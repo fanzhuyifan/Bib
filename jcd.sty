@@ -1,0 +1,179 @@
+\usepackage{enumerate}
+\usepackage{amssymb}
+\usepackage{amsbsy}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{latexsym}
+\usepackage{graphicx}
+% \usepackage{fullpage}
+
+% \setlength{\topmargin}{1cm}
+%% \setlength{\textwidth}{15cm}
+%% \setlength{\textheight}{8.5in}
+%% \setlength{\oddsidemargin}{1cm}
+
+% Symbol formats
+\newcommand{\mc}[1]{\mathcal{#1}}
+\newcommand{\mbf}[1]{\mathbf{#1}}
+\newcommand{\mrm}[1]{\mathrm{#1}}
+\newcommand{\mbi}[1]{\boldsymbol{#1}} % Bold and italic (math bold italic)
+
+% Norms for convenience, along with sizes
+\newcommand{\norm}[1]{\left\|{#1}\right\|} % A norm with 1 argument
+\newcommand{\lone}[1]{\norm{#1}_1} % l1 norm
+\newcommand{\ltwo}[1]{\norm{#1}_2} % l2 norm
+\newcommand{\linf}[1]{\norm{#1}_\infty} % l-infinity norm
+\newcommand{\dnorm}[1]{\norm{#1}_*} % Dual norm
+\newcommand{\lfro}[1]{\left\|{#1}\right\|_{\rm Fr}} % Frobenius norm
+\newcommand{\matrixnorm}[1]{\left|\!\left|\!\left|{#1}
+  \right|\!\right|\!\right|} % Matrix norm with three bars
+\newcommand{\normbigg}[1]{\bigg\|{#1}\bigg\|} % A norm with 1 argument and bigg
+                                              % brackets.
+\newcommand{\normbig}[1]{\big\|{#1}\big\|} % A norm with 1 argument and big
+                                           % brackets.
+\newcommand{\lonebigg}[1]{\normbigg{#1}_1} % l1 norm
+\newcommand{\ltwobigg}[1]{\normbigg{#1}_2} % l2 norm
+\newcommand{\ltwobig}[1]{\normbig{#1}_2} % l2 norm
+\newcommand{\linfbigg}[1]{\normbigg{#1}_\infty} % l-infinity norm
+\newcommand{\norms}[1]{\|{#1}\|} % A norm with 1 argument and normal (small)
+                                 % brackets.
+\newcommand{\matrixnorms}[1]{|\!|\!|{#1}|\!|\!|} % Small matrix norm
+\newcommand{\lones}[1]{\norms{#1}_1} % l1 norm with small brackets
+\newcommand{\ltwos}[1]{\norms{#1}_2} % l2 norm with small brackets
+\newcommand{\linfs}[1]{\norms{#1}_\infty} % l-infinity norm with small brackets
+
+
+\newcommand{\defeq}{:=}
+\newcommand{\what}[1]{\widehat{#1}} % Wide hat
+\newcommand{\wt}[1]{\widetilde{#1}} % Wide tilde
+
+\newcommand{\half}{\frac{1}{2}}
+\newcommand{\indic}[1]{\mbf{1}\left\{#1\right\}} % Indicator function
+
+\newcommand{\reals}{\mathbb{R}} % Real number symbol
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}} % Complex numbers
+\newcommand{\integers}{\mathbb{Z}} % Integer symbol
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\rationals}{\mathbb{Q}} % Rational numbers
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\naturals}{\mathbb{N}} % Natural numbers
+\newcommand{\N}{\mathbb{N}}
+
+%%% New version of \caption puts things in smaller type, single-spaced 
+%%% and indents them to set them off more from the text.
+\makeatletter
+\long\def\@makecaption#1#2{
+  \vskip 0.8ex
+  \setbox\@tempboxa\hbox{\small {\bf #1:} #2}
+  \parindent 1.5em  %% How can we use the global value of this???
+  \dimen0=\hsize
+  \advance\dimen0 by -3em
+  \ifdim \wd\@tempboxa >\dimen0
+  \hbox to \hsize{
+    \parindent 0em
+    \hfil 
+    \parbox{\dimen0}{\def\baselinestretch{0.96}\small
+      {\bf #1.} #2
+      %%\unhbox\@tempboxa
+    } 
+    \hfil}
+  \else \hbox to \hsize{\hfil \box\@tempboxa \hfil}
+  \fi
+}
+\makeatother
+
+\newcommand{\<}{\left\langle} % Angle brackets
+\renewcommand{\>}{\right\rangle}
+
+\renewcommand{\iff}{\Leftrightarrow}
+\renewcommand{\choose}[2]{\binom{#1}{#2}}
+\newcommand{\chooses}[2]{{}_{#1}C_{#2}}
+\newcommand{\twovec}[2]{\left[\begin{matrix} {#1} \\ {#2} \end{matrix}\right]}
+
+%%%% Probability symbols and associated distances %%%%
+
+\newcommand{\E}{\mathbb{E}} % Expectation symbol
+\renewcommand{\P}{\mathbb{P}} % Probability symbol
+\newcommand{\var}{\mathop{\rm Var}} % Variance
+\newcommand{\cov}{\mathop{\rm Cov}} % Covariance
+\newcommand{\simiid}{\stackrel{\rm i.i.d.}{\sim}}
+\newcommand{\openleft}[2]{\left({#1},{#2}\right]} % Interval open on left
+\newcommand{\openright}[2]{\left[{#1},{#2}\right)} % Interval open on right
+\newcommand{\tvnorm}[1]{\norm{#1}_{\rm TV}}
+\newcommand{\dkl}[2]{D_{\rm kl}\left({#1} |\!| {#2}\right)}
+\newcommand{\dhel}{d_{\rm hel}}
+
+% Convergence of random variables
+\newcommand{\cd}{\stackrel{d}{\rightarrow}} % Convergences in distribution
+\newcommand{\cas}{\stackrel{a.s.}{\rightarrow}} % Convergence a.s.
+\newcommand{\cp}{\stackrel{p}{\rightarrow}} % Convergence in probability
+
+%%%% Convenient mathematical symbols and operators %%%%
+
+\providecommand{\argmax}{\mathop{\rm argmax}} % Defining math symbols
+\providecommand{\argmin}{\mathop{\rm argmin}}
+\providecommand{\dom}{\mathop{\rm dom}}
+\providecommand{\diag}{\mathop{\rm diag}}
+\providecommand{\tr}{\mathop{\rm tr}}
+\providecommand{\abs}{\mathop{\rm abs}}
+\providecommand{\card}{\mathop{\rm card}}
+\providecommand{\sign}{\mathop{\rm sign}}
+\providecommand{\cl}{\mathop{\rm cl}}
+\providecommand{\interior}{\mathop{\rm int}}
+\providecommand{\bd}{\mathop{\rm bd}} % boundary of a set
+\providecommand{\conv}{\mathop{\rm Conv}}
+\providecommand{\relint}{\mathop{\rm relint}}
+\newcommand{\supp}{\mathop{\rm supp}} % support of a function
+\newcommand{\hinge}[1]{\left[{#1}\right]_+} % Max of argument and zero
+
+\providecommand{\minimize}{\mathop{\rm minimize}}
+\providecommand{\maximize}{\mathop{\rm maximize}}
+\providecommand{\subjectto}{\mathop{\rm subject\;to}}
+
+\newcommand{\figref}[1]{Fig.~\ref{#1}}
+
+% Proof environments
+% The Theorems are numbered consecutively
+% Lemmas are numbered by section, and observations, claims, facts, and 
+% assumptions take their numbering. Propositions and definitions have their
+% own numbering by section.
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{observation}[theorem]{Observation}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{fact}[theorem]{Fact}
+\newtheorem{assumption}{Assumption}
+\newtheorem{conjecture}[theorem]{Conjecture}
+
+\renewenvironment{proof}{\noindent{\bf Proof}\hspace*{1em}}{\qed\bigskip\\}
+
+\newenvironment{proof-sketch}{\noindent{\bf Sketch of Proof}
+  \hspace*{1em}}{\qed\bigskip\\}
+\newenvironment{proof-idea}{\noindent{\bf Proof Idea}
+  \hspace*{1em}}{\qed\bigskip\\}
+\newenvironment{proof-of-lemma}[1][{}]{\noindent{\bf Proof of Lemma {#1}}
+  \hspace*{1em}}{\qed\bigskip\\}
+\newenvironment{proof-of-proposition}[1][{}]{\noindent{\bf
+    Proof of Proposition {#1}}
+  \hspace*{1em}}{\qed\bigskip\\}
+\newenvironment{proof-of-theorem}[1][{}]{\noindent{\bf Proof of Theorem {#1}}
+  \hspace*{1em}}{\qed\bigskip\\}
+\newenvironment{inner-proof}{\noindent{\bf Proof}\hspace{1em}}{
+  $\bigtriangledown$\medskip\\}
+%% \newenvironment{proof-of-lemma}[1][{}]{\noindent{\bf Proof of Lemma {#1}}
+%%   \hspace*{1em}\renewcommand{\qedsymbol}{$\bigtriangledown$}}{\qed\bigskip\\}
+\newenvironment{proof-attempt}{\noindent{\bf Proof Attempt}
+  \hspace*{1em}}{\qed\bigskip\\}
+\newenvironment{proofof}[1]{\noindent{\bf Proof} of {#1}:
+  \hspace*{1em}}{\qed\bigskip\\}
+\newenvironment{remark}{\noindent{\bf Remark}
+  \hspace*{1em}}{\bigskip}
+
+% Makes equation numbers have (1.1) style
+% \numberwithin{equation}{section}
+% \numberwithin{equation}{subsection}
