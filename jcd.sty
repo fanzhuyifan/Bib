@@ -102,6 +102,7 @@
 \newcommand{\openleft}[2]{\left({#1},{#2}\right]} % Interval open on left
 \newcommand{\openright}[2]{\left[{#1},{#2}\right)} % Interval open on right
 \newcommand{\tvnorm}[1]{\norm{#1}_{\rm TV}}
+\newcommand{\tvnorms}[1]{\norms{#1}_{\rm TV}}
 \newcommand{\dkl}[2]{D_{\rm kl}\left({#1} |\!| {#2}\right)}
 \newcommand{\dhel}{d_{\rm hel}}
 
@@ -173,8 +174,34 @@
   \hspace*{1em}}{\qed\bigskip\\}
 \newenvironment{proofof}[1]{\noindent{\bf Proof} of {#1}:
   \hspace*{1em}}{\qed\bigskip\\}
+
 \newenvironment{remark}{\noindent{\bf Remark}
   \hspace*{1em}}{\bigskip}
+
+\newcounter{example}
+
+\newenvironment{example}[1][]{
+  \refstepcounter{example}
+  \ifthenelse{\isempty{#1}}{%
+    % There is no text to display in the example
+    \noindent \textbf{Example \theexample:}\hspace*{.05em}
+  }{%
+    \noindent \textbf{Example \theexample} ({#1})\textbf{:}\hspace*{.05em}
+  }
+}{%
+  $\clubsuit$ \bigskip
+}
+
+\newenvironment{example*}[1][]{
+  \ifthenelse{\isempty{#1}}{%
+    % There is no text to display in the example
+    \noindent \textbf{Example:}\hspace*{.05em}
+  }{%
+    \noindent \textbf{Example} ({#1})\textbf{:}\hspace*{.05em}
+  }
+}{%
+  $\clubsuit$ \bigskip
+}
 
 % Makes equation numbers have (1.1) style
 % \numberwithin{equation}{section}
