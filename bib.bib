@@ -5361,6 +5361,14 @@ month=		jul,
 year=		1992
 }
 
+@inproceedings{DeanCoMoChDeMaRaSeTuYaNg12,
+author = {Jeffrey Dean and Greg S. Corrado and Rajat Monga and Kai Chen and
+Matthieu Devin and Quoc V. Le and Mark Z. Mao and Marc’Aurelio Ranzato and
+Andrew Senior and Paul Tucker and Ke Yang and Andrew Y. Ng},
+title = {Large Scale Distributed Deep Networks},
+year = 2012,
+booktitle = nips25,
+}
 
 @article{DeanKa89,
         author = "T. Dean and K. Kanazawa",
@@ -9884,6 +9892,18 @@ comment=   	{Uses a back-propagation learning procedure to learn relational
 		 networks}
 }
 
+@article{HintonDeYuDaMoJaSeVaNgSaKi12,
+author = {Geoffrey Hinton and Li Deng and Dong Yu and George E. Dahl and
+   Abdel-rahman Mohamed and Navdeep Jaitly and 
+  Andrew Senior and Vincent Vanhoucke and Patrick Nguyen and Tara N. Sainath
+  and Brian Kingsbury},
+title  = {Deep neural networks for acoustic modeling in speech recognition},
+year = 2012,
+journal = {IEEE Signal Processing Magazine},
+volume = 82,
+month = {November},
+}
+
 @techreport{HintonSeAc84,
 author=   	{Hinton, Geoffrey E. and Terrence J. Sejnowski and David H.
 		Ackley},
@@ -11653,9 +11673,6 @@ year=     	1987,
 pages=    	{745}
 }
 
-
-
-
 @Article{KrichevsyTr81,
   author = 	 {R.E. Krichevsky and V.K. Trofimov},
   title = 	 {The performance of universal encoding},
@@ -11666,6 +11683,14 @@ pages=    	{745}
   month =	 {March},
   note =	 {The paper where the add 1/2 rule is first shown to be optimal}
 }
+
+@inproceedings{KrizhevskySuHi12,
+author = {Alex Krizhevsky and Ilya Sutskever and Geoffrey Hinton},
+title = {ImageNet Classification with Deep Convolutional Neural Networks},
+year = 2012,
+booktitle = nips25,
+}
+
 
 @article{Kugel77,
 author=   	{Kugel, Peter},
@@ -12361,6 +12386,14 @@ number=   	4,
 pages=    	{1035--1074},
 comment=  	{Analysis of implementation of Hidden Markov models and the
 		Baum-Welch algorithm}
+}
+
+@inproceedings{LevyGo14,
+author = {Omer Levy and Yoav Goldberg},
+title = {Linguistic Regularities in Sparse and Explicit Word Representations},
+year = 2014,
+booktitle = {Eighteenth Conference on Computational Neural Language Learning
+ (CoNLL)},
 }
 
 @TechReport{Lewis92,
@@ -13842,6 +13875,15 @@ comment=	{address = {Los Altos, California}}
 Intelligence}
 }
 
+@inproceedings{MikolovSuChCoDe13,
+author = {Tomas Mikolov and Ilya Sutskever and Kai Chen and Greg Corrado
+  and Jeff Dean},
+title = {Distributed representations of words and phrases and their
+  compositionality},
+year = 2013,
+booktitle = nips26,
+}
+
 @article{Miller56,
 author=		{Miller, G.},
 title=		{The magic number seven, plus or minus two:  Some limits on
@@ -15121,7 +15163,11 @@ the exact right stepsizes (and some other bells and whistles that may
 not be implementable), averaging iterates to get \bar{x}_t yields optimal
 rates of convergence for a wider variety of step sizes. Obtains results
 in classical style, showing \sqrt{t}(\bar{x}_t - x^*) converges in
-distribution to a normal with appropriate limiting variances. (These are
+distribution to a normal with appropriate limiting variances.
+Techniques are to first consider simple quadratic problem with
+independent noise (i.e. solve Ax = b with noise), with fixed stepsizes,
+then do this with decreasing stepsizes, then show the general problem
+is asymptotically equivalent. (The attained limiting variances are
 optimal in a Fisher-information/Bahadur efficiency sense.)
 A few minor typos in assumptions and proof: Assumption 3.3 should have
 dependence on \Delta_{t-1} = x_{t-1} - x^* instead of x_{t-1} in the stochastic
@@ -15413,10 +15459,17 @@ pages = 	{19--27}
 @inproceedings{RahimiRe07,
 author=   	{A. Rahimi and B. Recht},
 title=    	{Random Features for Large-Scale Kernel Machines},
-booktitle=	{NIPS},
+booktitle=	nips20,
 year=     	{2007}
 }
 
+@inproceedings{RahimiRe08,
+author = {Ali Rahimi and Benjamin Recht},
+title = {Weighted sums of random kitchen sinks: replacing minimization
+  with randomization in learning},
+year = 2008,
+booktitle = nips21,
+}
 
 @article{Raphael99,
 author=   	{C. Raphael},
@@ -16216,6 +16269,15 @@ title = {On dual decomposition and linear programming relaxations
 for natural language processing},
 booktitle = emnlp,
 year = 2010,
+}
+
+@article{RussakovskyDeSuKrSaMaHuKaKhBeBeFe14,
+author = {Olga Russakovsky and Jia Deng and Hao Su and Jonathan Krause and
+Sanjeev Satheesh and Sean Ma and Zhiheng Huang and Andrej Karpathy and
+Aditya Khosla and Michael Bernstein and Alexander C. Berg and Li Fei-Fei},
+title = {Image{N}et Large Scale Visual Recognition Challenge},
+year = 2014,
+journal = {arXiv:1409.0575 [cs.CV]},
 }
 
 @article{Saaty03,
@@ -18917,6 +18979,14 @@ in E step rather than 1},
  publisher = {Kluwer Academic Publishers},
  }
 
+@inproceedings{WeinbergerDaLaSmAt09,
+author = {Killian Weinberger and Anirban Dasgupta and John Langford
+  and Alex Smola and Josh Attenberg},
+title = {Feature hashing for large scale multitask learning},
+year = 2009,
+booktitle = icml09,
+}
+
 @article{WeinbergerLeZi92,
   author =       "Marcelo J. Weinberger and Abraham Lempel and Jacob Ziv",
   title =        "A Sequential Algorithm for the Universal Coding of
@@ -18955,9 +19025,6 @@ pages=		{643-652}
 ,title=         {Sequential prediction and ranking in universal
                   context modeling and data compression}
 }
-
-
-
 
 @article{WeissApDaJoOlGoHa99,
 	author = {S. M. Weiss and C. Apte and F. J. Damerau and
