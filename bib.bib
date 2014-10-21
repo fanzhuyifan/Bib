@@ -1672,6 +1672,15 @@ publisher = {Kluwer Academic},
                   learning, and neural nets}
 }
 
+@article{BarronCo91,
+author = {Andrew R. Barron and Thomas M. Cover},
+title = {Minimum complexity density estimation},
+journal = ieeeit,
+volume = 37,
+year = 1991,
+pages = {1034--1054},
+}
+
 @article{BarronBiMa99,
 author = {Andrew Barron and Lucien Birg\'e and Pascal Massart},
 title = {Risk bounds for model selection via penalization},
@@ -4416,6 +4425,14 @@ year=		1991,
 pages=		{151--164}
 }
 
+@incollection{CoatesNg12,
+author = {Adam Coates and Andrew Y. Ng},
+title = {Learning feature representations with $k$-means},
+year = 2012,
+booktitle = {Neural Networks: Tricks of the Trade, Reloaded},
+publisher = {Springer},
+}
+
 @inproceedings{Cohen95
 ,author=	{William Cohen}
 ,title=		{Fast Effective Rule Induction}
@@ -5361,6 +5378,14 @@ month=		jul,
 year=		1992
 }
 
+@inproceedings{DeanCoMoChDeMaRaSeTuYaNg12,
+author = {Jeffrey Dean and Greg S. Corrado and Rajat Monga and Kai Chen and
+Matthieu Devin and Quoc V. Le and Mark Z. Mao and Marc’Aurelio Ranzato and
+Andrew Senior and Paul Tucker and Ke Yang and Andrew Y. Ng},
+title = {Large Scale Distributed Deep Networks},
+year = 2012,
+booktitle = nips25,
+}
 
 @article{DeanKa89,
         author = "T. Dean and K. Kanazawa",
@@ -6822,6 +6847,17 @@ author = {Sam Efromovich},
 year = 1999,
 title = {Nonparametric Curve Estimation: Methods, Theory, and Applications},
 publisher = {Springer-Verlag},
+}
+
+@article{EfronHaJoTi04,
+author = {Bradley Efron and Trevor Hastie and Iain Johnstone and Robert
+  Tibshirani},
+title = {Least angle regression},
+year = 2004,
+journal = aos,
+volume = 32,
+number = 2,
+pages = {407--451},
 }
 
 @book{EfronTi93
@@ -9892,6 +9928,18 @@ comment=   	{Uses a back-propagation learning procedure to learn relational
 		 networks}
 }
 
+@article{HintonDeYuDaMoJaSeVaNgSaKi12,
+author = {Geoffrey Hinton and Li Deng and Dong Yu and George E. Dahl and
+   Abdel-Rahman Mohamed and Navdeep Jaitly and 
+  Andrew Senior and Vincent Vanhoucke and Patrick Nguyen and Tara N. Sainath
+  and Brian Kingsbury},
+title  = {Deep neural networks for acoustic modeling in speech recognition},
+year = 2012,
+journal = {IEEE Signal Processing Magazine},
+volume = 82,
+month = {November},
+}
+
 @techreport{HintonSeAc84,
 author=   	{Hinton, Geoffrey E. and Terrence J. Sejnowski and David H.
 		Ackley},
@@ -11661,9 +11709,6 @@ year=     	1987,
 pages=    	{745}
 }
 
-
-
-
 @Article{KrichevsyTr81,
   author = 	 {R.E. Krichevsky and V.K. Trofimov},
   title = 	 {The performance of universal encoding},
@@ -11674,6 +11719,14 @@ pages=    	{745}
   month =	 {March},
   note =	 {The paper where the add 1/2 rule is first shown to be optimal}
 }
+
+@inproceedings{KrizhevskySuHi12,
+author = {Alex Krizhevsky and Ilya Sutskever and Geoffrey Hinton},
+title = {ImageNet Classification with Deep Convolutional Neural Networks},
+year = 2012,
+booktitle = nips25,
+}
+
 
 @article{Kugel77,
 author=   	{Kugel, Peter},
@@ -12369,6 +12422,14 @@ number=   	4,
 pages=    	{1035--1074},
 comment=  	{Analysis of implementation of Hidden Markov models and the
 		Baum-Welch algorithm}
+}
+
+@inproceedings{LevyGo14,
+author = {Omer Levy and Yoav Goldberg},
+title = {Linguistic Regularities in Sparse and Explicit Word Representations},
+year = 2014,
+booktitle = {Eighteenth Conference on Computational Neural Language Learning
+ (CoNLL)},
 }
 
 @TechReport{Lewis92,
@@ -13850,6 +13911,15 @@ comment=	{address = {Los Altos, California}}
 Intelligence}
 }
 
+@inproceedings{MikolovSuChCoDe13,
+author = {Tomas Mikolov and Ilya Sutskever and Kai Chen and Greg Corrado
+  and Jeff Dean},
+title = {Distributed representations of words and phrases and their
+  compositionality},
+year = 2013,
+booktitle = nips26,
+}
+
 @article{Miller56,
 author=		{Miller, G.},
 title=		{The magic number seven, plus or minus two:  Some limits on
@@ -14902,6 +14972,15 @@ comment=  	{Critique of Rumelhart and McClelland's connectionist approach
 		to learning English past tense construction.}
 }
 
+@article{Pisier12,
+author = {Gilles Pisier},
+title = {Grothendieck's {T}heorem, past and present},
+journal = {Bulletin of the American Mathematical Society},
+year = 2012,
+pages = {237--323},
+volume = 49,
+}
+
 @BOOK{Pisier89,
 AUTHOR = {G. Pisier},
 TITLE = "The {V}olume of {C}onvex {B}odies and {B}anach {S}pace {G}eometry",
@@ -15129,7 +15208,11 @@ the exact right stepsizes (and some other bells and whistles that may
 not be implementable), averaging iterates to get \bar{x}_t yields optimal
 rates of convergence for a wider variety of step sizes. Obtains results
 in classical style, showing \sqrt{t}(\bar{x}_t - x^*) converges in
-distribution to a normal with appropriate limiting variances. (These are
+distribution to a normal with appropriate limiting variances.
+Techniques are to first consider simple quadratic problem with
+independent noise (i.e. solve Ax = b with noise), with fixed stepsizes,
+then do this with decreasing stepsizes, then show the general problem
+is asymptotically equivalent. (The attained limiting variances are
 optimal in a Fisher-information/Bahadur efficiency sense.)
 A few minor typos in assumptions and proof: Assumption 3.3 should have
 dependence on \Delta_{t-1} = x_{t-1} - x^* instead of x_{t-1} in the stochastic
@@ -15421,10 +15504,17 @@ pages = 	{19--27}
 @inproceedings{RahimiRe07,
 author=   	{A. Rahimi and B. Recht},
 title=    	{Random Features for Large-Scale Kernel Machines},
-booktitle=	{NIPS},
+booktitle=	nips20,
 year=     	{2007}
 }
 
+@inproceedings{RahimiRe08,
+author = {Ali Rahimi and Benjamin Recht},
+title = {Weighted sums of random kitchen sinks: replacing minimization
+  with randomization in learning},
+year = 2008,
+booktitle = nips21,
+}
 
 @article{Raphael99,
 author=   	{C. Raphael},
@@ -16224,6 +16314,15 @@ title = {On dual decomposition and linear programming relaxations
 for natural language processing},
 booktitle = emnlp,
 year = 2010,
+}
+
+@article{RussakovskyDeSuKrSaMaHuKaKhBeBeFe14,
+author = {Olga Russakovsky and Jia Deng and Hao Su and Jonathan Krause and
+Sanjeev Satheesh and Sean Ma and Zhiheng Huang and Andrej Karpathy and
+Aditya Khosla and Michael Bernstein and Alexander C. Berg and Li Fei-Fei},
+title = {Image{N}et Large Scale Visual Recognition Challenge},
+year = 2014,
+journal = {arXiv:1409.0575 [cs.CV]},
 }
 
 @article{Saaty03,
@@ -18931,6 +19030,14 @@ in E step rather than 1},
  publisher = {Kluwer Academic Publishers},
  }
 
+@inproceedings{WeinbergerDaLaSmAt09,
+author = {Killian Weinberger and Anirban Dasgupta and John Langford
+  and Alex Smola and Josh Attenberg},
+title = {Feature hashing for large scale multitask learning},
+year = 2009,
+booktitle = icml09,
+}
+
 @article{WeinbergerLeZi92,
   author =       "Marcelo J. Weinberger and Abraham Lempel and Jacob Ziv",
   title =        "A Sequential Algorithm for the Universal Coding of
@@ -18969,9 +19076,6 @@ pages=		{643-652}
 ,title=         {Sequential prediction and ranking in universal
                   context modeling and data compression}
 }
-
-
-
 
 @article{WeissApDaJoOlGoHa99,
 	author = {S. M. Weiss and C. Apte and F. J. Damerau and
@@ -19277,6 +19381,25 @@ journal = jmlr,
 volume = 7,
 year = 2006,
 pages = {603--624}
+}
+
+@article{WuSh04,
+author = {Wei Biao Wu and Xiaofeng Shao},
+title = {Limit theorems for iterated random functions},
+year = 2004,
+journal = {Journal of Applied Probability},
+volume = 41,
+pages = {425--436},
+comment = { Gives a nice argument for convergence of iterated random functions
+  of the form $X_n = F_{\theta_n}(X_{n-1})$, where $\theta_i$ are an i.i.d.
+  sequence and the $X_i$ are initialized somehow. Under an assumption of
+  geometric decay of distances $X_n(x) = F_{\theta_n} ... F_{\theta_1}(x)$
+  and $X_n(y)$, uses a backward process (converging a.s. to some random
+  variable) to get convergence in distribution of associated Markov chain.
+  Gives central limit theorems (and uniform variants) by showing a sequence
+  of $g(X_{n-l}, ..., X_n)$ has a Martingale structure. Does not
+  show \emph{what} distributions are or formulae for variance, but that
+  is non-trivial.},
 }
 
 @article{Wyner72,
