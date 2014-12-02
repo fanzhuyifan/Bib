@@ -205,6 +205,7 @@ on Artificial Intelligence and Statistics}}
 @string{annstat={The Annals of Statistics}}
 @string{aos = {Annals of Statistics}}
 @string{aop = {Annals of Probability}}
+@string{bams = {Bulletin of the American Mathematical Society}}
 @string{cacm =	{Communications of the ACM}}
 @string{eurosam79={Symbolic and Algebraic Computation}}
 @string{icalp92 = {Automata, Languages and Programming: 19th
@@ -300,6 +301,7 @@ on Artificial Intelligence and Statistics}}
 @string{icml11 = {Proceedings of the 28th International Conference on Machine Learning}}
 @string{icml12 = {Proceedings of the 29th International Conference on Machine Learning}}
 @string{icml13 = {Proceedings of the 30th International Conference on Machine Learning}}
+@string{icml14 = {Proceedings of the 31st International Conference on Machine Learning}}
 
 @string{allerton10 = {The 48th Allerton Conference on Communication, Control,
  and Computing}}
@@ -1319,6 +1321,17 @@ year = 2009,
 publisher = {Cambridge University Press},
 }
 
+@article{AroraHaKa12,
+title = {The multiplicative weights update method: a meta algorithm and
+applications},
+author = {S. Arora and E. Hazan and S. Kale},
+year = 2012,
+journal = {Theory of Computing},
+volume = 8,
+number = 1,
+pages = {121--164},
+}
+
 @book{Arrow51,
 author = {Kenneth Joseph Arrow},
 title = {Social Choice and Individual Values},
@@ -1936,7 +1949,7 @@ author=   	{Baum, Leonard E. and J. A. Eagon},
 title=    	{An Inequality with Applications to Statistical Estimation for
   	  	Probabilistic Functions of Markov Processes and to a Model for
 		Ecology},
-journal=  	{Bulletin of the American Mathematical Society},
+journal=  	bams,
 year=     	1967,
 volume=   	73,
 pages=    	{360--363},
@@ -2437,6 +2450,13 @@ author = {D.P. Bertsekas},
 title = {Nonlinear Programming},
 publisher = {Athena Scientific},
 year = {1999}
+}
+
+@book{Bertsekas09,
+author = {Dimitri P. Bertsekas},
+title = {Convex Optimization Theory},
+year = 2009,
+publisher = {Athena Scientific},
 }
 
 @book{BertsekasTs89,
@@ -3953,13 +3973,16 @@ pages =         {31--54},
 year =          {2007}
 }
 	
-
-
-@book{CesaBianchiLu06,
-author = {N. Cesa-Bianchi and G. Lugosi},
-title  = {Prediction, learning, and games},
-publisher = {Cambridge University Press},
-year = {2006}
+@article{CesaBianchiLu99,
+author = {Nicol\'o Cesa-Bianchi and G\'abor Lugosi},
+title = {On prediction of individual sequences},
+year = 1999,
+journal = aos,
+volume = 27,
+number = 6,
+pages = {1865--1895},
+comment = {Shows that in sequential prediction games with absolute loss,
+  the Rademacher complexity provides an upper bound on value of the game.},
 }
 
 @article{CesaBianchiLu03,
@@ -3970,6 +3993,23 @@ volume  =       {3},
 number = {51},
 pages =         {239--261},
 year =          {2003}
+}
+
+@book{CesaBianchiLu06,
+author = {N. Cesa-Bianchi and G. Lugosi},
+title  = {Prediction, learning, and games},
+publisher = {Cambridge University Press},
+year = {2006}
+}
+
+@article{CesaBianchiMaSt07,
+author = {Nicol\'o Cesa-Bianchi and Yishay Mansour and Gilles Stoltz},
+title = {Improved second-order bounds for prediction with expert advice},
+year = 2007,
+journal = ml,
+volume = 66,
+number = {2--3},
+pages = {321--352},
 }
 
 @inproceedings{CestnikKoBr87,
@@ -5402,6 +5442,16 @@ volume = 8,
 pages = {101--111},
 }
 
+@article{Davisson65,
+author = {Lee D. Davisson},
+title = {The prediction error of stationary Gaussian time series of unknown
+   covariance},
+year = 1965,
+journal = ieeeit,
+volume = 11,
+pages = {527--532},
+}
+
 @inproceedings{De12,
 author = {Anindya De},
 title = {Lower bounds in differential privacy},
@@ -5762,6 +5812,13 @@ number = 	4,
 year = 		1988,
 month = 	Jul,
 pages = 	{530--543}
+}
+		
+@book{DevroyeGy85,
+author = {Luc Devroye and L\'aszl\'o Gy\"{o}rfi},
+title = {Nonparametric Density Estimation: The $L_1$ View},
+year = 1985,
+publisher = {John Wiley and Sons},
 }
 		
 @Book{DevroyeGyLu96,
@@ -8063,7 +8120,7 @@ year=		1959
 author = {R. J. Gardner},
 title = {The {B}runn-{M}inkowski Inequality},
 year = 2002,
-journal = {Bulletin of the American Mathematical Society},
+journal = bams,
 volume = 39,
 number = 3,
 pages = {355--405},
@@ -9041,6 +9098,14 @@ and (essentially) saddle points to show rates of convergence of bootstrap
 for confidence intervals},
 }
 
+@phdthesis{Hall13,
+author = {Rob Hall},
+title = {New Statistical Applications for Differential Privacy},
+year = 2013,
+school = {Carnegie Mellon University, Departments of
+Statistics and Machine Learning},
+}
+
 @article{HallRiWa11,
 author = {Rob Hall and Alessandro Rinaldo and Larry Wasserman},
 year = 2011,
@@ -9568,6 +9633,17 @@ pages=		{83--113}
 ,year=		1995
 ,publisher=	{Springer-Verlag}
 ,pages=		{69--83}
+}
+
+@article{HausslerKiWa98,
+author = {David Haussler and Jyrki Kivinen and Manfred K. Warmuth},
+title = {Sequential Prediction of Individual
+    Sequences Under General Loss Functions},
+year = 1998,
+journal = ieeeit,
+volume = 44,
+number = 5,
+pages = {1906--1925},
 }
 
 @unpublished{HausslerLiWa87,
@@ -11474,7 +11550,7 @@ pages=          {606--617}
   author = 	 {J.~Kivinen and M.K.~Warmuth},
   title = 	 {Additive Versus Exponentiated Gradient Updates
                  for Linear Prediction},
-  booktitle = 	 {stoc95},
+  booktitle = 	 stoc95,
   year =	 1995,
   pages =	 {209-218},
   note =	 {See also technical report UCSC-CRL-94-16, University
@@ -11497,7 +11573,7 @@ pages=          {606--617}
 @Article{KivinenWa01,
   author = 	 {J.~Kivinen and M. Warmuth},
   title = 	 {Relative Loss Bounds for Multidimensional Regression Problems},
-  journal = 	 {Journal of Machine Learning},
+  journal = 	 ml,
   year = 	 2001,
   volume =	 45,
   number =	 3,
@@ -12393,6 +12469,12 @@ year = 1998,
 publisher = {Springer},
 }
 
+@book{LehmannRo05,
+author = {Erich L. Lehmann and Joseph P. Romano},
+title = {Testing Statistical Hypotheses, Third Edition},
+year = 2005,
+publisher = {Springer},
+}
 
 @article{LemarechalSa97,
 author = {C. Lemar\'{e}chal and C. Sagastiz\'{a}bal},
@@ -13012,6 +13094,18 @@ year = {1991}
   title = 	 {Mistake bounds for maximum entropy discrimination},
   booktitle =   nips17,
   year = 	 {2004}
+}
+
+@article{Lorentz66,
+author = {George G. Lorentz},
+title = {Metric Entropy and Approximation},
+year = 1966,
+journal = bams,
+volume = 72,
+number = 6,
+pages = {903--937},
+comment = {Gives general techniques for evaluating approximability and metric
+  entropies},
 }
 
 @book{Lovasz79,
@@ -15099,7 +15193,7 @@ comment=  	{Critique of Rumelhart and McClelland's connectionist approach
 @article{Pisier12,
 author = {Gilles Pisier},
 title = {Grothendieck's {T}heorem, past and present},
-journal = {Bulletin of the American Mathematical Society},
+journal = bams,
 year = 2012,
 pages = {237--323},
 volume = 49,
@@ -15850,6 +15944,15 @@ pages=    	{416--431}
   month =        sep,
   year =         "1983",
   pages =        "656--664"
+}
+
+@article{Rissanen84,
+author = {Jorma Rissanen},
+title = {Universal coding, information, prediction, and estimation},
+journal = ieeeit,
+year = 1984,
+volume = 30,
+pages = {629--636},
 }
 
 @article{Rissanen86a,
@@ -17998,6 +18101,14 @@ publisher = {Ellis Horwood},
                   uniformly optimal prediction}
 }
 
+@inproceedings{SteinhardtLi14,
+author = {Jacob Steinhardt and Percy Liang},
+title = {Adaptivity and Optimism: An Improved Exponentiated Gradient
+   Algorithm},
+year = 2014,
+booktitle = icml14,
+}
+
 @article{Steinwart05,
 author = {Ingo Steinwart},
 title = {Consistency of Support Vector Machines and
@@ -19317,7 +19428,7 @@ comment=  	{Interesting model for a stochastic system.}
 author=		{Herbert S. Wilf},
 title=		{Hadamard determinants, {M}\"obius functions, and the
 		 chromatic number of a graph},
-journal=	{Bulletin of the American Mathematical Society},
+journal=	bams,
 volume=		74,
 number=		5,
 month=		sep,
