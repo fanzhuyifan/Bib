@@ -3010,6 +3010,15 @@ pages=		{27--45}
 		aspirations}
 }
 
+@article{BorweinCh09,
+author = {Jonathan M. Borwein and O-Yeat Chan},
+title = {Uniform Bounds for the Incomplete Complementary {G}amma Function},
+journal = {Mathematical Inequalities and Applications},
+volume = 12,
+year = 2009,
+pages = {115--121},
+}
+
 @book{BorweinLe06,
 author = {J. Borwein and A. Lewis},
 title = {Convex Analysis and Nonlinear Optimization},
@@ -3657,6 +3666,43 @@ comment = {Studies convergence of random sampling procedures for evaluation
         and Infinite Dimensional Optimization",
     publisher = "Kluwer Academic Publishers, Dordrecht, the Netherlands",
     year = 2000
+}
+
+@article{CalafioreCa05,
+author = {Giuseppe Calafiore and M.C. Campi},
+title = {Uncertain convex programs: randomized solutions and
+confidence levels},
+year = 2005,
+journal = {Mathematical Programming Series A},
+volume = 102,
+pages = {25--46},
+comment = {Considers sampling based approaches to a robust convex problem
+  of $\min. c^Tx$ s.t.\ $f(x, \delta) \le 0$, all $\delta \in \Delta$, by
+  sampling from a distribution $P$ on $\Delta$. Via a clever counting
+  argument, shows that given $N$ samples $\delta^i$, the expected probability
+  of $\delta$s such that a solution $\what{x}_N$ fails
+  to satisfy $f(\what{x}_N, \delta) \le 0$ is bounded by $n / (N + 1)$.
+  The proof of the result is by showing--roughly via a hyperplane argument
+  (or Helly selection/intersection theorem for convex sets, see
+  also CalafioreCa04)--that only $n$ of the constraints can be active
+  at once, so on average dropping most of them does not matter.},
+}
+
+@incollection{CalafioreCa04,
+author = {Giuseppe Calafiore and M.C. Campi},
+title = {Decision making in an uncertain environment:
+         the scenario-based optimization approach},
+year = 2004,
+booktitle = {Multiple Participant Decision Making},
+publisher = {Advanced Knowledge International},
+pages = {99--111},
+comment = {A high-probability version of CalafioreCa05, which gives
+  similar results but with high probability. Also builds on a Helly
+  selection argument to show that we only need to get a certain number
+  of constraints correct, then some simple combinatorics do the rest.
+  Interestingly, no dependence on structure of robustifying set
+  $\Delta$ or distribution or anything, and rates are fast ($1/\epsilon$
+  rather than $1/\epsilon^2$ samples required).},
 }
 
 @article{CalderEsHe13,
