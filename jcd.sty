@@ -32,9 +32,12 @@
                                               % brackets.
 \newcommand{\normbig}[1]{\big\|{#1}\big\|} % A norm with 1 argument and big
                                            % brackets.
+\newcommand{\normBig}[1]{\Big\|{#1}\Big\|} % A norm with 1 argument and Big
+                                           % brackets
 \newcommand{\lonebigg}[1]{\normbigg{#1}_1} % l1 norm
 \newcommand{\ltwobigg}[1]{\normbigg{#1}_2} % l2 norm
 \newcommand{\ltwobig}[1]{\normbig{#1}_2} % l2 norm
+\newcommand{\ltwoBig}[1]{\normBig{#1}_2} % l2 norm
 \newcommand{\linfbigg}[1]{\normbigg{#1}_\infty} % l-infinity norm
 \newcommand{\norms}[1]{\|{#1}\|} % A norm with 1 argument and normal (small)
                                  % brackets.
@@ -110,6 +113,8 @@
 \newcommand{\cd}{\stackrel{d}{\rightarrow}} % Convergences in distribution
 \newcommand{\cas}{\stackrel{a.s.}{\rightarrow}} % Convergence a.s.
 \newcommand{\cp}{\stackrel{p}{\rightarrow}} % Convergence in probability
+\newcommand{\cltwo}{\stackrel{L_2}{\rightarrow}} % Convergence in ltwo
+\newcommand{\clp}[1]{\stackrel{L_{#1}}{\rightarrow}} % Convergence in Lp
 
 %%%% Convenient mathematical symbols and operators %%%%
 
