@@ -206,6 +206,7 @@ on Artificial Intelligence and Statistics}}
 @string{anappprob={Annals of Applied Probability}}
 @string{aoap = {Annals of Applied Probability}}
 @string{annstat={The Annals of Statistics}}
+@string{aoms = {Annals of Mathematical Statistics}}
 @string{aos = {Annals of Statistics}}
 @string{aop = {Annals of Probability}}
 @string{bams = {Bulletin of the American Mathematical Society}}
@@ -5724,13 +5725,25 @@ publisher = {Springer},
 }
 
 @article{DeGroot62,
-author = {M. H. DeGroot},
+author = {Morris H. De{G}root},
 title = {Uncertainty, Information, and Sequential Experiments},
+journal = aoms,
 year = 1962,
-journal = {Annals of Mathematical Statistics},
-pages = {404--419},
 volume = 33,
 number = 2,
+pages = {404--419},
+comment = {Classic paper on statistical information in simple
+  multi-way experiments. That is, for some prior probabilities
+  $\xi \in \R^k$ on $k$ different possibilities and a concave function
+  $U$ defined on the simplex, defines the information between $\xi$ and
+  an experiment $X$ (defined as a random variable distributed according
+  to one of the hypotheses $i = 1, \ldots, k$) via
+  $I(X, \xi; U) = U(\xi) - E[U(\xi(X)) \mid \xi]$, where
+  $\xi(X)$ denotes the posterior probability of the hypotheses given the
+  observation $X$. This quantity is nonegative for all experiments (random
+  variables $X$) if and only if $U$ is concave. Also looks at sequential
+  testing and how to optimize that, but optimization ``procedures'' are
+  impractical.}
 }
 
 @book{DeGroot70,
