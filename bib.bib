@@ -11240,12 +11240,29 @@ year = 2010,
 note = {URL \url{http://hal.archives-ouvertes.fr/docs/00/50/89/33/PDF/Strong-hal.pdf}},
 }
 
-@unpublished{JuditskyNeTa08,
-author = {A. Juditsky and A. Nemirovski and C. Tauvel},
+@article{JuditskyNeTa08,
+author = {Anatoli Juditsky and Arkadi Nemirovski and Claire Tauvel},
 title = {Solving variational inequalities with the stochastic mirror-prox
 algorithm},
+journal = {arXiv:0809.0815 [math.OC]},
 year = 2008,
-note = {URL \url{http://arxiv.org/abs/0809.0815}},
+url = {http://arxiv.org/abs/0809.0815},
+comment = {Solves variational inequalities with a stochastic
+                  oracle. Seems to be one of the first papers giving
+                  variance-based rates of convergence for smooth
+                  functions (i.e. Lipschitz monotone operators), even
+                  earlier than G. Lan's work.}
+}
+
+@article{JuditskyNeTa11,
+author = {Anatoli Juditsky and Arkadi Nemirovski and Claire Tauvel},
+title = {Solving variational inequalities with the stochastic mirror-prox
+algorithm},
+year = 2011,
+journal = {Stochastic Systems},
+volume = 1,
+number = 1,
+pages = {17--58},
 comment = {Solves variational inequalities with a stochastic
                   oracle. Seems to be one of the first papers giving
                   variance-based rates of convergence for smooth
@@ -13489,6 +13506,22 @@ year=		1989
 ,volume=	108
 ,year=		1994
 ,pages=		{212--261}
+}
+
+@inproceedings{LiuWrReBiSr14,
+author = {Ji Liu and Stephen J. Wright and Christopher R\'e
+   and Victor Bittorf and Srikrishna Sridhar},
+title = {An asynchronous parallel stochastic coordinate descent algorithm},
+year = 2014,
+booktitle = icml14,
+comment = {Shows that a value $H$ associated with the on Hessian (roughly that
+  the maximum column $\ell_2$-norm is bounded by $H$ times its maximum
+  diagonal entry) governs linear speedup of asynchronous coordinate methods.
+  If the delay in the method is bounded(ish) by $\sqrt{n} / H$, then
+  speedup over traditional coordinate descent methods is linear. This is
+  intuitive, as it means that roughly intermediate updates are (1) unlikely
+  to touch the desired coordiante and (2) coordinate updates do not affect
+  one another much.},
 }
 
 @inproceedings{LjoljeRi91,
@@ -16429,6 +16462,15 @@ Nothing about maintaining utility or general results on privacy.
                   Conference on Acoustics, Speech, and Signal Processing",
 	year = 1997,
 	pages = "1143--1146"
+}
+
+@article{RichtarikTa15,
+author = {Peter Richt\'arik and Martin Tak\'a\v{c}},
+title = {Parallel Coordinate Descent Methods for Big Data Optimization},
+year = 2015,
+journal = {Mathematical Programming},
+pages = {Online first},
+url = {http://link.springer.com/article/10.1007/s10107-015-0901-6},
 }
 
 @article{RichtarikTa12,
