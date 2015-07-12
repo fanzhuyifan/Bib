@@ -179,6 +179,9 @@ on Artificial Intelligence and Statistics}}
 @string{stoc14 = {Proceedings of the Fourty-Sixth Annual ACM
 		  Symposium on the Theory of Computing}}
 
+@string{pods02 = {Proceedings of the Twenty-First ACM SIGMOD-SIGACT-SIGART
+  Symposium on Principles of Database Systems}}
+
 @string{ml94 =	{Machine Learning: Proceedings of the Eleventh
 		 International Conference}}
 @string{ml95 =	{Proceedings of the Twelfth International Conference
@@ -263,6 +266,7 @@ on Artificial Intelligence and Statistics}}
 @string{nips24= {Advances in Neural Information Processing Systems 24}}
 @string{nips25= {Advances in Neural Information Processing Systems 25}}
 @string{nips26= {Advances in Neural Information Processing Systems 26}}
+@string{nips27= {Advances in Neural Information Processing Systems 27}}
 
 @string{nips5eds={Stephen Jos\'e Hanson and Jack D. Cowan and C. Lee Giles}}
 
@@ -868,6 +872,16 @@ year = 1986,
 journal = {Combinatorica},
 volume = 6,
 pages = {83--96},
+}
+
+@article{AlonMaSz99,
+author = {Noga Alon and Yossi Matias and Mario Szegedy},
+title = {The space complexity of approximating the frequency moments},
+journal = jcss,
+volume = 58,
+number = 1,
+pages = {137--147},
+year = 1999,
 }
 
 @book{AlonSp00,
@@ -1544,6 +1558,15 @@ journal = "Tohoku Mathematical Journal",
 volume = 68,
 pages = "357--367",
 year = 1967
+}
+
+@inproceedings{BabcockBaDaMoWi02,
+author = {Brian Babcock and Shivnath Babu and Mayur Datar
+   and Rajeev Motwani and Jennifer Widom},
+title = {Models and Issues in Data Stream Systems},
+year = 2002,
+booktitle = pods02,
+pages = {1--16},
 }
 
 @article{Bach08,
@@ -2389,6 +2412,17 @@ journal = {IEEE Transactions on Information Theory},
 volume = 56,
 number = 10,
 pages = {5150--5167},
+}
+
+@article{BenjaminiHo95,
+author = {Yoav Benjamini and Yosef Hochberg},
+title = {Controlling the false discovery rate: a practical and powerful
+   approach to multiple testing},
+year = 1995,
+journal = jrssb,
+volume = 57,
+number = 1,
+pages = {289--300},
 }
 
 @inproceedings{BengioMaKe05,
@@ -3920,6 +3954,17 @@ comment = {Gives sparse estimation lower bounds of roughly $s \log d / n$, but
   with good depednence on Frobenius norm of sensing matrix $X$. Uses a
   complicated packing construction---complete with matrix concentration,
   etc.---to show how covariance of packing gives sharper bounds.},
+}
+
+@article{CandesLiMaWr11,
+author = {Emmanuel J. Cand\`es and Xiadong Li and Yi Ma and John Wright},
+title = {Robust principal component analysis?},
+year = 2011,
+journal = jacm,
+volume = 58,
+number = 3,
+articleno = 11,
+pages = {11:1--11:37},
 }
 
 @article{CandesTa07,
@@ -7316,6 +7361,13 @@ month=		jan,
 year=		1991
 }
 
+@manual{Economist14,
+organization = {The Economist Intelligence Unit},
+title = {Who's big on {B}ig {D}ata?},
+year = 2014,
+url = {http://www.economistinsights.com/analysis/who-s-big-big-data},
+}
+
 @book{Edwards73,
 author = {C. Henry Edwards},
 title = {Advanced Calculus of Several Variables},
@@ -7921,6 +7973,14 @@ volume = 3,
 number = 1,
 pages = {100-118},
 month = feb}
+
+@book{Freedman09,
+author = {David A. Freedman},
+title = {Statistical Models: Theory and Practice},
+year = 2009,
+edition = {Second},
+publisher = {Cambridge University Press},
+}
 
 @article{Frees89,
 title = {Infinite Order U-Statistics},
@@ -18418,6 +18478,14 @@ pages = {567--599},
 volume = 14,
 }
 
+@inproceedings{Shamir14,
+author = {Ohad Shamir},
+title = {Fundamental Limits of Online and Distributed Algorithms
+  for Statistical Learning and Estimation},
+year = 2014,
+booktitle = nips27,
+}
+
 @inproceedings{Shamir13,
 author = {Ohad Shamir},
 title = {On the Complexity of Bandit and Derivative-Free
@@ -19325,6 +19393,39 @@ booktitle=	{Proceedings of the European Symposium on Artificial Neural Networks}
 	number = 5000,
 	pages = "2319--2323",
 	year = 2000
+}
+
+@article{TennessenEtAl12,
+author = {Tennessen, Jacob A. and Bigham, Abigail W. and O’Connor, Timothy D.
+ and Fu, Wenqing and Kenny, Eimear E. and Gravel, Simon and McGee, Sean 
+ and Do, Ron and Liu, Xiaoming and Jun, Goo and Kang, Hyun Min
+ and Jordan, Daniel and Leal, Suzanne M. and Gabriel, Stacey
+ and Rieder, Mark J. and Abecasis, Goncalo and Altshuler, David
+ and Nickerson, Deborah A. and Boerwinkle, Eric and Sunyaev, Shamil
+ and Bustamante, Carlos D. and Bamshad, Michael J. and Akey, Joshua M.
+ and Broad GO and Seattle GO and on behalf of the NHLBI Exome
+ Sequencing Project}, 
+title = {Evolution and Functional Impact of Rare Coding Variation from
+   Deep Sequencing of Human Exomes},
+volume = {337}, 
+number = {6090}, 
+pages = {64--69}, 
+year = {2012}, 
+abstract ={As a first step toward understanding how rare variants
+contribute to risk for complex diseases, we sequenced 15,585 human
+ protein-coding genes to an average median depth of 111× in 2440 individuals
+ of European (n = 1351) and African (n = 1088) ancestry. We identified over
+ 500,000 single-nucleotide variants (SNVs), the majority of which were rare
+ (86\% with a minor allele frequency less than 0.5\%), previously unknown (82\%),
+ and population-specific (82\%). On average, 2.3\% of the 13,595 SNVs each person
+ carried were predicted to affect protein function of \~313 genes per genome,
+ and \~95.7\% of SNVs predicted to be functionally important were rare. This
+ excess of rare functional variants is due to the combined effects of
+ explosive, recent accelerated population growth and weak purifying selection.
+ Furthermore, we show that large sample sizes will be required to associate
+ rare variants with complex traits.},
+journal = {Science},
+comment = {doi = {10.1126/science.1219240}},
 }
 
 @article{Tesauro87,
@@ -20991,6 +21092,15 @@ year = 2013,
 comment = {url = {http://arxiv.org/abs/1305.5029}},
 }
 
+@article{ZhangDuWa15,
+author = {Yuchen Zhang and John C.\ Duchi and Martin J.\ Wainwright},
+title = {Divide and Conquer Kernel Ridge Regression:
+  A Distributed Algorithm with Minimax Optimal Rates},
+journal = jmlr,
+year = 2015,
+volume = {to appear},
+}
+
 @inproceedings{ZhangDuWa13_colt,
 author = {Yuchen Zhang and John C.\ Duchi and Martin J.\ Wainwright},
 title = {Divide and Conquer Kernel Ridge Regression},
@@ -21024,6 +21134,13 @@ year = {2012},
 	year = 2001
 }
 
+@inproceedings{ZhangWaJo14,
+author = {Yuchen Zhang and Martin J. Wainwright and Michael I. Jordan},
+title = {Lower bounds on the performance of polynomial-time
+algorithms for sparse linear regression},
+year = 2014,
+booktitle = colt14,
+}
 
 @InProceedings{Zhang04,
   author = 	 {T. Zhang},
