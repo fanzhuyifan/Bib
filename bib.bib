@@ -238,6 +238,9 @@ on Artificial Intelligence and Statistics}}
 @string{jmlr =	{Journal of Machine Learning Research}}
 @string{jrss = {Journal of the Royal Statistical Society}}
 @string{jrssb = {Journal of the Royal Statistical Society, Series B}}
+@string{mathproga = {Mathematical Programming, Series A}}
+@string{mathprogb = {Mathematical Programming, Series B}}
+@string{mathprog = {Mathematical Programming}}
 @string{mit =	{Massachusetts Institute of Technology}}
 @string{mitlcs=	{MIT Laboratory for Computer Science}}
 @string{ml =	{Machine Learning}}
@@ -2743,6 +2746,34 @@ year = 1983,
 journal = {Zeitschrift f\"ur Wahrscheinlichkeitstheorie und verwebte Gebiet},
 volume = 65,
 pages = {181--238},
+}
+
+@article{BirginMaRa00,
+author = {Ernesto G. Birgin and Jos\'e Mario Mart\'inez and Marcos Raydan},
+title = {Nonmonotone Spectral Projected Gradient Methods on Convex Sets},
+year = 2000,
+journal = siopt,
+volume = 10,
+number = 4,
+pages = {1196--1211},
+comment = {Presents a projected gradient method using Barzilai-Borwein-type
+  stepsizes and a non-monotone line search (which generalized Armijo-type
+  line-searches), showing that the algorithm is convergent and has good
+  numerical properties. The Barzilai-Borwein stepsizes are based on secant
+  approximations to quadratic models and apepar to give good performance.
+  See also the survey BirginMaRa14.},
+}
+
+@article{BirginMaRa14,
+author = {Ernesto G. Birgin and Jos\'e Mario Mart\'inez and Marcos Raydan},
+title = {Spectral Projected Gradient Methods: Review and Perspectives},
+year = 2014,
+journal = {Journal of Statistical Software},
+volume = 60,
+number = 3,
+comment = {Survey on "spectral" gradient methods, whose convergence depends
+  on matching well the spectrum of the Hessian of the objective. These methods
+  have good performance, and choose stepsizes based on secant approximations.},
 }
 
 @InProceedings{BiZh04,
@@ -15440,11 +15471,32 @@ year = 2011,
 institution = {Center for Operations Research and Econometrics (CORE),
   Catholic University of Louvain (UCL)},
 number = 2011001,
-comment = {Should have cited Alekh Agarwal's paper in COLT 2010 doing the
+comment = {See also Alekh Agarwal's paper in COLT 2010 doing the
   same thing. Uses normal smoothing to use two-sample views of a function
   to get unbiased estimates of the gradient. Suffers a dimension-dependent
   penalty for using function values rather than gradients.
 },
+}
+
+@article{Nesterov15,
+author = {Yurii Nesterov},
+title = {Universal gradient methods for convex optimization problems},
+year = 2015,
+journal = {Mathematical Programming Series A},
+volume = 152,
+pages = {381--404},
+comment = {Provides gradient-based methods that are universally optimal for
+  all classes of convex optimization problems with H\"older-continuous
+  gradients, meaning $\dnorm{\nabla f(x) - \nabla f(y)} \le L \norm{x - y}^\nu$
+  for some $\nu \in [0, 1]$. Using appropriate Bregman divergences, shows
+  that with small enough stepsize, it is possible to get $\epsilon$-close to
+  guaranteed descent directions with the usual quadratic/Bregman divergence
+  model of the local version of the objective function. Also gives a
+  line-search method that makes it unnecessary to know either the constant
+  L or even the parameter $\nu$. The simple gradient-type method achieves
+  convergence rate $(1/\epsilon)^{2 / (1 + \nu)}}$, while an accelerated
+  method achieves rate $(1/\epsilon)^{2 / (1 + 3\nu)}$, which is universally
+  optimal.},
 }
 
 @book{NeterWaKu83,
@@ -15454,14 +15506,6 @@ publisher = {McGraw-Hill},
 year = {1983}
 }
 
-
-@Book{Neveu75,
-  author = 	 {J. Neveu},
-  title = 	 {Discrete-Parameter Martingales},
-  publisher = 	 {North Holland},
-  year = 	 1975
-}
-
 @article{Neumann28,
 author = {J. von Neumann},
 title = {Zur Theorie der Gesellschaftsspiele (On the Theory of Parlor Games)},
@@ -15469,6 +15513,23 @@ journal = {Math. Ann.},
 volume = {100},
 year = {1928},
 pages = {295–-320}
+}
+
+@article{Neumaier15,
+author = {Arnold Neumaier},
+title = {{OSGA}: a fast subgradient algorithm with optimal complexity},
+journal = mathproga,
+doi = {10.1007/s10107-015-0911-4},
+pages = {online first},
+month = {May},
+year = 2015,
+}
+
+@Book{Neveu75,
+  author = 	 {J. Neveu},
+  title = 	 {Discrete-Parameter Martingales},
+  publisher = 	 {North Holland},
+  year = 	 1975
 }
 
 @inproceedings{NgGoLo97
