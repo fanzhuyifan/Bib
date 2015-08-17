@@ -238,6 +238,9 @@ on Artificial Intelligence and Statistics}}
 @string{jmlr =	{Journal of Machine Learning Research}}
 @string{jrss = {Journal of the Royal Statistical Society}}
 @string{jrssb = {Journal of the Royal Statistical Society, Series B}}
+@string{mathproga = {Mathematical Programming, Series A}}
+@string{mathprogb = {Mathematical Programming, Series B}}
+@string{mathprog = {Mathematical Programming}}
 @string{mit =	{Massachusetts Institute of Technology}}
 @string{mitlcs=	{MIT Laboratory for Computer Science}}
 @string{ml =	{Machine Learning}}
@@ -544,6 +547,33 @@ volume = 48,
 NUMBER = 3,
 MONTH = "March",
 year = 2002
+}
+
+@article{Ahookhosh14,
+author = {Masoud Ahookhosh},
+title = {Optimal subgradient algorithms with application to large-scale
+  linear inverse problems},
+year = 2014,
+journal = {arXiv:1402.7291 [math.OC]},
+url = {http://arxiv.org/abs/1402.7291},
+}
+
+@article{AhookhoshNe15a,
+author = {Masoud Ahookhosh and Arnold Neumaier},
+title = {Solving nonsmooth convex optimization with complexity
+   ${O}(\varepsilon^{-1/2})$},
+year = 2015,
+journal = {Optimization Online},
+url = {http://www.optimization-online.org/DB\_HTML/2015/05/4900.html},
+}
+
+@article{AhookhoshNe15b,
+author = {Masoud Ahookhosh and Arnold Neumaier},
+title = {An optimal subgradient algorithm with subspace search for large-scale
+  bound-constrained convex optimization},
+year = 2015,
+journal = {arXiv:1501.01497 [math.OC]},
+url = {http://arxiv.org/abs/1501.01497},
 }
 
 @article{AhujaOr01,
@@ -2748,6 +2778,34 @@ volume = 65,
 pages = {181--238},
 }
 
+@article{BirginMaRa00,
+author = {Ernesto G. Birgin and Jos\'e Mario Mart\'inez and Marcos Raydan},
+title = {Nonmonotone Spectral Projected Gradient Methods on Convex Sets},
+year = 2000,
+journal = siopt,
+volume = 10,
+number = 4,
+pages = {1196--1211},
+comment = {Presents a projected gradient method using Barzilai-Borwein-type
+  stepsizes and a non-monotone line search (which generalized Armijo-type
+  line-searches), showing that the algorithm is convergent and has good
+  numerical properties. The Barzilai-Borwein stepsizes are based on secant
+  approximations to quadratic models and apepar to give good performance.
+  See also the survey BirginMaRa14.},
+}
+
+@article{BirginMaRa14,
+author = {Ernesto G. Birgin and Jos\'e Mario Mart\'inez and Marcos Raydan},
+title = {Spectral Projected Gradient Methods: Review and Perspectives},
+year = 2014,
+journal = {Journal of Statistical Software},
+volume = 60,
+number = 3,
+comment = {Survey on "spectral" gradient methods, whose convergence depends
+  on matching well the spectrum of the Hessian of the objective. These methods
+  have good performance, and choose stepsizes based on secant approximations.},
+}
+
 @InProceedings{BiZh04,
   author = 	 {J. Bi and T. Zhang},
   title = 	 {Support vector classification with input data uncertainty},
@@ -3892,6 +3950,16 @@ pages = {567--584},
 comment = {Studies convergence of random sampling procedures for evaluation
   of a gradient--for an a.s. differentiable function--to the true
   Clarke subgradient, or modifications thereof. Some nice analytical results.},
+}
+
+@article{BurkeMo94,
+author = {James Burke and Jorge Mor\'e},
+title = {Exposing Constraints},
+year = 1994,
+journal = siopt,
+volume = 4,
+number = 3,
+pages = {573--595},
 }
 
 @book{ButnariuIu00,
@@ -6711,6 +6779,14 @@ howpublished = {Course at Stanford University},
 url = {http://web.stanford.edu/class/stats311},
 }
 
+@misc{DuchiChRe15code,
+author = {John C. Duchi and Sorathan Chaturapruek and Christopher R\'e},
+title = {Asynchronous stochastic convex optimization},
+year = 2015,
+url = {https://www.codalab.org/worksheets/0x610bcdb722bf48d3b537a65edf0fe72d/},
+note = {Code for reproducing experiments},
+}
+
 @inproceedings{Duchi12,
 author = {John C. Duchi},
 title = {Commentary on ``{T}oward a Noncommutative Arithmetic-geometric Mean Inequality:
@@ -8833,6 +8909,17 @@ stochastic composite optimization},
 year = 2010,
 }
 
+@article{GhadimiLa12,
+author = {Saeed Ghadimi and Guanghui Lan},
+title = {Optimal stochastic approximation algorithms for strongly convex stochastic
+  composite optimization, {I}: a generic algorithmic framework},
+year = 2012,
+journal = siopt,
+volume = 22,
+number = 4,
+pages = {1469--1492},
+}
+
 @article{GhadimiLa13,
 author = {Saeed Ghadimi and Guanghui Lan},
 title = {Stochastic first- and zeroth-order methods for nonconvex
@@ -10679,7 +10766,7 @@ volume = 8,
 number = 3,
 pages = {329--361},
 comment = {Given a (combinatorial) optimization problem and a feasible
- solution to it, the corresponding inverse optimization problem is to find 
+ solution to it, the corresponding inverse optimization problem is to find
  a minimal adjustment of the cost function such that the given solution
  becomes optimum.},
 }
@@ -13481,6 +13568,14 @@ comment = {Uses Von-Neumann's trace inequality to derive a conjugacy
   year =	 1996
 }
 
+@article{LewisWr08,
+author = {Adrian S. Lewis and Stephen J. Wright},
+title = {A proximal method for composite minimization},
+year = 2008,
+journal = {arXiv:0812.0423 [math.OC]},
+url = {http://arxiv.org/abs/0812.0423},
+}
+
 @article{LewisYaRoLi04,
   author =        {D. Lewis and Y. Yang and T. Rose and F. Li},
   title =         {{RCV}1: A New Benchmark Collection for Text Categorization
@@ -15392,7 +15487,7 @@ year = {2004},
 @article{Nesterov05b,
 author = {Y. Nesterov},
 title = {Smooth minimization of nonsmooth functions},
-journal = {Mathematical Programming},
+journal = mathproga,
 year = 2005,
 volume = 103,
 pages = {127--152},
@@ -15424,11 +15519,32 @@ year = 2011,
 institution = {Center for Operations Research and Econometrics (CORE),
   Catholic University of Louvain (UCL)},
 number = 2011001,
-comment = {Should have cited Alekh Agarwal's paper in COLT 2010 doing the
+comment = {See also Alekh Agarwal's paper in COLT 2010 doing the
   same thing. Uses normal smoothing to use two-sample views of a function
   to get unbiased estimates of the gradient. Suffers a dimension-dependent
   penalty for using function values rather than gradients.
 },
+}
+
+@article{Nesterov15,
+author = {Yurii Nesterov},
+title = {Universal gradient methods for convex optimization problems},
+year = 2015,
+journal = {Mathematical Programming Series A},
+volume = 152,
+pages = {381--404},
+comment = {Provides gradient-based methods that are universally optimal for
+  all classes of convex optimization problems with H\"older-continuous
+  gradients, meaning $\dnorm{\nabla f(x) - \nabla f(y)} \le L \norm{x - y}^\nu$
+  for some $\nu \in [0, 1]$. Using appropriate Bregman divergences, shows
+  that with small enough stepsize, it is possible to get $\epsilon$-close to
+  guaranteed descent directions with the usual quadratic/Bregman divergence
+  model of the local version of the objective function. Also gives a
+  line-search method that makes it unnecessary to know either the constant
+  L or even the parameter $\nu$. The simple gradient-type method achieves
+  convergence rate $(1/\epsilon)^{2 / (1 + \nu)}$, while an accelerated
+  method achieves rate $(1/\epsilon)^{2 / (1 + 3\nu)}$, which is universally
+  optimal.},
 }
 
 @book{NeterWaKu83,
@@ -15438,14 +15554,6 @@ publisher = {McGraw-Hill},
 year = {1983}
 }
 
-
-@Book{Neveu75,
-  author = 	 {J. Neveu},
-  title = 	 {Discrete-Parameter Martingales},
-  publisher = 	 {North Holland},
-  year = 	 1975
-}
-
 @article{Neumann28,
 author = {J. von Neumann},
 title = {Zur Theorie der Gesellschaftsspiele (On the Theory of Parlor Games)},
@@ -15453,6 +15561,23 @@ journal = {Math. Ann.},
 volume = {100},
 year = {1928},
 pages = {295–-320}
+}
+
+@article{Neumaier15,
+author = {Arnold Neumaier},
+title = {{OSGA}: a fast subgradient algorithm with optimal complexity},
+journal = mathproga,
+doi = {10.1007/s10107-015-0911-4},
+volume = {online first},
+month = {May},
+year = 2015,
+}
+
+@Book{Neveu75,
+  author = 	 {J. Neveu},
+  title = 	 {Discrete-Parameter Martingales},
+  publisher = 	 {North Holland},
+  year = 	 1975
 }
 
 @inproceedings{NgGoLo97
@@ -16627,7 +16752,7 @@ of the final predictor. Gives high probability bounds too},
 }
 
 @article{RamaswamyTaRiMuYeAnLaReLaMePoGeLoLaGo01,
-author = {Sridhar Ramaswamy and Pablo Tamayo and Ryan Rifkin 
+author = {Sridhar Ramaswamy and Pablo Tamayo and Ryan Rifkin
   and Sayan Mukherjee and Chen-Hsiang Yeang and Michael Angelo and
  Christine Ladd and Michael Reich and Eva Latulippe and Jill P. Mesirov and
  Tomaso Poggio and William Gerald and Massimo Loda and Eric S. Lander and
@@ -19537,20 +19662,20 @@ booktitle=	{Proceedings of the European Symposium on Artificial Neural Networks}
 
 @article{TennessenEtAl12,
 author = {Tennessen, Jacob A. and Bigham, Abigail W. and O’Connor, Timothy D.
- and Fu, Wenqing and Kenny, Eimear E. and Gravel, Simon and McGee, Sean 
+ and Fu, Wenqing and Kenny, Eimear E. and Gravel, Simon and McGee, Sean
  and Do, Ron and Liu, Xiaoming and Jun, Goo and Kang, Hyun Min
  and Jordan, Daniel and Leal, Suzanne M. and Gabriel, Stacey
  and Rieder, Mark J. and Abecasis, Goncalo and Altshuler, David
  and Nickerson, Deborah A. and Boerwinkle, Eric and Sunyaev, Shamil
  and Bustamante, Carlos D. and Bamshad, Michael J. and Akey, Joshua M.
  and Broad GO and Seattle GO and on behalf of the NHLBI Exome
- Sequencing Project}, 
+ Sequencing Project},
 title = {Evolution and Functional Impact of Rare Coding Variation from
    Deep Sequencing of Human Exomes},
-volume = {337}, 
-number = {6090}, 
-pages = {64--69}, 
-year = {2012}, 
+volume = {337},
+number = {6090},
+pages = {64--69},
+year = {2012},
 abstract ={As a first step toward understanding how rare variants
 contribute to risk for complex diseases, we sequenced 15,585 human
  protein-coding genes to an average median depth of 111× in 2440 individuals
@@ -20766,6 +20891,16 @@ comment = 	{Controller sees state of environment at each instant, and
 ,year=		1977
 }
 
+@article{Wright93,
+author = {Stephen J. Wright},
+title = {Identifiable surfaces in constrained optimization},
+year = 1993,
+journal = {SIAM Journal on Control and Optimization},
+volume = 31,
+number = 4,
+pages = {1063--1079},
+}
+
 @inproceedings{WrightGoRi97,
 	author = "J. H. Wright and A. L. Gorin and G. Riccardi",
 	title = "Automatic acquisition of salient grammar fragments
@@ -20905,6 +21040,14 @@ pages = {2543--2596},
 		side-information",
 	booktitle = nips15,
 	year = 2003
+}
+
+@inproceedings{XuCaMa09_nips,
+  title={Robust regression and Lasso},
+  author={Xu, Huan and Caramanis, Constantine and Mannor, Shie},
+  booktitle=nips21,
+  pages={1801--1808},
+  year=2009
 }
 
 @article{XuCaMa09,
