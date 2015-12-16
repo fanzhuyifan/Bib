@@ -6,6 +6,7 @@
 \usepackage{amsfonts}
 \usepackage{latexsym}
 \usepackage{graphicx}
+\usepackage{color}
 % \usepackage{fullpage}
 
 % \setlength{\topmargin}{1cm}
@@ -88,6 +89,15 @@
 }
 \makeatother
 
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\definecolor{innerboxcolor}{rgb}{.9,.95,1}
+\definecolor{outerlinecolor}{rgb}{.6,0,.2}
+\newcommand{\jcdcomment}[1]{\fcolorbox{outerlinecolor}{innerboxcolor}{
+    \begin{minipage}{.9\textwidth}
+      \red{\bf JCD Comment:} {#1}
+  \end{minipage}} \\
+}
+
 \newcommand{\<}{\left\langle} % Angle brackets
 \renewcommand{\>}{\right\rangle}
 
@@ -102,7 +112,7 @@
 \renewcommand{\P}{\mathbb{P}} % Probability symbol
 \newcommand{\var}{\mathop{\rm Var}} % Variance
 \newcommand{\cov}{\mathop{\rm Cov}} % Covariance
-\newcommand{\simiid}{\stackrel{\rm i.i.d.}{\sim}}
+\newcommand{\simiid}{\stackrel{\rm iid}{\sim}}
 \newcommand{\openleft}[2]{\left({#1},{#2}\right]} % Interval open on left
 \newcommand{\openright}[2]{\left[{#1},{#2}\right)} % Interval open on right
 \newcommand{\tvnorm}[1]{\norm{#1}_{\rm TV}}
