@@ -124,9 +124,11 @@ on Artificial Intelligence and Statistics}}
 @string{focs13 = {54th Annual Symposium on Foundations of Computer Science}}
 
 @string{soda90 = {Proceedings of the First Annual ACM-SIAM Symposium on
-		  Discrete Algorithms}}
+		  Discrete Algorithms (SODA)}}
 @string{soda91 = {Proceedings of the Second Annual ACM-SIAM Symposium on
-		  Discrete Algorithms}}
+		  Discrete Algorithms (SODA)}}
+@string{soda14 = {Proceedings of the Twenty-Fifth ACM-SIAM Symposium on
+		  Discrete Algorithms (SODA)}}
 
 @string{stoc79 = {Proceedings of the Eleventh Annual ACM Symposium on
 		  Theory of Computing}}
@@ -253,6 +255,7 @@ on Artificial Intelligence and Statistics}}
 @string{ml =	{Machine Learning}}
 @string{pnas =  {Proceedings of the National Academy of Sciences}}
 @string{sicomp ={SIAM Journal on Computing}}
+@string{statsci = {Statistical Science}}
 @string{symcomp={Journal of Symbolic Computation}}
 @string{tcs =	{Theoretical Computer Science}}
 @string{ucsccrl={University of California Santa Cruz,
@@ -279,6 +282,7 @@ on Artificial Intelligence and Statistics}}
 @string{nips25= {Advances in Neural Information Processing Systems 25}}
 @string{nips26= {Advances in Neural Information Processing Systems 26}}
 @string{nips27= {Advances in Neural Information Processing Systems 27}}
+@string{nips28= {Advances in Neural Information Processing Systems 28}}
 
 @string{nips5eds={Stephen Jos\'e Hanson and Jack D. Cowan and C. Lee Giles}}
 
@@ -766,6 +770,13 @@ comment = {
   then using EM to estimate the distribution from which data is sampled
   by computing a histogram estimate. A few experiments.
 },
+}
+
+@inproceedings{AgrawalGo12,
+author = {Shipra Agrawal and Navin Goyal},
+title = {Analysis of {T}hompson sampling for the multi-armed bandit problem},
+year = 2012,
+booktitle = colt12,
 }
 
 @article{AguehCa11,
@@ -4618,6 +4629,13 @@ comment = {Introduces information complexity to show that direct sum problems
 ,publisher=	{Wadsworth \& Brooks/Cole}
 }
 
+@inproceedings{ChanDiVaVa14,
+  title = "Optimal algorithms for testing closeness of discrete distributions",
+  author = "Siu-On Chan and Ilias Diakonikolas and Gregory Valiant and Paul Valiant ",
+  booktitle= soda14,
+  year = "2014",
+}
+
 @article{ChandrasekaranJo13,
 author = {Venkat Chandrasekaran and Michael I. Jordan},
 year = 2013,
@@ -4707,6 +4725,13 @@ journal = {Probability Theory and Related Fields},
 year = 2007,
 volume = 138,
 pages = {305--321},
+}
+
+@techreport{ChatterjeeDi15,
+author = {Sourav Chatterjee and Persi Diaconis},
+title = {The sample size required in importance sampling},
+year = 2015,
+institution = {Stanford University Department of Statistics},
 }
 
 @inproceedings{ChaudhuriHs11,
@@ -6022,6 +6047,7 @@ pages = {764--792},
 
 @article{DavenportPlVaWo15,
 author = {Mark A. Davenport and Yaniv Plan and Ewout van den Berg and Mary Wootters},
+title = {One-bit matrix completion},
 year = 2015,
 journal = {Information and Inference},
 pages = {to appear},
@@ -6589,6 +6615,18 @@ publisher = {John Wiley and Sons},
   title = 	 {A Probabilistic Theory of Pattern Recognition},
   publisher = 	 {Springer},
   year = 	 1996,
+}
+
+@article{DezeureBuMeME15,
+author = {Ruben Dezeure and Peter B\"uhlmann and Lukas Meier and
+Nicolai Meinshausen},
+title = {High-dimensional inference: confidence intervals,
+  $p$-values, and {R}-software {\tt hdi}},
+year = 2015,
+journal = statsci,
+volume = 30,
+number = 4,
+pages = {533--558},
 }
 
 @book{DiCiccioHaRo88,
@@ -11926,6 +11964,13 @@ publisher = {PWS Publishing},
   year=2013
 }
 
+@article{JiaoVeHaWe14,
+author = {Jiantao Jiao and  Kartik Venkat and  Yanjun Han and Tsachy Weissman},
+title = {Minimax Estimation of Functionals of Discrete Distributions},
+year = 2014,
+journal = {arXiv:1406.6956 [cs.IT]},
+}
+
 @article{Jittorntrum78,
   title={An implicit function theorem},
   author={Jittorntrum, K},
@@ -16519,6 +16564,22 @@ booktitle = {49th IEEE Conference on Decision and
 ,booktitle=	nips15
 }
 
+@inproceedings{OrlitskySaZh03,
+author = {Alon Orlitsky and Narayana Santhanam and Junan Zhang},
+title = {Always {G}ood-Turing: asymptotically optimal probability estimation},
+year = 2003,
+booktitle = focs03,
+}
+
+
+@inproceedings{OrlitskySu15,
+author = {Alon Orlitsky and Ananda Suresh},
+title = {Competitive Distribution Estimation:
+  Why is {G}ood-{T}uring Good?},
+year = 2015,
+booktitle = nips28,
+}
+
 @article{OshersonStWe84,
 author=   	{Osherson, Daniel N. and Michael Stob and Scott Weinstein},
 title=    	{Learning Theory and Natural Language},
@@ -18475,6 +18536,21 @@ Aditya Khosla and Michael Bernstein and Alexander C. Berg and Li Fei-Fei},
 title = {Image{N}et Large Scale Visual Recognition Challenge},
 year = 2014,
 journal = {arXiv:1409.0575 [cs.CV]},
+}
+
+@article{RussoVa14,
+author = {Daniel Russo and Benjamin {Van Roy}},
+title = {An information-theoretic analysis of {T}hompson Sampling},
+year = 2014,
+journal = jmlr,
+pages = {To appear},
+}
+
+@inproceedings{RussoVa14b,
+author = {Daniel Russo and Benjamin {Van Roy}},
+title = {Learning to optimize via information-directed sampling},
+year = 2014,
+booktitle = nips27,
 }
 
 @article{RussoZo15,
@@ -20661,6 +20737,26 @@ pages={273--286}
   pages = 	 {267--288}
 }
 
+@article{TibshiraniTaLoTi14,
+author = {Ryan Tibshirani and Jonathan Taylor and Richard Lockhart and
+Robert Tibshirani},
+title = {Exact post-selection inference for sequential regression
+procedures},
+year = 2014,
+journal = jasa,
+pages = {To appear},
+}
+
+@article{LockhardtTaTiTi14,
+author = {Richard Lockhardt and Jonathan Taylor and Ryan Tibshirani
+and Robert Tibshirani},
+title = {A significance test for the {L}asso},
+year = 2014,
+journal = aos,
+volume = 42,
+number = 2,
+pages = {413--468},
+}
 
 @TechReport{TieuVi99,
   author = 	 {Kinh H. Tieu and Paul Viola},
@@ -20960,6 +21056,15 @@ pages=		{560--566},
 year=		1985,
 month=		aug
 }
+
+@inproceedings{ValiantVa13,
+  author = "Gregory Valiant and Paul Valiant",
+title = "Estimating the unseen: improved estimators for entropy
+ and other properties",
+  booktitle= nips26,
+  year = "2013",
+}
+
 
 @BOOK{vandeGeer,
 AUTHOR = "S. van de Geer",
