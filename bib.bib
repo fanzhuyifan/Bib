@@ -404,6 +404,20 @@ year=		1992,
 pages=		{205--260}
 }
 
+@inproceedings{AbernethyAmDrKe13,
+author = {Jacob Abernethy and Kareem Amin and Moez Draief and Michael Kearns},
+title = {Large-Scale Bandit Problems and {KWIK} Learning},
+year = 2013,
+booktitle = icml13,
+comment = {Shows how to reduce Multi-armed bandit problems, with
+  covariates, to the Li, Littman, and Walsh KWIK (Knows what it knows) setting
+  of learning. In particular, assumes we observe $f_\theta(x, a) + \varepsilon$, where
+  $\varepsilon$ is zero mean noise, and asks a KWIK algorithm to either
+  give outputs for each value of $\{f_\theta(x, a), a \in \mc{A}\}$ or ask for a label.
+  We must learn $f_\theta$ by selection $\theta \in \Theta$, which it is assumed
+  KWIK can do given sufficient data. },
+}
+
 @InProceedings{AbneyScSi99,
   author = 	 {Steven Abney and Robert E. Schapire and Yoram Singer},
   title = 	 {Boosting applied to tagging and {PP} attachment},
@@ -1844,6 +1858,32 @@ comment = {Uses Loomis-Whitney inequality to show lower bounds on amount
   given \emph{any} particular algorithm.},
 }
 
+@unpublished{Balsubramani14,
+author = {Akshay Balsubramani},
+title = {The Utility of Abstaining in Binary Classification},
+year = 2014,
+note = {Master's thesis survey probably},
+comment = {Survey of abstention in binary classification, focusing
+  on KWIK (knows what it knows) settings mostly.
+  Covers a variety of algorithms for this setting, including the simplest
+  "predict if all $h$ agree, otherwise ask". Shows results
+  by Avrim Blum and others that show there are natural tradeoffs if
+  one is allowed to make mistakes and there is a perfect classifier,
+  so you make at most $k$ mistakes and abstain $k |H|^{1/k}$ times.
+  (Take $k = \log|H|$ to get both logarithmic.) No notion of confidence,
+  but some treatment of models that trade between abstention and risk.
+  Evidently the paper of El-Yaniv and Wiener, "Foundations of noise free
+  selective classification" and follow-ups "Active Learning via perfect
+  selective classification" and "Agnostic selective classification"
+  give explicit tradeoffs between abstention and risk.
+  Also states a result (ASC paper) that shows how abstentions of an empirical
+  minimization-based procedure occur only when a classifier with small
+  risk to the optimal $h^*$ exists that disagrees with $h^*$ on a particular
+  $x$ (i.e. there is some confusion; see also BeygelzimerHsLaZh10 for the
+  active learning analogue of this idea).
+},
+}
+
 @article{Banos68
 ,author=   	{Alfredo Ba{\~{n}}os}
 ,title=		{On pseudo-games}
@@ -2935,6 +2975,31 @@ author = {Bertsekas, D. P. and Tsitsiklis, J. N.},
   journal={arXiv:1408.4445 [math.OC]},
   url = {http://arxiv.org/abs/1408.4445},
   year=2014,
+}
+
+@inproceedings{BeygelzimerHsLaZh10,
+author = {Alina Beygelzimer and Daniel Hsu and John Langford and Tong Zhang},
+title = {Agnostic Active Learning Without Constraints},
+year = 2010,
+booktitle = nips23,
+comment = {
+  Studies active learning, where we can query labels according to a particular
+  probability, and proves generalization guarantees for finite hypothesis classes.
+  In particular, shows that a procedure that, roughly, chooses to *not* query
+  an example if choosing hypotheses that differ on its value lead to large
+  changes in empirical risk--that is, minimizing empirical risk (ignoring recent
+  example $X_k$) to get $h_k$, then choosing some $h_k'$ that disagrees with
+  $h_k(X_k)$ does not increase the empirical risk means that we are very
+  uncertain about $X_k$ and so should ask for a label; if the risk increases,
+  then the set of hypotheses that agree with $h_k(X_k)$ should (roughly) be
+  the true minimizers. Shows that the probability of sampling an example
+  $i$ is $P_i \ge 1/2$ only when hypotheses $h_n$ disagree with $h^*$. Uses an
+  inductive argument with martingales.
+  To show that not too many labels are queried requires controlling the
+  probablity of data $x$ for which there exist $h$ that are close to $h^*$
+  in general but for which $h(x) \neq h^*(x)$. If most data satisfy this,
+  then it is hard to find $h^*$ without querying many labels.
+},
 }
 
 @book{Bhatia97,
