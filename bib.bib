@@ -1824,6 +1824,21 @@ comment = {
   year = 	 {2004},
 }
 
+@inproceedings{BalcanCoIwWa12,
+author = {Maria Florina Balcan and Florin Constantin and Storu Iwata
+  and Lei Wang},
+title = {Learning Valuation Functions},
+year = 2012,
+booktitle = colt12,
+}
+
+@inproceedings{BalcanHa11,
+author = {Maria Florina Balcan and Nicholas J.\ Harvey},
+title = {Learning submodular functions},
+year = 2011,
+booktitle = stoc11,
+}
+
 @article{BaldiSaWh14,
 author = {Pierre Baldi and Peter Sadowski and Daniel Whiteson},
 year = 2014,
@@ -3156,6 +3171,16 @@ year = 1958,
 publisher = {Cambridge University Press},
 }
 
+@inproceedings{Blackwell51,
+author = {David Blackwell},
+title = {Comparison of experiments},
+year = 1951,
+booktitle = {Proceedings of the 2nd Berkeley Symposium on Probability and
+  Statistics},
+pages = {93--102},
+publisher = {University of California Press},
+}
+
 @article{Blackwell56
 ,author=	{D. Blackwell}
 ,title=		{An analog of the minimax theorem for vector payoffs}
@@ -4308,6 +4333,28 @@ pages = {573--595},
         and Infinite Dimensional Optimization",
     publisher = "Kluwer Academic Publishers, Dordrecht, the Netherlands",
     year = 2000
+}
+
+@article{CaiLo15,
+author = {Tony Cai and Mark Low},
+title = {A framework for estimating convex functions},
+year = 2015,
+journal = {Statistica Sinica},
+volume = 25,
+pages = {423--456},
+comment = {
+  Builds off of the results of Donoho to give a more local analysis of
+  minimax estimation of a functional at a point. Defines the quantity
+  $R_n(f) = \sup_{g \in \mc{F}} \inf_{\hat{T}} \max\{\E[(\hat{T} - f(0))^2],
+  \E[(\hat{T} - g(0))^2]\}$, which is a type of local minimax quantity.
+  Shows how estimation of convex functions (among other shape
+  constrained functions) is governed by this rate, and gives an adaptive
+  estimator that attains the rate $R_n(f)$ uniformly among (most) convex
+  functions. (This is possible because the shape constraint
+  allows accurate bias estimation.) The quantity is essentially identical
+  to a local modulus of continuity. Also shows that though convexity
+  allows adaptivity, smoothness rates are same as in the non-convex case.
+},
 }
 
 @article{CalafioreCa05,
@@ -7082,6 +7129,26 @@ comment = {Never published, but shows how modulus of continuity of a
   functional w.r.t. Hellinger distance governs minimax rates of estimation.},
 }
 
+@article{DonohoLi91a,
+author = {David L. Donoho and Richard C. Liu},
+title = {Geometrizing Rates of Convergence {II}},
+year = 1991,
+journal = aos,
+volume = 19,
+number = 2,
+pages = {633--667},
+}
+
+@article{DonohoLi91b,
+author = {David L. Donoho and Richard C. Liu},
+title = {Geometrizing Rates of Convergence {III}},
+year = 1991,
+journal = aos,
+volume = 19,
+number = 2,
+pages = {688--701},
+}
+
 @misc{Donoho82,
 author = {David Donoho},
 title = {Breakdown properties of multivariate location estimators},
@@ -7470,6 +7537,15 @@ number = 5,
 pages = {2788--2806},
 }
 
+@article{DuchiJoWa14,
+author = {John C.\ Duchi and Michael I. Jordan and Martin J. Wainwright},
+title = {Privacy Aware Learning},
+journal = jacm,
+year = 2014,
+volume = 61,
+number = 6,
+}
+
 @inproceedings{DuchiJoWa12_nips,
 author = {John C. Duchi and Michael I. Jordan and Martin J. Wainwright},
 title = {Privacy Aware Learning},
@@ -7731,8 +7807,29 @@ edition = {Second},
 year = 2002,
 }
 
+
+@article{DumbgenFrJo04,
+author = {Lutz D\"umbgen and Sandra Freitag and Geurt Jongbloed},
+title = {Consistency of Concave Regression with an Application to
+   Current-Status Data},
+year = 2004,
+journal = {Mathematical Methods of Statistics},
+volume = 13,
+pages = {69--81},
+}
+
+@article{DumbgenSaSc11,
+author = {Lutz D\"umbgen and Richard Samworth and },
+title = {Approximation by log-concave distributions with applications
+   to regression},
+year = 2011,
+journal = aos,
+volume = 39,
+pages = {702–-730},
+}
+
 @article{DuembgenVaVeWe10,
-author = {Lutz Duembgen and Sara A. van de Geer and Marc C. Veraar and Jon
+author = {Lutz D\"umbgen and Sara A. van de Geer and Marc C. Veraar and Jon
   A. Wellner},
 title = {Nemirovski's Inequalities Revisited},
 journal = {American Mathematical Monthly},
@@ -9351,6 +9448,24 @@ publisher=	{Interscience},
 year=		1959
 }
 
+@article{GaoWe15,
+author = {Fuchang Gao and Jon A.\ Wellner},
+title = {Entropy of convex functions on $\mathbb{R}^d$},
+year = 2015,
+journal = {arXiv:1502.01752 [math.ST]},
+comment = {Shows a lot of strange properties of covering numbers and
+  metric entropies for convex functions. Very strong dependence on
+  metric used and properties of the boundary. Does not cover Lipschitz
+  convex functions exactly, but is very interesting.},
+}
+
+@inproceedings{GarciaWi12,
+author = {Dar\'io Garc\'ia-Garc\'ia and Robert C. Williamson},
+title = {Divergences and Risks for Multiclass Experiments},
+year = 2012,
+booktitle = colt12,
+}
+
 @article{Gardner02,
 author = {R. J. Gardner},
 title = {The {B}runn-{M}inkowski Inequality},
@@ -10130,6 +10245,17 @@ month=		dec,
 year=		1990
 }
 
+@article{GroeneboomJoWe01,
+author = {Piet Groeneboom and Geurt Jongbloed and Jon A. Wellner},
+title = {Estimation of a convex function: characterization and 
+  asymptotic theory},
+year = 2001,
+journal = aos,
+volume = 29,
+number = 6,
+pages = {1653--1698},
+}
+
 @book{GrossmanMa64,
 author = 	{Israel Grossman and Wilhelm Magnus},
 title = 	{Groups and Their Graphs },
@@ -10263,6 +10389,35 @@ number = 4,
 pages = {2386--2399},
 }
 
+@article{Guntuboyina12,
+author = {Adityanand Guntuboyina},
+title = {Optimal rates of convergence for convex set estimation from
+  support functions},
+year = 2012,
+journal = aos,
+volume = 40,
+pages = {385--411},
+}
+
+@article{GuntuboyinaSe13,
+author = {Adityanand Guntuboyina and Bodhisattva Sen},
+title = {Covering numbers for convex functions},
+year = 2013,
+journal = ieeeit,
+volume = 59,
+number = 4,
+pages = {1957--1966},
+}
+
+@article{GuntuboyinaSe15,
+author = {Adityanand Guntuboyina and Bodhisattva Sen},
+title = {Global risk bounds and adaptation in univariate convex regression},
+journal = {Probability Theory and Related Fields},
+year = 2015,
+volume = 163,
+pages = {379–-411},
+}
+
 @book{Gupal79,
 author = {A. M. Gupal},
 title = {Stokhasticheskie Methody Resheniya Negladkikh Ekstremal'nykh Zadach
@@ -10371,6 +10526,16 @@ Walk},
 title = {A Distribution-Free Theory of Nonparametric Regression},
 year = 2002,
 publisher = {Springer},
+}
+
+@article{GyorfiNe78,
+author = {L\'asl\'o Gy\"orfi and Tibor Nemetz},
+title = {$f$-dissimilarity: A generalization of the affinity of several
+ distributions},
+year = 1978,
+journal = {Annals of the Institute of Statistical Mathematics},
+volume = 30,
+pages = {105--113},
 }
 
 @inproceedings{GyorgiTi89,
@@ -14575,6 +14740,15 @@ pages=    	{361--387},
 ,title=		{Stochastic models of interacting systems}
 }
 
+@article{LimGl12,
+author = {Eunji Lim and Peter W. Glynn},
+title = {Consistency of multidimensional convex regression},
+year = 2012,
+journal = {Operations Research},
+volume = 60,
+pages = {196--208},
+}
+
 @article{LionsMe79,
 author = {P. L. Lions and B. Mercier},
 title = {Splitting algorithms for the sum of two nonlinear operators},
@@ -15272,6 +15446,16 @@ pages = {274--300},
   title = 	 {On Bandwidth Smoothing},
   booktitle = 	 {Fourth International Web Caching Workshop},
   year =	 1999
+}
+
+@article{Mammen91,
+author = {Enno Mammen},
+title = {Nonparametric regression under qualitative smoothness assumptions},
+year = 1991,
+journal = aos,
+volume = 19,
+number = 2,
+pages = {741--759},
 }
 
 @article{MammenTs99,
@@ -16822,6 +17006,19 @@ number=  5,
 pages=    	{360--378},
 }
 
+@article{OsterreicherVa93,
+author = {F.\ \"{O}sterreicher and Igor Vajda},
+title = {Statistical Information and Discrimination},
+year = 1993,
+journal = ieeeit,
+volume = 39,
+number = 3,
+pages = {1036--1039},
+comment = {Shows that all $f$ divergences are equivalent to statistical
+  informations (differences between prior and posterior Bayes risks).
+  See also LieseVa06.}
+}
+
 @book{OsteyeeGo74,
 author=   	{Osteyee, David Bridston},
 title=    	{Information, Weight of Evidence, the Singularity between
@@ -17079,6 +17276,15 @@ publisher = {Oxford University Press},
   volume = 	 {17},
   number = 	 {2},
   pages = 	 {189},
+}
+
+@article{PerchetRiChSn15,
+author = {Vianney Perchet and Philippe Rigollet and Sylvain Chassang
+  and Erik Snowberg},
+title = {Batched bandit problems},
+year = 2015,
+journal = aos,
+volume = {to appear},
 }
 
 @inproceedings{PereiraRiSp??
@@ -17434,6 +17640,17 @@ publisher = 	{Springer-Verlag},
 year = 		1984
 }
 
+@incollection{Pollard97,
+author = {David Pollard},
+title = {Another look at Differentiability in Quadratic Mean},
+year = 1997,
+booktitle = {Festschrift for Lucien Le Cam: Research Papers in Probability
+and Statistics},
+editor = {David Pollard and Erik Torgersen and Grace Yang},
+chapter = {19},
+publisher = {Springer},
+}
+
 @book{Polyak87,
 author = {B. T. Polyak},
 title = {Introduction to optimization},
@@ -17721,8 +17938,19 @@ booktitle = {Proceedings of the IEEE International Symposium
    on Informaiton Theory},
 }
 
+@article{RaginskyRa11,
+author = {Maxim Raginsky and Alexander Rakhlin},
+title = {Information-based complexity, feedback, and dynamics in
+  convex programming},
+year = 2011,
+journal = ieeeit,
+volume = 57,
+number = 10,
+pages = {7036--7056},
+}
+
 @inproceedings{RakhlinShSr12,
-author = {Sasha Rakhlin and Ohad Shamir and Karthik Sridharan},
+author = {Alexander Rakhlin and Ohad Shamir and Karthik Sridharan},
 title = {Making gradient descent optimal for strongly convex
    stochastic optimization},
 year = 2012,
@@ -20191,6 +20419,12 @@ month=		jul,
 pages=		{440--449}
 }
 
+@book{Siegmund85,
+author = {David O. Siegmund},
+year = 1985,
+title = {Sequential Analysis},
+publisher = {Springer},
+}
 
 @inproceedings{SimardLeDe93,
 author =        "Simard, P. and LeCun, Y. and Denker J.",
@@ -21497,6 +21731,16 @@ author = {Cedric Villani},
 title = {Optimal Transport: Old and New},
 year = 2009,
 publisher = {Springer},
+}
+
+@article{Vitanyi11,
+author = {Paul M. B. Vita\'ny},
+title = {Information distance in multiples},
+journal = ieeeit,
+year = 2011,
+volume = 57,
+number = 4,
+pages = {2451–-2456},
 }
 
 @inproceedings{Vovk90
