@@ -2967,8 +2967,8 @@ author = {Bertsekas, D. P. and Tsitsiklis, J. N.},
 
 @article{BertsimasBrCa11,
   title={Theory and applications of robust optimization},
-  author={Bertsimas, Dimitris and Brown, David B and Caramanis, Constantine},
-  journal={SIAM review},
+  author={Bertsimas, Dimitris and Brown, David and Caramanis, Constantine},
+  journal={SIAM Review},
   volume=53,
   number=3,
   pages={464--501},
@@ -7933,10 +7933,9 @@ comment = {
 @article{DupacovaWe88,
   title={Asymptotic behavior of statistical estimators and of optimal solutions of stochastic optimization problems},
   author={Dupacov{\'a}, Jitka and Wets, Roger},
-  journal={The annals of statistics},
+  journal=aos,
   pages={1517--1549},
   year=1988,
-  publisher={JSTOR},
   comment={Conditions under which consistency and asymptotic normality
                   of empirical optimum hold are given. Feasible set is
                   assumed to be fixed and the objective smooth. Cleans
@@ -12311,9 +12310,9 @@ publisher = {PWS Publishing},
 @article{JiangGu13,
   title={Data-driven chance constrained stochastic program},
   author={Jiang, Ruiwei and Guan, Yongpei},
-  journal={Optimization Online. Retrieved from http://www. optimizationonline. org/DB\_FILE/2013/09/4044. pdf on Feb},
-  volume=24,
-  year=2013
+  journal={Optimization Online},
+  url={http://www.optimization-online.org/DB_FILE/2013/09/4044.pdf},
+  year=2013,
 }
 
 @article{JiaoVeHaWe14,
@@ -19265,6 +19264,30 @@ models in high dimensions",
 ,title=		{Learning in Boltzman Trees}
 }
 
+@article{Scarsini99,
+author = {Marco Scarsini},
+title = {Multivariate convex orderings, dependence, and stochastic equality},
+journal = {Journal of Applied Probability},
+volume = 35,
+pages = {93--103},
+year = 1999,
+comment = {Shows some equality in distribution results that are implied by
+  a number of convex ordering constraints. In particular, shows that
+  $X \le_{\rm lcx} Y$, meaning that $\E[\phi(a^T X)] \le \E[\phi(a^T Y)]$
+  for all vectors $a \in \R^d$ (the linear convex ordering), coupled with
+  $\E[X_i^2] = \E[Y_i^2]$, implies that $X = Y$ in distribution. The
+  proof follows by noting that $\E[X] = \E[Y]$ because of the linear convex
+  ordering constraint, then showing there are versions of $X$ and $Y$ (on
+  different probability spaces) with $\E[\tilde{Y} \mid \tilde{X}]
+  = \tilde{X}$, so that $\var(\tilde{Y} \mid \tilde{X}) = 0$. (This is by
+  the conditional expectation decomposition of variance and Strassen's theorem
+  on random variables.) In particular, by the fact that the extremal
+  $1$-dimensional convex functions are of the form $\max\{x - t, 0\}$, we
+  have that $X = Y$ in distribution if and only if
+  (1) $\E[\max\{a^T X - b, 0\}] \le \E[\max\{a^T Y - b, 0\}]$ for all
+  $a, b$ and $\E[||X||^2] \ge \E[||Y||^2]$.},
+}
+
 @article{Schaffer93
 ,author=	{Cullen Schaffer}
 ,title=		{Overfitting avoidance as bias}
@@ -20104,7 +20127,7 @@ comment=  	{Uses Horn clauses as representation and backtracing as a
 @incollection{Shapiro00,
   title={Statistical inference of stochastic optimization problems},
   author={Shapiro, Alexander},
-  booktitle={Probabilistic constrained optimization},
+  booktitle={Probabilistic Constrained Optimization},
   pages={282--307},
   year=2000,
   publisher={Springer}
