@@ -190,6 +190,8 @@ on Artificial Intelligence and Statistics}}
 		  Symposium on the Theory of Computing}}
 @string{stoc15 = {Proceedings of the Fourty-Seventh Annual ACM
 		  Symposium on the Theory of Computing}}
+@string{stoc16 = {Proceedings of the Fourty-Eighth Annual ACM
+		  Symposium on the Theory of Computing}}
 
 @string{pods02 = {Proceedings of the Twenty-First ACM SIGMOD-SIGACT-SIGART
   Symposium on Principles of Database Systems}}
@@ -6591,6 +6593,15 @@ year = 1999,
 publisher = {Springer},
 }
 
+@inproceedings{DefazioBaLa14,
+author = {Aaron Defazio and Francis Bach and Simon Lacoste-Julien},
+title = {{SAGA}: A Fast Incremental Gradient Method With
+  Support for Non-Strongly Convex Composite
+  Objectives},
+year = 2014,
+booktitle = nips27,
+}
+
 @article{DeGroot62,
 author = {Morris H. De{G}root},
 title = {Uncertainty, Information, and Sequential Experiments},
@@ -7188,6 +7199,11 @@ year = 		1989
   year = 	 {2006}
 }
 
+@article{Donoho06b,
+author = {David L. Donoho},
+year = 2006,
+}
+
 @InProceedings{Donoho06,
   author = 	 {D.L. Donoho},
   title = 	 {For most large underdetermined systems of linear equations,
@@ -7748,12 +7764,11 @@ comment = {url = {http://arxiv.org/abs/1405.0782}},
 }
 
 @article{DuchiKhRu16,
-author = {John C. Duchi and Khashayar Khosravi and Feng Ruan},
-title = {Information Measures, Experiments, Multi-category Hypothesis Tests,
- and Surrogate Losses},
-journal = {arXiv:1603.00126 [math.ST]},
-url = {http://arxiv.org/abs/1603.00126},
+author = {John C.\ Duchi and Khashayar Khosravi and Feng Ruan},
+title = {Information Measures, Experiments,
+    Multi-category Hypothesis Tests, and Surrogate Losses},
 year = 2016,
+journal = {arXiv:1603.00126 [math.ST]},
 }
 
 @inproceedings{DuchiMaJo10,
@@ -12620,6 +12635,14 @@ pages=    	{942--943},
 comment=  	{Corrects error in previous paper regarding discrete case.}
 }
 
+@inproceedings{JohnsonZh13,
+author = {Rie Johnson and Tong Zhang},
+title = {Accelerating Stochastic Gradient Descent using
+Predictive Variance Reduction},
+year = 2013,
+booktitle = nips26,
+}
+
 @book{Johnstone13,
 author = {Iain Johnstone},
 title = {Gaussian Estimation: Sequence and Wavelet Models},
@@ -16757,6 +16780,13 @@ volume = 15,
 pages = {229--251},
 }
 
+@unpublished{Nemirovski05,
+author = {Arkadi Nemirovski},
+year = 2005,
+title = {Lectures on Modern Convex Optimization},
+note = {Georgia Institute of Technology},
+}
+
 @article{NemirovskiJuLaSh09,
 author = {A. Nemirovski and A. Juditsky and G. Lan and A. Shapiro},
 title = {Robust stochastic approximation approach to stochastic programming},
@@ -17893,7 +17923,7 @@ publisher = {Springer},
 
 @book{Polyak87,
 author = {B. T. Polyak},
-title = {Introduction to optimization},
+title = {Introduction to Optimization},
 year = 1987,
 publisher = {Optimization Software, Inc.},
 }
@@ -18271,7 +18301,7 @@ pages = 	{19--27}
 }
 
 @inproceedings{RahimiRe07,
-author=   	{A. Rahimi and B. Recht},
+author=   	{Ali Rahimi and Benjamin Recht},
 title=    	{Random Features for Large-Scale Kernel Machines},
 booktitle=	nips20,
 year=     	{2007}
@@ -21844,6 +21874,13 @@ year=		1985,
 month=		aug
 }
 
+@inproceedings{ValiantVa16,
+author = {Gregory Valiant and Paul Valiant},
+title = {Instance Optimal Learning of Discrete Distributions},
+year = 2016,
+booktitle = stoc16,
+}
+
 @inproceedings{ValiantVa13,
   author = "Gregory Valiant and Paul Valiant",
 title = "Estimating the unseen: improved estimators for entropy
@@ -22703,6 +22740,18 @@ journal = {SIAM Journal on Control and Optimization},
 volume = 31,
 number = 4,
 pages = {1063--1079},
+comment = {Shows how constraints may be identified under a linear
+  independence constraint qualification, which is required for
+  uniqueness of Lagrange multipliers.
+  In particular, shows that under appropriate conditions, the normal
+  cone $N_S(x)$ to the surface S can be roughly open. If $\nabla F(x^*)$
+  is in the relative interior of $N_S(x^*)$, then eventually projected
+  gradient steps lie in the interior of the outward normal cone $N_S(x^*)$
+  so that projections lie in $S$. (i.e. finite identification)
+  Moreover, under appropriate conditions,
+  convergence is locally quadratic if the Hessian restricted to the
+  tangent $T_S(x^*)$ is strongly convex and we use a Newton-like projected
+  gradient method.},
 }
 
 @inproceedings{WrightGoRi97,
@@ -23410,6 +23459,14 @@ comment = {
   One nice thing is that data only needs to be released one time, so after
   the perturbation, many problems may be solved.
 },
+}
+
+@article{ZhuChDuLa16,
+title = {Local Minimax Complexity of Stochastic Convex Optimization},
+author = {Yuancheng Zhu and Sabyasachi Chatterjee and John Duchi
+   and John Lafferty},
+year = 2016,
+journal = {arXiv:1605.07596 [stat.ML]},
 }
 
 @inproceedings{ZhuLa14,
