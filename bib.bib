@@ -2588,6 +2588,28 @@ year=		2003
   publisher={Springer}
 }
 
+@article{Ben-TalHaKoMa15,
+  title={Oracle-based robust optimization via online learning},
+  author={Ben-Tal, Aharon and Hazan, Elad and Koren, Tomer and
+  Mannor, Shie},
+  journal={Operations Research},
+  volume=63,
+  number=3,
+  pages={628--638},
+  year=2015,
+  publisher={INFORMS},
+  comment={Solution methods for RO based on oracles for the original
+                  problem. Uses Online Gradient Descent and Follow the
+                  Perturbed Leader type algorithms on the uncertainty
+                  parameter while solving the problem on the updated
+                  value. They focus on robust feasibility problems
+                  which is more general than RO. This is in contrast
+                  to Nemirovski et al.'s mirror descent-ascent
+                  algorithm for the saddle point where they use an
+                  inexact oracle (SGD) to update the original problem's
+                  solution.}
+}
+
 @article{Ben-TalMaNe01,
 author = {Aharon Ben-Tal and T. Margalit and Arkadi Nemirovski},
 title = {The ordered subsets mirror descent optimization method with
@@ -8454,6 +8476,21 @@ year = 1969,
 journal = {Kibernetika},
 volume = 2,
 pages = {72--83},
+}
+
+@article{EsfahaniKu15,
+  title={Data-driven distributionally robust optimization using the Wasserstein metric: Performance guarantees and tractable reformulations},
+  author={Esfahani, Peyman Mohajerin and Kuhn, Daniel},
+  journal={arXiv preprint arXiv:1505.05116},
+  year=2015,
+  comment={Gives convex reformulations of DRO problems based on
+                  Wasserstein distances for certain loss functions
+                  (concave in uncertainty parameter, certain two-stage
+                  stochastic programs). Using a recent result by
+                  Fournier and Guillin (2014), they use a
+                  concentration inequality for the probability of P
+                  being contained in the Wasserstein ball to choose
+                  the size of the robust region.}
 }
 
 @PhdThesis{Eskin02,
@@ -20080,6 +20117,20 @@ pages = 	{97--103},
 publisher = 	{Morgan Kaufmann},
 comment= 	{Shows how to pac learn kDNF with random attribute noise of
 		up to one half.}
+}
+
+@inproceedings{Shafieezadeh-AbadehEsKu15,
+  title={Distributionally Robust Logistic Regression},
+  author={Shafieezadeh-Abadeh, Soroosh and Esfahani, Peyman Mohajerin and Kuhn, Daniel},
+  booktitle={Advances in Neural Information Processing Systems},
+  pages={1576--1584},
+  year=2015,
+  comment={Gives a convex reformulation for a distributionally robust
+                  logistic regression problem with Wasserstein
+                  distances. Shows that DRO with Wasserstein is just a
+                  regularization with the corresponding dual
+                  norm. Uses the know Wasserstein concentration
+                  result to give statistical guarantees.}
 }
 
 @article{ShahMe13,
