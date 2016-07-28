@@ -3994,6 +3994,19 @@ title = {Lower Bounds on the Oracle Complexity of Nonsmooth Convex Optimization
    via Information Theory},
 year = 2014,
 journal = {arXiv:1407.5144 [math.OC]},
+comment = {
+  Studies oracle complexity of optimization problems using information
+  theoretic tools. They construct oracles for optimization that reduce
+  to the problem of identifying a random string $S \in \{0, 1\}^M$, for
+  appropriate $M$, where querying the oracle for a subgradient is equivalent
+  to querying the string by asking ``given a permutation $\sigma$ and string
+  $s$, which coordinate $j$ is the first satisfying $s_{\sigma(j)} \neq
+  S_{j}$.'' This oracle requires at least $M/2$ queries to solve when
+  $S$ is uniform. The optimization oracle that is equivalent
+  is given by maxima of particular collections of recursively-defined
+  functions, where $f_s(x)$ can be specified by a particular (permuted)
+  prefix of the string $s$ until enough queries have occured.
+},
 }
 
 @article{BravermanGaMaNgWo15,
