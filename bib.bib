@@ -333,6 +333,7 @@ on Artificial Intelligence and Statistics}}
 @string{icml13 = {Proceedings of the 30th International Conference on Machine Learning}}
 @string{icml14 = {Proceedings of the 31st International Conference on Machine Learning}}
 @string{icml15 = {Proceedings of the 32nd International Conference on Machine Learning}}
+@string{icml16 = {Proceedings of the 32nd International Conference on Machine Learning}}
 
 @string{allerton10 = {The 48th Allerton Conference on Communication, Control,
  and Computing}}
@@ -3301,6 +3302,13 @@ number = 4,
 pages = {1351--1378},
 }
 
+@article{BlanchetMu16,
+  title={Quantifying Distributional Model Risk Via Optimal Transport},
+  author={Blanchet, Jose and Murthy, Karthyek},
+  journal={Available at SSRN 2759640},
+  year=2016
+}
+
 @Article{Block62,
   author = 	 {H. D. Block},
   title = 	 {The Perceptron: A Model for Brain Functioning},
@@ -3978,6 +3986,27 @@ booktitle = {Proceedings of the 2007 Joint Conference on Empirical Methods
  in Natural Language Processing and Computational Natural Language Learning
  (EMNLP-CoNLL)},
 pages = {858--867},
+}
+
+@article{BraunGuPo14,
+author = {G\'abor Braun and Crist\'obal Guzm\'an and Sebastian Pokutta},
+title = {Lower Bounds on the Oracle Complexity of Nonsmooth Convex Optimization
+   via Information Theory},
+year = 2014,
+journal = {arXiv:1407.5144 [math.OC]},
+comment = {
+  Studies oracle complexity of optimization problems using information
+  theoretic tools. They construct oracles for optimization that reduce
+  to the problem of identifying a random string $S \in \{0, 1\}^M$, for
+  appropriate $M$, where querying the oracle for a subgradient is equivalent
+  to querying the string by asking ``given a permutation $\sigma$ and string
+  $s$, which coordinate $j$ is the first satisfying $s_{\sigma(j)} \neq
+  S_{j}$.'' This oracle requires at least $M/2$ queries to solve when
+  $S$ is uniform. The optimization oracle that is equivalent
+  is given by maxima of particular collections of recursively-defined
+  functions, where $f_s(x)$ can be specified by a particular (permuted)
+  prefix of the string $s$ until enough queries have occured.
+},
 }
 
 @article{BravermanGaMaNgWo15,
@@ -7650,11 +7679,13 @@ note = {Lecture notes for EE290o, University of California, Berkeley},
 }
 
 @article{DuchiGlNa16,
-  title={Statistics of Robust Optimization},
+  title={Statistics of Robust Optimization: A Generalized Empirical
+    Likelihood Approach},
   author={John C. Duchi and Peter W. Glynn and Hongseok Namkoong},
   year=2016,
-  journal={To be submitted}
-  }
+  journal={In submission to INFORMS},
+  url = {http://web.stanford.edu/~jduchi/projects/DuchiGlNa16.pdf},
+}
 
 @inproceedings{DuchiGoKo08,
 author = {John C. Duchi and Stephen Gould and Daphne Koller},
@@ -7861,6 +7892,13 @@ author = {John C. Duchi and Lester Mackey and Michael I. Jordan},
 year = 2013,
 title = {Supplement to ``{T}he Asymptotics of Ranking Algorithms''},
 note = {DOI: COMPLETED BY TYPESETTER},
+}
+
+@inproceedings{DuchiNa16,
+  title={Robust Stochastic Optimization: Learning the Tails},
+  author={John C. Duchi and Hongseok Namkoong},
+  year= 2016,
+  booktitle={Reliable Machine Learning the Wild Workshop, ICML 2016},
 }
 
 @inproceedings{DuchiShSiCh08,
@@ -8983,6 +9021,17 @@ year = {2002}
 ,year=          1998
 ,number=        2
 ,pages=         {379--390}
+}
+
+@article{FournierGu15,
+  title={On the rate of convergence in Wasserstein distance of the empirical measure},
+  author={Fournier, Nicolas and Guillin, Arnaud},
+  journal={Probability Theory and Related Fields},
+  volume=162,
+  number={3-4},
+  pages={707--738},
+  year=2015,
+  publisher={Springer}
 }
 
 @inproceedings{FrankHa01,
@@ -10752,7 +10801,12 @@ year=		1987,
 note=		{Unpublished manuscript}
 }
 
-@article{Gurvits95
+@misc{Gurobi,
+   author = "Gurobi Optimization, Inc.",
+   title = "Gurobi Optimizer Reference Manual",
+   year = 2015,
+   url = "http://www.gurobi.com"
+}@article{Gurvits95
 ,author=	{Leonid Gurvits}
 ,title=		{Stability of discrete linear inclusion}
 }
@@ -11486,6 +11540,14 @@ pages = 	{248-292}
   title = "Approximate Convex Optimization by Online Game Playing",
   note = "Unpublished manuscript",
   year = 2006
+}
+
+@article{Hazan16,
+author = {Elad Hazan},
+title = {Draft: Introduction to Online Convex Optimization},
+year = 2016,
+journal = {Foundations and Trends in Optimization},
+volume = {To Appear},
 }
 
 @incollection{Hazan12,
@@ -14918,7 +14980,6 @@ number = 4,
 pages = {355--580},
 }
 
-
 @misc{Lichman13,
 author = {M. Lichman},
 year = 2013,
@@ -16773,6 +16834,13 @@ pages = {227--234},
   year=2011
 }
 
+@phdthesis{Nedic02,
+author = {Angelia Nedi\'{c}},
+title = {Subgradient Methods for Convex Minimization},
+year = 2002,
+school = mit,
+}
+
 @article{NedicBe01,
 author = {A. Nedi\'{c} and D. P. Bertsekas},
 title = {Incremental subgradient methods for nondifferentiable optimization},
@@ -16852,6 +16920,13 @@ journal = {Statistical Science},
 volume = 27,
 number = 4,
 pages = {538--557},
+}
+
+@unpublished{Nemirovski94,
+author = {Arkadi Nemirovski},
+title = {Efficient Methods in Convex Programming},
+year = 1994,
+note = {Lecture notes at the Technion--The Israel Institute of Technology},
 }
 
 @article{Nemirovski04,
@@ -17717,6 +17792,17 @@ comment = {Several nice proofs of trace inequalities that are fairly elementary
   volume=20,
   year=2007,
   publisher={World Scientific}
+}
+
+@article{PflugWo07,
+  title={Ambiguity in portfolio selection},
+  author={Pflug, Georg and Wozabal, David},
+  journal={Quantitative Finance},
+  volume=7,
+  number=4,
+  pages={435--442},
+  year=2007,
+  publisher={Taylor \& Francis}
 }
 
 @article{PflugWo10,
@@ -20196,14 +20282,14 @@ journal = {arXiv:1308.1269 [math.ST]},
   note = 	 {http://www.cs.huji.ac.il/$\sim$shais/}
 }
 
-@article{Shalev11,
+@article{Shalev12,
   title={Online learning and online convex optimization},
   author={Shalev-Shwartz, Shai},
   journal={Foundations and Trends in Machine Learning},
   volume=4,
   number=2,
   pages={107--194},
-  year=2011
+  year=2012,
 }
 
 @book{ShalevBe14,
@@ -20453,14 +20539,14 @@ comment = {Performs greedy coordinate descent for a multiclass problem where
   is better than the regularized boosting algorithms of DuchiSi09a.},
 }
 
-@unpublished{ShalevWe16,
+@inproceedings{ShalevWe16,
 author = {Shai Shalev-Shwartz and Yonatan Wexler},
 title = {Minimizing the Maximal Loss: How and Why?},
 year = 2016,
-note = {URL http://arxiv.org/pdf/1602.01690},
-url = {http://arxiv.org/pdf/1602.01690},
+booktitle = icml16,
 comment = {Use bandit algorithms to optimize maximum loss. Propose
-                  tree structure for sampling efficiently.},
+                  tree structure for sampling efficiently,
+                  http://arxiv.org/pdf/1602.01690}
 }
 
 @article{ShalevZh12,
@@ -20764,6 +20850,27 @@ journal=	{New Generation Computing},
 volume=		8,
 year=		1991,
 pages=		{337--347}
+}
+
+@book{Shor85,
+author = {Naum Zuselevich Shor},
+title = {Minimization Methods for Nondifferentiable Functions},
+translator = {Krzystof Kiwiel and Andrzej Ruszczy\'nski},
+publisher = {Springer-Verlag},
+year = 1985,
+comment = {Describes subgradient methods as well as "space dilation along
+  gradient" methods (SDG), which build approximations to guarantee that
+  subgradient-like directions are actually moving in directions to get
+  close to optimality by removing previous subgradient directions, making
+  movements "more" orthogonal (or perhaps conjugate) to them. Gives
+  a number of applications.},
+}
+
+@book{Shor98,
+author = {Naum Zuselevich Shor},
+title = {Nondifferentiable Optimization and Polynomial Problems},
+year = 1998,
+publisher = {Springer},
 }
 
 @article{Shorack72,
@@ -22830,6 +22937,17 @@ comment = 	{Controller sees state of environment at each instant, and
 ,title=		{Exploring, modelling and controlling discrete
 		 sequential environments}
 ,year=		1977
+}
+
+@article{Wozabal12,
+  title={A framework for optimization under ambiguity},
+  author={Wozabal, David},
+  journal={Annals of Operations Research},
+  volume=193,
+  number=1,
+  pages={21--47},
+  year=2012,
+  publisher={Springer}
 }
 
 @article{Wright93,
