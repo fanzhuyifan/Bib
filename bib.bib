@@ -7742,9 +7742,10 @@ note = {Lecture notes for EE290o, University of California, Berkeley},
     Likelihood Approach},
   author={John C. Duchi and Peter W. Glynn and Hongseok Namkoong},
   year=2016,
-  journal={In submission to Mathematics of Operations Research},
-  url = {http://web.stanford.edu/~jduchi/projects/DuchiGlNa16.pdf},
+  journal={arXiv:1610.03425 [stat.ML]},
+  url = {https://arxiv.org/abs/1610.03425},
 }
+
 
 @inproceedings{DuchiGoKo08,
 author = {John C. Duchi and Stephen Gould and Daphne Koller},
@@ -7953,12 +7954,13 @@ title = {Supplement to ``{T}he Asymptotics of Ranking Algorithms''},
 note = {DOI: COMPLETED BY TYPESETTER},
 }
 
-@inproceedings{DuchiNa16,
-author = {John C. Duchi and Hongseok Namkoong},
-title = {Stochastic Gradient Methods for Distributionally
-  Robust Optimization with $f$-divergences},
-year = 2016,
-booktitle = nips29,
+@article{DuchiNa16,
+  title={Statistics of Robust Optimization: A Generalized Empirical
+                  Likelihood Approach},
+  author={John C. Duchi and Hongseok Namkoong},
+  year=2016,
+  journal={arXiv:1610.02581 [stat.ML]},
+  url = {https://arxiv.org/abs/1610.02581},
 }
 
 @inproceedings{DuchiNa16_workshop,
@@ -14446,7 +14448,24 @@ pages = {911--940},
   title={Robust sensitivity analysis for stochastic systems},
   author={Lam, Henry},
   journal={arXiv preprint arXiv:1303.0326},
-  year=2013
+  year=2013,
+  comment={Shows for the KL divergence that the robust problem is
+                  equal to the variance expansion asymptotically as
+                  the radius goes to 0. He shows this in a
+                  non-statistical setting but for random horizons as
+                  well.}
+}
+
+@article{Lam16,
+  title={Recovering Best Statistical Guarantees via the Empirical Divergence-based Distributionally Robust Optimization},
+  author={Lam, Henry},
+  journal={arXiv preprint arXiv:1605.09349},
+  year=2016,
+  comments={Shows Chi-squared process result for empirical likelihood
+                  profile processes and uses this to get two-sided
+                  confidence bands on the objective function
+                  itself. This (more or less) relaxes the
+                  identifiability condition required in DuchiGlNa16.}
 }
 
 @inproceedings{LamZh15,
@@ -14454,7 +14473,14 @@ pages = {911--940},
   author={Lam, Henry and Zhou, Enlu},
   booktitle={Proceedings of the 2015 Winter Simulation Conference},
   year=2015,
-  organization={IEEE}
+  organization={IEEE},
+  comments={Studies the empirical likelihood robust formulation and
+                  shows chi-squared calibration by using the KKT
+                  conditions as estimating equations. This results in
+                  a much less general theory compared to DuchiGlNa16
+                  and their proof is a straightforward plug-in from
+                  standard empirical likelihood theory with estimating
+                  equations.}
 }
 
 @article{Lan10,
@@ -23944,6 +23970,17 @@ pages=		{375--403}
   year = 	 1978,
   volume =	 24,
   pages =	 {530--536}
+}
+
+@article{ZouHa05,
+author = {Hui Zou and Trevor Hastie},
+title = {Regularization and variable selection via the
+elastic net},
+year = 2005,
+journal = jrssb,
+volume = 67,
+number = 2,
+pages = {301--320},
 }
 
 @inproceedings{ZollmanVeOcPo08,
