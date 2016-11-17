@@ -3016,6 +3016,16 @@ author = {Bertsekas, D. P. and Tsitsiklis, J. N.},
  publisher = {Prentice-Hall, Inc.},
 }
 
+@article{BertsekasTs00,
+author = {Dmitri P. Bertsekas and John N. Tsitsiklis},
+title = {Gradient convergence in gradient methods with errors},
+year = 2000,
+pages = {627--642},
+volume = 10,
+number = 3,
+journal = siopt,
+}
+
 @article{BertsimasBr09,
   title={Constructing uncertainty sets for robust linear optimization},
   author={Bertsimas, Dimitris and Brown, David B},
@@ -7944,13 +7954,20 @@ title = {Supplement to ``{T}he Asymptotics of Ranking Algorithms''},
 note = {DOI: COMPLETED BY TYPESETTER},
 }
 
-@article{DuchiNa16,
+@article{DuchiGlNa16,
   title={Statistics of Robust Optimization: A Generalized Empirical
                   Likelihood Approach},
-  author={John C. Duchi and Hongseok Namkoong},
+  author={John C. Duchi and Peter Glynn and Hongseok Namkoong},
   year=2016,
-  journal={arXiv:1610.02581 [stat.ML]},
-  url = {https://arxiv.org/abs/1610.02581},
+  journal={arXiv:1610.03425 [stat.ML]},
+  url = {https://arxiv.org/abs/1610.03425},
+}
+
+@article{DuchiNa16,
+title = {Variance-based regularization with convex objectives},
+author = {John C. Duchi and Hongseok Namkoong},
+year = 2016,
+journal = {arXiv:1610.02581 [stat.ML]},
 }
 
 @inproceedings{DuchiNa16_workshop,
@@ -9873,6 +9890,17 @@ edition = {Third},
 publisher = {Chapman \& Hall},
 }
 
+@article{Gelman15,
+author = {Andrew Gelman},
+title = {Working through some issues},
+journal = {Significance},
+publisher = {Wiley},
+year = 2015,
+volume = 12,
+number = 3,
+pages = {33--35},
+}
+
 @article{GelmanRu92,
 author = {Andrew Gelman and Donald B. Rubin},
 title = {Inference from Iterative Simulation Using Multiple Sequences},
@@ -11233,6 +11261,15 @@ year =    	1960,
 publisher= 	{Oxford University Press}
 }
 
+@article{HareLe04,
+author = {Warren Hare and Adrian Lewis},
+title = {Identifying Active Constraints via Partial Smoothness and Prox-Regularity},
+year = 2004,
+journal = {Journal of Convex Analysis},
+pages = {251–-266},
+volume = 11,
+number = 2,
+}
 
 @inproceedings{Harrington03,
   author = "E.~F.~Harrington",
@@ -12093,6 +12130,16 @@ comment=  	{Uses simulated annealing to update propositional states in
 	  	a connectionist Hopfield-like neural network.}
 }
 
+@article{HiranoImRe03,
+author = {Keisuke Hirano and Guido Imbens and Geert Ridder},
+title = {Efficient Estimation of Average Treatment Effects Using the Estimated Propensity Score},
+year = 2003,
+journal = {Econometrica},
+pages = {1161–-1189},
+volume = 71,
+number = 4,
+}
+
 @book{HiriartUrrutyLe93,
 author = {J. Hiriart-Urruty and C. Lemar\'echal},
 title = {Convex Analysis and Minimization Algorithms {I}},
@@ -12381,6 +12428,17 @@ author = {I. A. Ibragimov and R. Z. Has'minskii},
 title = {Statistical Estimation: Asymptotic Theory},
 year = 1981,
 publisher = {Springer-Verlag},
+}
+
+@article{Imbens04,
+author = {Guido Imbens},
+title = {Nonparametric estimation of average treatment effects
+under exogeneity: a review},
+journal = {The Review of Economics and Statistics},
+year = 2004,
+volume = 86,
+number = 1,
+pages = {4--29},
 }
 
 @article{Imbens02,
@@ -14447,7 +14505,24 @@ pages = {911--940},
   title={Robust sensitivity analysis for stochastic systems},
   author={Lam, Henry},
   journal={arXiv preprint arXiv:1303.0326},
-  year=2013
+  year=2013,
+  comment={Shows for the KL divergence that the robust problem is
+                  equal to the variance expansion asymptotically as
+                  the radius goes to 0. He shows this in a
+                  non-statistical setting but for random horizons as
+                  well.}
+}
+
+@article{Lam16,
+  title={Recovering Best Statistical Guarantees via the Empirical Divergence-based Distributionally Robust Optimization},
+  author={Lam, Henry},
+  journal={arXiv preprint arXiv:1605.09349},
+  year=2016,
+  comments={Shows Chi-squared process result for empirical likelihood
+                  profile processes and uses this to get two-sided
+                  confidence bands on the objective function
+                  itself. This (more or less) relaxes the
+                  identifiability condition required in DuchiGlNa16.}
 }
 
 @inproceedings{LamZh15,
@@ -14455,7 +14530,14 @@ pages = {911--940},
   author={Lam, Henry and Zhou, Enlu},
   booktitle={Proceedings of the 2015 Winter Simulation Conference},
   year=2015,
-  organization={IEEE}
+  organization={IEEE},
+  comments={Studies the empirical likelihood robust formulation and
+                  shows chi-squared calibration by using the KKT
+                  conditions as estimating equations. This results in
+                  a much less general theory compared to DuchiGlNa16
+                  and their proof is a straightforward plug-in from
+                  standard empirical likelihood theory with estimating
+                  equations.}
 }
 
 @article{Lan10,
@@ -22176,9 +22258,9 @@ pages=     	{149-216}
 }
 
 @inproceedings{UdellMoZeHoDiBo14,
-  title={Convex optimization in Julia},
+  title={Convex optimization in {J}ulia},
   author={Udell, Madeleine and Mohan, Karanveer and Zeng, David and Hong, Jenny and Diamond, Steven and Boyd, Stephen},
-  booktitle={High Performance Technical Computing in Dynamic Languages (HPTCDL), 2014 First Workshop for},
+  booktitle={First Workshop for High Performance Technical Computing in Dynamic Languages},
   pages={18--28},
   year=2014,
   organization={IEEE}
@@ -23945,6 +24027,17 @@ pages=		{375--403}
   year = 	 1978,
   volume =	 24,
   pages =	 {530--536}
+}
+
+@article{ZouHa05,
+author = {Hui Zou and Trevor Hastie},
+title = {Regularization and variable selection via the
+elastic net},
+year = 2005,
+journal = jrssb,
+volume = 67,
+number = 2,
+pages = {301--320},
 }
 
 @inproceedings{ZollmanVeOcPo08,
