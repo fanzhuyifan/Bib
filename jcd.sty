@@ -34,8 +34,6 @@
 \newcommand{\lfro}[1]{\left\|{#1}\right\|_{\rm Fr}} % Frobenius norm
 \newcommand{\matrixnorm}[1]{\left|\!\left|\!\left|{#1}
   \right|\!\right|\!\right|} % Matrix norm with three bars
-\newcommand{\opnorm}[1]{\matrixnorm{#1}_{\rm op}} % Operator norm with three bars
-\newcommand{\opnorms}[1]{\matrixnorms{#1}_{\rm op}} % Small operator norm with three bars
 \newcommand{\normbigg}[1]{\bigg\|{#1}\bigg\|} % A norm with 1 argument and bigg
                                               % brackets.
 \newcommand{\normbig}[1]{\big\|{#1}\big\|} % A norm with 1 argument and big
@@ -55,6 +53,10 @@
 \newcommand{\ltwos}[1]{\norms{#1}_2} % l2 norm with small brackets
 \newcommand{\linfs}[1]{\norms{#1}_\infty} % l-infinity norm with small brackets
 \newcommand{\lzeros}[1]{\norms{#1}_0} % l0 norm with small brackets
+
+\newcommand{\opnorm}[1]{\matrixnorm{#1}_{\rm op}} % Operator norm with three bars
+\newcommand{\opnormbigg}[1]{\matrixnormbigg{#1}_{\rm op}} % Operator norm with three bars
+\newcommand{\opnorms}[1]{\matrixnorms{#1}_{\rm op}} % Small operator norm with three bars
 
 
 \newcommand{\defeq}{:=}
