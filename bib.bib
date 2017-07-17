@@ -3111,6 +3111,24 @@ number = 2,
 pages = {218--231}
 }
 
+@article{Bertsekas77,
+author = {Dmitri P. Bertsekas},
+title = {Approximation Procedures Based on the Method of Multipliers},
+year = 1977,
+journal = jota,
+volume = 23,
+number = 4,
+pages = {487--510},
+comment = {Studies minimization problems with objectives of the composite
+  form $f(x) = h(c(x))$, where $h$ is convex and $c$ is smooth. Implicitly
+  seems to be assuming that $c$ is actually linear. Develops a method
+  of multipliers methods that roughly proceeds as follows: introducing
+  $u \in \R^m$, solve $\min. h(c(x) + u) + y^T u + \half \ltwo{u}^2$, where
+  $y$ is a dual multiplier being updated to force $u = 0$. This smooths
+  $h$ and makes the problem easier (it is the natural smoothing of $h$).
+  See also the paper Polyak79. },
+}
+
 @book{Bertsekas99,
 author = {D.P. Bertsekas},
 title = {Nonlinear Programming},
@@ -19744,6 +19762,21 @@ chapter = {19},
 publisher = {Springer},
 }
 
+@incollection{Polyak79,
+author="Polyak, Boris T.",
+editor="Bensoussan, A. and Lions, J. L.",
+title={On the {B}ertsekas' method for minimization of composite functions},
+booktitle = {International Symposium on Systems Optimization and Analysis},
+year="1979",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages={178--186},
+isbn="978-3-540-35232-7",
+doi="10.1007/BFb0002653",
+url="http://dx.doi.org/10.1007/BFb0002653",
+comment = {See also Bertsekas77},
+}
+
 @book{Polyak87,
 author = {B. T. Polyak},
 title = {Introduction to Optimization},
@@ -19786,6 +19819,10 @@ volume = 16,
 pages = {53--63},
 doi = {10.1016/0005-1098(80)90086-2},
 url = {http://dx.doi.org/10.1016/0005-1098(80)90086-2},
+comment = {Considers nonlinear models of the form
+ $y = f(x; \theta) + \varepsilon$, where $f$ is smooth enough and
+ $\varepsilon$ is noise from some unknown distribution. Shows robust
+ estimation strategies based on families for $\varepsilon$.},
 }
 
 @article{PoorTh77,
