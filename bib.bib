@@ -194,6 +194,8 @@ on Artificial Intelligence and Statistics}}
 		  Symposium on the Theory of Computing}}
 @string{stoc16 = {Proceedings of the Forty-Eighth Annual ACM
 		  Symposium on the Theory of Computing}}
+@string{stoc17 = {Proceedings of the Forty-Ninth Annual ACM
+		  Symposium on the Theory of Computing}}
 
 @string{pods02 = {Proceedings of the Twenty-First ACM SIGMOD-SIGACT-SIGART
   Symposium on Principles of Database Systems}}
@@ -315,6 +317,7 @@ on Artificial Intelligence and Statistics}}
 		  ACM SIGIR Conference on Research and Development in
 		  Information Retrieval}}
 
+@string{simat={SIAM Journal on Matrix Analysis and Applications}}
 @string{siopt={SIAM Journal on Optimization}}
 @string{sicon={SIAM Journal on Control and Optimization}}
 
@@ -669,13 +672,13 @@ comment = {Discusses perturbation of the data in a linear program so that
 the LP has a particular desired vector x_0 as its solution},
 }
 
-@article{AgarwalAlBuHaMa16,
+@inproceedings{AgarwalAlBuHaMa17,
 author = {Naman Agarwal and Zeyuan Allen-Zhu and Brian Bullins
   and Elad Hazan and Tengyu Ma},
-title = {Finding Approximate Local Minima for Nonconvex Optimization in
-Linear Time},
-year = 2016,
-journal = {arXiv:1611.01146 [math.OC]},
+title = {Finding Approximate Local Minima Faster than Gradient Descent},
+year = 2017,
+booktitle = stoc17,
+url = {https://arxiv.org/abs/1611.01146},
 }
 
 @article{AgarwalBaDu12,
@@ -993,6 +996,22 @@ comment = {Surveys results on SOCPs, including a variety of problems
   journal={arXiv preprint arXiv:1512.09103},
   year=2015
 }
+
+@article{Allen17a,
+Author = {Allen-Zhu, Zeyuan},
+Journal = {arXiv:1702.00763 [math.OC]},
+Title = {Natasha: Faster stochastic non-convex optimization via
+   strongly non-convex parameter},
+Year = {2017}
+}
+
+@article{Allen17b,
+  Author = {Allen-Zhu, Zeyuan},
+  Journal = {arXiv:1708.08694 [math.OC]},
+  Title = {Natasha 2: Faster Non-Convex Optimization than {SGD}},
+  Year = {2017},
+}
+
 
 @InProceedings{AllweinScSi00,
         author = "E.~L. Allwein and R.E. Schapire and Y. Singer",
@@ -2015,7 +2034,7 @@ comment = {volume = {31}},
 author = {Grey Ballard and James Demmel and Olga Holtz and Oded Schwartz},
 title = {Minimizing Communication in Numerical Linear Algebra},
 year = 2011,
-journal = {SIAM Journal on Matrix Analysis and Applications},
+journal = simat,
 volume = 32,
 number = 3,
 pages = {866--901},
@@ -3449,6 +3468,20 @@ comment = {Presents a projected gradient method using Barzilai-Borwein-type
   numerical properties. The Barzilai-Borwein stepsizes are based on secant
   approximations to quadratic models and apepar to give good performance.
   See also the survey BirginMaRa14.},
+}
+
+@article{BirginGaMaSaTo17,
+Author = {Ernesto G. Birgin and John L. Gardenghi
+   and Jos\'{e} Martio Mart\'inez
+   and Sandra A. Santos and Philippe L. Toint},
+Title = {Worst-case evaluation complexity for unconstrained nonlinear
+ optimization using high-order regularized models},
+Journal = mathprog,
+volume = 163,
+number = {1--2},
+pages = {359--368},
+Keywords = {nonconvex},
+Year = {2017},
 }
 
 @article{BirginMaRa14,
@@ -12211,6 +12244,16 @@ year = 		1989
   pages =	 {1-7}
 }
 
+@article{HagerZh06,
+Author = {Hager, William W and Zhang, Hongchao},
+	Journal = {Pacific Journal of Optimization},
+	Number = {1},
+	Pages = {35--58},
+	Title = {A survey of nonlinear conjugate gradient methods},
+	Volume = {2},
+	Year = {2006},
+}
+
 @Article{HagerupRu90,
   author = 	 {Torben Hagerup and Christine R\"{u}b},
   title = 	 {A guided tour of Chernoff bounds},
@@ -15585,6 +15628,17 @@ pages = {2697--2706},
 ,title=		{Combining decisions of multiple rules}
 }
 
+@article{KorenBeVo09,
+Author = {Koren, Yehuda and Bell, Robert and Volinsky, Chris},
+Journal = {Computer},
+Publisher = {IEEE Computer Society},
+Title = {Matrix factorization techniques for recommender systems},
+volume = 42,
+number = 8,
+pages = {30--37},
+Year = {2009}
+}
+
 @article{Kosorok08,
   title={Introduction to Empirical Processes},
   author={Kosorok, Michael R},
@@ -15666,7 +15720,7 @@ booktitle = nips25,
 	Author = {Kuczynski, Jacek and Wozniakowski, Henryk},
 	Title = {Estimating the largest eigenvalue by the power and {L}anczos
 	algorithms with a random start},
-	Journal = {SIAM Journal on Matrix Analysis and Applications},
+	Journal = simat,
 	Number = {4},
 	Pages = {1094--1122},
 	Publisher = {SIAM},
@@ -17079,6 +17133,16 @@ volume = 101,
 number = 2,
 pages = {484--493},
 }
+
+@article{LiuNo89,
+Author = {Dong Liu and Jorge Nocedal},
+Journal = mathprog,
+Number = {1},
+Pages = {503--528},
+Title = {On the limited memory {BFGS} method for large scale optimization},
+Volume = {45},
+Year = {1989}}
+
 
 @inproceedings{LiuWrReBiSr14,
 author = {Ji Liu and Stephen J. Wright and Christopher R\'e
@@ -18689,7 +18753,7 @@ comment=  	{Stochastic automata that adapt behavior under reinforcement
 author = {Stephen Nash and Ariela Sofer},
 title = {Preconditioning reduced matrices},
 year = 1996,
-journal = {SIAM Journal on Matrix Analysis and Applications},
+journal = simat,
 volume = 17,
 number = 1,
 pages = {47--68},
@@ -18825,13 +18889,6 @@ journal = {Statistical Science},
 volume = 27,
 number = 4,
 pages = {538--557},
-}
-
-@unpublished{Nemirovski94,
-author = {Arkadi Nemirovski},
-title = {Efficient Methods in Convex Programming},
-year = 1994,
-note = {Lecture notes at the Technion--The Israel Institute of Technology},
 }
 
 @article{Nemirovski04,
@@ -21927,7 +21984,7 @@ author = {Arvind Sankard and Daniel Spielman and Shang-Hua Teng},
 title = {Smoothed analysis of the condition numbers and growth factors
   of matrices},
 year = 2006,
-journal = {SIAM Journal on Matrix Analysis and Applications},
+journal = simat,
 pages = {446--476},
 volume = 28,
 number = 2,
@@ -22318,6 +22375,16 @@ journal = {Mathematics of Computation},
 volume = 24,
 number = 111,
 pages = 665,
+}
+
+@article{Schmidhuber15,
+	Author = {Schmidhuber, J\"{u}rgen},
+	Journal = {Neural networks},
+	Pages = {85--117},
+	Publisher = {Elsevier},
+	Title = {Deep learning in neural networks: An overview},
+	Volume = {61},
+	Year = {2015}
 }
 
 @inproceedings{SchmidtLeBa11,
@@ -25752,7 +25819,7 @@ pages = {2543--2596},
 @article{XueYe00,
   title={An efficient algorithm for minimizing a sum of p-norms},
   author={Xue, Guoliang and Ye, Yinyu},
-  journal={SIAM Journal on Optimization},
+  journal=siopt,
   volume=10,
   number=2,
   pages={551--579},
@@ -26233,6 +26300,17 @@ comment = {Shows that the convergence rate of RKHS-based estimators is
   booktitle=icml16,
   pages={993--1001},
   year={2016}
+}
+
+@article{ZhangLiQi12,
+author = {Xinzhen Zhang and Chen Ling and Liqun Qi},
+title = {The best rank-1 approximation of a symmetric
+  tensor and related spherical optimization problems},
+journal = simat,
+year = 2012,
+volume = 33,
+number = 3,
+pages = {806--821},
 }
 
 @article{ZhangLiWa16,
