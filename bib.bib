@@ -226,6 +226,8 @@ on Artificial Intelligence and Statistics}}
 		  Artificial Intelligence}}
 @string{aaai99= {Proceedings of the Sixteenth National Conference on
 		  Artificial Intelligence}}
+@string{aaai15= {Proceedings of the Thirty-Second National Conference on
+		  Artificial Intelligence}}
 
 @string{anprob=	{Annals of Probability}}
 @string{anappprob={Annals of Applied Probability}}
@@ -1190,6 +1192,17 @@ journal = {arXiv:1304.6133 [cs.IT]},
 url = {http://arxiv.org/abs/1304.6133},
 }
 
+@article{AndersonHaTi94,
+author = {Niall H. Anderson and Peter Hall and D. M. Titterington},
+title = {Two-Sample Test Statistics for Measuring Discrepancies Between
+ Two Multivariate Probability Density Functions Using Kernel-Based Density
+ Estimates},
+year = 1994,
+journal = {Journal of Multivariate Analysis},
+volume = 50,
+pages = {41--54},
+}
+
 @book{AndersonRo88,
 editor=   	{Anderson, James A. and Rosenfeld, Edward},
 title=    	{Neurocomputing: Foundations of Research},
@@ -1738,6 +1751,17 @@ author = {Soren Asmussen and Peter W. Glynn},
 title = {Stochsatic Simulation: Algorithms and Analysis},
 year = 2007,
 publisher = {Springer},
+}
+
+@article{AsmussenKrRu05,
+  title={Heavy tails, importance sampling and cross--entropy},
+  author={Asmussen, S{\o}ren and Kroese, Dirk P and Rubinstein, Reuven Y},
+  journal={Stochastic Models},
+  volume=21,
+  number=1,
+  pages={57--76},
+  year=2005,
+  publisher={Taylor \& Francis}
 }
 
 @article{Assouad83,
@@ -3686,7 +3710,6 @@ pages = {1351--1378},
 @article{BlanchetMu16,
   title={Quantifying Distributional Model Risk Via Optimal Transport},
   author={Blanchet, Jose and Murthy, Karthyek},
-  journal={Available at SSRN 2759640},
   year=2016,
 journal = {arXiv:1604.01446 [math.PR]},
 url = {https://arxiv.org/abs/1604.01446},
@@ -4059,6 +4082,13 @@ author=   	{Bongard, M.},
 title=    	{Pattern Recognition},
 publisher= 	{Spartan Books},
 year=      	{19??}
+}
+
+@book{BonnansSh13,
+  title={Perturbation analysis of optimization problems},
+  author={Bonnans, J Fr{\'e}d{\'e}ric and Shapiro, Alexander},
+  year=2013,
+  publisher={Springer Science \& Business Media}
 }
 
 @article{BonnansSh98,
@@ -4868,6 +4898,14 @@ series = {Translations of Mathematical Monographs},
 volume = 188,
 }
 
+@inproceedings{BunSt16,
+author = {Mark Bun and Thomas Steinke},
+year = 2016,
+title = {Concentrated Differential Privacy: Simplifications, Extensions,
+   and Lower Bounds},
+booktitle = {Theory of Cryptography Conference (TCC)},
+pages = {635--658},
+}
 
 @phdthesis{Buntine90
 ,author=	{Wray Lindsay Buntine}
@@ -7920,6 +7958,24 @@ publisher=	{Prentice-Hall},
 year=     	1987
 }
 
+@article{DelMoralLeMi03,
+author = {Pierre {Del Moral} and Michel Ledoux and Laurent Miclo},
+title = {On contraction properties of {M}arkov kernels},
+year = 2003,
+journal = {Probability Theory and Related Fields},
+pages = {395--420},
+volume = 126,
+comment = {Builds off the classical result of Dobrushin that
+  if $K$ is a Markov kernel such that, for any two probability
+  measures $P, Q$ we have
+  $\tvnorm{P K - Q K} \le \alpha \tvnorm{\mu - \nu}$,
+  then $D_f(PK || QK) \le \alpha D_f(P, Q)$ for all $P, Q$. The proof is
+  by showing that any $f$ divergence---as $f$ is a convex function---can
+  be approximated by piecewise linear functions (clearly), and then
+  using the variation-norm contraction to build the piecewise linear
+  approximations.},
+}
+
 @book{DemboZe98,
 author = {Amir Dembo and Ofer Zeitouni},
 title = {Large Deviations Techniques and Applications},
@@ -8987,6 +9043,14 @@ year = 2016,
 journal = {arXiv:1604.02390 [math.ST]},
 }
 
+@article{DuchiJoWa18,
+author = {John C. Duchi and Michael I. Jordan and Martin J. Wainwright},
+title = {Minimax Optimal Procedures for Locally Private Estimation},
+year = 2016,
+journal = jasa,
+volume = {To appear},
+}
+
 @article{DuchiJoWaZh14,
 author = {John C.\ Duchi and Michael I.\ Jordan and
 Martin J.\ Wainwright and Yuchen Zhang},
@@ -9564,6 +9628,13 @@ comment = {
   robust statistics and convergence rates for point estimators. Gives
   simple arguments/explanations for both of them; easy to read.
 },
+}
+
+@article{DworkRo16,
+author = {Cynthia Dwork and Guy Rothblum},
+title = {Concentrated Differential Privacy},
+year = 2016,
+journal = {arXiv:1603.01887 [cs.DS]},
 }
 
 @inproceedings{DworkRoVa10,
@@ -11985,6 +12056,25 @@ publisher=	{John WIley \& Sons, Inc.},
 year=     	1981
 }
 
+@article{GrettonBoRaScSm12,
+author = {Arthur Gretton and Karsten Borgwardt and Malte Rasch
+  and Bernhard Sch\"{o}lkopf and Alexander Smola},
+title = {A Kernel Two-Sample Test},
+year = 2012,
+journal = jmlr,
+volume = 13,
+pages = {723--773},
+}
+
+@inproceedings{GrettonSrSeStBaPoFu12,
+author = {Arthur Gretton and Bharath Sriperumbudur and
+Dino Sejdinovic and Heiko Strathmann and Sivaraman Balakrishnan
+and Massimiliano Pontil and Kenji Fukumizu},
+title = {Optimal kernel choice for large-scale two-sample tests},
+year = 2012,
+booktitle = nips25,
+}
+
 @TechReport{GrigoriadisKh91,
   author = 	 {Michael D. Grigoriadis and Leonid G. Khachiyan},
   title = 	 {Approximate solution of matrix games in parallel},
@@ -13769,6 +13859,20 @@ pages = {177--190}
 ,pages=		{63-91}
 }
 
+@article{HomemDeMello07,
+  title={A study on the cross-entropy method for rare-event probability estimation},
+  author={Homem-de-Mello, Tito},
+  journal={INFORMS Journal on Computing},
+  volume=19,
+  number=3,
+  pages={381--394},
+  year=2007,
+  publisher={INFORMS},
+  comment={Considers cross-entropy methods on product
+                  measures. Proposes a novel way of updating the
+                  rare threshold quantile.}
+}
+
 @article{HomerSzReDuTeMuPeStNeCr08,
 author = {Nils Homer and Szabolcs Szelinger and Margot Redman and
  David Duggan and Waibhav Tembe and Jill Muehling and John V. Pearson
@@ -13869,6 +13973,52 @@ comment = {Provides a bound on the moment generating function of the square
   is bounded using standard analysis of Gaussian random vectors.},
 }
 
+@inproceedings{HuHu09,
+  title={On the performance of the cross-entropy method},
+  author={Hu, Jiaqiao and Hu, Ping},
+  booktitle={Simulation Conference (WSC), Proceedings of the 2009 Winter},
+  pages={459--468},
+  year=2009,
+  organization={IEEE},
+  comment={Conference version of HuHuCh12. Gives consistency and rate of
+                  convergence to a non-interpretable quantity for a
+                  variant of the cross-entropy method. Requires
+                  exponential families and polynomially increasing
+                  sample sizes.}
+}
+
+@article{HuHu11,
+  title={Annealing adaptive search, cross-entropy, and stochastic approximation in global optimization},
+  author={Hu, Jiaqiao and Hu, Ping},
+  journal={Naval Research Logistics (NRL)},
+  volume=58,
+  number=5,
+  pages={457--477},
+  year=2011,
+  publisher={Wiley Online Library},
+  comment={Proposes model-based annealing algorithm for global
+                  optimization. If sample sizes increase polynomially,
+                  then shows both consistency and rate of convergence
+                  to global optimum (assuming that it is suitably
+                  stable).}
+}
+
+@article{HuHuCh12,
+  title={A stochastic approximation framework for a class of randomized optimization algorithms},
+  author={Hu, Jiaqiao and Hu, Ping and Chang, Hyeong Soo},
+  journal={IEEE Transactions on Automatic Control},
+  volume=57,
+  number=1,
+  pages={165--178},
+  year=2012,
+  publisher={IEEE},
+  comment={Journal version of HuHu09. Gives consistency and rate of
+                  convergence to a non-interpretable quantity for a
+                  variant of the cross-entropy method. Requires
+                  exponential families and polynomially increasing
+                  sample sizes.}
+}
+
 @inproceedings{HuangKwWaWu17,
   title={Safety verification of deep neural networks},
   author={Huang, Xiaowei and Kwiatkowska, Marta and Wang, Sen and Wu, Min},
@@ -13919,6 +14069,23 @@ title = {Accelerated gradient methods for stochastic optimization and online
 learning},
 year = 2009,
 booktitle = nips22,
+}
+
+@article{HuZhFa14,
+  title={Model-based annealing random search with stochastic averaging},
+  author={Hu, Jiaqiao and Zhou, Enlu and Fan, Qi},
+  journal={ACM Transactions on Modeling and Computer Simulation (TOMACS)},
+  volume=24,
+  number=4,
+  pages=21,
+  year=2014,
+  publisher={ACM},
+  comment={Proposes model-based annealing algorithm with stochastic
+                  averaging and shows that it converges to global
+                  optimum in the limit. Stochastic averaging allows us
+                  to have constant sample sizes which is an
+                  improvement over previous algorithms that required
+                  polynomially growing samples.}
 }
 
 @inproceedings{HullPeSc96,
@@ -15905,6 +16072,16 @@ author = {Alex Krizhevsky and Ilya Sutskever and Geoffrey Hinton},
 title = {ImageNet Classification with Deep Convolutional Neural Networks},
 year = 2012,
 booktitle = nips25,
+}
+
+@article{KroeseRuGl13,
+  title={The cross-entropy method for estimation},
+  author={Kroese, Dirk P and Rubinstein, Reuven Y and Glynn, Peter W},
+  journal={Handbook of Statistics: Machine Learning: Theory and Applications},
+  volume=31,
+  pages={19--34},
+  year=2013,
+  publisher={Newnes}
 }
 
 @article{Krokhmal07,
@@ -18832,6 +19009,14 @@ journal = {Machine Learning Journal},
 year = {1989}
 }
 
+@inproceedings{Mironov17,
+author = {Ilya Mironov},
+title = {R\'{e}nyi Differential Privacy},
+year = 2017,
+booktitle = {30th IEEE Computer Security Foundations Symposium (CSF)},
+pages = {263--275},
+}
+
 @inproceedings{Mitchell77,
 author=   	{Mitchell, Tom M.},
 title=    	{Version Spaces: A Candidate Elimination Approach to Rule
@@ -21095,6 +21280,15 @@ pages = {15149–-15154},
   year={2013}
 }
 
+@inproceedings{RamdasRePoSiWa15,
+author = {Aaditya Ramdas and Sashank Reddi and Barnab\`{a}s P\`{o}czos
+and Aarti Singh and Larry Wasserman},
+title = {On the decreasing power of kernel and distance-based nonparametric
+hypothesis tests in high dimensions},
+year = 2015,
+booktitle = aaai15,
+}
+
 @article{RamNeVe09a,
 title = {Incremental stochastic subgradient algorithms for
    convex optimization},
@@ -22005,6 +22199,13 @@ not both. I don't believe the trade-off is sharp. Includes nice background
 section with several relevant references.
 url = {http://arxiv.org/abs/0911.5708v1},
 },
+}
+
+@article{RubinsteinKr04,
+  title={The cross-entropy method: A unified approach to Monte Carlo simulation, randomized optimization and machine learning},
+  author={Rubinstein, Reuven Y and Kroese, Dirk P},
+  journal={Information Science \& Statistics, Springer Verlag, NY},
+  year=2004
 }
 
 @article{Rudelson99,
@@ -23031,6 +23232,13 @@ title=		{Non-negative Matrices and Markov Chains},
 edition=	{second},
 year=		1981,
 publisher=	{Springer-Verlag}
+}
+
+@book{Serfling80,
+author = {Robert Serfling},
+title = {Approximation Theorems of Mathematical Statistics},
+year = 1980,
+publisher = {John Wiley \& Sons},
 }
 
 @inproceedings{Servedio01,
@@ -26966,6 +27174,21 @@ pages = {2541-2567},
                   Kuhn11.}
 }
 
+@article{ZhouHu14,
+  title={Gradient-based adaptive stochastic search for non-differentiable optimization},
+  author={Zhou, Enlu and Hu, Jiaqiao},
+  journal={IEEE Transactions on Automatic Control},
+  volume=59,
+  number=7,
+  pages={1818--1832},
+  year=2014,
+  publisher={IEEE},
+  comment={Proposes a novel model-based algorithm by using a new
+                  surrogate distribution. Gives consistency and rate
+                  of convergence to the global optimum but requires
+                  polynomially growing sample sizes.}
+}
+
 @article{ZhouLaWa09,
 author = {Shuheng Zhou and John Lafferty and Larry Wasserman},
 title = {Compressed regression},
@@ -27143,4 +27366,5 @@ booktitle = {Proceedings of the 22nd International Conference on Computational
   year=2013,
   publisher={SIAM}
 }
+
 
