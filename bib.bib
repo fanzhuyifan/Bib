@@ -10117,6 +10117,18 @@ pages = {72--83},
   pages={196--215},
   year={1998},
   publisher={Springer}
+  comment = {Shows that a stochastic subgradient method applied to the
+    problem of minimizing $f(x) = \E[F(x; W)]$ subject to $x \in X$, where
+    $X = \{x \mid \psi(x) \le 0\}$ is compact, converges to stationary
+    points in a particular sense. Here $F$ is simply generalized
+    sub-differentiable (something like Clark). The argument shows that if
+    the iterates $x^k$ have a subsequence $k_s$ converging to some $y$ that is
+    not stationary, then there is a different subsequence of $l_s > k_s$
+    such that $\limsup_s f(x^{l_s}) < f(y)$, because one must make
+    progress in the intervening iterates as they are at non-stationary
+    points. Thus if $X^*$ denotes stationary points, then this set is
+    connected, and the limit points of $f(x^k)$ all belong to the
+    interval $f(X^*)$.}
 }
 
 @article{ErmolievNo03,
@@ -24925,6 +24937,15 @@ journal = aoms,
 volume = 16,
 number = 3,
 pages = {243--258},
+}
+
+@inproceedings{Stein56a,
+author = {Charles Stein},
+title = {Efficient Nonparametric Testing and Estimation},
+year = 1956,
+booktitle = {Proceedings of the Third Berkeley Symposium on
+Mathematical Statistics and Probability},
+pages = {187--195},
 }
 
 @inproceedings{Stein56,
