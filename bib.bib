@@ -357,6 +357,7 @@ on Artificial Intelligence and Statistics}}
 @string{icml16 = {Proceedings of the 33rd International Conference on Machine Learning}}
 @string{icml17 = {Proceedings of the 34th International Conference on Machine Learning}}
 
+@string{iclr17 = {Proceedings of the Fifth International Conference on Learning Representations}}
 @string{iclr18 = {Proceedings of the Sixth International Conference on Learning Representations}}
 
 @string{allerton10 = {The 48th Allerton Conference on Communication, Control,
@@ -2554,6 +2555,16 @@ booktitle = stoc16,
 pages = {1046--1059},
 }
 
+@article{BauschkeBo93,
+author = {Heinz H. Bauschke and Jonathan M. Borwein},
+title = {On the convergence of von {N}eumann’s
+alternating projection algorithm for two sets},
+journal =  {Set-Valued Analysis},
+volume = 1,
+pages = {185--212},
+year = 1993,
+}
+
 @article{BauschkeBo97,
     author = "H.H. Bauschke and J.M. Borwein",
     title = "Legendre functions and the method of random Bregman projections",
@@ -4478,7 +4489,24 @@ volume = 3,
 number = 1,
 }
 
-@Book{BoydVa04,
+@book{BoydElFeBa94,
+author = {Stephen Boyd and Laurent {El Ghaoui} and
+Eric Feron and V. Balakrishnan},
+title = {Linear Matrix Inequalities in System and Control Theory},
+series = {Studies in Applied Mathematics},
+volume = 15,
+publisher = {SIAM},
+year = 1994,
+}
+
+@book{BoydBa91,
+author = {Stephen Boyd and Clark Barratt},
+title = {Linear Controller Design: Limits of Performance},
+year = 1991,
+publisher = {Prentice-Hall},
+}
+
+@book{BoydVa04,
   author =	 {Stephen Boyd and Lieven Vandenberghe},
   title = 	 {Convex Optimization},
   publisher = 	 {Cambridge University Press},
@@ -7740,11 +7768,41 @@ volume = 8,
 pages = {101--111},
 }
 
+@article{DavisDr18a,
+author = {Damek Davis and Dmitriy Drusvyatskiy},
+title = {Stochastic model-based minimization of weakly convex
+functions},
+year = 2018,
+journal = {arXiv:1803.06523 [math.OC]},
+}
+
+@article{DavisDr18,
+author = {Damek Davis and Dmitriy Drusvyatskiy},
+title = {Stochastic subgradient method converges at the rate
+  ${O}(k^{−1/4})$ on weakly convex functions},
+year = 2018,
+journal = {arXiv:1802.02988 [math.OC]},
+}
+
+@article{DavisDrKaLe18,
+  title={Stochastic subgradient method converges on tame functions},
+  author={Davis, Damek and Drusvyatskiy, Dmitriy and Kakade, Sham and Lee, Jason D},
+  journal={arXiv:1804.07795 [math.OC]},
+  year={2018}
+}
+
 @article{DavisDrPa17,
 author = {Damek Davis and Dmitriy Drusvyatskiy and Courtney Paquette},
 title = {The nonsmooth landscape of phase retrieval},
 year = 2017,
 journal = {arXiv:1711.03247 [math.OC]},
+}
+
+@article{DavisGr17,
+  title={Proximally Guided Stochastic Subgradient Method for Nonsmooth, Nonconvex Problems},
+  author={Davis, Damek and Grimmer, Benjamin},
+  journal={arXiv:1707.03505 [math.OC]},
+  year={2017}
 }
 
 @article{Davisson65,
@@ -7794,6 +7852,14 @@ year = 2012,
 booktitle = nips25,
 }
 
+@article{DeanMaMaReTu17,
+author = {Sarah Dean and Horia Mania and Nikolai Matni
+  and Benjamin Recht and Stephen Tu},
+title = {On the Sample Complexity of the Linear Quadratic Regulator},
+year = 2017,
+journal = {arXiv:1710.01688 [math.OC]},
+}
+
 @article{DeanKa89,
         author = "T. Dean and K. Kanazawa",
         title = "A model for reasoning about persistence and causation",
@@ -7810,14 +7876,6 @@ author = {Jeffrey Dean and Sanjay Ghemawat},
 year = 2004,
 booktitle = {Sixth Symposium on Operating System Design and Implementation
 (OSDI)},
-}
-
-@article{DeanMaMaReTu17,
-author = {Sarah Dean and Horia Mania and Nikolai Matni
-  and Benjamin Recht and Stephen Tu},
-title = {On the Sample Complexity of the Linear Quadratic Regulator},
-year = 2017,
-journal = {arXiv:1710.01688 [math.OC]},
 }
 
 @article{DeAcosta81,
@@ -8684,6 +8742,23 @@ edition = {Second},
 publisher = {Springer},
 }
 
+@article{Dorofeyev85,
+author = {P. A. Dorofeyev},
+title = {Some properties of the generalized gradient method},
+year = 1985,
+journal = {USSR Computational Mathematics and Mathematical Physics},
+volume = 25,
+number = 1,
+pages = {117--122},
+comment = {Classical results on generalized (sub)gradient
+  method, with a few convergence results. Shows that limit points (assuming
+  iterates stay bounded) of $x^k$ satisfy that
+  $[\liminf_k f(x_k), \limsup_k f(x_k)] \subset \{f(x) \mid x \in M\}$, where
+  $M$ denotes the set of stationary points. (Thus if $M$ is countable
+  we must have convergence of $f(x_k)$.)},
+}
+
+
 @Book{Doukhan94,
   author =	 {Paul Doukhan},
   title = 	 {Mixing, Properties and Examples},
@@ -8866,7 +8941,7 @@ year = {2005}
 }
 
 @article{DrusvyatskiyIoLe16,
-author = {Dmitry Drusvyatskiy and Alexander Ioffe and Adrian Lewis},
+author = {Dmitriy Drusvyatskiy and Alexander Ioffe and Adrian Lewis},
 title = {Nonsmooth optimization using {T}aylor-like models: error bounds,
   convergence, and termination criteria},
 year = 2016,
@@ -8875,7 +8950,7 @@ url = {https://arxiv.org/abs/1610.03446},
 }
 
 @article{DrusvyatskiyLe11,
-author = {Dmitry Drusvyatskiy and Adrian Lewis},
+author = {Dmitriy Drusvyatskiy and Adrian Lewis},
 title = {Generic nondegeneracy in convex optimization},
 year = 2011,
 journal = {Proceedings of the American Mathematical Society},
@@ -8885,7 +8960,7 @@ pages = {2519–-2527},
 }
 
 @article{DrusvyatskiyLe13,
-author = {Dmitry Drusvyatskiy and Adrian Lewis},
+author = {Dmitriy Drusvyatskiy and Adrian Lewis},
 title = {Tilt Stability, Uniform Quadratic Growth, and Strong Metric 
   Regularity of the Subdifferential},
 year = 2013,
@@ -8898,15 +8973,24 @@ pages = {256--267},
 @article{DrusvyatskiyLe16,
   title={Error bounds, quadratic growth, and linear convergence of
    proximal methods},
-  author={Dmitry Drusvyatskiy and Adrian Lewis},
+  author={Dmitriy Drusvyatskiy and Adrian Lewis},
   journal = {Mathematics of Operations Research},
   volume = {To appear},
   year={2018},
   comment = {journal={arXiv:1602.06661 [math.OC]}},
 }
 
+@article{Drusvyatskiy18,
+author = {Dmitriy Drusvyatskiy},
+title = {The proximal point method revisited},
+journal = {SIAG/OPT Views and News},
+year = 2018,
+volume=  {to appear},
+url = {http://www.arXiv.org/abs/1712.06038},
+}
+
 @article{DrusvyatskiyPa16,
-author = {Dmitry Drusvyatskiy and Caroline Paquette},
+author = {Dmitriy Drusvyatskiy and Caroline Paquette},
 title = {Efficiency of minimizing compositions of convex functions and smooth maps},
 journal = {arXiv:1605.00125 [math.OC]},
 year = 2016,
@@ -9278,6 +9362,16 @@ year = 2016,
 journal = {arXiv:1603.00126 [math.ST]},
 }
 
+@article{DuchiKhRu17,
+author = {John C.\ Duchi and Khashayar Khosravi and Feng Ruan},
+title = {Multiclass classification, information, divergence,
+   and surrogate risk},
+year = 2017,
+journal = aos,
+volume = {to appear},
+note = {arXiv:1603.00126 [math.ST]},
+}
+
 @unpublished{DuchiKhRu17s,
 author = {John C.\ Duchi and Khashayar Khosravi and Feng Ruan},
 title = {Supplement to ``{I}nformation Measures, Experiments,
@@ -9368,9 +9462,9 @@ journal = {arXiv:1703.08570 [math.OC]},
 
 @article{DuchiRu18,
 author = {John C. Duchi and Feng Ruan},
-title = {An extension of the constrained risk inequality of Brown and Low},
+title = {A constrained risk inequality for general losses},
 year = 2018,
-journal = {arXiv: [stat.TH]},
+journal = {arXiv:1804.08116 [stat.TH]},
 }
 
 @inproceedings{DuchiShSiCh08,
@@ -10093,6 +10187,41 @@ year = 1969,
 journal = {Kibernetika},
 volume = 2,
 pages = {72--83},
+}
+
+@article{ErmolievNo98,
+  title={Stochastic generalized gradient method for nonconvex nonsmooth
+    stochastic optimization},
+  author={Ermoliev, Yu M and Norkin, VI},
+  journal={Cybernetics and Systems Analysis},
+  volume={34},
+  number={2},
+  pages={196--215},
+  year={1998},
+  publisher={Springer},
+  comment = {Shows that a stochastic subgradient method applied to the
+    problem of minimizing $f(x) = \E[F(x; W)]$ subject to $x \in X$, where
+    $X = \{x \mid \psi(x) \le 0\}$ is compact, converges to stationary
+    points in a particular sense. Here $F$ is simply generalized
+    sub-differentiable (something like Clark). The argument shows that if
+    the iterates $x^k$ have a subsequence $k_s$ converging to some $y$ that is
+    not stationary, then there is a different subsequence of $l_s > k_s$
+    such that $\limsup_s f(x^{l_s}) < f(y)$, because one must make
+    progress in the intervening iterates as they are at non-stationary
+    points. Thus if $X^*$ denotes stationary points, then this set is
+    connected, and the limit points of $f(x^k)$ all belong to the
+    interval $f(X^*)$.}
+}
+
+@article{ErmolievNo03,
+  title={Solution of nonconvex nonsmooth stochastic optimization problems},
+  author={Ermoliev, Yu M and Norkin, VI},
+  journal={Cybernetics and Systems Analysis},
+  volume={39},
+  number={5},
+  pages={701--715},
+  year={2003},
+  publisher={Springer}
 }
 
 @article{ErwayGi09,
@@ -12758,6 +12887,16 @@ Computational Linguistics (HLT/ACL)},
 pages = {771--779},
 }
 
+@inproceedings{Hajek72,
+author = {Jaroslav H\'{a}jek},
+title = {Local asymptotic minimax and admissibility in estimation},
+year = 1972,
+booktitle = {Proceedings of the Sixth Berkeley Symposium on Mathematical
+  Statistics and Probability},
+pages = {175--194},
+}
+
+
 @article{HalevyNoPe09,
 author = {Alon Halevy and Peter Norvig and Fernando Pereira},
 title = {The unreasonable effectiveness of data},
@@ -13137,6 +13276,13 @@ year=     	1966
   year = 	 1999,
   volume =	 34,
   pages =	 {131-149}
+}
+
+@inproceedings{HashimotoDuLi17,
+author = {Tatsunori Hashimoto and John Duchi and Percy Liang},
+year = 2017,
+booktitle = nips30,
+title = {Unsupervised Transformation Learning via Convex Relaxations},
 }
 
 @inproceedings{HashimotoYaDu18,
@@ -15817,6 +15963,13 @@ comment=  	{Interactive decision support system using Pearl's Bayesian
 	   	networks}
 }
 
+@inproceedings{KimDeHoRu17,
+author = {Yoon Kim and Carl Denton and Luong Hoang and Alexander Rush},
+title = {Structured attention networks},
+year = 2017,
+booktitle = iclr17,
+}
+
 @article{KimKiFa14,
   title={Recent developments in robust portfolios with a worst-case approach},
   author={Kim, Jang Ho and Kim, Woo Chang and Fabozzi, Frank J},
@@ -16943,6 +17096,15 @@ comment = { Shows essentially that the gradient of the loss is asymptotically
 sufficient. Need to write more here. },
 }
 
+@inproceedings{LeCam72,
+author = {Lucien {Le Cam}},
+title = {Limits of experiments},
+year = 1972,
+booktitle = {Proceedings of the Sixth Berkeley Symposium on Mathematical
+  Statistics and Probability},
+pages = {245--261},
+}
+
 @article{LeCam73,
 author = {Lucien {Le Cam}},
 title = {Convergence of estimates under dimensionality restrictions},
@@ -17225,6 +17387,13 @@ author = {Erich L. Lehmann and Joseph P. Romano},
 title = {Testing Statistical Hypotheses, Third Edition},
 year = 2005,
 publisher = {Springer},
+}
+
+@article{Lei18,
+  title={Convergence and Concentration of Empirical Measures under Wasserstein Distance in Unbounded Functional Spaces},
+  author={Lei, Jing},
+  journal={arXiv:1804.10556 [math.ST]},
+  year=2018
 }
 
 @article{LemarechalSa97,
@@ -19033,6 +19202,16 @@ booktitle = colt10,
 year = 2010,
 }
 
+@article{Mcshane34,
+  title={Extension of range of functions},
+  author={McShane, Edward James},
+  journal={Bulletin of the American Mathematical Society},
+  volume=40,
+  number=12,
+  pages={837--842},
+  year=1934
+}
+
 @article{Megiddo80
 ,author=   	{N. Megiddo}
 ,title=		{On repeated games with incomplete information played
@@ -19459,17 +19638,6 @@ comment=	{address= Boston/Dordrecht/Lancaster}
   journal={arXiv:1507.00677 [stat.ML]},
   year=2015
 }
-
-@article{MohriRo10,
-author = {Mehryar Mohri and Afshin Rostamizadeh},
-title = {Stability bounds for stationary $\phi$-mixing and $\beta$-mixing
-  processes},
-year = 2010,
-journal = jmlr,
-volume = 11,
-pages = {789--814},
-}
-
 
 @article{Mokkadem88,
 author = {Abdelkader Mokkadem},
@@ -21812,6 +21980,15 @@ year = 2008,
 booktitle = nips21,
 }
 
+@misc{RahimiRe17,
+author = {Ali Rahimi and Benjamin Recht},
+title = {Reflections on Random Kitchen Sinks},
+year = 2017,
+url = {http://www.argmin.net/2017/12/05/kitchen-sinks/},
+note = {Acceptance speach for \emph{Neural Information Processing
+Systems} Test of Time Award},
+}
+
 @article{Raphael99,
 author=   	{C. Raphael},
 title=    	{Automatic Segmentation of Acoustic Musical Signals Using Hidden Markov Models},
@@ -22900,6 +23077,17 @@ journal = {arXiv:1511.05219 [stat.ML]},
 comment = {Uses some simple information theoretic inequalities to bound
   the bias of ``adaptive'' choices of data to release in simple mean
   estimation problems},
+}
+
+@article{Ruszczynski87,
+  title={A linearization method for nonsmooth stochastic programming problems},
+  author={Ruszczy{\'n}ski, Andrzej},
+  journal={Mathematics of Operations Research},
+  volume={12},
+  number={1},
+  pages={32--49},
+  year={1987},
+  publisher={INFORMS}
 }
 
 @article{RuszczynskiSh06,
@@ -24920,6 +25108,15 @@ number = 3,
 pages = {243--258},
 }
 
+@inproceedings{Stein56a,
+author = {Charles Stein},
+title = {Efficient nonparametric testing and estmiation},
+year = 1956,
+booktitle = {Proceedings of the Third Berkeley Symposium on
+Mathematical Statistics and Probability},
+pages = {187--195},
+}
+
 @inproceedings{Stein56,
 author = {Charles Stein},
 title = {Inadmissibility of the Usual Estimator for the Mean of
@@ -25004,14 +25201,6 @@ pages = {225--287},
                   generated by the Gaussian kernel. The log metric
                   entropy depends exponentially in the dimension.}
 }
-
-@inproceedings{SteinwartCh09,
-author = {Ingo Steinwart and Andreas Christmann},
-title = {Fast Learning from Non-i.i.d.\ Observations},
-year = 2009,
-booktitle = nips22,
-}
-
 
 @article{Stern04,
 author = {H.~S.~Stern},
@@ -25120,6 +25309,16 @@ booktitle = nips17,
   year=2012,
   publisher={Springer Science \& Business Media}
 }
+
+@inproceedings{SuCa14,
+  title={A differential equation for modeling Nesterov’s accelerated 
+  	gradient method: Theory and insights},
+  author={Su, Weijie and Boyd, Stephen and Candes, Emmanuel},
+  booktitle=nips27,
+  pages={2510--2518},
+  year={2014}
+}
+
 
 @article{Suchanskiy87
 ,author=        {M. Ye. Suchanskiy}
@@ -25823,14 +26022,6 @@ comment = {
   publisher={JSTOR}
 }
 
-@article{TuBoPaRe17,
-author = {Stephen Tu and Ross Boczar and Andrew Packard and Benjamin Recht},
-title = {Non-Asymptotic Analysis of Robust Control from
-  Coarse-Grained Identification},
-year = 2017,
-journal = {arXiv:1707.04791 [math.OC]},
-}
-
 @inproceedings{TuBoSiSoRe16,
 author = {Stephen Tu and Ross Boczar and Max Simchowitz and Mahdi Soltanolkotabi and Benjamin Recht},
 title = {Low-rank Solutions of Linear Matrix Equations via Procrustes Flow},
@@ -26471,6 +26662,25 @@ year = 2016,
 journal = {arXiv:1605.08285 [stat.ML]},
 }
 
+@article{WangFaLi17,
+  title={Stochastic compositional gradient descent: algorithms for 
+  	minimizing compositions of expected-value functions},
+  author={Wang, Mengdi and Fang, Ethan and Liu, Han},
+  journal=mathproga,
+  volume={161},
+  number={1-2},
+  pages={419--449},
+  year={2017},
+  publisher={Springer}
+}
+
+@inproceedings{WangLiuFa16,
+  title={Accelerating stochastic composition optimization},
+  author={Wang, Mengdi and Liu, Ji and Fang, Ethan},
+  booktitle=nips29,
+  pages={1714--1722},
+  year={2016}
+}
 
 @article{Wang13,
   title={The L1 penalized LAD estimator for high dimensional linear regression},
@@ -26786,6 +26996,16 @@ Institute}
   author={Whitt, Ward},
   year=2002,
   publisher={Springer Science \& Business Media}
+}
+
+@article{WibisonoWiJo16,
+author = {Andre Wibisono and Ashia Wilson and Michael I. Jordan},
+title = {A variational perspective on accelerated methods in optimization},
+year = 2016,
+journal = pnas,
+volume = 113,
+number = 47,
+pages = {7351--7358},
 }
 
 @article{WidrowGuMa73
@@ -28026,3 +28246,69 @@ booktitle = {Proceedings of the 22nd International Conference on Computational
   publisher={SIAM}
 }
 
+@article{HuNiSaSu18,
+  author = {Weihua Hu and Gang Niu and Issei Sato and Masashi Sugiayma},
+  title = {Does Distributionally Robust Supervised Learning Give Robust Classifiers?},
+  year = 2018,
+  journal = {arXiv:1611.02041v4 [stat.ML]},
+  url = {https://arxiv.org/abs/1611.02041v4},
+}
+
+@InProceedings{RaZhLoLLi16,
+    author = {P. Rajpurkar and J. Zhang and K. Lopyrev and P. Liang},
+    title = {SQuAD: 100,000+ Questions for Machine Comprehension of Text},
+    booktitle = {Empirical Methods in Natural Language Processing (EMNLP)},
+    year = 2016,
+}
+
+@InProceedings{CeDiAgLoLu17,
+    author = {Daniel Cer and Mona Diab and Eneko Agirre and Inigo Lopez-Gazpio and Lucia Specia},
+    title = {SemEval-2017 Task 1: Semantic Textual Similarity Multilingual and Cross-Lingual Focused Evaluation},
+    booktitle = {Proceedings of the 10th International Workshop on Semantic Evaluation (SemEval 2017)},
+    year = 2017,
+}
+
+@article{BaSe16,
+  author = {S. Barocas and A. D. Selbst},
+  journal = {104 California Law Review},
+  pages = {671--732},
+  title = {Big Data's Disparate Impact},
+  volume = {3},
+  year = {2016},
+}
+
+@inproceedings{Ta17,
+  author = {R. Tatman},
+  booktitle = {First Workshop on Ethics in Natural Langauge Processing},
+  pages = {53--59},
+  title = {Gender and Dialect Bias in YouTube’s Automatic Captions},
+  volume = {1},
+  year = {2017},
+}
+
+@inproceedings{BlGrO16,
+  author = {S. L. Blodgett and L. Green and B. O'Connor},
+  booktitle = {Empirical Methods in Natural Language Processing (EMNLP)},
+  pages = {1119--1130},
+  title = {Demographic Dialectal Variation in Social Media: A Case Study of African-American English},
+  year = {2016},
+}
+
+@article{FoGu15,
+  title={On the rate of convergence in Wasserstein distance of the empirical measure},
+  author={Nicolas Fournier and Arnaud Guillin },
+  journal={Probability Theory and Related Fields},
+  volume={162},
+  number={3-4},
+  pages={707--738},
+  year={2015},
+  publisher={Springer}
+}
+
+@article{chouldechova2017,
+  author = {A. Chouldechova},
+  journal = {Big Data},
+  pages = {153--163},
+  title = {A study of bias in recidivism prediciton instruments},
+  year = {2017},
+}
