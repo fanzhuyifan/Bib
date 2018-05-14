@@ -133,6 +133,8 @@ on Artificial Intelligence and Statistics}}
 		  Discrete Algorithms (SODA)}}
 @string{soda91 = {Proceedings of the Second Annual ACM-SIAM Symposium on
 		  Discrete Algorithms (SODA)}}
+@string{soda10 = {Proceedings of the Twenty-First ACM-SIAM Symposium on
+		  Discrete Algorithms (SODA)}}
 @string{soda13 = {Proceedings of the Twenty-Fourth ACM-SIAM Symposium on
 		  Discrete Algorithms (SODA)}}
 @string{soda14 = {Proceedings of the Twenty-Fifth ACM-SIAM Symposium on
@@ -355,6 +357,7 @@ on Artificial Intelligence and Statistics}}
 @string{icml16 = {Proceedings of the 33rd International Conference on Machine Learning}}
 @string{icml17 = {Proceedings of the 34th International Conference on Machine Learning}}
 
+@string{iclr17 = {Proceedings of the Fifth International Conference on Learning Representations}}
 @string{iclr18 = {Proceedings of the Sixth International Conference on Learning Representations}}
 
 @string{allerton10 = {The 48th Allerton Conference on Communication, Control,
@@ -4100,6 +4103,17 @@ comment = {Shows a type of isoperimetric inequality: a box is in
   $k$-cover), we have $\vol(K)^k \le \prod_{A \in \mc{C}} \vol(K_A)$. },
 }
 
+@article{BolteDaLeSh07,
+author = {J\'{e}r\^{o}me Bolte and Aris Daniilidis and Adrian S. Lewis
+  and Masahiro Shiota},
+title = {Clarke subgradients of stratifiable functions},
+journal = siopt,
+volume = 18,
+number = 2,
+pages = {556--572},
+year = 2007,
+}
+
 @article{BolteDaLeMa09,
 author = {J\'{e}r\^{o}me Bolte and Aris Daniilidis and Olivier Ley and
   Laurent Mazet},
@@ -4486,7 +4500,24 @@ volume = 3,
 number = 1,
 }
 
-@Book{BoydVa04,
+@book{BoydElFeBa94,
+author = {Stephen Boyd and Laurent {El Ghaoui} and
+Eric Feron and V. Balakrishnan},
+title = {Linear Matrix Inequalities in System and Control Theory},
+series = {Studies in Applied Mathematics},
+volume = 15,
+publisher = {SIAM},
+year = 1994,
+}
+
+@book{BoydBa91,
+author = {Stephen Boyd and Clark Barratt},
+title = {Linear Controller Design: Limits of Performance},
+year = 1991,
+publisher = {Prentice-Hall},
+}
+
+@book{BoydVa04,
   author =	 {Stephen Boyd and Lieven Vandenberghe},
   title = 	 {Convex Optimization},
   publisher = 	 {Cambridge University Press},
@@ -7491,20 +7522,6 @@ comment=  	{Justification of maximum-entropy via proper scoring rules for
   publisher={SIAM}
 }
 
-@article{DamekBe17,
-  title={Proximally Guided Stochastic Subgradient Method for Nonsmooth, Nonconvex Problems},
-  author={Davis, Damek and Grimmer, Benjamin},
-  journal={arXiv:1707.03505 [math.OC]},
-  year={2017}
-}
-
-@article{DamekDmShJa18,
-  title={Stochastic subgradient method converges on tame functions},
-  author={Davis, Damek and Drusvyatskiy, Dmitriy and Kakade, Sham and Lee, Jason D},
-  journal={arXiv:1804.07795 [math.OC]},
-  year={2018}
-}
-
 @inproceedings{DaniHaKa07,
 author = {Varsha Dani and Thomas Hayes and Sham Kakade},
 title = {The price of bandit information in online optimization},
@@ -7762,11 +7779,41 @@ volume = 8,
 pages = {101--111},
 }
 
+@article{DavisDr18a,
+author = {Damek Davis and Dmitriy Drusvyatskiy},
+title = {Stochastic model-based minimization of weakly convex
+functions},
+year = 2018,
+journal = {arXiv:1803.06523 [math.OC]},
+}
+
+@article{DavisDr18,
+author = {Damek Davis and Dmitriy Drusvyatskiy},
+title = {Stochastic subgradient method converges at the rate
+  ${O}(k^{−1/4})$ on weakly convex functions},
+year = 2018,
+journal = {arXiv:1802.02988 [math.OC]},
+}
+
+@article{DavisDrKaLe18,
+  title={Stochastic subgradient method converges on tame functions},
+  author={Davis, Damek and Drusvyatskiy, Dmitriy and Kakade, Sham and Lee, Jason D},
+  journal={arXiv:1804.07795 [math.OC]},
+  year={2018}
+}
+
 @article{DavisDrPa17,
 author = {Damek Davis and Dmitriy Drusvyatskiy and Courtney Paquette},
 title = {The nonsmooth landscape of phase retrieval},
 year = 2017,
 journal = {arXiv:1711.03247 [math.OC]},
+}
+
+@article{DavisGr17,
+  title={Proximally Guided Stochastic Subgradient Method for Nonsmooth, Nonconvex Problems},
+  author={Davis, Damek and Grimmer, Benjamin},
+  journal={arXiv:1707.03505 [math.OC]},
+  year={2017}
 }
 
 @article{Davisson65,
@@ -8905,7 +8952,7 @@ year = {2005}
 }
 
 @article{DrusvyatskiyIoLe16,
-author = {Dmitry Drusvyatskiy and Alexander Ioffe and Adrian Lewis},
+author = {Dmitriy Drusvyatskiy and Alexander Ioffe and Adrian Lewis},
 title = {Nonsmooth optimization using {T}aylor-like models: error bounds,
   convergence, and termination criteria},
 year = 2016,
@@ -8914,7 +8961,7 @@ url = {https://arxiv.org/abs/1610.03446},
 }
 
 @article{DrusvyatskiyLe11,
-author = {Dmitry Drusvyatskiy and Adrian Lewis},
+author = {Dmitriy Drusvyatskiy and Adrian Lewis},
 title = {Generic nondegeneracy in convex optimization},
 year = 2011,
 journal = {Proceedings of the American Mathematical Society},
@@ -8924,7 +8971,7 @@ pages = {2519–-2527},
 }
 
 @article{DrusvyatskiyLe13,
-author = {Dmitry Drusvyatskiy and Adrian Lewis},
+author = {Dmitriy Drusvyatskiy and Adrian Lewis},
 title = {Tilt Stability, Uniform Quadratic Growth, and Strong Metric 
   Regularity of the Subdifferential},
 year = 2013,
@@ -8937,15 +8984,24 @@ pages = {256--267},
 @article{DrusvyatskiyLe16,
   title={Error bounds, quadratic growth, and linear convergence of
    proximal methods},
-  author={Dmitry Drusvyatskiy and Adrian Lewis},
+  author={Dmitriy Drusvyatskiy and Adrian Lewis},
   journal = {Mathematics of Operations Research},
   volume = {To appear},
   year={2018},
   comment = {journal={arXiv:1602.06661 [math.OC]}},
 }
 
+@article{Drusvyatskiy18,
+author = {Dmitriy Drusvyatskiy},
+title = {The proximal point method revisited},
+journal = {SIAG/OPT Views and News},
+year = 2018,
+volume=  {to appear},
+url = {http://www.arXiv.org/abs/1712.06038},
+}
+
 @article{DrusvyatskiyPa16,
-author = {Dmitry Drusvyatskiy and Caroline Paquette},
+author = {Dmitriy Drusvyatskiy and Caroline Paquette},
 title = {Efficiency of minimizing compositions of convex functions and smooth maps},
 journal = {arXiv:1605.00125 [math.OC]},
 year = 2016,
@@ -9317,6 +9373,16 @@ year = 2016,
 journal = {arXiv:1603.00126 [math.ST]},
 }
 
+@article{DuchiKhRu17,
+author = {John C.\ Duchi and Khashayar Khosravi and Feng Ruan},
+title = {Multiclass classification, information, divergence,
+   and surrogate risk},
+year = 2017,
+journal = aos,
+volume = {to appear},
+note = {arXiv:1603.00126 [math.ST]},
+}
+
 @unpublished{DuchiKhRu17s,
 author = {John C.\ Duchi and Khashayar Khosravi and Feng Ruan},
 title = {Supplement to ``{I}nformation Measures, Experiments,
@@ -9407,7 +9473,7 @@ journal = {arXiv:1703.08570 [math.OC]},
 
 @article{DuchiRu18,
 author = {John C. Duchi and Feng Ruan},
-title = {An extension of the constrained risk inequality of Brown and Low},
+title = {A constrained risk inequality for general losses},
 year = 2018,
 journal = {arXiv:1804.08116 [stat.TH]},
 }
@@ -13223,6 +13289,13 @@ year=     	1966
   pages =	 {131-149}
 }
 
+@inproceedings{HashimotoDuLi17,
+author = {Tatsunori Hashimoto and John Duchi and Percy Liang},
+year = 2017,
+booktitle = nips30,
+title = {Unsupervised Transformation Learning via Convex Relaxations},
+}
+
 @inproceedings{HashimotoYaDu18,
 author = {Tatsunori Hashimoto and Steve Yadlowsky and John Duchi},
 year = 2018,
@@ -14573,6 +14646,23 @@ number = 8,
 doi = {10.1371/journal.pmed.0020124},
 }
 
+@article{Ioffe08,
+author = {Aleksandr D. Ioffe},
+title = {Critical values of set-valued maps with
+  stratifiable graphs. Extensions of {S}ard and {S}male-{S}ard theorems},
+year = 2008,
+journal = {Proceedings of the American Mathematical Society},
+volume = 136,
+number = 9,
+pages = {3111--3119},
+}
+
+@book{Ioffe17,
+author = {Aleksandr D. Ioffe},
+title = {Variational Analysis of Regular Mappings},
+year = 2017,
+publisher = {Springer},
+}
 
 @article{IrelandKu68,
 author=   	{Ireland, C.T. and S. Kullback},
@@ -15899,6 +15989,13 @@ school=   	{University of California, Los Angeles},
 year=     	1983,
 comment=  	{Interactive decision support system using Pearl's Bayesian
 	   	networks}
+}
+
+@inproceedings{KimDeHoRu17,
+author = {Yoon Kim and Carl Denton and Luong Hoang and Alexander Rush},
+title = {Structured attention networks},
+year = 2017,
+booktitle = iclr17,
 }
 
 @article{KimKiFa14,
@@ -19117,6 +19214,15 @@ comment = {Shows a number of bounds based on minimizing empirical risk
  plus standard error of loss. Cute ideas.},
 }
 
+@article{MaWaChCh17,
+author = {Cong Ma and Kaizheng Wang and Yuejie Chi and Yuxin Chen},
+title = {Implicit Regularization in Nonconvex Statistical Estimation:
+Gradient Descent Converges Linearly for Phase Retrieval,
+Matrix Completion and Blind Deconvolution},
+year = 2017,
+journal = {arXiv:1711.10467 [cs.LG]},
+}
+
 @inproceedings{McMahanSt10,
 author = {Brendan McMahan and Matthew Streeter},
 title = {Adaptive Bound Optimization for Online Convex Optimization},
@@ -19397,6 +19503,13 @@ title = {Markov Chains and Stochastic Stability},
 year = 2009,
 edition = {{S}econd},
 publisher = {Cambridge University Press},
+}
+
+@inproceedings{MicciancioVo10,
+author = {Daniele Micciancio and Panagiotis Voulgaris},
+title = {Faster exponential time algorithms for the shortest vector problem},
+year = 2010,
+booktitle = soda10,
 }
 
 @incollection{Michalski86,
@@ -19932,6 +20045,18 @@ journal = {Statistical Science},
 volume = 27,
 number = 4,
 pages = {538--557},
+}
+
+@article{Neidinger10,
+author = {Richard D. Neidinger},
+title = {Introduction to Automatic
+Differentiation and {MATLAB}
+Object-Oriented Programming},
+year = 2010,
+journal = {SIAM Review},
+volume = 52,
+number = 3,
+pages = {545--563},
 }
 
 @article{Nemirovski04,
@@ -21881,6 +22006,15 @@ title = {Weighted sums of random kitchen sinks: replacing minimization
   with randomization in learning},
 year = 2008,
 booktitle = nips21,
+}
+
+@misc{RahimiRe17,
+author = {Ali Rahimi and Benjamin Recht},
+title = {Reflections on Random Kitchen Sinks},
+year = 2017,
+url = {http://www.argmin.net/2017/12/05/kitchen-sinks/},
+note = {Acceptance speach for \emph{Neural Information Processing
+Systems} Test of Time Award},
 }
 
 @article{Raphael99,
@@ -25464,6 +25598,54 @@ pages=		{251--256},
 booktitle=	{Proceedings of the European Symposium on Artificial Neural Networks}
 }
 
+@misc{TensorFlow15,
+title={ {TensorFlow}: Large-Scale Machine Learning on Heterogeneous Systems},
+url={https://www.tensorflow.org/},
+note={Software available from tensorflow.org},
+author={
+    Mart\'{\i}n~Abadi and
+    Ashish~Agarwal and
+    Paul~Barham and
+    Eugene~Brevdo and
+    Zhifeng~Chen and
+    Craig~Citro and
+    Greg~S.~Corrado and
+    Andy~Davis and
+    Jeffrey~Dean and
+    Matthieu~Devin and
+    Sanjay~Ghemawat and
+    Ian~Goodfellow and
+    Andrew~Harp and
+    Geoffrey~Irving and
+    Michael~Isard and
+    Yangqing Jia and
+    Rafal~Jozefowicz and
+    Lukasz~Kaiser and
+    Manjunath~Kudlur and
+    Josh~Levenberg and
+    Dandelion~Man\'{e} and
+    Rajat~Monga and
+    Sherry~Moore and
+    Derek~Murray and
+    Chris~Olah and
+    Mike~Schuster and
+    Jonathon~Shlens and
+    Benoit~Steiner and
+    Ilya~Sutskever and
+    Kunal~Talwar and
+    Paul~Tucker and
+    Vincent~Vanhoucke and
+    Vijay~Vasudevan and
+    Fernanda~Vi\'{e}gas and
+    Oriol~Vinyals and
+    Pete~Warden and
+    Martin~Wattenberg and
+    Martin~Wicke and
+    Yuan~Yu and
+    Xiaoqiang~Zheng},
+  year={2015},
+}
+
 @article{TenenbaumDeLa00,
 	author = "J.B. Tenenbaum and V. De {S}ilva and J. C. Langford",
 	title = "A global geometric framework for
@@ -26844,6 +27026,16 @@ Institute}
   publisher={Springer Science \& Business Media}
 }
 
+@article{WibisonoWiJo16,
+author = {Andre Wibisono and Ashia Wilson and Michael I. Jordan},
+title = {A variational perspective on accelerated methods in optimization},
+year = 2016,
+journal = pnas,
+volume = 113,
+number = 47,
+pages = {7351--7358},
+}
+
 @article{WidrowGuMa73
 ,author=	{Bernard Widrow and Narendra K. Gupta and Sidhartha Maitra}
 ,title=		{Punish/reward: Learning with a critic in adaptive
@@ -28155,3 +28347,4 @@ booktitle = {Proceedings of the 22nd International Conference on Computational
   title = {Glove: Global vectors for word representation},
   year = {2014},
 }
+
