@@ -357,6 +357,7 @@ on Artificial Intelligence and Statistics}}
 @string{icml16 = {Proceedings of the 33rd International Conference on Machine Learning}}
 @string{icml17 = {Proceedings of the 34th International Conference on Machine Learning}}
 
+@string{iclr15 = {Proceedings of the Third International Conference on Learning Representations}}
 @string{iclr17 = {Proceedings of the Fifth International Conference on Learning Representations}}
 @string{iclr18 = {Proceedings of the Sixth International Conference on Learning Representations}}
 
@@ -1006,7 +1007,7 @@ comment = {Surveys results on SOCPs, including a variety of problems
 @article{AllenYu15,
   title={Even Faster Accelerated Coordinate Descent Using Non-Uniform Sampling},
   author={Allen-Zhu, Zeyuan and Yuan, Yang},
-  journal={arXiv preprint arXiv:1512.09103},
+  journal={arXiv:1512.09103 [math.OC]},
   year=2015
 }
 
@@ -3431,12 +3432,15 @@ journal = siopt,
   publisher={SIAM}
 }
 
-@article{BertsimasGuKa13,
+@article{BertsimasGuKa18,
   title={Data-driven robust optimization},
   author={Bertsimas, Dimitris and Gupta, Vishal and Kallus, Nathan},
-  journal={arXiv:1401.0212 [math.OC]},
+  journal=mathproga,
+  volume = 167,
+  number = 2,
+  pages = {235--292},
   url = {http://arxiv.org/abs/1401.0212},
-  year=2013
+  year=2018,
 }
 
 @article{BertsimasGuKa14,
@@ -3770,7 +3774,7 @@ volume = 11,
 	nonconvex optimization},
 	author={Blanchet, Jose and Cartis, Coralia and Menickelly, Matt and 
 	Scheinberg, Katya},
-	journal={arXiv preprint arXiv:1609.07428},
+	journal={arXiv:1609.07428 [math.OC]},
 	year={2016}
 }
 
@@ -7322,14 +7326,14 @@ note =          {to appear}
 @article{CsibaQuRi15,
   title={Stochastic dual coordinate ascent with adaptive probabilities},
   author={Csiba, Dominik and Qu, Zheng and Richt{\'a}rik, Peter},
-  journal={arXiv preprint arXiv:1502.08053},
+  journal={arXiv:1502.08053 [math.OC]},
   year=2015
 }
 
 @article{CsibaRi16,
   title={Importance Sampling for Minibatches},
   author={Csiba, Dominik and Richt{\'a}rik, Peter},
-  journal={arXiv preprint arXiv:1602.02283},
+  journal={arXiv:1602.02283 [cs.LG]},
   year=2016
 }
 
@@ -9694,7 +9698,7 @@ year = 2002,
 @article{DuffyWi15,
   title={Estimating large deviation rate functions},
   author={Duffy, Ken R and Williamson, Brendan D},
-  journal={arXiv preprint arXiv:1511.02295},
+  journal={arXiv:1511.02295 [math.PR]},
   year=2015,
   comment={Gives large deviation rates for Sanov's theorem for plug-in
            estimators for the large deviation rate functional}
@@ -10328,11 +10332,12 @@ pages = {72--83},
   year={2009},
 }
 
-@article{EsfahaniKu15,
+@article{EsfahaniKu17,
   title={Data-driven distributionally robust optimization using the Wasserstein metric: Performance guarantees and tractable reformulations},
   author={Esfahani, Peyman Mohajerin and Kuhn, Daniel},
-  journal={arXiv preprint arXiv:1505.05116},
-  year=2015,
+  journal=mathproga,
+  year = 2017,
+  volume = {to appear},
   comment={Gives convex reformulations of DRO problems based on
                   Wasserstein distances for certain loss functions
                   (concave in uncertainty parameter, certain two-stage
@@ -10507,7 +10512,7 @@ volume=   	1
 @article{FercoqRi13,
   title={Smooth minimization of nonsmooth functions with parallel coordinate descent methods},
   author={Fercoq, Olivier and Richt{\'a}rik, Peter},
-  journal={arXiv preprint arXiv:1309.5885},
+  journal={arXiv:1309.5885 [cs.DC]},
   year=2013
 }
 
@@ -11710,7 +11715,7 @@ comment=  	{Argues for deriving probability density of future observations
 @article{GeJiZh17,
   title={No Spurious Local Minima in Nonconvex Low Rank Problems: A Unified Geometric Analysis},
   author={Ge, Rong and Jin, Chi and Zheng, Yi},
-  journal={arXiv preprint arXiv:1704.00708},
+  journal={arXiv:1704.00708 [cs.LG]},
   year={2017}
 }
 
@@ -12351,7 +12356,7 @@ pages=    	{108--141}
 
 @inproceedings{GoodfellowShSz15,
 	Author = {Goodfellow, Ian J and Shlens, Jonathon and Szegedy, Christian},
-	Booktitle = {International Conference on Learning Representations},
+	Booktitle = iclr15,
 	Title = {Explaining and harnessing adversarial examples},
 	Year = 2015
 	}
@@ -12480,7 +12485,7 @@ pages = {21--57},
 @article{GowerRi16,
   title={Randomized quasi-Newton updates are linearly convergent matrix inversion algorithms},
   author={Gower, Robert M and Richt{\'a}rik, Peter},
-  journal={arXiv preprint arXiv:1602.01768},
+  journal={arXiv:1602.01768 [math.NA]},
   year=2016
 }
 
@@ -15112,8 +15117,8 @@ publisher = {PWS Publishing},
 
 @article{JiaShDoKaLoGiGuDa14,
   Author = {Jia, Yangqing and Shelhamer, Evan and Donahue, Jeff and Karayev, Sergey and Long, Jonathan and Girshick, Ross and Guadarrama, Sergio and Darrell, Trevor},
-  Journal = {arXiv preprint arXiv:1408.5093},
-  Title = {Caffe: Convolutional Architecture for Fast Feature Embedding},
+  Journal = {arXiv:1408.5093},
+  Title = {Caffe: Convolutional Architecture for Fast Feature Embedding [cs.CV]},
   Year = 2014
 }
 
@@ -15517,6 +15522,15 @@ year = 1997,
 publisher = {Springer},
 comment = {Brutal book on everything in probability.},
 }
+
+@article{KalraPa16,
+	Author = {Kalra, Nidhi and Paddock, Susan M},
+	Journal = {Transportation Research Part A: Policy and Practice},
+	Pages = {182--193},
+	Publisher = {Elsevier},
+	Title = {Driving to safety: How many miles of driving would it take to demonstrate autonomous vehicle reliability?},
+	Volume = 94,
+	Year = 2016}
 
 @inproceedings{KamathAn12,
 author = {Sudeep Kamath and Venkat Anantharam},
@@ -16420,7 +16434,7 @@ unpublished{Kleinberg9?
 @article{KleinbergLiYu18,
   title={An Alternative View: When Does SGD Escape Local Minima?},
   author={Kleinberg, Robert and Li, Yuanzhi and Yuan, Yang},
-  journal={arXiv preprint arXiv:1802.06175},
+  journal={arXiv:1802.06175 [cs.LG]},
   year={2018}
 }
 
@@ -16564,6 +16578,13 @@ comment=  	{Chapter on State-Identification and Fault-Detection
 ,booktitle=     ml96
 ,year=          1996
 ,pages=         {275--283}
+}
+
+@inproceedings{KohLi17,
+author = {Pang Wei Koh and Percy Liang},
+title = {Understanding black-box predictions via influence functions},
+year = 2017,
+booktitle = icml17,
 }
 
 @Article{Kolaczyk96,
@@ -17404,7 +17425,7 @@ comment = {Huge reference book containing tons of concentration facts, etc.
 @article{LeeRa17,
   title={Minimax Statistical Learning and Domain Adaptation with Wasserstein Distances},
   author={Lee, Jaeho and Raginsky, Maxim},
-  journal={arXiv preprint arXiv:1705.07815},
+  journal={arXiv:1705.07815 [cs.LG]},
   year=2017
 }
 
@@ -20742,10 +20763,11 @@ year=		1987
   publisher={Elsevier}
 }
 
-@article{NutiniScLaFrKo15,
+@inproceedings{NutiniScLaFrKo15,
   title={Coordinate descent converges faster with the Gauss-Southwell rule than random selection},
   author={Nutini, Julie and Schmidt, Mark and Laradji, Issam H and Friedlander, Michael and Koepke, Hoyt},
-  journal={arXiv preprint arXiv:1506.00552},
+  booktitle = icml15,
+  url={http://arXiv.org/abs/1506.00552},
   year=2015
 }
 
@@ -21363,7 +21385,6 @@ year = 		1989
   number={5},
   pages={947--1012},
   year={2016},
-  publisher={Wiley Online Library}
 }
 
 @article{PetersWa78a,
@@ -22523,7 +22544,7 @@ url = {http://arxiv.org/abs/1212.0873},
 @article{RiquelmeJoZh16,
   title={Online Active Linear Regression via Thresholding},
   author={Carlos Riquelme and Ramesh Johari and Baosen Zhang},
-  journal={arXiv preprint arXiv:1602.02845},
+  journal={arXiv:1602.02845 [stat.ML]},
   year={2016}
 }
 
@@ -24576,13 +24597,6 @@ comment = {Use bandit algorithms to optimize maximum loss. Propose
                   http://arxiv.org/pdf/1602.01690}
 }
 
-@article{ShalevZh12,
-  title={Proximal stochastic dual coordinate ascent},
-  author={Shalev-Shwartz, Shai and Zhang, Tong},
-  journal={arXiv preprint arXiv:1211.2717},
-  year=2012
-}
-
 @article{ShalevZh13,
 title = {Stochastic dual coordinate ascent methods
 for regularized loss minimization},
@@ -25437,6 +25451,13 @@ Mathematical Statistics and Probability},
 pages = {197--206},
 }
 
+@inproceedings{SteinhardtKoLi17,
+author = {Jacob Steinhardt and Pang Wei Koh and Percy Liang},
+title = {Certified Defenses for Data Poisoning Attacks},
+year = 2017,
+booktitle = nips30,
+}
+
 @inproceedings{SteinhardtDu15,
 author = {Jacob Steinhardt and John C. Duchi},
 title = {Minimax rates for memory-bounded sparse linear regression},
@@ -25732,7 +25753,7 @@ note = {Preprint available at arXiv:math/970123 [math.MG]},
                   Goodfellow, Ian and Fergus, Rob},
   title = {Intriguing properties of neural networks},
   year = 2013,
-  journal = {arXiv preprint arXiv:1312.6199}
+  journal = {arXiv:1312.6199 [cs.CV]}
 }
 
 @inproceedings{TakacBiRiSr13,
@@ -28302,6 +28323,15 @@ year = 2008,
   pages = 	 {1538-1579}
 }
 
+@article{ZhaoHuPeLaLe18,
+	Author = {Zhao, Ding and Huang, Xianan and Peng, Huei and Lam, Henry and LeBlanc, David J},
+	Journal = {IEEE Transactions on Intelligent Transportation Systems},
+	Number = {3},
+	Pages = {733--744},
+	Publisher = {IEEE},
+	Title = {Accelerated evaluation of automated vehicles in car-following maneuvers},
+	Volume = {19},
+	Year = {2018}}
 
 @techreport{ZhaoRoYu06,
 author = {P. Zhao and G. Rocha and B. Yu},
@@ -28457,9 +28487,9 @@ booktitle = nips29,
 }
 
 @article{ZhuLa15,
-  title={Quantized Nonparametric Estimation},
+  title={Quantized Nonparametric Estimation over Sobolev Ellipsoids},
   author={Zhu, Yuancheng and Lafferty, John},
-  journal={arXiv preprint arXiv:1503.07368},
+  journal={arXiv:1503.07368 [math.ST]},
   year=2015
 }
 

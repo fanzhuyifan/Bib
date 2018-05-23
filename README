@@ -1,0 +1,71 @@
+Welcome to John's bibliography file (begun from a seed of Rob Schapire
+and Yoram Singer). Please be gentle when making changes to the
+bibliography file, as it has been built for about 12 years by hand,
+and it only takes a few tweaks to make it less useful.
+
+This bib.bib file is very convenient, as you can simply soft-link it
+into whatever project you are working on, and then you do not have to
+maintain multiple bibliography files. The aggressively precise
+formatting also means that citations are simpler within the file, and
+easier to find. As a corollary to this, please *use* this bib file--it
+is convenient! Do not start your own ones!
+
+*** Entry format ***
+
+Entries are in alphabetical order by first author's last name, and
+each has a key given by first author's full last name, then first two
+initials of each additional author, followed by the 2-digit year.
+As a typical example, here is
+
+@article{DuchiBaWa12,
+author = {John C. Duchi and Peter L. Bartlett and Martin J. Wainwright},
+title = {Randomized Smoothing for Stochastic Optimization},
+year = 2012,
+journal = siopt,
+volume = 22,
+number = 2,
+pages = {674--701},
+}
+
+Note that this has an abbreviated journal. This is because there are
+strings at the top of the file to allow consistent formatting. Please use those
+whenever possible; e.g., NIPS should be
+
+booktitle = nips30
+
+where the last two digits indicate which NIPS it is.
+
+*** Formatting instructions ***
+
+When entering things from the arXiv, use the format
+
+@article{DuchiGlNa16,
+  title={Statistics of Robust Optimization: A Generalized Empirical
+    Likelihood Approach},
+  author={John C. Duchi and Peter W. Glynn and Hongseok Namkoong},
+  year=2016,
+  journal={arXiv:1610.03425 [stat.ML]},
+}
+
+Note that you should *never* use
+
+journal = {arXiv preprint arXiv:1610.03425}
+
+as that does not actually reflect arXiv's desired citation style. You
+should include the subject area.  Relatedly, do not simply download
+Google's citations, as they are typically wrong and have bad capitalization,
+etc.
+
+*** Comments and Common Errors ***
+
+In the title field, any letters that should be capitalized must be
+surrounded by brackets, i.e.
+
+title = {Some cool things called {M}arkov chains}
+
+rather than
+
+title = {Some cool things called Markov chains}
+
+as latex will lower-case Markov in the second example.
+
