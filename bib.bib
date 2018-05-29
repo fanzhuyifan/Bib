@@ -383,6 +383,7 @@ on Artificial Intelligence and Statistics}}
 @string{wiley=	{John Wiley \& Sons}}
 @string{cvpr = "Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition"}
 @string{iccv = "Proceedings of the International Conference on Computer Vision"}
+@string{iccv = "Proceedings of the European Conference on Computer Vision"}
 @string{siopt = {SIAM Journal on Optimization}}
 @string{jota = {Journal of Optimization Theory and Applications}}
 
@@ -3577,6 +3578,21 @@ year=		2003
   organization={ACM}
 }
 
+@article{BickelHaOC75,
+author = {Peter J. Bickel and Eugene A. Hammel J. William O'Connell},
+title = {Sex Bias in Graduate Admissions: Data from {B}erkeley},
+journal = {Science},
+year = 1975,
+volume = {187},
+number = 4175,
+pages = {398--404},
+comment = {Women are admitted to Berkeley in lower proportion to men,
+  but it seems that the reason for this is that women apply to more
+  competitive departments than do the men, and in most of these,
+  the women are more likely to be admitted than the men. A fun example
+  of Simpson's Paradox at work.},
+}
+
 @book{BickelKlRiWe98,
 author = {Peter Bickel and C. A. J. Klaassen and Yaacov Ritov and Jon Wellner},
 title = {Efficient and Adaptive Estimation for Semiparametric Models},
@@ -3838,7 +3854,7 @@ journal = {arXiv:1604.01446 [math.PR]},
 url = {https://arxiv.org/abs/1604.01446},
 }
 
-@inproceedings{Blitzer06,
+@inproceedings{BlitzerMcPe06,
   title={Domain adaptation with structural correspondence learning},
   author={Blitzer, John and McDonald, Ryan and Pereira, Fernando},
   booktitle={Proceedings of the 2006 conference on empirical methods in natural language processing},
@@ -6126,6 +6142,18 @@ booktitle = {Conference on Information and Knowledge Management},
    year = {2003},
    volume = {15},
    booktitle = {Advances in Neural Information Processing Systems}
+}
+
+@article{CharigWePaWi86,
+author = {C. R. Charig and D. R. Webb and S. R. Payne and J. E. Wickham},
+title = {Comparison of treatment of renal calculi by open surgery,
+                  percutaneous nephrolithotomy, and extracorporeal
+                  shockwave lithotripsy},
+year = 1986,
+journal = {British Medical Journal (Clinical Research)},
+volume = 292,
+number = 6524,
+pages = {879--882},
 }
 
 @inproceedings{Charikar02,
@@ -8427,6 +8455,15 @@ year = 2009,
 booktitle = cvpr,
 }
 
+@article{DenkerGaGrHeHoHuJaBaGu88,
+author = {John S. Denker and W. R. Gardner and Hans Peter Graf and
+  Donnie Henderson and R. E. Howard and W. Hubbard and L. D. Jackel
+  and Henry S. Baird and Isabelle Guyon},
+title = {Neural Network Recognizer for Hand-Written Zip Code Digits},
+booktitle = nips1,
+year = 1988,
+}
+
 @article{Dennis84,
 author=   	{Dennis, J.E., Jr.},
 title=    	{A User's Guide to Nonlinear Optimization Algorithms},
@@ -8927,6 +8964,12 @@ comment = {Classical results on generalized (sub)gradient
   we must have convergence of $f(x_k)$.)},
 }
 
+@inproceedings{DosovitskiyBr16,
+author = {Alexey Dosovitskiy and Thomas Brox},
+title = {Generating images with perceptual similarity metrics based on deep networks},
+year = 2016,
+booktitle = nips29,
+}
 
 @Book{Doukhan94,
   author =	 {Paul Doukhan},
@@ -11727,11 +11770,12 @@ booktitle = {Proceedings of the 24th Conference Conference on
   Uncertainty in Artificial Intelligence (UAI)},
 }
 
-@article{GaninLe14,
+@article{GaninLe15,
   title={Unsupervised domain adaptation by backpropagation},
   author={Ganin, Yaroslav and Lempitsky, Victor},
-  journal={arXiv preprint arXiv:1409.7495},
-  year=2014
+  journal=icml15,
+  year=201,
+  pages = {1180--1189},
   }
 
 @inproceedings{GantaKaSm08,
@@ -15464,6 +15508,14 @@ year=		1984,
 pages=		{284--299}
 }
 
+@inproceedings{JohnsonAlFe16,
+author = {Justin Johnson and Alexandre Alahi and Li Fei-Fei},
+title = {Perceptual losses for real-time style transfer and super-resolution},
+booktitle = eccv,
+year = 2016,
+pages = {694--711},
+}
+
 @article{JohnsonLi84,
   author = {W. Johnson and J. Lindenstrauss},
   journal = {Contemporary Mathematics},
@@ -16950,7 +17002,7 @@ journal = {arXiv:0906.4835 [math.OC]},
 }
 @inproceedings{KrizhevskySuHi12,
 author = {Alex Krizhevsky and Ilya Sutskever and Geoffrey Hinton},
-title = {ImageNet Classification with Deep Convolutional Neural Networks},
+title = {Image{N}et Classification with Deep Convolutional Neural Networks},
 year = 2012,
 booktitle = nips25,
 }
@@ -17555,12 +17607,16 @@ pages = {9--50},
 publisher = {Springer-Verlag},
 }
 
-@article{LeCunBoBeHa98
-,author=         {Yann LeCun and L\'eon Bottou and Yoshua Bengio and
-                  Patrick Haffner}
-,title=          {Gradient-Based Learning Applied to Document
-                  Recognition}
-,year=           1998
+@article{LeCunBoBeHa98,
+author=         {Yann LeCun and L\'eon Bottou and Yoshua Bengio and
+                  Patrick Haffner},
+title=          {Gradient-Based Learning Applied to Document
+                  Recognition},
+year=           1998,
+journal = {Proceedings of the IEEE},
+volume = 86,
+number = 11,
+pages = {2278--2324},
 }
 
 @InProceedings{LeCunEtAl95,
@@ -18951,11 +19007,12 @@ number={7},
 pages={2317--2329}, 
 }
 
-@article{MadryMaScTsVl17,
+@inproceedings{MadryMaScTsVl18,
   title={Towards deep learning models resistant to adversarial attacks},
   author={Madry, Aleksander and Makelov, Aleksandar and Schmidt, Ludwig and Tsipras, Dimitris and Vladu, Adrian},
-  journal={arXiv:1706.06083 [stat.ML]},
-  year=2017
+  booktitle = iclr18,
+  url={https://arXiv.org/abs/1706.06083},
+  year=2018,
 }
 
 @book{MagnusKaSo66,
@@ -20718,6 +20775,14 @@ author = {Praneeth Netrapalli and Prateek Jain and Sujay Sanghavi},
 title  = {Phase Retrieval using Alternating Minimization},
 year = 2013,
 booktitle = nips26,
+}
+
+@inproceedings{NetzerWaCoBiWuNg11,
+author = {Yuval Netzer and  Tao Wang and  Adam Coates and  Alessandro Bissacco
+and  Bo Wu and Andrew Y. Ng},
+title = {Reading digits in natural images with unsupervised feature learning},
+year = 2011,
+booktitle = {NIPS Workshop on Deep Learning and Unsupervised Feature Learning},
 }
 
 @article{Neumann28,
