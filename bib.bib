@@ -282,6 +282,7 @@ on Artificial Intelligence and Statistics}}
 @string{ucsccrl={University of California Santa Cruz,
 		 Computer Research Laboratory}}
 
+@string{nips1=	{Advances in Neural Information Processing Systems 1}}
 @string{nips5=	{Advances in Neural Information Processing Systems 5}}
 @string{nips7=	{Advances in Neural Information Processing Systems 7}}
 @string{nips8=	{Advances in Neural Information Processing Systems 8}}
@@ -383,6 +384,7 @@ on Artificial Intelligence and Statistics}}
 @string{wiley=	{John Wiley \& Sons}}
 @string{cvpr = "Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition"}
 @string{iccv = "Proceedings of the International Conference on Computer Vision"}
+@string{eccv = "Proceedings of the European Conference on Computer Vision"}
 @string{siopt = {SIAM Journal on Optimization}}
 @string{jota = {Journal of Optimization Theory and Applications}}
 
@@ -911,6 +913,15 @@ year = 2008,
 booktitle = colt08,
 }
 
+@article{Aitkin85,
+  title={Estimation and hypothesis testing in finite mixture models},
+  author={Aitkin, Murray and Rubin, Donald B},
+  journal={jrssb},
+  pages={67--75},
+  year=1985,
+  publisher={JSTOR}
+}
+
 @Article{AizermanBrRo64,
   author = 	 {M. A. Aizerman and E. M. Braverman and L. I. Rozonoer},
   title = 	 {Theoretical foundations of the potential function
@@ -1141,6 +1152,14 @@ title = {Ranking: compare, don't score},
 year = 2011,
 booktitle = {The 49th Allerton Conference on Communication, Control, and
 Computing},
+}
+
+@inproceedings{AmodeiAnAnBaBaCaCaCaChCh16,
+  title={Deep speech 2: End-to-end speech recognition in english and mandarin},
+  author={Amodei, Dario and Ananthanarayanan, Sundaram and Anubhai, Rishita and Bai, Jingliang and Battenberg, Eric and Case, Carl and Casper, Jared and Catanzaro, Bryan and Cheng, Qiang and Chen, Guoliang and others},
+  booktitle={International Conference on Machine Learning},
+  pages={173--182},
+  year=2016
 }
 
 @mastersthesis{Amsterdam88,
@@ -2861,6 +2880,14 @@ year =          {1961}
   publisher={Springer}
 }
 
+@inproceedings{Ben-DavidBlCrPe07,
+  title={Analysis of representations for domain adaptation},
+  author={Ben-David, Shai and Blitzer, John and Crammer, Koby and Pereira, Fernando},
+  booktitle={Advances in neural information processing systems},
+  pages={137--144},
+  year=2007
+}
+
 @article{Ben-DavidBlCrPeVa10,
 title = {A theory of learning from different domains},
 author  = {Shai Ben-David and John Blitzer and Koby Crammer and 
@@ -3543,6 +3570,30 @@ month=          sep,
 year=		2003
 }
 
+@inproceedings{BickelBrSc07,
+  title={Discriminative learning for differing training and test distributions},
+  author={Bickel, Steffen and Br{\"u}ckner, Michael and Scheffer, Tobias},
+  booktitle={Proceedings of the 24th international conference on Machine learning},
+  pages={81--88},
+  year=2007,
+  organization={ACM}
+}
+
+@article{BickelHaOC75,
+author = {Peter J. Bickel and Eugene A. Hammel J. William O'Connell},
+title = {Sex Bias in Graduate Admissions: Data from {B}erkeley},
+journal = {Science},
+year = 1975,
+volume = {187},
+number = 4175,
+pages = {398--404},
+comment = {Women are admitted to Berkeley in lower proportion to men,
+  but it seems that the reason for this is that women apply to more
+  competitive departments than do the men, and in most of these,
+  the women are more likely to be admitted than the men. A fun example
+  of Simpson's Paradox at work.},
+}
+
 @book{BickelKlRiWe98,
 author = {Peter Bickel and C. A. J. Klaassen and Yaacov Ritov and Jon Wellner},
 title = {Efficient and Adaptive Estimation for Semiparametric Models},
@@ -3789,12 +3840,28 @@ number = 4,
 pages = {1351--1378},
 }
 
+@article{BlanchetKaMu16,
+  title={Robust Wasserstein profile inference and applications to machine learning},
+  author={Blanchet, Jose and Kang, Yang and Murthy, Karthyek},
+  journal={arXiv:1610.05627 [math.ST]},
+  year=2016
+}
+
 @article{BlanchetMu16,
   title={Quantifying Distributional Model Risk Via Optimal Transport},
   author={Blanchet, Jose and Murthy, Karthyek},
   year=2016,
 journal = {arXiv:1604.01446 [math.PR]},
 url = {https://arxiv.org/abs/1604.01446},
+}
+
+@inproceedings{BlitzerMcPe06,
+  title={Domain adaptation with structural correspondence learning},
+  author={Blitzer, John and McDonald, Ryan and Pereira, Fernando},
+  booktitle={Proceedings of the 2006 conference on empirical methods in natural language processing},
+  pages={120--128},
+  year=2006,
+  organization={Association for Computational Linguistics}
 }
 
 @Article{Block62,
@@ -5192,6 +5259,17 @@ pages = {573--595},
     year = 2000
 }
 
+@article{CaiFaLi00,
+  title={Efficient estimation and inferences for varying-coefficient models},
+  author={Cai, Zongwu and Fan, Jianqing and Li, Runze},
+  journal={Journal of the American Statistical Association},
+  volume=95,
+  number=451,
+  pages={888--902},
+  year=2000,
+  publisher={Taylor \& Francis Group}
+}
+
 @article{CaiLo15,
 author = {Tony Cai and Mark Low},
 title = {A framework for estimating convex functions},
@@ -5449,6 +5527,12 @@ comment = {Gives an argument that shows that the "effective dimensionality"
   which seems a little strong...},
 }
 
+@book{CappeMoRy05,
+  title={Inference in hidden markov models},
+  author={Capp{\'e}, Olivier and Moulines, Eric and Ryd{\'e}n, Tobias},
+  publisher={Springer},
+  year=2005
+}
 @inproceedings{CarbonellG87,
 author=   	{Carbonell, Jaime G. and Yolanda Gil},
 title=    	{Learning by Experimentation},
@@ -5461,6 +5545,13 @@ pages=    	{256--266},
 publisher=	{Morgan Kaufmann}
 }
 
+@book{CarlsteinMuSi94,
+  title={Change-point problems},
+  author={Carlstein, Edward G and M{\"u}ller, Hans-Georg and Siegmund, David},
+  year=1994,
+  publisher={IMS}
+  
+}
 @article{CarmonDu16,
 title = {Gradient Descent Efficiently Finds the Cubic-Regularized
  Non-Convex {N}ewton Step},
@@ -5636,6 +5727,15 @@ volume = 28,
 number = 1,
 pages = "41--75",
 year = 1997
+}
+
+@incollection{Caruana98,
+  title={Multitask learning},
+  author={Caruana, Rich},
+  booktitle={Learning to learn},
+  pages={95--133},
+  year=1998,
+  publisher={Springer}
 }
 
 @inproceedings{CaruanaBaMi96,
@@ -6043,6 +6143,18 @@ booktitle = {Conference on Information and Knowledge Management},
    year = {2003},
    volume = {15},
    booktitle = {Advances in Neural Information Processing Systems}
+}
+
+@article{CharigWePaWi86,
+author = {C. R. Charig and D. R. Webb and S. R. Payne and J. E. Wickham},
+title = {Comparison of treatment of renal calculi by open surgery,
+                  percutaneous nephrolithotomy, and extracorporeal
+                  shockwave lithotripsy},
+year = 1986,
+journal = {British Medical Journal (Clinical Research)},
+volume = 292,
+number = 6524,
+pages = {879--882},
 }
 
 @inproceedings{Charikar02,
@@ -7716,6 +7828,15 @@ publisher = {Springer},
 pages = {764--792},
 }
 
+@article{DaumeMa06,
+  title={Domain adaptation for statistical classifiers},
+  author={Daume III, Hal and Marcu, Daniel},
+  journal={Journal of artificial Intelligence research},
+  volume=26,
+  pages={101--126},
+  year=2006
+}
+
 @article{DavenportPlVaWo15,
 author = {Mark A. Davenport and Yaniv Plan and Ewout van den Berg and Mary Wootters},
 title = {One-bit matrix completion},
@@ -8335,6 +8456,15 @@ year = 2009,
 booktitle = cvpr,
 }
 
+@inproceedings{DenkerGaGrHeHoHuJaBaGu88,
+author = {John S. Denker and W. R. Gardner and Hans Peter Graf and
+  Donnie Henderson and R. E. Howard and W. Hubbard and L. D. Jackel
+  and Henry S. Baird and Isabelle Guyon},
+title = {Neural Network Recognizer for Hand-Written Zip Code Digits},
+booktitle = nips1,
+year = 1988,
+}
+
 @article{Dennis84,
 author=   	{Dennis, J.E., Jr.},
 title=    	{A User's Guide to Nonlinear Optimization Algorithms},
@@ -8835,6 +8965,12 @@ comment = {Classical results on generalized (sub)gradient
   we must have convergence of $f(x_k)$.)},
 }
 
+@inproceedings{DosovitskiyBr16,
+author = {Alexey Dosovitskiy and Thomas Brox},
+title = {Generating images with perceptual similarity metrics based on deep networks},
+year = 2016,
+booktitle = nips29,
+}
 
 @Book{Doukhan94,
   author =	 {Paul Doukhan},
@@ -10229,6 +10365,17 @@ publisher = {Cambridge University Press},
 year = 2011,
 }
 
+@article{EldarBeNe04,
+  title={Linear minimax regret estimation of deterministic parameters with bounded data uncertainties},
+  author={Eldar, Yonina C and Ben-Tal, Aharon and Nemirovski, Arkadi},
+  journal={IEEE Transactions on Signal Processing},
+  volume=52,
+  number=8,
+  pages={2177--2188},
+  year=2004,
+  publisher={IEEE}
+}
+
 @article{EldarMe14,
 author = {Yonina Eldar and Shahar Mendelson},
 title = {Phase retrieval: Stability and recovery guarantees},
@@ -10332,6 +10479,16 @@ pages = {72--83},
   pages={701--715},
   year={2003},
   publisher={Springer}
+}
+
+@article{ErvenHa14,
+title = {R\'{e}nyi Divergence and {K}ullback-{L}eibler Divergence},
+author = {Tim van Erven and Peter Harremo\"{e}s},
+year = 2014,
+journal = ieeeit,
+volume = 60,
+number = 7,
+pages = {3797--3820},
 }
 
 @article{ErwayGi09,
@@ -10445,6 +10602,15 @@ journal = aos,
 volume = 19,
 number = 3,
 pages = {1273--1294},
+}
+
+@article{FanZh99,
+  title={Statistical estimation in varying coefficient models},
+  author={Fan, Jianqing and Zhang, Wenyang},
+  journal={Annals of Statistics},
+  pages={1491--1518},
+  year=1999,
+  publisher={JSTOR}
 }
 
 @book{FangPu93,
@@ -10684,6 +10850,17 @@ volume = {21},
 year = {1982},
 }
 
+@article{FigueiredoJa02,
+  title={Unsupervised learning of finite mixture models},
+  author={Figueiredo, Mario A. T. and Jain, Anil K.},
+  journal={IEEE Transactions on pattern analysis and machine intelligence},
+  volume=24,
+  number=3,
+  pages={381--396},
+  year=2002,
+  publisher={Ieee}
+}
+
 @article{FigueiredoNoWr07,
 author =        {M. Figueiredo and R. Nowak and
                  S. Wright},
@@ -10709,7 +10886,6 @@ year=		1991,
 pages=		{62--87}
 }
 
-
 @article{FineSc01,
 author = {S. Fine and K. Scheinberg},
 title = {Efficient {SVM} training using low-rank kernel representations},
@@ -10717,6 +10893,17 @@ journal = {J. of Mach. Learning Res.},
 volume = {2},
 pages = {242--264},
 year = {2001}
+}
+
+@article{FinkelsteinGaMaRiSoWoRu02,
+title = {Placing Search in Context: The Concept Revisited},
+author = {Lev Finkelstein and Evgeniy Gabrilovich and Yossi Matias and
+  Ehud Rivlin and Zach Solan and Gadi Wolfman and Eytan Ruppin},
+journal = {ACM Transactions on Information Systems},
+year = 2002,
+volume = 20,
+number = 1,
+pages = {116--131},
 }
 
 @inproceedings{FinkShSiUl06,
@@ -11615,6 +11802,14 @@ booktitle = {Proceedings of the 24th Conference Conference on
   Uncertainty in Artificial Intelligence (UAI)},
 }
 
+@article{GaninLe15,
+  title={Unsupervised domain adaptation by backpropagation},
+  author={Ganin, Yaroslav and Lempitsky, Victor},
+  journal=icml15,
+  year=201,
+  pages = {1180--1189},
+  }
+
 @inproceedings{GantaKaSm08,
 author = {Srivatsava Ranjit Ganta and Shiva Kasiviswanathan and Adam Smith},
 title = {Composition Attacks and Auxiliary Information in Data Privacy},
@@ -11642,6 +11837,13 @@ author=		{F. R. Gantmacher},
 title=		{Applications of the Theory of Matrices},
 publisher=	{Interscience},
 year=		1959
+}
+
+@article{GaoChKl17,
+author = {Rui Gao and Xi Chen and Anton Klewegt},
+title = {Wasserstein Distributional Robustness and Regularization in Statistical Learning},
+year = 2017,
+journal = {arXiv:1712.06050 [cs.LG]},
 }
 
 @article{GaoWe15,
@@ -12531,6 +12733,15 @@ year = 2008,
   note      = {\url{http://stanford.edu/~boyd/graph_dcp.html}},
 }
 
+@incollection{GrantBoYe06,
+  title={Disciplined convex programming},
+  author={Grant, Michael and Boyd, Stephen and Ye, Yinyu},
+  booktitle={Global optimization},
+  pages={155--210},
+  year=2006,
+  publisher={Springer}
+}
+
 @techreport{GravesLa94
 ,author=	{Todd Graves and Tze Leung Lai}
 ,title=		{Asymptotically Efficient Adaptive Choice of Control
@@ -12670,6 +12881,15 @@ address = 	{Washington},
 comment = 	{A low level introduction to group theory via Cayley graphs}
 }
 
+
+@article{GrotherQuPh10,
+  title={Report on the evaluation of 2D still-image face recognition algorithms},
+  author={Grother, Patrick J and Quinn, George W and Phillips, P Jonathon},
+  journal={NIST interagency report},
+  volume=7709,
+  pages=106,
+  year=2010
+}
 
 @inproceedings{GroveLiSc97,
 author=		{Adam J. Grove and Nick Littlestone and Dale Schuurmans},
@@ -13225,6 +13445,15 @@ booktitle=	colt91,
 month=		aug,
 year=		1991,
 pages=		{179--183}
+}
+
+@article{Hand06,
+  title={Classifier technology and the illusion of progress},
+  author={Hand, David J},
+  journal={Statistical science},
+  pages={1--14},
+  year=2006,
+  publisher={JSTOR}
 }
 
 @book{Hanke95,
@@ -14536,6 +14765,15 @@ pages=		{357-360},
 year=		2002
 }
 
+@inproceedings{HovySo15,
+  title={Tagging performance correlates with author age},
+  author={Hovy, Dirk and S{\o}gaard, Anders},
+  booktitle={Proceedings of the 53rd Annual Meeting of the Association for Computational Linguistics and the 7th International Joint Conference on Natural Language Processing (Volume 2: Short Papers)},
+  volume=2,
+  pages={483--488},
+  year=2015
+}
+
 @article{HristacheJuSp01,
 author = {Marian Hristache and Anatoli Juditsky and Vladimir Spokoiny},
 year = 2001,
@@ -14616,6 +14854,14 @@ comment = {Provides a bound on the moment generating function of the square
                   variant of the cross-entropy method. Requires
                   exponential families and polynomially increasing
                   sample sizes.}
+}
+
+@inproceedings{Huang07,
+  title={Correcting sample selection bias by unlabeled data},
+  author={Huang, Jiayuan and Gretton, Arthur and Borgwardt, Karsten M and Sch{\"o}lkopf, Bernhard and Smola, Alex J},
+  booktitle={Advances in neural information processing systems},
+  pages={601--608},
+  year=2007
 }
 
 @inproceedings{HuangKwWaWu17,
@@ -14763,6 +15009,23 @@ journal = {Journal of Business and Economic Statistics},
 volume = 20,
 number = 4,
 pages = {493--506},
+}
+
+@article{ImbensAn94,
+author = {Guido Imbens and Joshua Angrist},
+title = {Identification and estimation of local average treatment effects},
+journal = {Econometrica},
+year = 1994,
+pages = {467--476},
+volume = 62,
+number = 2,
+}
+
+@book{ImbensRu15,
+title = {Causal Inference for Statistics, Social, and Biomedical Sciences},
+year = 2015,
+author = {Guido Imbens and Donald Rubin},
+publisher = {Cambridge University Press},
 }
 
 @inproceedings{ImpagliazzoZu89,
@@ -15147,6 +15410,14 @@ publisher = {PWS Publishing},
   Year = 2014
 }
 
+@article{Jiang08,
+  title={A literature survey on domain adaptation of statistical classifiers},
+  author={Jiang, Jing},
+  journal={Technical Report},
+  volume=3,
+  year=2008
+}
+
 @article{JiangGu13,
   title={Data-driven chance constrained stochastic program},
   author={Jiang, Ruiwei and Guan, Yongpei},
@@ -15293,6 +15564,14 @@ number=		2,
 month=		jun,
 year=		1984,
 pages=		{284--299}
+}
+
+@inproceedings{JohnsonAlFe16,
+author = {Justin Johnson and Alexandre Alahi and Li Fei-Fei},
+title = {Perceptual losses for real-time style transfer and super-resolution},
+booktitle = eccv,
+year = 2016,
+pages = {694--711},
 }
 
 @article{JohnsonLi84,
@@ -16781,7 +17060,7 @@ journal = {arXiv:0906.4835 [math.OC]},
 }
 @inproceedings{KrizhevskySuHi12,
 author = {Alex Krizhevsky and Ilya Sutskever and Geoffrey Hinton},
-title = {ImageNet Classification with Deep Convolutional Neural Networks},
+title = {Image{N}et Classification with Deep Convolutional Neural Networks},
 year = 2012,
 booktitle = nips25,
 }
@@ -16992,6 +17271,14 @@ comment = {Book on classical theory of stochastic approximation. Reasonably
   year=2001,
   publisher={Springer}
 }
+
+@inproceedings{KwiatkowskaNoPa11,
+	Author = {Kwiatkowska, Marta and Norman, Gethin and Parker, David},
+	Booktitle = {International Conference on Computer Aided Verification},
+	Organization = {Springer},
+	Pages = {585--591},
+	Title = {PRISM 4.0: Verification of probabilistic real-time systems},
+	Year = {2011}}
 
 @incollection{KwokCa90
 ,author=	{Suk Wah Kwok and Chris Carter}
@@ -17386,12 +17673,16 @@ pages = {9--50},
 publisher = {Springer-Verlag},
 }
 
-@article{LeCunBoBeHa98
-,author=         {Yann LeCun and L\'eon Bottou and Yoshua Bengio and
-                  Patrick Haffner}
-,title=          {Gradient-Based Learning Applied to Document
-                  Recognition}
-,year=           1998
+@article{LeCunBoBeHa98,
+author=         {Yann LeCun and L\'eon Bottou and Yoshua Bengio and
+                  Patrick Haffner},
+title=          {Gradient-Based Learning Applied to Document
+                  Recognition},
+year=           1998,
+journal = {Proceedings of the IEEE},
+volume = 86,
+number = 11,
+pages = {2278--2324},
 }
 
 @InProceedings{LeCunEtAl95,
@@ -18782,11 +19073,12 @@ number={7},
 pages={2317--2329}, 
 }
 
-@article{MadryMaScTsVl17,
+@inproceedings{MadryMaScTsVl18,
   title={Towards deep learning models resistant to adversarial attacks},
   author={Madry, Aleksander and Makelov, Aleksandar and Schmidt, Ludwig and Tsipras, Dimitris and Vladu, Adrian},
-  journal={arXiv:1706.06083 [stat.ML]},
-  year=2017
+  booktitle = iclr18,
+  url={https://arXiv.org/abs/1706.06083},
+  year=2018,
 }
 
 @book{MagnusKaSo66,
@@ -19044,6 +19336,14 @@ title =		{Pruning Adaptive Boosting},
 booktitle =	ml97,
 pages =		{211--218},
 year =		1997
+}
+
+@article{Margolis11,
+  title={A literature review of domain adaptation with unlabeled data},
+  author={Margolis, Anna},
+  journal={Tec. Report},
+  pages={1--42},
+  year=2011
 }
 
 @article{Marimon93
@@ -19465,6 +19765,13 @@ author = {Brendan McMahan and Matthew Streeter},
 title = {Adaptive Bound Optimization for Online Convex Optimization},
 booktitle = colt10,
 year = 2010,
+}
+
+@book{MclachlanPe04,
+  title={Finite mixture models},
+  author={McLachlan, Geoffrey and Peel, David},
+  year=2004,
+  publisher={John Wiley \& Sons}
 }
 
 @article{Mcshane34,
@@ -19991,6 +20298,13 @@ year = 1975,
 journal = {Mathematica Scandinavica},
 pages = {159--173},
 volume = 36,
+}
+
+@article{MorerioCaMu17,
+  title={Minimal-Entropy Correlation Alignment for Unsupervised Deep Domain Adaptation},
+  author={Morerio, Pietro and Cavazza, Jacopo and Murino, Vittorio},
+  journal={arXiv:1711.10288 [cs.CV]},
+  year=2017
 }
 
 @article{Mosk-AoyamaRoSh2010,
@@ -20527,6 +20841,14 @@ author = {Praneeth Netrapalli and Prateek Jain and Sujay Sanghavi},
 title  = {Phase Retrieval using Alternating Minimization},
 year = 2013,
 booktitle = nips26,
+}
+
+@inproceedings{NetzerWaCoBiWuNg11,
+author = {Yuval Netzer and  Tao Wang and  Adam Coates and  Alessandro Bissacco
+and  Bo Wu and Andrew Y. Ng},
+title = {Reading digits in natural images with unsupervised feature learning},
+year = 2011,
+booktitle = {NIPS Workshop on Deep Learning and Unsupervised Feature Learning},
 }
 
 @article{Neumann28,
@@ -21245,7 +21567,7 @@ comment=  	{Describes Bayesian networks and propagation in
   title={Causality},
   author={Pearl, Judea},
   year={2009},
-  publisher={Cambridge university press}
+  publisher={Cambridge University Press}
 }
 
 @techreport{Pearl85b,
@@ -22439,6 +22761,18 @@ booktitle = nips24,
 	year = 	 2016
 }
 
+@article{RedmondBa02,
+  title={A data-driven software tool for enabling cooperative
+                  information sharing among police departments},
+  author={Redmond, Michael and Baveja, Alok},
+  journal={European Journal of Operational Research},
+  volume=141,
+  number=3,
+  pages={660--678},
+  year=2002,
+  publisher={Elsevier}
+}
+
 @article{RednerWa84
 ,author=	{Richard A. Redner and Homer F. Walker}
 ,title=		{Mixture densities, maximum likelihood and the {EM}
@@ -22942,6 +23276,14 @@ pages = {183–-283},
 ,title=		{The metrics induced by the {K}ullback number}
 }
 
+
+@article{RohdeSt18,
+  title={Geometrizing rates of convergence under differential privacy constraints},
+  author={Rohde, Angelika and Steinberger, Lukas},
+  journal={arXiv:1805.01422 [stat.ML]},
+  year={2018}
+}
+
 @article{RohwerAnTo15,
   title={Convergence of large-deviation estimators},
   author={Rohwer, Christian M and Angeletti, Florian and Touchette, Hugo},
@@ -23023,6 +23365,15 @@ comment = {
 @article{RoseGuFo90
 ,author=	{Kenneth Rose and Eitan Gurewitz and Geoffrey C. Fox}
 ,title=		{Vector quantization by deterministic annealing}
+}
+
+@incollection{Rosenbaum02,
+  title={Observational studies},
+  author={Rosenbaum, Paul R},
+  booktitle={Observational studies},
+  pages={1--17},
+  year=2002,
+  publisher={Springer}
 }
 
 @article{Rosenblatt58,
@@ -23486,6 +23837,15 @@ pages = {251--318},
   year={2014}
 }
 
+@inproceedings{SaenkoKuFrDa10,
+  title={Adapting visual category models to new domains},
+  author={Saenko, Kate and Kulis, Brian and Fritz, Mario and Darrell, Trevor},
+  booktitle={European conference on computer vision},
+  pages={213--226},
+  year=2010,
+  organization={Springer}
+}
+
 @article{SairaYoTaMoAvPe12,
   title={Test of the Jarzynski and Crooks fluctuation relations in an electronic system},
   author={Saira, O-P and Yoon, Y and Tanttu, T and M{\"o}tt{\"o}nen, M and Averin, DV and Pekola, Jukka P},
@@ -23688,6 +24048,15 @@ models in high dimensions",
        VOLUME = 58,
        NUMBER = 7,
        PAGES = "4117--4134"
+}
+
+@article{SapiezynskiKaWi17,
+  title={Academic performance prediction in a gender-imbalanced environment},
+  author={Sapiezynski, Piotr and Kassarnig, Valentin and Wilson, Christo},
+  year=2017,
+  journal={FATREC},
+  volume=1,
+  pages={48--51}
 }
 
 @article{Sard42,
@@ -24281,6 +24650,14 @@ pages = {633-648}
    year = {2006}
 }
 
+@inproceedings{SeshiaSaSa15,
+	Author = {Seshia, Sanjit A and Sadigh, Dorsa and Sastry, S Shankar},
+	Booktitle = {Proceedings of the 52nd Annual Design Automation Conference},
+	Organization = {ACM},
+	Pages = {148},
+	Title = {Formal methods for semi-autonomous driving},
+	Year = {2015}}
+
 @inproceedings{SeungOpSo92,
 	author=	"H. S. Seung and M. Opper and H. Sompolinsky",
 	title = "Query by committee",
@@ -24569,6 +24946,13 @@ author = {Shai Shalev-Shwartz and Ohad Shamir and Eran Tromer},
 title = {Using more data to speed-up training time},
 year = 2012,
 booktitle = aistat12,
+}
+
+@Article{ShalevShSh17,
+  Title = {On a Formal Model of Safe and Scalable Self-driving Cars},
+  Author = {Shalev-Shwartz, Shai and Shammah, Shaked and Shashua, Amnon},
+  Journal = {arXiv:1708.06374 [cs.RO]},
+  Year = {2017},
 }
 
 @inproceedings{ShalevSr08,
@@ -24929,6 +25313,17 @@ journal = {Psychological Review},
 volume = 101,
 number = 2,
 pages = {357--361},
+}
+
+@article{Shimodaira00,
+  title={Improving predictive inference under covariate shift by weighting the log-likelihood function},
+  author={Shimodaira, Hidetoshi},
+  journal={Journal of statistical planning and inference},
+  volume=90,
+  number=2,
+  pages={227--244},
+  year=2000,
+  publisher={Elsevier}
 }
 
 @article{ShimojoIc89,
@@ -25666,7 +26061,7 @@ booktitle = nips17,
   publisher={Springer Science \& Business Media}
 }
 
-@inproceedings{SuCa14,
+@inproceedings{SuBoCa14,
   title={A differential equation for modeling Nesterov’s accelerated 
   	gradient method: Theory and insights},
   author={Su, Weijie and Boyd, Stephen and Candes, Emmanuel},
@@ -25680,6 +26075,24 @@ booktitle = nips17,
 ,author=        {M. Ye. Suchanskiy}
 ,title=         {Adaptive algorithm for determination of weakly
                   efficient variant under randomness}
+}
+
+@article{SugiyamaKrMa07,
+  title={Covariate shift adaptation by importance weighted cross validation},
+  author={Sugiyama, Masashi and Krauledat, Matthias and M{\~A}{\v{z}}ller, Klaus-Robert},
+  journal={Journal of Machine Learning Research},
+  volume=8,
+  number={May},
+  pages={985--1005},
+  year=2007
+}
+
+@inproceedings{SugiyamaNaKaBuKa08,
+  title={Direct importance estimation with model selection and its application to covariate shift adaptation},
+  author={Sugiyama, Masashi and Nakajima, Shinichi and Kashima, Hisashi and Buenau, Paul V and Kawanabe, Motoaki},
+  booktitle={Advances in neural information processing systems},
+  pages={1433--1440},
+  year=2008
 }
 
 @article{SunQuWr15,
@@ -25815,6 +26228,15 @@ volume=        16
 ,author=        {M. Talagrand}
 ,title=         {Sharper bounds for Gaussian and empirical processes}
 ,year=          1994
+}
+
+@article{Talagrand96b,
+  title={A new look at independence},
+  author={Talagrand, Michel},
+  journal={Annals of probability},
+  pages={1--34},
+  year=1996,
+  publisher={JSTOR}
 }
 
 @article{Talagrand96,
@@ -26216,6 +26638,15 @@ I. Guyon, S. Gunn, M. Nikravesh, L. Zadeh, editors},
   year = 	 {2006}
 }
 
+@inproceedings{TorralbaEf11,
+  title={Unbiased look at dataset bias},
+  author={Torralba, Antonio and Efros, Alexei A},
+  booktitle={Computer Vision and Pattern Recognition (CVPR), 2011 IEEE Conference on},
+  pages={1521--1528},
+  year=2011,
+  organization={IEEE}
+}
+
 @article{Touchette09,
   title={The large deviation approach to statistical mechanics},
   author={Touchette, Hugo},
@@ -26384,13 +26815,59 @@ comment = {
    year =       {2004}
 }
 
+@article{TsuboiKaHiBiSu09,
+  title={Direct density ratio estimation for large-scale covariate shift adaptation},
+  author={Tsuboi, Yuta and Kashima, Hisashi and Hido, Shohei and Bickel, Steffen and Sugiyama, Masashi},
+  journal={Journal of Information Processing},
+  volume=17,
+  pages={138--155},
+  year=2009,
+  publisher={Information Processing Society of Japan}
+}
+
+@techreport{TsukidaGu11,
+author = { K.\ Tsukida and M.~R.\ Gupta},
+title = {How to analyze paired comparison data},
+year = {2011},
+institution = {University of Washington Department of Electrical Engineering},
+number = {UWEETR-2011-0004},
+comment = {Very readable tutorial on aggregation and related ideas for
+ranking problems, focusing specifically on recovering rankings from
+paired data},
+}
+
+@article{Tsybakov98,
+author = {Alexandre Tsybakov},
+title = {Pointwise and sup-norm sharp adaptive estimation of functions on the
+  {S}obolev classes},
+journal = aos,
+year = 1998,
+volume = 26,
+number = 6,
+pages = {2420--2469},
+}
+
 @article{Tsybakov04,
   title={Optimal aggregation of classifiers in statistical learning},
   author={Tsybakov, Alexandre B},
-  journal={Annals of Statistics},
+  journal=aos,
   pages={135--166},
   year=2004,
-  publisher={JSTOR}
+  volume = 32,
+  number = 1,
+}
+
+@book{Tsybakov09,
+author = {Alexandre B. Tsybakov},
+title = {Introduction to Nonparametric Estimation},
+year = 2009,
+publisher = {Springer},
+comment = {A nice introduction to non-parametrics, much of the form of
+density estimation and non-parametric integration. First chapter covers
+estimation strategies for these problems, including histogram, kernel, and
+orthogonal series/projection estimators, while second and third chapters move
+toward lower bounds and oracle inequalities. Readable for young students,
+and nice proofs of some Sobolev class inequalities and containments.},
 }
 
 @inproceedings{TuBoSiSoRe16,
@@ -26419,30 +26896,6 @@ url = {https://arxiv.org/abs/1602.05310},
 	title = "Ground-Truth Transcriptions of Real Music from Force-Aligned MIDI Syntheses",
 	booktitle = "Proceedings of the International Symposium on Music Information Retrieval",
 	year = 2003
-}
-
-@techreport{TsukidaGu11,
-author = { K.\ Tsukida and M.~R.\ Gupta},
-title = {How to analyze paired comparison data},
-year = {2011},
-institution = {University of Washington Department of Electrical Engineering},
-number = {UWEETR-2011-0004},
-comment = {Very readable tutorial on aggregation and related ideas for
-ranking problems, focusing specifically on recovering rankings from
-paired data},
-}
-
-@book{Tsybakov09,
-author = {Alexandre B. Tsybakov},
-title = {Introduction to Nonparametric Estimation},
-year = 2009,
-publisher = {Springer},
-comment = {A nice introduction to non-parametrics, much of the form of
-density estimation and non-parametric integration. First chapter covers
-estimation strategies for these problems, including histogram, kernel, and
-orthogonal series/projection estimators, while second and third chapters move
-toward lower bounds and oracle inequalities. Readable for young students,
-and nice proofs of some Sobolev class inequalities and containments.},
 }
 
 @article{Turing50,
@@ -27045,7 +27498,7 @@ journal = {arXiv:1605.08285 [stat.ML]},
   publisher={Springer}
 }
 
-@inproceedings{WangLiuFa16,
+@inproceedings{WangLiFa16,
   title={Accelerating stochastic composition optimization},
   author={Wang, Mengdi and Liu, Ji and Fang, Ethan},
   booktitle=nips29,
@@ -28646,3 +29099,5 @@ booktitle = {Proceedings of the 22nd International Conference on Computational
   year=2013,
   publisher={SIAM}
 }
+
+
