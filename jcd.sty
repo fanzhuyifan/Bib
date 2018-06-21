@@ -10,6 +10,8 @@
 \usepackage{xifthen}
 % \usepackage{fullpage}
 
+\definecolor{darkblue}{rgb}{0,0,.75}
+
 \def\usebiggeometry{%
   \usepackage[top=2.54cm,left=2.54cm,right=2.54cm,bottom=2.54cm]{geometry}}
 
@@ -113,6 +115,16 @@
       \red{\bf JCD Comment:} {#1}
   \end{minipage}} \\
 }
+
+% General comment: two arguments. First is the name of the commenter, second
+% is the actual comment.
+\newcommand{\gencomment}[2]{\fcolorbox{outerilnecolor}{innerboxcolor}{
+    \begin{minipage}{.9\textwidth}
+      \red{\bf {#1} Comment:} {#2}
+    \end{minipage}
+  } \\
+}
+
 \newcommand{\hncomment}[1]{\fcolorbox{outerlinecolor}{innerboxcolor}{
     \begin{minipage}{.9\textwidth}
       \red{\bf HN Comment:} {#1}
