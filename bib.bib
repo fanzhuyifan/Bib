@@ -27546,10 +27546,24 @@ I. Guyon, S. Gunn, M. Nikravesh, L. Zadeh, editors},
 }
 
 @article{ToulisHoAi15,
-title={Stable Robbins-Monro approximations through stochastic proximal updates},
+title={Stable {R}obbins-{M}onro approximations
+  through stochastic proximal updates},
 author={Toulis, Panos and Horel, Thibaut and Airoldi, Edoardo M},
 year = 2015,
 journal = {arXiv:1510.00967 [math.ST]},
+comment = {Investigates iterative procedures that apply
+  $\theta_n = \theta_{n-1} - \gamma_n h(\theta_n)$, where $h$ is the
+  stochastic gradient. Make the ``weakened'' assumption (not really weaker)
+  that $\theta_n = \theta_{n-1} - \gamma_n W(\theta_n^+)$, where $W$
+  is the random gradient and $\E[\theta_n \mid \mc{F}_{n-1}] = \theta_n^+$
+  so that it's some kind of stochastically unbiased proximal update.
+  I cannot see situations where that would happen.
+  Additionally, makes the assumption (Assumption 5) that the noise
+  has bounded L2 norm everywhere, which of course is unrealistic unless
+  one can prove such a thing. (For example, linear regression
+  fails this.) Proves convergence guarantees for final iterates (and
+  rates) based on stepsize powers. Also shows asymptotic normality
+  of final iterate under some strong assumptions.}
 }
 
 
