@@ -18,6 +18,8 @@ on Artificial Intelligence and Statistics}}
 on Artificial Intelligence and Statistics}}
 @string{aistat15 = {Proceedings of the 18th International Conference
 on Artificial Intelligence and Statistics}}
+@string{aistat16 = {Proceedings of the 19th International Conference
+on Artificial Intelligence and Statistics}}
 @string{aistat18 = {Proceedings of the 21st International Conference
 on Artificial Intelligence and Statistics}}
 
@@ -27583,6 +27585,17 @@ I. Guyon, S. Gunn, M. Nikravesh, L. Zadeh, editors},
   publisher={Elsevier}
 }
 
+@article{ToulisAi17,
+author = {Panos Toulis and Edo Airoldi},
+title = {Asymptotic and finite-sample properties of estimators
+  based on stochastic gradients},
+year = 2017,
+journal = aos,
+volume = 45,
+number = 4,
+pages = {1694--1727},
+}
+
 @article{ToulisHoAi15,
 title={Stable {R}obbins-{M}onro approximations
   through stochastic proximal updates},
@@ -27604,16 +27617,20 @@ comment = {Investigates iterative procedures that apply
   of final iterate under some strong assumptions.}
 }
 
-
-@article{ToulisAi17,
-author = {Panos Toulis and Edo Airoldi},
-title = {Asymptotic and finite-sample properties of estimators
-  based on stochastic gradients},
-year = 2017,
-journal = aos,
-volume = 45,
-number = 4,
-pages = {1694--1727},
+@inproceedings{ToulisTrAi16,
+author = {Panos Toulis and Dustin Tran and Edoardo Airoldi},
+title = {Towards stability and optimality in stochastic gradient descent},
+year = 2016,
+booktitle = aistat16,
+comment = {Similar to the other papers of Toulis and Airoldi, and not
+  really clear what the generalization is. Still assumes that the functions
+  involved are globally Lipschitz and strongly convex, which more or less
+  defeats the purpose of the results. Claims of ``intuition'' from
+  strongly convex case also have false proofs, and assume that random
+  functions are (i) all strongly convex and (ii) have the same shared
+  minimizer. In this case, of course, using infinite stepsize is optimal,
+  because it minimizes all the functions simultaneously.
+  (See Assumptions 3a and 4 for the contradictory assuptions.)},
 }
 
 @book{TrakhtenbrotBa73,
