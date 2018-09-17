@@ -18,6 +18,8 @@ on Artificial Intelligence and Statistics}}
 on Artificial Intelligence and Statistics}}
 @string{aistat15 = {Proceedings of the 18th International Conference
 on Artificial Intelligence and Statistics}}
+@string{aistat16 = {Proceedings of the 19th International Conference
+on Artificial Intelligence and Statistics}}
 @string{aistat18 = {Proceedings of the 21st International Conference
 on Artificial Intelligence and Statistics}}
 
@@ -19313,6 +19315,14 @@ number = 4,
 pages = {551--575},
 }
 
+@book{LjungPfWa12,
+  title={Stochastic approximation and optimization of random systems},
+  author={Ljung, Lennart and Pflug, Georg and Walk, Harro},
+  volume={17},
+  year={2012},
+  publisher={Birkh{\"a}user}
+}
+
 @techreport{LobelOz09,
 author = {I. Lobel and A. Ozdaglar},
 title = {Distributed subgradient methods over random networks},
@@ -27592,14 +27602,6 @@ I. Guyon, S. Gunn, M. Nikravesh, L. Zadeh, editors},
   publisher={Elsevier}
 }
 
-@article{ToulisHoAi15,
-title={Stable Robbins-Monro approximations through stochastic proximal updates},
-author={Toulis, Panos and Horel, Thibaut and Airoldi, Edoardo M},
-year = 2015,
-journal = {arXiv:1510.00967 [math.ST]},
-}
-
-
 @article{ToulisAi17,
 author = {Panos Toulis and Edo Airoldi},
 title = {Asymptotic and finite-sample properties of estimators
@@ -27609,6 +27611,48 @@ journal = aos,
 volume = 45,
 number = 4,
 pages = {1694--1727},
+comment = {See discussion of other Toulis papers below. Assumptions of
+  Lipschitz
+  continuity and strong convexity contradictory, but Lipschitz continuity
+  of function strongly strongly used. Not clear how to interpret results
+  in light of obvious contradictions.},
+}
+
+@article{ToulisHoAi15,
+title={Stable {R}obbins-{M}onro approximations
+  through stochastic proximal updates},
+author={Toulis, Panos and Horel, Thibaut and Airoldi, Edoardo M},
+year = 2015,
+journal = {arXiv:1510.00967 [math.ST]},
+comment = {Investigates iterative procedures that apply
+  $\theta_n = \theta_{n-1} - \gamma_n h(\theta_n)$, where $h$ is the
+  stochastic gradient. Make the ``weakened'' assumption (not really weaker)
+  that $\theta_n = \theta_{n-1} - \gamma_n W(\theta_n^+)$, where $W$
+  is the random gradient and $\E[\theta_n \mid \mc{F}_{n-1}] = \theta_n^+$
+  so that it's some kind of stochastically unbiased proximal update.
+  I cannot see situations where that would happen.
+  Additionally, makes the assumption (Assumption 5) that the noise
+  has bounded L2 norm everywhere, which of course is unrealistic unless
+  one can prove such a thing. (For example, linear regression
+  fails this.) Proves convergence guarantees for final iterates (and
+  rates) based on stepsize powers. Also shows asymptotic normality
+  of final iterate under some strong assumptions.}
+}
+
+@inproceedings{ToulisTrAi16,
+author = {Panos Toulis and Dustin Tran and Edoardo Airoldi},
+title = {Towards stability and optimality in stochastic gradient descent},
+year = 2016,
+booktitle = aistat16,
+comment = {Similar to the other papers of Toulis and Airoldi, and not
+  really clear what the generalization is. Still assumes that the functions
+  involved are globally Lipschitz and strongly convex, which more or less
+  defeats the purpose of the results. Claims of ``intuition'' from
+  strongly convex case also have false proofs, and assume that random
+  functions are (i) all strongly convex and (ii) have the same shared
+  minimizer. In this case, of course, using infinite stepsize is optimal,
+  because it minimizes all the functions simultaneously.
+  (See Assumptions 3a and 4 for the contradictory assuptions.)},
 }
 
 @book{TrakhtenbrotBa73,
@@ -28411,6 +28455,19 @@ pages = {47--81},
 volume = 149,
 number = {1--2},
 }
+
+@article{Walk83,
+  title={Stochastic iteration for a constrained optimization problem},
+  author={Walk, Harro},
+  journal={Sequential Analysis},
+  volume={2},
+  number={4},
+  pages={369--385},
+  year={1983},
+  publisher={Taylor \& Francis}
+}
+
+
 
 @phdthesis{Wallace89,
 author = 	{Richard Scott Wallace},
