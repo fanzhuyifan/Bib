@@ -314,11 +314,13 @@ on Artificial Intelligence and Statistics}}
 @string{nips23= {Advances in Neural Information Processing Systems 23}}
 @string{nips24= {Advances in Neural Information Processing Systems 24}}
 @string{nips25= {Advances in Neural Information Processing Systems 25}}
-@string{nips26= {Advances in Neural Information Processing Systems 26}}
-@string{nips27= {Advances in Neural Information Processing Systems 27}}
-@string{nips28= {Advances in Neural Information Processing Systems 28}}
-@string{nips29= {Advances in Neural Information Processing Systems 29}}
-@string{nips30= {Advances in Neural Information Processing Systems 30}}
+@string{nips26= {Advances in Neural Information Processing Systems 26}} % 2012
+@string{nips27= {Advances in Neural Information Processing Systems 27}} % 2013
+@string{nips28= {Advances in Neural Information Processing Systems 28}} % 2014
+@string{nips29= {Advances in Neural Information Processing Systems 29}} % 2015
+@string{nips30= {Advances in Neural Information Processing Systems 30}} % 2016
+@string{nips31= {Advances in Neural Information Processing Systems 31}} % 2017
+@string{nips32= {Advances in Neural Information Processing Systems 32}} % 2018
 
 @string{nips5eds={Stephen Jos\'e Hanson and Jack D. Cowan and C. Lee Giles}}
 
@@ -1791,7 +1793,7 @@ note = {Available at
 author = {Yossi Arjevani and Ohad Shamir},
 title = {Communication complexity of distributed convex learning and
   optimization},
-booktitle = nips28,
+booktitle = nips29,
 year = 2015,
 }
 
@@ -4721,7 +4723,7 @@ year    = {2016},
   title={The non-convex {B}urer-{M}onteiro approach works on smooth
     semidefinite programs},
   author={Boumal, Nicolas and Voroninski, Vlad and Bandeira, Afonso}, 
-  booktitle=nips29,
+  booktitle=nips30,
   pages={2757--2765},
   year={2016}
 }
@@ -5803,6 +5805,14 @@ pages=    	{256--266},
 publisher=	{Morgan Kaufmann}
 }
 
+@inproceedings{CarliniWa17,
+author = {Nicolas Carlini and David Wagner},
+title = {Towards evaluating the robustness of neural networks},
+booktitle = {IEEE Symposium on Security and Privacy (SP)},
+pages = {39--57},
+year = 2017,
+}
+
 @book{CarlsteinMuSi94,
   title={Change-point problems},
   author={Carlstein, Edward G and M{\"u}ller, Hans-Georg and Siegmund, David},
@@ -6183,7 +6193,7 @@ year = {2005}
 author = {Nicolo Cesa-Bianchi and Ofer Dekel and Ohad Shamir},
 title = {Online learning with switching costs and other adaptive adversaries},
 year = 2013,
-booktitle = nips26,
+booktitle = nips27,
 }
 
 @inproceedings{CesaBianchiGe06,
@@ -6476,7 +6486,7 @@ title = {Local Minimax Complexity of Stochastic Convex Optimization},
 author = {Sabyasachi Chatterjee and John Duchi
    and John Lafferty and Yuancheng Zhu},
 year = 2016,
-booktitle = nips29,
+booktitle = nips30,
 }
 
 @article{ChatterjeeDuLaZh16a,
@@ -6492,7 +6502,7 @@ author = {Sorathan Chaturapruek and John C. Duchi and Christopher R\'e},
 title = {Asynchronous stochastic convex optimization:
 the noise is in the noise and {SGD} don't care},
 year = 2015,
-booktitle = nips28,
+booktitle = nips29,
 }
 
 @inproceedings{ChaudhuriHs11,
@@ -6538,7 +6548,7 @@ comment = {Gives lower bounds on sample complexity (for 1 dimensional problems)
 @inproceedings{ChaudhuriKaNeSa15,
   title={Convergence rates of active learning for maximum likelihood estimation},
   author={Kamalika Chaudhuri and Sham M. Kakade and Praneeth Netrapalli and Sujay Sanghavi},
-  booktitle=nips28,
+  booktitle=nips29,
   pages={1090--1098},
   year={2015}
 }
@@ -8461,7 +8471,7 @@ title = {{SAGA}: A Fast Incremental Gradient Method With
   Support for Non-Strongly Convex Composite
   Objectives},
 year = 2014,
-booktitle = nips27,
+booktitle = nips28,
 }
 
 @article{DeGroot62,
@@ -9357,7 +9367,7 @@ comment = {Classical results on generalized (sub)gradient
 author = {Alexey Dosovitskiy and Thomas Brox},
 title = {Generating images with perceptual similarity metrics based on deep networks},
 year = 2016,
-booktitle = nips29,
+booktitle = nips30,
 }
 
 @Book{Doukhan94,
@@ -9831,7 +9841,7 @@ booktitle = colt10,
 author = {John C. Duchi and Michael I. Jordan and H. Brendan McMahan},
 title = {Estimation, Optimization, and Parallelism when Data is Sparse},
 year = 2013,
-booktitle = nips26,
+booktitle = nips27,
 }
 
 @inproceedings{DuchiJoWaWi12,
@@ -9910,7 +9920,7 @@ booktitle = {IEEE Information Theory Workshop},
 author = {John C.\ Duchi and Michael I.\ Jordan and Martin J.\ Wainwright},
 title = {Local Privacy and Minimax Bounds:
    Sharp Rates for Probability Estimation},
-booktitle = nips26,
+booktitle = nips27,
 year = 2013,
 pages = {1529--1537},
 }
@@ -10039,6 +10049,13 @@ title = {Supplement to ``{T}he Asymptotics of Ranking Algorithms''},
 note = {DOI: COMPLETED BY TYPESETTER},
 }
 
+@article{DuchiNa18,
+author = {John C. Duchi and Hongseok Namkoong},
+year = 2018,
+journal = {arXiv:1810.08750 [stat.ML]},
+title = {Learning Models with Uniform Performance via Distributionally Robust Optimization},
+}
+
 @article{DuchiNa16,
 title = {Variance-based regularization with convex objectives},
 author = {John C. Duchi and Hongseok Namkoong},
@@ -10056,10 +10073,9 @@ International Conference on Machine Learning},
 
 @article{DuchiRu16,
 author = {John C. Duchi and Feng Ruan},
-title = {Local asymptotics for some stochastic optimization problems:
-optimality, constraint identification, and dual averaging},
+title = {Asymptotic optimality in stochastic optimization},
 year = 2016,
-journal = {arXiv:1612.05612 [math.ST]},
+journal = {arXiv:1612.05612v4 [math.ST]},
 }
 
 @article{DuchiRu17b,
@@ -12405,7 +12421,17 @@ author = {Ankit Garg and Tengyu Ma and Huy L. Nguyen},
 title = {On Communication Cost of Distributed Statistical Estimation
    and Dimensionality},
 year = 2014,
-booktitle = nips27,
+booktitle = nips28,
+}
+
+@article{GargScJuZo18,
+author = {Nikhil Garg and Londa Schiebinger and Dan Jurafsky and James Zou},
+year = 2018,
+title = {Word embeddings quantify 100 years of gender and ethnic stereotypes},
+journal = pnas,
+volume = 115,
+number = 16,
+pages = {E3635--E3644},
 }
 
 @thesis{Garsia??
@@ -12463,7 +12489,7 @@ comment=  	{Argues for deriving probability density of future observations
 author = {Rong Ge and Jason D. Lee and Tengyu Ma},
 title = {Matrix Completion has No Spurious Local Minimum},
 year = 2016,
-booktitle = nips29,
+booktitle = nips30,
 }
 
 @book{GelmanCaStDuVeRu13,
@@ -14100,6 +14126,13 @@ comment = {Uses a conjecture known as gap-small-set-expansion (deciding
   Currently not completely convinced of the lower bounds.},
 }
 
+@inproceedings{HardtPrSr16,
+author = {Moritz Hardt and Eric Price and Nati Srebro},
+year = 2016,
+title = {Equality of opportunity in supervised learning},
+booktitle = nips30,
+}
+
 @inproceedings{HardtReSi16,
 author = {Moritz Hardt and Benjamin Recht and Yoram Singer},
 title = {Train faster, generalize better:
@@ -14255,9 +14288,18 @@ year=     	1966
 @inproceedings{HashimotoDuLi17,
 author = {Tatsunori Hashimoto and John Duchi and Percy Liang},
 year = 2017,
-booktitle = nips30,
+booktitle = nips31,
 title = {Unsupervised Transformation Learning via Convex Relaxations},
 }
+
+@inproceedings{HashimotoSrNaLi18,
+author = {Tatsunori Hashimoto and Megha Srivastava and Hongseok Namkoong
+ and Percy Liang},
+title = {Fairness Without Demographics in Repeated Loss Minimization},
+booktitle = icml18,
+year = 2018,
+}
+
 
 @inproceedings{HashimotoYaDu18,
 author = {Tatsunori Hashimoto and Steve Yadlowsky and John Duchi},
@@ -16253,7 +16295,7 @@ author = {Rie Johnson and Tong Zhang},
 title = {Accelerating Stochastic Gradient Descent using
 Predictive Variance Reduction},
 year = 2013,
-booktitle = nips26,
+booktitle = nips27,
 }
 
 @book{Johnstone13,
@@ -16445,7 +16487,7 @@ author = {Peter Kairouz and Sewoong Oh and Pramod Vishwanath},
 title = {Extremal mechanisms for local differential privacy},
 year = 2014,
 pages = {2879--2887},
-booktitle = nips27,
+booktitle = nips28,
 }
 
 @inproceedings{KakadeTe09,
@@ -19162,7 +19204,7 @@ pages=    	{361--387},
 	title = {Algorithms and matching lower bounds for approximately-convex 
 	optimization},
 	year = 2016,
-	booktitle = nips29,
+	booktitle = nips30,
 }
 
 @inproceedings{LiWoHuSa02,
@@ -19464,7 +19506,7 @@ comment = {Shows that a value $H$ associated with the on Hessian (roughly that
 author = {Anqi Liu and Brian Ziebart},
 title = {Robust Classification Under Sample Selection Bias},
 year = 2014,
-booktitle = nips27,
+booktitle = nips28,
 pages = {37--45}
 }
 
@@ -19992,6 +20034,13 @@ pages = {274--300},
 	volume = 41,
 	pages = "3397--3415",
 	year = 1993
+}
+
+@article{Mallat08,
+author = {Stephane Mallat},
+title = {A Wavelet Tour of Signal Processing: The Sparse Way (Third Edition)},
+year = 2008,
+publisher = {Academic Press},
 }
 
 @article{Mallows57,
@@ -21005,7 +21054,7 @@ author = {Tomas Mikolov and Ilya Sutskever and Kai Chen and Greg Corrado
 title = {Distributed representations of words and phrases and their
   compositionality},
 year = 2013,
-booktitle = nips26,
+booktitle = nips27,
 }
 
 @article{Miller56,
@@ -21287,7 +21336,7 @@ comment = {Shows how even deciding whether the point $x = 0$ is a
 	title={Randomized block {K}rylov methods for stronger and faster
 approximate singular value decomposition},
 	author={Musco, Cameron and Musco, Christopher},
-	booktitle=nips28,
+	booktitle=nips29,
 	year={2015},
 }
 
@@ -21337,14 +21386,14 @@ author = {Hongseok Namkoong and John C. Duchi},
 title = {Stochastic Gradient Methods for Distributionally
   Robust Optimization with $f$-divergences},
 year = 2016,
-booktitle = nips29,
+booktitle = nips30,
 }
 
 @inproceedings{NamkoongDu17,
  author = {Hongseok Namkoong and John C. Duchi},
  title = {Variance Regularization with Convex Objectives},
  year = 2017,
- booktitle = nips30,
+ booktitle = nips31,
  }
 
 @inproceedings{NarayananSh08,
@@ -21482,7 +21531,7 @@ pages={2506 -2517},
   title={Stochastic gradient descent, weighted sampling, and the randomized
    {K}aczmarz algorithm},
   author={Needell, Deanna and Ward, Rachel and Srebro, Nati},
-  booktitle=nips27,
+  booktitle=nips28,
   pages={1017--1025},
   year=2014
 }
@@ -21778,7 +21827,7 @@ year = {1983}
 author = {Praneeth Netrapalli and Prateek Jain and Sujay Sanghavi},
 title  = {Phase Retrieval using Alternating Minimization},
 year = 2013,
-booktitle = nips26,
+booktitle = nips27,
 }
 
 @inproceedings{NetzerWaCoBiWuNg11,
@@ -21862,6 +21911,12 @@ author = {Hung Ngo and Ely Porat and Christopher R\'e and Atri Rudra},
 year = 2012,
 title = {Worst case optimal join algorithms},
 booktitle = {Principles of Database Systems},
+}
+
+@misc{NGSIM08,
+	Author = {US Department of Transportation},
+	Title = {{NGSIM} -- {N}ext {G}eneration {SIM}ulation},
+	Year = {2008},
 }
 
 @article{NguyenWaJo05,
@@ -22091,6 +22146,13 @@ journal = {arXiv:1311.0776 [cs.DS]},
 		separation --- mathematical analysis}
 }
 
+@inproceedings{OKellySiNaDuTe18,
+author = {Matthew O'Kelly and Aman Sinha and Hongseok Namkoong and John Duchi and Russ Tedrake},
+title = {Scalable End-to-End Autonomous Vehicle Testing via Rare-event Simulation},
+year = 2018,
+booktitle = nips31,
+}
+
 @inproceedings{OliverHa94
 ,author=	{Jonathan J. Oliver and David Hand}
 ,title=		{Averaging over decision stumps}
@@ -22163,7 +22225,7 @@ author = {Alon Orlitsky and Ananda Suresh},
 title = {Competitive Distribution Estimation:
   Why is {G}ood-{T}uring Good?},
 year = 2015,
-booktitle = nips28,
+booktitle = nips29,
 }
 
 @article{OshersonStWe84,
@@ -23788,7 +23850,7 @@ pages = {731--817},
 	title={Fast black-box variational inference through stochastic 
 	trust-region optimization},
 	author={Regier, Jeffrey and Jordan, Michael I and McAuliffe, Jon},
-	booktitle=nips30,
+	booktitle=nips31,
 	year={2017}
 }
 
@@ -24416,6 +24478,16 @@ comment = {Proves the Rosenthal inequalities for sums of independent
   $E[\sum_{i=1}^n X_i^{2m}]$ and $(\sum_{i=1}^n E[X_i^2])^m$},
 }
 
+@inproceedings{RosSeMaVaLo16,
+author = {German Ros and Laura Sellart and Joanna Materzynska and David Vazquez
+ and Antonio M. Lopez},
+year = 2016,
+title = {The {S}ynthia dataset: A large collection of synthetic images for
+  semantic segmentation of urban scene},
+booktitle = cvpr,
+}
+
+
 @article{RothBe91,
 author=		{Ron M. Roth and Gyora M. Benedek},
 title=		{Interpolation and approximation of sparse
@@ -24445,7 +24517,7 @@ year=		1991
 @inproceedings{RothenhauslerHePeMe15,
   title={BACKSHIFT: Learning causal cyclic graphs from unknown shift interventions},
   author={Rothenh{\"a}usler, Dominik and Heinze, Christina and Peters, Jonas and Meinshausen, Nicolai},
-  booktitle=nips28,
+  booktitle=nips29,
   pages={1513--1521},
   year={2015}
 }
@@ -24779,7 +24851,7 @@ pages = {To appear},
 author = {Daniel Russo and Benjamin {Van Roy}},
 title = {Learning to optimize via information-directed sampling},
 year = 2014,
-booktitle = nips27,
+booktitle = nips28,
 }
 
 @article{RussoZo15,
@@ -24856,7 +24928,7 @@ pages = {251--318},
 @inproceedings{SabatoMu14,
   title={Active regression by stratification},
   author={Sivan Sabato and Remi Munos},
-  booktitle=nips27,
+  booktitle=nips28,
   pages={469--477},
   year={2014}
 }
@@ -25753,7 +25825,7 @@ comment= 	{Shows how to pac learn kDNF with random attribute noise of
 @inproceedings{Shafieezadeh-AbadehEsKu15,
   title={Distributionally Robust Logistic Regression},
   author={Shafieezadeh-Abadeh, Soroosh and Esfahani, Peyman Mohajerin and Kuhn, Daniel},
-  booktitle=nips28,
+  booktitle=nips29,
   pages={1576--1584},
   year=2015,
   comment={Gives a convex reformulation for a distributionally robust
@@ -26090,7 +26162,7 @@ author = {Ohad Shamir},
 title = {Fundamental Limits of Online and Distributed Algorithms
   for Statistical Learning and Estimation},
 year = 2014,
-booktitle = nips27,
+booktitle = nips28,
 }
 
 @inproceedings{Shamir13,
@@ -26732,7 +26804,7 @@ booktitle = iclr18,
 @inproceedings{SinhaDu16,
 author = {Aman Sinha and John C.\ Duchi},
 title = {Learning Kernels with Random Features},
-booktitle = nips29,
+booktitle = nips30,
 year = 2016,
 }
 
@@ -26816,7 +26888,7 @@ author = {Adam Smith and Abhradeep Thakurta},
 title = {({N}early) optimal algorithms for private online
   learning in full- information and bandit settings},
 year = 2013,
-booktitle = nips26,
+booktitle = nips27,
 }
 
 @inproceedings{SmithThUp17,
@@ -26997,7 +27069,7 @@ booktitle = colt15,
 author = {Jacob Steinhardt and Pang Wei Koh and Percy Liang},
 title = {Certified Defenses for Data Poisoning Attacks},
 year = 2017,
-booktitle = nips30,
+booktitle = nips31,
 }
 
 @inproceedings{SteinhardtLi14,
@@ -27187,7 +27259,7 @@ booktitle = nips17,
   title={A differential equation for modeling Nesterov’s accelerated 
   	gradient method: Theory and insights},
   author={Su, Weijie and Boyd, Stephen and Candes, Emmanuel},
-  booktitle=nips27,
+  booktitle=nips28,
   pages={2510--2518},
   year={2014}
 }
@@ -28240,7 +28312,7 @@ booktitle = stoc16,
   author = "Gregory Valiant and Paul Valiant",
 title = "Estimating the unseen: improved estimators for entropy
  and other properties",
-  booktitle= nips26,
+  booktitle= nips27,
   year = "2013",
 }
 
@@ -28503,6 +28575,15 @@ volume = 57,
 number = 4,
 pages = {2451–-2456},
 }
+
+@inproceedings{VolpiNaSeDuMuSa18,
+author = {Riccardo Volpi and Hongseok Namkoong and Ozan Sener and John Duchi
+and Vittorio Murino and Silvio Savarese},
+title = {Generalizing to Unseen Domains via Adversarial Data Augmentation},
+year = 2018,
+booktitle = nips32,
+}
+
 
 @inproceedings{Vovk90
 , author =      "Volodimir G. Vovk"
@@ -28775,7 +28856,7 @@ journal = {arXiv:1605.08285 [stat.ML]},
 @inproceedings{WangLiFa16,
   title={Accelerating stochastic composition optimization},
   author={Wang, Mengdi and Liu, Ji and Fang, Ethan},
-  booktitle=nips29,
+  booktitle=nips30,
   pages={1714--1722},
   year={2016}
 }
@@ -29336,7 +29417,7 @@ comment = 	{Controller sees state of environment at each instant, and
 
 @inproceedings{WoodworthSr16,
  Author = {Woodworth, Blake E and Srebro, Nati},
- Booktitle = nips29,
+ Booktitle = nips30,
  Title = {Tight complexity bounds for optimizing composite objectives},
  Year = {2016},
  Pages = {3639--3647},
@@ -29583,6 +29664,13 @@ pages = {2543--2596},
   pages={551--579},
   year=2000,
   publisher={SIAM}
+}
+
+@article{YadlowskyNaBaDuTi18,
+author = {Steve Yadlowsky and Hongseok Namkoong and Sanjay Basu and John Duchi and Lu Tian},
+title = {Bounds on the Conditional and Average Treatment Effect in the Presence of Unobserved Confounders},
+year = 2018,
+journal = {arXiv:1808.09521 [stat.ME]},
 }
 
 @article{YakowitzSP68,
@@ -30006,7 +30094,7 @@ booktitle = iclr17,
 	and Martin J.\ Wainwright},
 	title = {Information-theoretic lower bounds for distributed estimation
 	with communication constraints},
-	booktitle = nips26,
+	booktitle = nips27,
 	year = {2013},
 }
 
@@ -30286,7 +30374,7 @@ title = {Local Minimax Complexity of Stochastic Convex Optimization},
 author = {Yuancheng Zhu and Sabyasachi Chatterjee and John Duchi
    and John Lafferty},
 year = 2016,
-booktitle = nips29,
+booktitle = nips30,
 }
 
 @inproceedings{ZhuLa14,
