@@ -22910,6 +22910,25 @@ year = 2018,
 number = {HAL-01799116v2},
 }
 
+@article{Pillaud-VivienRuBa17,
+author = {Loucas Pillaud-Vivien and Alessandro Rudi and Francis Bach},
+title = {Exponential Convergence of Testing Error for Stochastic Gradient
+  Methods},
+year = 2017,
+journal = {arXiv:1712.04755 [cs.LG]},
+comment = {Shows that stochastic gradient on the squared error
+  $R_2(f) = E[(f(X) - Y)^2] + \lambda \norm{f}_{\mc{H}}^2$, where $\mc{H}$
+  is a Hilbert space, can converge exponentially quickly on the \emph{testing
+  error} $R(f) = P(f(X) \neq Y) - P(f^*(X) \neq Y)$ as long as there are
+  appropriate low-noise conditions on $Y$ conditional on $X$, e.g.\ that
+  $|E[Y \mid X=x]| \ge \delta$ for all $x$, and that the population squared
+  error minimizer similarly has the correct sign. This is intuitive for
+  bounded kernels, because getting \emph{anywhere} close in $\mc{H}$ norm
+  implies closeness in function values. Needs to assume some type of connection
+  between $\mc{H}$ and $L^2$, which they do by assuming appropriate
+  boundedness of the noise in Hilbert norm.},
+}
+
 @inproceedings{Pinelis92,
 author = {Iosif Pinelis},
 title = {An approach to inequalities for the distributions of
