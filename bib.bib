@@ -8359,7 +8359,9 @@ author = {Damek Davis and Dmitriy Drusvyatskiy},
 title = {Stochastic model-based minimization of weakly convex
 functions},
 year = 2018,
-journal = {arXiv:1803.06523 [math.OC]},
+journal = siopt,
+volume = {To Appear},
+comment = {arXiv:1803.06523 [math.OC]},
 }
 
 @article{DavisDr18b,
@@ -10091,6 +10093,14 @@ author = {John C. Duchi and Hongseok Namkoong},
 year = 2018,
 journal = {arXiv:1810.08750 [stat.ML]},
 title = {Learning Models with Uniform Performance via Distributionally Robust Optimization},
+}
+
+@article{DuchiNa19,
+author = {John C. Duchi and Hongseok Namkoong},
+title = {Variance-based regularization with convex objectives},
+journal = jmlr,
+year = 2019,
+volume = {To appear},
 }
 
 @article{DuchiNa16,
@@ -12285,6 +12295,15 @@ booktitle=	colt91,
 month=		aug,
 year=		1991,
 pages=		{317--325}
+}
+
+@article{FusterGoRaWa18,
+author = {Andreas Fuster and Paul Goldsmith-Pinkham and
+   Tarun Ramadorai and Ansgar Walther},
+title = {Predictably Unequal? The Effects of Machine Learning on Credit Markets},
+year = 2018,
+journal = {Social Science Research Network: 3072038},
+url = {http://dx.doi.org/10.2139/ssrn.3072038},
 }
 
 @article{GabrelViMu14,
@@ -20811,11 +20830,16 @@ pages=		{307--316},
 comment=  	{A problem that is equiv. to CNF with log**2 n variables}
 }
 
-@article{MeiBaMo16,
+@article{MeiBaMo18,
 author = {Song Mei and Yu Bai and Andrea Montanari},
 title = {The Landscape of Empirical Risk for Non-convex Losses},
-year = 2016,
-journal = {arXiv:1607.06534 [stat.ML]},
+year = 2018,
+journal = aos,
+volume = 46,
+number = 6,
+pages = {2747--2774},
+comment = {
+  journal = {arXiv:1607.06534 [stat.ML]}},
 }
 
 @article{MeinshausenBu06,
@@ -22934,6 +22958,25 @@ title = {Statistical Optimality of Stochastic Gradient Descent on
 Hard Learning Problems through Multiple Passes},
 year = 2018,
 number = {HAL-01799116v2},
+}
+
+@article{Pillaud-VivienRuBa17,
+author = {Loucas Pillaud-Vivien and Alessandro Rudi and Francis Bach},
+title = {Exponential Convergence of Testing Error for Stochastic Gradient
+  Methods},
+year = 2017,
+journal = {arXiv:1712.04755 [cs.LG]},
+comment = {Shows that stochastic gradient on the squared error
+  $R_2(f) = E[(f(X) - Y)^2] + \lambda \norm{f}_{\mc{H}}^2$, where $\mc{H}$
+  is a Hilbert space, can converge exponentially quickly on the \emph{testing
+  error} $R(f) = P(f(X) \neq Y) - P(f^*(X) \neq Y)$ as long as there are
+  appropriate low-noise conditions on $Y$ conditional on $X$, e.g.\ that
+  $|E[Y \mid X=x]| \ge \delta$ for all $x$, and that the population squared
+  error minimizer similarly has the correct sign. This is intuitive for
+  bounded kernels, because getting \emph{anywhere} close in $\mc{H}$ norm
+  implies closeness in function values. Needs to assume some type of connection
+  between $\mc{H}$ and $L^2$, which they do by assuming appropriate
+  boundedness of the noise in Hilbert norm.},
 }
 
 @inproceedings{Pinelis92,
