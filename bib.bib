@@ -1887,19 +1887,23 @@ year = 2009,
 publisher = {Cambridge University Press},
 }
 
-@inproceedings{AroraKa07,
-	title={A combinatorial, primal-dual approach to semidefinite programs},
-	author={Arora, Sanjeev and Kale, Satyen},
-	booktitle=stoc07,
-	year={2007},
-	organization={ACM}
-}
 
 @inproceedings{AroraGeKaMo12,
 author = {Sanjeev Arora and Rong Ge and Ravi Kannan and Ankur Moitra},
 year = 2012,
 booktitle = stoc12,
 title = {Computing a nonnegative matrix factorization---provably},
+}
+
+@inproceedings{AroraHaKa05,
+  author    = {Sanjeev Arora and
+               Elad Hazan and
+               Satyen Kale},
+  title     = {Fast Algorithms for Approximate Semidefinite Programming using the
+               Multiplicative Weights Update Method},
+  booktitle = {focs2005},
+  pages     = {339--348},
+  year      = {2005},
 }
 
 @article{AroraHaKa12,
@@ -1911,6 +1915,15 @@ journal = {Theory of Computing},
 volume = 8,
 number = 1,
 pages = {121--164},
+}
+
+
+@inproceedings{AroraKa07,
+	title={A combinatorial, primal-dual approach to semidefinite programs},
+	author={Arora, Sanjeev and Kale, Satyen},
+	booktitle=stoc07,
+	year={2007},
+	organization={ACM}
 }
 
 @book{Arrow51,
@@ -7242,6 +7255,17 @@ publisher = {Springer},
 	publisher={Elsevier}
 }
 
+@article{CohenLeMiPaSi16,
+  author    = {Michael B. Cohen and
+               Yin Tat Lee and
+               Gary L. Miller and
+               Jakub W. Pachocki and
+               Aaron Sidford},
+  title     = {Geometric Median in Nearly Linear Time},
+  year      = {2016},
+  journal   = {arXiv:1606.05225 [cs.DS]}
+}
+
 @inproceedings{Cohen95
 ,author=	{William Cohen}
 ,title=		{Fast Effective Rule Induction}
@@ -8274,6 +8298,16 @@ pages = {60--65},
   title = "Algorithms",
   publisher = "Mcgraw-Hill Higher Education",
   year = 2007
+}
+
+@article{d'Aspremont11,
+	author = {Alexandre d'Aspremont},
+	title = {Subsampling Algorithms for Semidefinite Programming},
+	year = 2011,
+	journal = {Stochastic Systems},
+	volume = 1,
+	number = 2,
+	pages = {209--436}
 }
 
 @inproceedings{DatarInImMi04,
@@ -9695,6 +9729,16 @@ year = 1991,
 volume = 31,
 number = 7,
 pages = {970--983},
+}
+
+@article {DurskinKn95,
+	author 	= {Druskin, Vladimir and Knizhnerman, Leonid},
+	title 		= {{K}rylov subspace approximation of eigenpairs and matrix functions in exact and computer arithmetic},
+	journal 	= {Numerical Linear Algebra with Applications},
+	volume 	= {2},
+	number 	= {3},
+	pages 	= {205--217},
+	year 		= {1995},
 }
 
 @article{DrusvyatskiyIoLe16,
@@ -12580,11 +12624,22 @@ comment = {Shows a lot of strange properties of covering numbers and
   convex functions exactly, but is very interesting.},
 }
 
-@inproceedings{GarberHaMa15,
-	title={Online Learning of Eigenvectors.},
+@inproceedings{GarberHaMa15,	
 	author={Garber, Dan and Hazan, Elad and Ma, Tengyu},
+	title={Online Learning of Eigenvectors.},
 	booktitle=icml15,
 	year={2015}
+}
+
+@article{GarberHa16,
+	author    = {Dan Garber and
+	Elad Hazan},
+	title     = {Sublinear time algorithms for approximate semidefinite programming},
+	journal   = {Math. Program.},
+	volume    = {158},
+	number    = {1-2},
+	pages     = {329--361},
+	year      = {2016}
 }
 
 @inproceedings{GarciaWi12,
@@ -13753,6 +13808,16 @@ author = {C. Gu},
 title = {Smoothing spline ANOVA models},
 publisher = {Springer},
 year = 2002,
+}
+@article{GuEi95,
+  	title		= {A divide-and-conquer algorithm for the symmetric tridiagonal eigenproblem},
+  	author	= {Gu, Ming and Eisenstat, Stanley C.},
+  	journal	= {SIAM Journal on Matrix Analysis and Applications},
+  	volume	= {16},
+  	number	= {1},
+  	pages	= {172--191},
+  	year		= {1995},
+  	publisher	= {SIAM}
 }
 
 @inproceedings{GuermeurElPa00,
@@ -16131,6 +16196,16 @@ author = {Prateek Jain and Praneeth Netrapalli and Sujay Sanghavi},
 title = {Low-rank Matrix Completion using Alternating Minimization},
 year = 2013,
 booktitle = stoc13,
+}
+
+@article{JambulapatiKiSi18,
+  author    = {Arun Jambulapati and
+               Kirankumar Shiragur and
+               Aaron Sidford},
+  title     = {Efficient Structured Matrix Recovery and Nearly-Linear Time Algorithms
+               for Solving Inverse Symmetric M-Matrices},
+  year      = {2018},
+  journal   = {arXiv:1812.06295 [cs.DS]}
 }
 
 @article{JamesHa98,
@@ -18537,6 +18612,15 @@ volume = 5,
 pages = {27--72},
 }
 
+@article{Lanczos50,
+  	title		= {An Iteration Method for the Solution of the Eigenvalue Problem of Linear Differential and Integral Operators},
+  	author	= {Lanczos, Cornelius},
+  	journal	= {Journal of Research of the National Bureau of Standards},
+  	volume	= {45},
+  	number	= {4},
+  	year		= {1950},
+}
+
 @inproceedings{Lang92,
 author=		{Kevin J. Lang},
 title=		{Random {DFA}'s can be approximately learned from
@@ -18772,6 +18856,14 @@ comment = {Huge reference book containing tons of concentration facts, etc.
   author={Lee, Jaeho and Raginsky, Maxim},
   journal={arXiv:1705.07815 [cs.LG]},
   year=2017
+}
+
+@inproceedings{LeeSu17,
+  author    = {Yin Tat Lee and
+               He Sun},
+  title     = {An SDP-based algorithm for linear-sized spectral sparsification},
+  booktitle = {stoc2017},
+  year      = {2017},
 }
 
 @phdthesis{Lee88,
@@ -21000,6 +21092,13 @@ year = 2010,
   year=1934
 }
 
+@book{MeurantGe06,
+	author 	= {Meurant, G{\'e}rard},
+	title 		= {The {L}anczos and Conjugate Gradient Algorithms: From Theory to Finite Precision Computations},
+	publisher 	= {Society for Industrial and Applied Mathematics},
+	year 		= {2006},
+}
+
 @article{Megiddo80
 ,author=   	{N. Megiddo}
 ,title=		{On repeated games with incomplete information played
@@ -21495,6 +21594,18 @@ comment = {Discusses geometric ergodicity of linear ARMA models. A little
                   version in English.}
 		  }
 		  
+@article{MolerLo03,
+  author    = {Cleve B. Moler and
+               Charles Van Loan},
+  title     = {Nineteen Dubious Ways to Compute the Exponential of a Matrix, Twenty-Five
+               Years Later},
+  journal   = {{SIAM} Review},
+  volume    = {45},
+  number    = {1},
+  pages     = {3--49},
+  year      = {2003}
+}
+		  
 @article{MonteiroBe13,
 	title={An accelerated hybrid proximal extragradient method for convex optimization and its implications to second-order methods},
 	author={Monteiro, Renato DC and Svaiter, Benar Fux},
@@ -21637,7 +21748,7 @@ approximate singular value decomposition},
 }
 
 @article{MuscoMuSi17,
-author = {Cameron Musco, Christopher Musco, Aaron Sidford},
+author = {Musco, Cameron and Musco, Christopher and Sidford, Aaron},
 title = {Stability of the {L}anczos Method
 for Matrix Function Approximation},
 year = 2017,
@@ -22517,6 +22628,26 @@ booktitle = icml11,
 year = 2011,
 }
 
+@inproceedings{OrecchiaScVaVa08,
+  author    = {Lorenzo Orecchia and
+               Leonard J. Schulman and
+               Umesh V. Vazirani and
+               Nisheeth K. Vishnoi},
+  title     = {On partitioning graphs via single commodity flows},
+  booktitle = {stoc08},
+  year      = {2008}
+}
+
+@inproceedings{OrecchiaSaVi12,
+  author    = {Lorenzo Orecchia and
+               Sushant Sachdeva and
+               Nisheeth K. Vishnoi},
+  title     = {Approximating the exponential, the lanczos method and an {\~{O}}(\emph{m})-time
+               spectral algorithm for balanced separator},
+  booktitle = stoc12,
+  year      = {2012}
+}
+
 @inproceedings{OrlitskySaZh03,
 author = {Alon Orlitsky and Narayana Santhanam and Junan Zhang},
 title = {Always {G}ood-Turing: asymptotically optimal probability estimation},
@@ -22681,6 +22812,33 @@ institution=	ucsccrl,
 number=		{UCSC-CRL-89-12},
 year=		1989,
 month=		jun
+}
+
+@phdthesis{Paige71,
+    author 		= {Christopher C. Paige},
+    title 		= {The computation of eigenvalues and eigenvectors of very large sparse matrices},
+    school 		= {University of London},
+    year 		= {1971}
+}
+
+@article{Paige76,
+  	title		= {Error analysis of the {L}anczos algorithm for tridiagonalizing a symmetric matrix},
+  	author	= {Paige, Christopher C.},
+  	journal	= {IMA Journal of Applied Mathematics},
+  	volume	= {18},
+  	number	= {3},
+  	pages	= {341--349},
+  	year		= {1976},
+  	publisher	= {IMA}
+}
+
+@article{Paige80,
+  	title		= {Accuracy and effectiveness of the {L}anczos algorithm for the symmetric eigenproblem},
+  	author	= {Paige, Christopher C.},
+  	journal	= {Linear Algebra and its Applications},
+  	volume	= {34},
+  	pages	= {235--258},
+  	year		= {1980},
 }
 
 @book{Palay85,
@@ -25281,6 +25439,25 @@ title = {Stochastic Proximal Iteration: A Non-Asymptotic Improvement Upon
 author = {Ernest Ryu and Stephen Boyd},
 url = {http://www.math.ucla.edu/~eryu/papers/spi.pdf},
 year = 2014,
+}
+
+@article{Saad92,
+	title={Analysis of some {K}rylov subspace approximations to the matrix 
+	exponential operator},
+	author={Saad, Yousef},
+	journal={SIAM Journal on Numerical Analysis},
+	volume={29},
+	number={1},
+	pages={209--228},
+	year={1992},
+	publisher={SIAM}
+}
+
+@book{saad2011numerical,
+  	title		= {Numerical Methods for Large Eigenvalue Problems: Revised Edition},
+  	author	= {Saad, Yousef},
+  	year		= {2011},
+  	publisher	= {SIAM}
 }
 
 @article{Saaty03,
