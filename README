@@ -5,10 +5,16 @@ and it only takes a few tweaks to make it less useful.
 
 This bib.bib file is very convenient, as you can simply soft-link it
 into whatever project you are working on, and then you do not have to
-maintain multiple bibliography files. The aggressively precise
-formatting also means that citations are simpler within the file, and
-easier to find. As a corollary to this, please *use* this bib file--it
-is convenient! Do not start your own ones!
+maintain multiple bibliography files.
+
+To soft-link things, use the command
+
+ln -s [path-to-bib]/bib.bib [path-to-desired-place].
+
+The aggressively precise formatting also means that citations are
+simpler within the file, and easier to find. As a corollary to this,
+please *use* this bib file--it is convenient! Do not start your own
+ones!
 
 *** Entry format ***
 
