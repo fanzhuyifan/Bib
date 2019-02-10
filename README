@@ -31,9 +31,9 @@ Note that this has an abbreviated journal. This is because there are
 strings at the top of the file to allow consistent formatting. Please use those
 whenever possible; e.g., NIPS should be
 
-booktitle = nips30
+booktitle = nips2013
 
-where the last two digits indicate which NIPS it is.
+where the last four digits indicate which year of NIPS it is.
 
 *** Formatting instructions ***
 
