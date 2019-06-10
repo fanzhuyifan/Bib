@@ -146,6 +146,9 @@ on Artificial Intelligence and Statistics}}
 @string{focs15 = {56th Annual Symposium on Foundations of Computer Science}}
 @string{focs16 = {57th Annual Symposium on Foundations of Computer Science}}
 
+@string{recomb19 = {23rd Annual International Conference on Research
+  in Computational Molecular Biology (RECOMB)}}
+  
 @string{soda90 = {Proceedings of the First Annual ACM-SIAM Symposium on
 		  Discrete Algorithms (SODA)}}
 @string{soda91 = {Proceedings of the Second Annual ACM-SIAM Symposium on
@@ -264,6 +267,7 @@ on Artificial Intelligence and Statistics}}
 @string{annstat={The Annals of Statistics}}
 @string{aoms = {Annals of Mathematical Statistics}}
 @string{aos = {Annals of Statistics}}
+@string{aoas = {Annals of Applied Statistics}}
 @string{aop = {Annals of Probability}}
 @string{bams = {Bulletin of the American Mathematical Society}}
 @string{cacm =	{Communications of the ACM}}
@@ -299,6 +303,7 @@ on Artificial Intelligence and Statistics}}
 @string{mitlcs=	{MIT Laboratory for Computer Science}}
 @string{ml =	{Machine Learning}}
 @string{pnas =  {Proceedings of the National Academy of Sciences}}
+@string{ptrf = {Probability Theory and Related Fields}}
 @string{sicomp ={SIAM Journal on Computing}}
 @string{statsci = {Statistical Science}}
 @string{symcomp={Journal of Symbolic Computation}}
@@ -4659,6 +4664,15 @@ semialgebraic feasible region F. Semidefinite programming is an example.
 it is independent of the representation of F and is eventually identified by a
 variety of iterative algorithms such as proximal and projected gradient
  schemes. These results extend to unbounded sets F. }
+}
+
+@inproceedings{BolukbasiChZoSaKa16,
+author = {Tolga Bolukbasi and Kai-Wei Chang and James Y Zou and
+  Venkatesh Saligrama and Adam T Kalai},
+title = {Man is to computer programmer as woman is to homemaker?
+  Debiasing word embeddings},
+booktitle = nips2016,
+year = 2016,
 }
 
 @book{Bongard??,
@@ -9561,11 +9575,14 @@ number = 1,
 pages = {238--270},
 }
 
-@InProceedings{Donoho06a,
-  author = 	 {D.L. Donoho},
+@article{Donoho06a,
+  author = 	 {David L. Donoho},
   title = 	 {Compressed Sensing},
-  booktitle = {Technical Report, Stanford University},
-  year = 	 {2006}
+  journal = ieeeit,
+  year = 	 {2006},
+  volume = 52,
+  number = 4,
+  pages = {1289--1306},
 }
 
 @article{Donoho06,
@@ -9696,6 +9713,17 @@ the Minimal L1-norm Near-Solution
 Approximates the Sparsest Near-Solution},
   institution =  {Stanford University},
   year = 	 {2004}
+}
+
+@article{DonohoMo16,
+author = {David Donoho and Andrea Montanari},
+title = {High dimensional robust {M}-estimation: asymptotic variance
+  via approximate message passing},
+year = 2016,
+journal = ptrf,
+volume = 166,
+number = {3--4},
+pages = {935--969},
 }
 
 @book{DontchevRo14,
@@ -19389,6 +19417,17 @@ comment = { Main idea of the paper: since most data analysis
                   data to live in [0, 1]^d.},
 }
 
+@article{LeiGSRiTiWa18,
+author = {Jing Lei and Max {G'S}ell and Alessandro Rinaldo and Ryan J Tibshirani
+  and Larry Wasserman},
+title = {Distribution-free predictive inference for regression},
+year = 2018,
+journal = jasa,
+volume = 113,
+number = 523,
+pages = {1094--1111},
+}
+
 @inproceedings{LeiJuChJo17,
 	title={Nonconvex Finite-Sum Optimization Via {SCSG} Methods},
 	author={Lei, Lihua and Ju, Cheng and Chen, Jianbo and Jordan, Michael I},
@@ -23216,6 +23255,35 @@ author = {Art Owen},
 title = {A robust hybrid of lasso and ridge regression},
 institution = {Stanford University},
 year = 2006,
+}
+
+@article{Owen07,
+author = {Art Owen},
+title = {Infinitely imbalanced logistic regression},
+journal = jmlr,
+year = 2007,
+volume = 8,
+pages = {761--773},
+}
+
+@article{OwenEc12,
+author = {Art Owen and Dean Eckles},
+title = {Bootstrapping data arrays of arbitrary order},
+year = 2012,
+journal = aoas,
+volume = 6,
+number = 3,
+pages = {895--927},
+}
+
+@article{OwenPe09,
+author = {Art Owen and Patrick Perry},
+title = {Bi-cross-validation of the SVD and the nonnegative matrix factorization},
+year = 2009,
+journal = aoas,
+volume = 3,
+number = 2,
+pages = {564--594},
 }
 
 @techreport{PagalloHa89,
@@ -28865,14 +28933,35 @@ pages={273--286}
   pages = 	 {267--288}
 }
 
-@article{TibshiraniTaLoTi14,
+@article{Tibshirani13,
+author = {Ryan J. Tibshrani},
+title = {The lasso problem and uniqueness},
+journal = ejs,
+year = 2013,
+volume = 7,
+pages = {1456--1490},
+}
+
+@article{TibshiraniRiTiWa18,
+author = {Ryan J Tibshirani and Alessandro Rinaldo and Rob Tibshirani and Larry Wasserman},
+year = 2018,
+title = {Uniform asymptotic inference and the bootstrap after model selection},
+journal = aos,
+volume = 46,
+number = 3,
+pages = {1255--1287},
+}
+
+@article{TibshiraniTaLoTi16,
 author = {Ryan Tibshirani and Jonathan Taylor and Richard Lockhart and
 Robert Tibshirani},
 title = {Exact post-selection inference for sequential regression
 procedures},
-year = 2014,
+year = 2016,
 journal = jasa,
-pages = {To appear},
+pages = {600-620},
+volume = 111,
+number = 514,
 }
 
 @article{LockhardtTaTiTi14,
@@ -29403,6 +29492,14 @@ author = {Gregory Valiant and Paul Valiant},
 title = {Instance Optimal Learning of Discrete Distributions},
 year = 2016,
 booktitle = stoc16,
+}
+
+@inproceedings{ValiantVa13a,
+author = {Gregory Valiant and Paul Valiant},
+title = {Estimating the unseen: an $n / \log n$-sample estimator for entropy
+  and support size, shown optimal via new {CLT}s},
+booktitle = stoc13,
+year = 2013,
 }
 
 @inproceedings{ValiantVa13,
@@ -31391,6 +31488,13 @@ year = 2008,
 	algorithms for sparse linear regression},
 	year = 2014,
 	booktitle = colt14,
+}
+
+@inproceedings{ZhangXiZo19,
+author = {Martin J. Zhang and Fei Xia and James Zou},
+year = 2019,
+booktitle = recomb19,
+title = {{AdaFDR}: a Fast, Powerful and Covariate-Adaptive Approach to Multiple Hypothesis Testing},
 }
 
 @article{ZhangYu05,
