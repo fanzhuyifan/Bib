@@ -159,6 +159,8 @@ on Artificial Intelligence and Statistics}}
 		  Discrete Algorithms (SODA)}}
 @string{soda14 = {Proceedings of the Twenty-Fifth ACM-SIAM Symposium on
 		  Discrete Algorithms (SODA)}}
+@string{soda18 = {Proceedings of the Twenty-Ninth ACM-SIAM 
+Symposium on Discrete Algorithms (SODA)}}
 @string{soda19 = {Proceedings of the Thirtieth ACM-SIAM Symposium on
 		  Discrete Algorithms (SODA)}}
 
@@ -6132,11 +6134,11 @@ year = 2016,
 journal = {arXiv:1612.00547 [math.OC]},
 }
 
-@article{CarmonDu18,
+@inproceedings{CarmonDu18,
 title = {Analysis of {K}rylov Subspace Solutions of
   Regularized Nonconvex Quadratic Problems},
 author = {Yair Carmon and John C. Duchi},
-journal = {arXiv:1806.09222 [math.OC]},
+booktitle = nips2018,
 year = 2018,
 }
 
@@ -6153,7 +6155,6 @@ booktitle = {NIPS Workshop on Non-Convex Optimization}
   author={Carmon, Yair and Duchi, John C and Hinder, Oliver and Sidford, 
 	Aaron},
   journal = siopt,
-  url={https://arXiv.org/abs/1611.00756},
   volume = 28,
   number = 2,
   pages = {1751--1772},
@@ -12299,6 +12300,15 @@ year = {2002}
 ,pages=         {379--390}
 }
 
+@InProceedings{FosterSeShSrWo19,
+	title = 	 {The Complexity of Making the Gradient Small in Stochastic 
+	Convex Optimization},
+	author = 	 {Foster, Dylan J. and Sekhari, Ayush and Shamir, Ohad and 
+	Srebro, Nathan and Sridharan, Karthik and Woodworth, Blake},
+	booktitle = colt19,
+	year = 2019
+}
+
 @article{FournierGu15,
   title={On the rate of convergence in {W}asserstein distance of the empirical measure},
   author={Fournier, Nicolas and Guillin, Arnaud},
@@ -12766,6 +12776,17 @@ pages =            {302--332}
   pages={33--46},
   year=2005,
   publisher={Springer}
+}
+
+@article{Frohlich18,
+  title={From hype to reality: data science enabling personalized medicine},
+  author={Fr{\"o}hlich, Holger and Balling, Rudi and Beerenwinkel, Niko and Kohlbacher, Oliver and Kumar, Santosh and Lengauer, Thomas and Maathuis, Marloes H and Moreau, Yves and Murphy, Susan A and Przytycka, Teresa M and others},
+  journal={BMC medicine},
+  volume=16,
+  number=1,
+  pages=150,
+  year=2018,
+  publisher={BioMed Central}
 }
 
 @book{FrontiersMassiveDataAnalysis,
@@ -15936,6 +15957,14 @@ url = {http://www.samhsa.gov/data/emergency-department-data-dawn/reports?tab=47}
 	year={2018}
 }
 
+@article{HinderSiSo19,
+	author = {Oliver Hinder and Aaron Sidford and Nimit S. Sohoni},
+	title = {Near-Optimal Methods for Minimizing Star-Convex Functions 
+	and Beyond},
+	year = 2019,
+	journal = {arXiv:1906.11985 [math.OC]},
+}
+
 @inproceedings{Hinton86,
 author=   	{Hinton, Geoffrey E.},
 title=    	{Learning Distributed Representations of Concepts},
@@ -18106,6 +18135,14 @@ author = {Yoon Kim and Carl Denton and Luong Hoang and Alexander Rush},
 title = {Structured attention networks},
 year = 2017,
 booktitle = iclr17,
+}
+
+@article{KimFe19,
+	title={Optimizing the efficiency of first-order methods for decreasing the 
+	gradient of smooth convex functions},
+	author={Kim, Donghwan and Fessler, Jeffrey A},
+	journal={arXiv:1803.06600 [math.OC]},
+	year={2018}
 }
 
 @article{KimKiFa14,
@@ -22429,6 +22466,13 @@ publisher = {Cambridge University Press},
 ,year=          1996
 }
 
+@book{Munoz16,
+  title={Big data: A report on algorithmic systems, opportunity, and civil rights},
+  author={Executive Office of the President},
+  year=2016,
+  publisher={Executive Office of the President}
+}
+
 @article{MurtyKa87,
 author = {Katta Murty and Santosh Kabadi},
 title = {Some {NP}-Complete Problems in Quadratic and Nonlinear Programming},
@@ -22457,12 +22501,12 @@ approximate singular value decomposition},
 	year={2015},
 }
 
-@article{MuscoMuSi17,
+@inproceedings{MuscoMuSi18,
 author = {Musco, Cameron and Musco, Christopher and Sidford, Aaron},
 title = {Stability of the {L}anczos Method
 for Matrix Function Approximation},
-year = 2017,
-journal = {arXiv:1708.07788 [cs.DS]},
+year = 2018,
+booktitle = soda18,
 }
 
 @article{Mykland95,
@@ -23933,7 +23977,7 @@ comment=  	{Defines and studies graphoids for representing dependencies}
 	the paper}
 }
 
-@inproceedings{PenningtonSoMa2014,
+@inproceedings{PenningtonSoMa14,
   author = {Jeffrey Pennington and Richard Socher and Christopher D. Manning},
   booktitle = emnlp,
   title = {GloVe: Global Vectors for Word Representation},
@@ -29527,12 +29571,12 @@ publisher = {Academic Press},
   publisher={SIAM}
 }
 
-@article{TripuraneniStJiReJo17,
+@inproceedings{TripuraneniStJiReJo18,
 	title={Stochastic Cubic Regularization for Fast Nonconvex Optimization},
 	author={Tripuraneni, Nilesh and Stern, Mitchell and Jin, Chi and Regier, 
 	Jeffrey and Jordan, Michael I},
-	journal={arXiv:1711.02838 [cs.LG]},
-	year={2017}
+	booktitle=nips2018,
+	year={2018}
 }
 
 @article{TripuraneniFlBaJo18,
@@ -31896,6 +31940,14 @@ title = {{AdaFDR}: a Fast, Powerful and Covariate-Adaptive Approach to Multiple 
   pages = 	 {1538-1579}
 }
 
+@article{ZhangZh18,
+	title={A Cubic Regularized {N}ewton's Method over {R}iemannian 
+	Manifolds},
+	author={Zhang, Junyu and Zhang, Shuzhong},
+	journal = {arXiv:1805.05565 [math.OC]},
+	year={2018}
+}
+
 @article{ZhaoHuPeLaLe18,
 	Author = {Zhao, Ding and Huang, Xianan and Peng, Huei and Lam, Henry and LeBlanc, David J},
 	Journal = {IEEE Transactions on Intelligent Transportation Systems},
@@ -32002,6 +32054,14 @@ pages = {2541-2567},
                   surrogate distribution. Gives consistency and rate
                   of convergence to the global optimum but requires
                   polynomially growing sample sizes.}
+}
+
+@InProceedings{ZhouGu19,
+	title = 	 {Lower Bounds for Smooth Nonconvex Finite-Sum 
+	Optimization},
+	author = 	 {Zhou, Dongruo and Gu, Quanquan},
+	booktitle = 	icml19,
+	year = 	 {2019},
 }
 
 @article{ZhouLaWa09,
