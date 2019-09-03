@@ -314,6 +314,10 @@ Symposium on Discrete Algorithms (SODA)}}
 @string{ucsccrl={University of California Santa Cruz,
 		 Computer Research Laboratory}}
 
+%% NOTE: NeurIPS has an off-by-one error in its numbering. The
+%% Proceedings of the Thirty-Second Conference on Neural Information
+%% Processing Systems is the *book* Advances in Neural Information
+%% Processing Systems 31.
 @string{nips1=	{Advances in Neural Information Processing Systems 1}}
 @string{nips5=	{Advances in Neural Information Processing Systems 5}}
 @string{nips7=	{Advances in Neural Information Processing Systems 7}}
@@ -332,15 +336,15 @@ Symposium on Discrete Algorithms (SODA)}}
 @string{nips21= {Advances in Neural Information Processing Systems 21}}
 @string{nips22= {Advances in Neural Information Processing Systems 22}}
 @string{nips23= {Advances in Neural Information Processing Systems 23}}
-@string{nips2010= {Advances in Neural Information Processing Systems 24}}
-@string{nips2011= {Advances in Neural Information Processing Systems 25}}
-@string{nips2012= {Advances in Neural Information Processing Systems 26}} % 2012
-@string{nips2013= {Advances in Neural Information Processing Systems 27}} % 2013
-@string{nips2014= {Advances in Neural Information Processing Systems 28}} % 2014
-@string{nips2015= {Advances in Neural Information Processing Systems 29}} % 2015
-@string{nips2016= {Advances in Neural Information Processing Systems 30}} % 2016
-@string{nips2017= {Advances in Neural Information Processing Systems 31}} % 2017
-@string{nips2018= {Advances in Neural Information Processing Systems 32}} % 2018
+@string{nips2010= {Advances in Neural Information Processing Systems 23}}
+@string{nips2011= {Advances in Neural Information Processing Systems 24}}
+@string{nips2012= {Advances in Neural Information Processing Systems 25}} % 2012
+@string{nips2013= {Advances in Neural Information Processing Systems 26}} % 2013
+@string{nips2014= {Advances in Neural Information Processing Systems 27}} % 2014
+@string{nips2015= {Advances in Neural Information Processing Systems 28}} % 2015
+@string{nips2016= {Advances in Neural Information Processing Systems 29}} % 2016
+@string{nips2017= {Advances in Neural Information Processing Systems 30}} % 2017
+@string{nips2018= {Advances in Neural Information Processing Systems 31}} % 2018
 
 @string{nips5eds={Stephen Jos\'e Hanson and Jack D. Cowan and C. Lee Giles}}
 
@@ -3261,19 +3265,23 @@ comment = {Considers some distributed differential privacy ideas (something
   publisher={Taylor \& Francis Group}
 }
 
-@article{BelkinHsMi18,
+@inproceedings{BelkinHsMi18,
 title = {Overfitting or perfect fitting? {R}isk bounds
   for classification and regression rules that interpolate},
-year = 2018,
 author = {Mikhail Belkin and Daniel Hsu and Partha Mitra},
-journal = {arXiv:1806.05161 [stat.ML]},
+pages = {2300--2311},
+year = {2018},
+booktitle = nips2018,
+publisher = {Curran Associates, Inc.},
+comment = {arXiv:1806.05161 [stat.ML]},
 }
 
-@article{BelkinRaTs18,
+@inproceedings{BelkinRaTs19,
 author = {Mikhail Belkin and Alexander Rakhlin and Alexandre B. Tsybakov},
 title = {Does data interpolation contradict statistical optimality?},
-journal = {arXiv:1806.09471 [stat.ML]},
-year = 2018,
+booktitle = aistat19,
+pages = {1611--1619},
+year = 2019,
 }
 
 @inproceedings{BelkinSi10,
