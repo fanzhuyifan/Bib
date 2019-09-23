@@ -399,6 +399,8 @@ Symposium on Discrete Algorithms (SODA)}}
 @string{icml18 = {Proceedings of the 35th International Conference on Machine Learning}}
 @string{icml19 = {Proceedings of the 36th International Conference on Machine Learning}}
 
+@string{iclr14 = {Proceedings of the Second International Conference on 
+Learning Representations}}
 @string{iclr15 = {Proceedings of the Third International Conference on Learning Representations}}
 @string{iclr2016 = {Proceedings of the Fourth International Conference on Learning Representations}}
 @string{iclr17 = {Proceedings of the Fifth International Conference on Learning Representations}}
@@ -6169,12 +6171,16 @@ year = 2017,
   publisher={IMS}
   
 }
-@article{CarmonDu16,
-title = {Gradient Descent Efficiently Finds the Cubic-Regularized
- Non-Convex {N}ewton Step},
+@article{CarmonDu19,
+title = {Gradient Descent Finds the Cubic-Regularized
+ Nonconvex {N}ewton Step},
 author = {Yair Carmon and John C. Duchi},
-year = 2016,
-journal = {arXiv:1612.00547 [math.OC]},
+journal = siopt,
+volume = 29,
+number = 3,
+pages = {2146–-2178},
+year={2019},
+comment = {arXiv:1612.00547 [math.OC]},
 }
 
 @inproceedings{CarmonDu18,
@@ -6220,26 +6226,36 @@ author = {Carmon, Yair and Duchi, John C and Hinder, Oliver and Sidford,
 	Aaron},
 year = 2019,
 journal = mathproga,
-volume = {To Appear},
+comment = {To Appear},
+doi={s10107-019-01406-y}
 }
 
-@article{CarmonDuHiSi19,
+@article{CarmonDuHiSi19ii,
 title = {Lower bounds for finding stationary points
  {II}: First order methods},
 author = {Carmon, Yair and Duchi, John C and Hinder, Oliver and Sidford, 
 	Aaron},
 year = 2019,
 journal = mathproga,
-volume = {to appear},
+comment = {to appear},
 comment = {arXiv:1711.00841 [math.OC]},
+doi={s10107-019-01431-x}
 }
 
 @inproceedings{CarmonDuSiTi19,
-author = {Yair Carmon and John Duchi and Aaron Sidford and Kevin Tian},
+author = {Yair Carmon and John C Duchi and Aaron Sidford and Kevin Tian},
 title = {A Rank-1 Sketch for Matrix Multiplicative Weights},
 year = 2019,
 booktitle = colt19,
 }
+
+@inproceedings{CarmonJiSiTi19,
+	author = {Yair Carmon and Yujia Jin and Aaron Sidford and Kevin Tian},
+	title = {Variance Reduction for Matrix Games},
+	year = 2019,
+	booktitle = nips2019,
+}
+
 
 @inproceedings{CarmonRaScLiDu19,
 author = {Yair Carmon and Aditi Raghunathan and Ludwig Schmidt and Percy Liang and John Duchi},
@@ -11515,6 +11531,18 @@ year = 2014,
 volume = 36,
 number = 3,
 pages = {473–-494},
+}
+
+@article{EldarMe14b,
+	title={A competitive minimax approach to robust estimation of random 
+	parameters},
+	author={Eldar, Yonina C and Merhav, Neri},
+	journal={IEEE Transactions on Signal Processing},
+	volume={52},
+	number={7},
+	pages={1931--1946},
+	year={2004},
+	publisher={IEEE}
 }
 
 @inproceedings{ElidanMcKo06,
@@ -25443,6 +25471,14 @@ year = 2011,
 booktitle = nips2011,
 }
 
+@inproceedings{RechtRoScSh19,
+	title = 	 {Do {I}mage{N}et Classifiers Generalize to {I}mage{N}et?},
+	author = 	 {Recht, Benjamin and Roelofs, Rebecca and Schmidt, Ludwig 
+	and Shankar, Vaishaal},
+	booktitle = 	icml19,
+	year = 	 {2019},
+}
+
 @inproceedings{ReddiHeSrPoSm16,
 	title = 	 {Stochastic Variance Reduction for Nonconvex Optimization},
 	author = 	 {Sashank J. Reddi and Ahmed Hefny and Suvrit Sra and Barnabas Poczos and Alex Smola},
@@ -29158,13 +29194,13 @@ note = {Preprint available at arXiv:math/970123 [math.MG]},
   organization={IEEE Computer Society}
 }
 
-@article{SzegedyZaSuBrErGoFe14,
+@inproceedings{SzegedyZaSuBrErGoFe14,
   author = {Szegedy, Christian and Zaremba, Wojciech and Sutskever,
                   Ilya and Bruna, Joan and Erhan, Dumitru and
                   Goodfellow, Ian and Fergus, Rob},
   title = {Intriguing properties of neural networks},
-  year = 2013,
-  journal = {arXiv:1312.6199 [cs.CV]}
+  year = 2014,
+  booktitle = iclr14,
 }
 
 @article{SzepesvariLi99,
