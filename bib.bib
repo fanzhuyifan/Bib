@@ -262,6 +262,8 @@ Symposium on Discrete Algorithms (SODA)}}
 		  Artificial Intelligence}}
 @string{aaai15= {Proceedings of the Thirty-Second National Conference on
 		  Artificial Intelligence}}
+@string{aaai19= {Proceedings of the Thirty-Third AAAI Conference on
+		  Artificial Intelligence}}
 
 @string{anprob=	{Annals of Probability}}
 @string{anappprob={Annals of Applied Probability}}
@@ -399,6 +401,8 @@ Symposium on Discrete Algorithms (SODA)}}
 @string{icml18 = {Proceedings of the 35th International Conference on Machine Learning}}
 @string{icml19 = {Proceedings of the 36th International Conference on Machine Learning}}
 
+@string{iclr14 = {Proceedings of the Second International Conference on 
+Learning Representations}}
 @string{iclr15 = {Proceedings of the Third International Conference on Learning Representations}}
 @string{iclr2016 = {Proceedings of the Fourth International Conference on Learning Representations}}
 @string{iclr17 = {Proceedings of the Fifth International Conference on Learning Representations}}
@@ -1072,6 +1076,17 @@ comment = {Studies the problem of existence and uniqueness of the minimizer
   year=2012,
   publisher={Springer}
 }
+
+@article{AhmedReRo13,
+author = {Ali Ahmed and Benjamin Recht and Justin Romberg},
+title = {Blind Deconvolution Using Convex Programming},
+journal = ieeeit,
+volume = 60,
+number = 3,
+pages = {1711--1732},
+year = 2013,
+}
+
 
 @article{AhmedCaSh07,
   title={Coherent risk measures in inventory problems},
@@ -2040,7 +2055,9 @@ year = 2019,
 title = {Stochastic (Approximate) Proximal Point Methods:
 Convergence, Optimality, and Adaptivity},
 journal = siopt,
-volume=  {To Appear},
+volume = 29,
+number = 3,
+pages = {2257--2290},
 url = {https://arXiv.org/abs/1810.05633},
 }
 
@@ -2325,12 +2342,11 @@ pages = {1019--1048},
 }
 
 @inproceedings{BachMo13,
-  title={Non-strongly-convex smooth stochastic approximation with convergence rate O (1/n)},
+  title={Non-strongly-convex smooth stochastic approximation with convergence rate ${O}(1/n)$},
   author={Bach, Francis and Moulines, Eric},
   year = 2013,
   booktitle=nips2013,
   pages={773--781},
-  year=2013
 }
 
 @article{Bach14,
@@ -2533,6 +2549,14 @@ comment = {Uses Loomis-Whitney inequality to show lower bounds on amount
   of communication between levels of processors in a numerical linear
   algebra system. Arguments are (nicely) quite simple; lower bounds apply
   given \emph{any} particular algorithm.},
+}
+
+@inproceedings{BalleBaGa18,
+  title={Privacy Amplification by Subsampling: Tight Analyses via Couplings and Divergences},
+  author={Borja Balle and Gilles Barthe and Marco Gaboardi},
+  booktitle= nips2018,
+  pages={6277--6287},
+  year={2018}
 }
 
 @unpublished{Balsubramani14,
@@ -3030,6 +3054,13 @@ comment = {Gives equivalent conditions to a Bregman divergence being
 comment={    url = "citeseer.nj.nec.com/bauschke96projection.html"},
 }
 
+@book{BauschkeCo11,
+  title={Convex Analysis and Monotone Operator Theory in {H}ilbert Spaces},
+  author={Heinz H. Bauschke and Patrick L. Combettes},
+  volume={408},
+  year={2011},
+  publisher={Springer}
+}
 
 @article{BauerKo99,
   author = 	 {Eric Bauer and Ron Kohavi},
@@ -4799,11 +4830,11 @@ pages = {2217–-2229},
 year = 2013,
 }
 
-@book{BonnansSh13,
-  title={Perturbation analysis of optimization problems},
+@book{BonnansSh00,
+  title={Perturbation Analysis of Optimization Problems},
   author={Bonnans, J Fr{\'e}d{\'e}ric and Shapiro, Alexander},
-  year=2013,
-  publisher={Springer Science \& Business Media}
+  year=2000,
+  publisher={Springer},
 }
 
 @article{BonnansSh98,
@@ -5590,11 +5621,11 @@ note =          {Unpublished manuscript}
 }
 
 @inproceedings{BubeckElLe15,
-  title={Finite-time analysis of projected Langevin Monte Carlo},
+  title={Finite-time analysis of projected {L}angevin {M}onte {C}arlo},
   author={Bubeck, Sebastien and Eldan, Ronen and Lehec, Joseph},
   booktitle=nips2015,
   pages={1243--1251},
-  year=2015
+  year=2015,
 }
 
 @article{BubeckMuStSz12,
@@ -5616,6 +5647,16 @@ volume = 5,
 number = 1,
 pages = {1--122},
 year = 2012,
+}
+
+@article{BubeckLeSi15,
+	author    = {S{\'{e}}bastien Bubeck and
+	Yin Tat Lee and
+	Mohit Singh},
+	title     = {A geometric alternative to {N}esterov's accelerated gradient descent},
+	journal   =  {arXiv:1506.08187 [math.AG]},
+	year      = {2015},
+
 }
 
 @inproceedings{BuckleySaAl94
@@ -6170,12 +6211,16 @@ year = 2017,
   publisher={IMS}
   
 }
-@article{CarmonDu16,
-title = {Gradient Descent Efficiently Finds the Cubic-Regularized
- Non-Convex {N}ewton Step},
+@article{CarmonDu19,
+title = {Gradient Descent Finds the Cubic-Regularized
+ Nonconvex {N}ewton Step},
 author = {Yair Carmon and John C. Duchi},
-year = 2016,
-journal = {arXiv:1612.00547 [math.OC]},
+journal = siopt,
+volume = 29,
+number = 3,
+pages = {2146–-2178},
+year={2019},
+comment = {arXiv:1612.00547 [math.OC]},
 }
 
 @inproceedings{CarmonDu18,
@@ -6221,26 +6266,36 @@ author = {Carmon, Yair and Duchi, John C and Hinder, Oliver and Sidford,
 	Aaron},
 year = 2019,
 journal = mathproga,
-volume = {To Appear},
+comment = {To Appear},
+doi={s10107-019-01406-y}
 }
 
-@article{CarmonDuHiSi19,
+@article{CarmonDuHiSi19ii,
 title = {Lower bounds for finding stationary points
  {II}: First order methods},
 author = {Carmon, Yair and Duchi, John C and Hinder, Oliver and Sidford, 
 	Aaron},
 year = 2019,
 journal = mathproga,
-volume = {to appear},
+comment = {to appear},
 comment = {arXiv:1711.00841 [math.OC]},
+doi={s10107-019-01431-x}
 }
 
 @inproceedings{CarmonDuSiTi19,
-author = {Yair Carmon and John Duchi and Aaron Sidford and Kevin Tian},
+author = {Yair Carmon and John C Duchi and Aaron Sidford and Kevin Tian},
 title = {A Rank-1 Sketch for Matrix Multiplicative Weights},
 year = 2019,
 booktitle = colt19,
 }
+
+@inproceedings{CarmonJiSiTi19,
+	author = {Yair Carmon and Yujia Jin and Aaron Sidford and Kevin Tian},
+	title = {Variance Reduction for Matrix Games},
+	year = 2019,
+	booktitle = nips2019,
+}
+
 
 @inproceedings{CarmonRaScLiDu19,
 author = {Yair Carmon and Aditi Raghunathan and Ludwig Schmidt and Percy Liang and John Duchi},
@@ -6548,13 +6603,6 @@ pages=		{429--438}
 	year = "(to appear)"
 }
 
-@inproceedings{CesaBianchiLu99,
-  title={Minimax regret under log loss for general classes of experts},
-  author={Nicol\`o Cesa-Bianchi and G\'abor Lugosi},
-  year = 1999, 
-  booktitle = colt99,
-}
-
 @inproceedings{CesaBianchiCoGe02,
 	author= {N.~Cesa-Bianchi and A.~Conconi and C.~Gentile},
 	title=  {On the Generalization Ability of On-line Learning Algorithms},
@@ -6658,7 +6706,7 @@ year =          {2003}
 
 @book{CesaBianchiLu06,
 author = {N. Cesa-Bianchi and G. Lugosi},
-title  = {Prediction, learning, and games},
+title  = {Prediction, Learning, and Games},
 publisher = {Cambridge University Press},
 year = {2006}
 }
@@ -7188,8 +7236,9 @@ volume = {to appear},
 @article{ChenLeToZh16,
   title={Statistical inference for model parameters in stochastic gradient descent},
   author={Chen, Xi and Lee, Jason D and Tong, Xin T and Zhang, Yichen},
-  journal={aos},
-  year=2019
+  journal=aos,
+  volume = {to appear},
+  year=2019,
 }
 
 @article{ChenLeToZh19,
@@ -9556,11 +9605,13 @@ pages = {533--558},
 }
 
 @article{DiCiccioHaRo91,
-  title={Empirical likelihood is Bartlett-correctable},
+  title={Empirical likelihood is {B}artlett-correctable},
   author={DiCiccio, Thomas and Hall, Peter and Romano, Joseph},
-  journal={The Annals of Statistics},
+  journal=aos,
+  volume=19,
+  number = 2,
   pages={1053--1061},
-  year=1991
+  year=1991,
 }
 
 @article{Diaconis87
@@ -9585,6 +9636,17 @@ author = {Ilias Diakonikolas and Gautam Kamath and Daniel M. Kane and Jerry Li
 title = {Being Robust (in High Dimensions) Can Be Practical},
 booktitle = icml17,
 year = 2017,
+}
+
+@article{DiakonikolasOr19,
+	title={The approximate duality gap technique: A unified theory of first-order 
+	methods},
+	author={Diakonikolas, Jelena and Orecchia, Lorenzo},
+	journal=siopt,
+	volume={29},
+	number={1},
+	pages={660--689},
+	year={2019},
 }
 
 @phdthesis{Diep95
@@ -9779,6 +9841,13 @@ year = 		1989
   year = 	 1997,
   volume =	 13,
   pages =	 {187--220}
+}
+
+@article{DongRoSu19,
+author = {Jinshuo Dong and Aaron Roth and Weijie J. Su},
+year = 2019,
+title = {Gaussian Differential Privacy},
+journal = {arXiv:arXiv:1905.02383 [cs.LG]},
 }
 
 @article{Donoho94,
@@ -10176,6 +10245,16 @@ pages = {970--983},
 	year 		= {1995},
 }
 
+@article{DrusvyatskiyFaRo18,
+	author={Drusvyatskiy, Dmitriy and Fazel, Maryam and Roy, Scott},
+	title = {An optimal first order method based on optimal quadratic averaging},
+	year = 2018,
+	journal = siopt,
+	volume = 28,
+	number = 1,
+	pages = {251--271},
+}
+
 @article{DrusvyatskiyIoLe16,
 author = {Dmitriy Drusvyatskiy and Alexander Ioffe and Adrian Lewis},
 title = {Nonsmooth optimization using {T}aylor-like models: error bounds,
@@ -10223,12 +10302,13 @@ author = {Dmitriy Drusvyatskiy},
 title = {The proximal point method revisited},
 journal = {SIAG/OPT Views and News},
 year = 2018,
-volume=  {to appear},
+volume=  {26},
+number = 1,
 url = {http://www.arXiv.org/abs/1712.06038},
 }
 
 @article{DrusvyatskiyPa18,
-author = {Dmitriy Drusvyatskiy and Caroline Paquette},
+author = {Dmitriy Drusvyatskiy and Courtney Paquette},
 title = {Efficiency of minimizing compositions of convex functions and smooth maps},
 journal = mathproga,
 year = 2018,
@@ -10733,7 +10813,7 @@ url = {https://arxiv.org/abs/1703.08570},
 }
 
 @article{DuchiRu18a,
-author = {John C. Duchi and Feng Ruan},
+author = {John Duchi and Feng Ruan},
 title = {Solving (most) of a set of quadratic equalities:
   Composite optimization for robust phase retrieval},
 year = 2018,
@@ -11523,6 +11603,18 @@ year = 2014,
 volume = 36,
 number = 3,
 pages = {473–-494},
+}
+
+@article{EldarMe14b,
+	title={A competitive minimax approach to robust estimation of random 
+	parameters},
+	author={Eldar, Yonina C and Merhav, Neri},
+	journal={IEEE Transactions on Signal Processing},
+	volume={52},
+	number={7},
+	pages={1931--1946},
+	year={2004},
+	publisher={IEEE}
 }
 
 @inproceedings{ElidanMcKo06,
@@ -12344,13 +12436,12 @@ year = {2002}
 ,booktitle=	stoc94
 }
 
-@article{FosterKaLuMoSr18,
+@inproceedings{FosterKaLuMoSr18,
   title={Logistic Regression: The Importance of Being Improper},
   author={Foster, Dylan J and Kale, Satyen and Luo, Haipeng and Mohri, Mehryar and Sridharan, Karthik},
-  booktitle=colt18
-  volume={75},
-  pages={1--42},
-  year=2018
+  booktitle=colt18,
+  pages={167--208},
+  year=2018,
 }
 
 @article{Foster91
@@ -14466,6 +14557,17 @@ year = 2002,
  editor =       {V. Piuri et al.}
 }
 
+@article{GulerOs91,
+  title={On the convergence of the proximal point algorithm for convex minimization},
+  author={G{\"u}ler, Osman},
+  journal={SIAM Journal on Control and Optimization},
+  volume={29},
+  number={2},
+  pages={403--419},
+  year={1991},
+  publisher={SIAM}
+}
+
 @inproceedings{GuibasSe78,
 	author = {L.J.~Guibas and R.~Sedgewick},
 	title = {A Dichromatic Framework for Balanced Trees},
@@ -14532,6 +14634,14 @@ url = {http://www.cis.upenn.edu/~sudipto/mypapers/unsketchables.pdf},
  year = {2012},
 } 
 
+@inproceedings{GunasekarWoBhNeSr17,
+author = {Suriya Gunasekar and Blake Woodworth
+and Srinadh Bhojanapalli and Behnam Neyshabur and Nathan Srebro},
+title = {Implicit Regularization in Matrix Factorization},
+year = 2017,
+booktitle = nips2017,
+}
+
 @article{Guntuboyina11,
 author = {Adityanand Guntuboyina},
 title = {Lower bounds for the minimax risk using $f$-divergences,
@@ -14583,9 +14693,11 @@ address = {Kiev},
 }
 
 @article{Gupta19,
-  title={Near-optimal Bayesian ambiguity sets for distributionally robust optimization},
+  title={Near-optimal {B}ayesian ambiguity sets for distributionally robust optimization},
   author={Gupta, Vishal},
   journal={Management Science},
+  volume=65,
+  number=9,
   year=2019,
   publisher={INFORMS}
 }
@@ -14740,6 +14852,17 @@ pages = {S1--S115 (supplement)},
   year = 	 1956,
   month =	 mar,
   pages =	 {1-7}
+}
+
+@article{HagerZh05,
+	title={A new conjugate gradient method with guaranteed descent and an 
+	efficient line search},
+	author={Hager, William W and Zhang, Hongchao},
+	journal=siopt,
+	volume={16},
+	number={1},
+	pages={170--192},
+	year={2005},
 }
 
 @article{HagerZh06,
@@ -18932,6 +19055,13 @@ journal = {arXiv:0906.4835 [math.OC]},
   note =	 {The paper where the add 1/2 rule is first shown to be optimal}
 }
 
+@inproceedings{KricheneBaBa15,
+	title={Accelerated mirror descent in continuous and discrete time},
+	author={Krichene, Walid and Bayen, Alexandre and Bartlett, Peter L},
+	booktitle=nips2015,
+	year={2015}
+}
+
 @techreport{KrizhevskyHi09,
   title={Learning multiple layers of features from tiny images},
   author={Krizhevsky, Alex and Hinton, Geoffrey},
@@ -20277,7 +20407,7 @@ url = {http://arxiv.org/abs/0812.0423},
 }
 
 @inproceedings{LiLiKyCa18,
-  title={Statistical inference using SGD},
+  title={Statistical inference using {SGD}},
   author={Li, Tianyang and Liu, Liu and Kyrillidis, Anastasios and Caramanis, Constantine},
   booktitle={Thirty-Second AAAI Conference on Artificial Intelligence},
   year=2018
@@ -20411,11 +20541,13 @@ pages=    	{361--387},
   year={2015}
 }
 
-@article{LinMaHa17,
+@article{LinMaHa18,
   title={Catalyst Acceleration for First-order Convex Optimization: from Theory to Practice},
   author={Lin, Hongzhou and Mairal, Julien and Harchaoui, Zaid},
-  journal={arXiv preprint arXiv:1712.05654},
-  year={2017}
+  journal=jmlr,
+  year={2018},
+  volume=18,
+  number=212,
 }
 
 @inproceedings{LiRi16,
@@ -21335,11 +21467,12 @@ pages = {1808--1829},
 
 @article{MandtHoBl17,
 author = {Stephan Mandt and Matthew Hoffman and David Blei},
-title = {Stochastic Gradient Descent as Approximate Bayesian Inference},
+title = {Stochastic Gradient Descent as Approximate {B}ayesian Inference},
 year = 2017,
 journal = jmlr,
 pages = {1--35},
 volume = 18,
+number = 134,
 }
 
 
@@ -21583,6 +21716,15 @@ title = {Inequalities: Theory of Majorization and Its Applications},
 year = 2011,
 edition = {Second},
 publisher = {Springer},
+}
+
+@article{Martinet70,
+  title={Regularisation d'in{\'e}quations variationelles par approximations succesives},
+  author={Martinet, Bernard},
+  journal={Revue Francaise d'Informatique et de Recherche Operationelle},
+  year={1970},
+  volume = 4,
+  pages = {154--158},
 }
 
 @article{Marton98,
@@ -21959,7 +22101,7 @@ journal = {arXiv:1711.10467 [cs.LG]},
   organization={IEEE}
 }
 
-@article{McMahanSt12,
+@inproceedings{McMahanSt12,
   title={Open problem: Better bounds for online logistic regression},
   author={McMahan, H Brendan and Streeter, Matthew},
   year=2012,
@@ -24039,12 +24181,14 @@ year=		1982,
 publisher=	{Marcel Dekker}
 }
 
-@article{PatrascuNe17,
+@article{PatrascuNe18,
 author = {Patrascu, Andrei and Necoara, Ion},
 title={Nonasymptotic convergence of stochastic proximal point algorithms for
   constrained convex optimization},
-year = 2017,
-journal = {arXiv:1706.06297 [math.OC]},
+year = 2018,
+journal = jmlr,
+volume = 18,
+number = 198,
 }
 
 
@@ -25199,7 +25343,7 @@ journal = {arXiv:1510.03925 [math.PR]},
 @article{RakhlinSr15b,
   title={Online nonparametric regression with general loss functions},
   author={Rakhlin, Alexander and Sridharan, Karthik},
-  journal={	arXiv:1501.06598 [stat.ML]},
+  journal={arXiv:1501.06598 [stat.ML]},
   year={2015}
 }
 
@@ -25422,11 +25566,12 @@ number = 3,
 pages = {1287--1319},
 }
 
-@article{RealAgHuLe18,
+@inproceedings{RealAgHuLe19,
   title={Regularized evolution for image classifier architecture search},
   author={Real, Esteban and Aggarwal, Alok and Huang, Yanping and Le, Quoc V},
-  journal={arXiv:1802.01548 [cs.NE]},
-  year={2018}
+  comment = {journal={arXiv:1802.01548 [cs.NE]}},
+  booktitle = aaai19,
+  year={2019}
 }
 
 @article{Recht11,
@@ -25472,6 +25617,14 @@ title = {Hogwild: a lock-free approach to parallelizing stochastic gradient
 descent},
 year = 2011,
 booktitle = nips2011,
+}
+
+@inproceedings{RechtRoScSh19,
+	title = 	 {Do {I}mage{N}et Classifiers Generalize to {I}mage{N}et?},
+	author = 	 {Recht, Benjamin and Roelofs, Rebecca and Schmidt, Ludwig 
+	and Shankar, Vaishaal},
+	booktitle = 	icml19,
+	year = 	 {2019},
 }
 
 @inproceedings{ReddiHeSrPoSm16,
@@ -26925,6 +27078,13 @@ comment = {Shows (among other results) that if a function
 ,title=		{Learning in Boltzman Trees}
 }
 
+@book{Sayed03,
+  title={Fundamentals of Adaptive Filtering},
+  author={Sayed, Ali H},
+  year={2003},
+  publisher={John Wiley \& Sons}
+}
+
 @article{Scarsini99,
 author = {Marco Scarsini},
 title = {Multivariate convex orderings, dependence, and stochastic equality},
@@ -27606,6 +27766,13 @@ publisher = {Cambridge University Press},
 }
 
 
+@inproceedings{ShalevShSrSr09,
+  title={Stochastic Convex Optimization},
+  author={Shalev-Shwartz, Shai and Shamir, Ohad and Srebro, Nathan and Sridharan, Karthik},
+  booktitle=colt09,
+  year={2009}
+}
+
 @InProceedings{ShalevSiNg04,
   author = 	 {S.~Shalev-Shwartz and Y.~Singer and A.~Ng},
   title = 	 {Online and Batch Learning of Pseudo-Metrics},
@@ -27751,13 +27918,6 @@ publisher = {Cambridge University Press},
   year = 	 {2007}
 }
 
-@inproceedings{ShalevShSrSr09,
-  title={Stochastic Convex Optimization.},
-  author={Shalev-Shwartz, Shai and Shamir, Ohad and Srebro, Nathan and Sridharan, Karthik},
-  booktitle=colt09,
-  year={2009}
-}
-
 @article{ShalevSiSrCo11,
 author = {S.\ Shalev-Shwartz and Y.\ Singer and N.\ Srebro and A.\ Cotter},
 title = {Pegasos: primal estimated sub-gradient solver for {SVM}},
@@ -27883,6 +28043,14 @@ pages = {567--599},
 volume = 14,
 }
 
+@inproceedings{ShalevZh14,
+  title={Accelerated proximal stochastic dual coordinate ascent for regularized loss minimization},
+  author={Shalev-Shwartz, Shai and Zhang, Tong},
+  booktitle=icml14,
+  pages={64--72},
+  year={2014}
+}
+
 @inproceedings{Shamir14,
 author = {Ohad Shamir},
 title = {Fundamental Limits of Online and Distributed Algorithms
@@ -27995,9 +28163,11 @@ comment=  	{Uses Horn clauses as representation and backtracing as a
 @article{Shapiro89,
   title={Asymptotic properties of statistical estimators in stochastic programming},
   author={Shapiro, Alexander},
-  journal={Annals of Statistics},
+  journal=aos,
   pages={841--858},
   year=1989,
+  volume=17,
+  number=2,
   comment={Asymptotic expansion of sample optimum is given when the feasible set is fixed.}
 }
 
@@ -28730,7 +28900,16 @@ comment=  	{Continues Part I.  Inference of probabilities and grammars.}
 }
 
 
-
+@article{SoudryHoNaGuSr18,
+title = {The Implicit Bias of Gradient Descent on Separable Data},
+author = {Daniel Soudry and Elad Hoffer and Mor Shpigel Nacson
+  and Suriya Gunasekar and  Nathan Srebro},
+journal = jmlr,
+volume = 19,
+number = 18,
+year = 2018,
+pages = {1--57},
+}
 
 @InProceedings{SoulezRoSc03,
   author = 	 {F.~Soulez and X.~Rodet and D.~Schwarz},
@@ -29035,7 +29214,7 @@ booktitle = nips17,
 }
 
 @inproceedings{SuBoCa14,
-  title={A differential equation for modeling Nesterov’s accelerated 
+  title={A differential equation for modeling {N}esterov's accelerated 
   	gradient method: Theory and insights},
   author={Su, Weijie and Boyd, Stephen and Candes, Emmanuel},
   booktitle=nips2014,
@@ -29189,13 +29368,13 @@ note = {Preprint available at arXiv:math/970123 [math.MG]},
   organization={IEEE Computer Society}
 }
 
-@article{SzegedyZaSuBrErGoFe14,
+@inproceedings{SzegedyZaSuBrErGoFe14,
   author = {Szegedy, Christian and Zaremba, Wojciech and Sutskever,
                   Ilya and Bruna, Joan and Erhan, Dumitru and
                   Goodfellow, Ian and Fergus, Rob},
   title = {Intriguing properties of neural networks},
-  year = 2013,
-  journal = {arXiv:1312.6199 [cs.CV]}
+  year = 2014,
+  booktitle = iclr14,
 }
 
 @article{SzepesvariLi99,
@@ -31153,7 +31332,7 @@ journal =	{1960 IRE WESCON Convention Record},
 publisher = 	{IRE},
 year = 		1960,
 pages = 	{96--104},
-note = 		{Reprinted in {\sl Neurocomputing} (MIT Press, 1988).}
+note = 		{Reprinted in \emph{Neurocomputing} (MIT Press, 1988).}
 }
 
 @misc{Wikipedia16,
@@ -32507,11 +32686,11 @@ booktitle = {Proceedings of the 22nd International Conference on Computational
  Linguistics (COLING)},
 }
 
-@article{ZophLe16,
+@inproceedings{ZophLe17,
   title={Neural architecture search with reinforcement learning},
   author={Zoph, Barret and Le, Quoc V},
-  journal={arXiv:1611.01578 [cs.LG]},
-  year={2016}
+  booktitle=iclr17,
+  year={2017}
 }
 
 @inproceedings{ZophVaShLe18,
