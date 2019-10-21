@@ -2175,14 +2175,17 @@ institution = {University of California, Irvine, School of Information and Compu
 }
 
 @article{AtarChDu15,
-  title={Robust bounds on risk-sensitive functionals via R{\'e}nyi divergence},
+  title={Robust bounds on risk-sensitive functionals via {R}\'{e}nyi
+    divergence},
   author={Atar, Rami and Chowdhary, Kenny and Dupuis, Paul},
   journal={SIAM/ASA Journal on Uncertainty Quantification},
   volume=3,
   number=1,
   pages={18--33},
   year=2015,
-  publisher={SIAM}
+  publisher={SIAM},
+  comment = {Gives some duality calculations for robustness to uncertainty
+    sets defined by divergence balls.},
 }
 
 @article{AtlasonEpHe04,
@@ -11228,7 +11231,12 @@ number = 2,
   number=1,
   pages={80--111},
   year=2016,
-  publisher={SIAM}
+  publisher={SIAM},
+  comment = {Lots of duality calculations and asymptotic expansions of
+    robustness sets as underlying distributions change (i.e. asymptotic
+    expansion of robust value under small distribution shift).
+    Applies sometimes to stochastic processes (long-running
+    systems).},
 }
 
 @inproceedings{DureyCl01,
@@ -13792,7 +13800,9 @@ pages = {237–-246},
   number=1,
   pages={29--58},
   year=2013,
-  publisher={Taylor \& Francis}
+  publisher={Taylor \& Francis},
+  comment = {Looks at estimating value of portfolio over uncertainty
+    region in probability space. Not sure if this isn't trivial...},
 }
 
 @inproceedings{GleichLi11,
@@ -15209,8 +15219,10 @@ booktitle = colt18,
   title={Robustness},
   author={Hansen, Lars Peter and Sargent, Thomas J},
   year=2008,
-  publisher={Princeton university press},
-  comment={Treatment of robust control in macroeconomic settings.}
+  publisher={Princeton University Press},
+  comment={Treatment of robust control in macroeconomic settings, where
+    one assumes underlying dynamics are not known perfectly (i.e. model
+    of time evolution is wrong).}
 }
 
 @inproceedings{HardtMa17,
@@ -24560,12 +24572,17 @@ publisher = {MIT Press},
 @article{PetersenJaDu00,
   title={Minimax optimal control of stochastic uncertain systems with relative entropy constraints},
   author={Petersen, Ian R and James, Matthew R and Dupuis, Paul},
-  journal={IEEE Transactions on Automatic Control},
+  journal=ieeetac,
   volume=45,
   number=3,
   pages={398--412},
   year=2000,
-  publisher={IEEE}
+  publisher={IEEE},
+  comment = {Discusses control systems with uncertain dynamics,
+    where the uncertain dynamics are described by a KL-divergence ball.
+    Develops a Ricatti recursion for LQR controllers under these constraints,
+    where unsurprisingly the asymptotic loss is a log-sum-exp formula
+    under the nominal distribution.},
 }
 
 @article{Petrov65,
