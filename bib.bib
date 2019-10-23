@@ -1252,6 +1252,13 @@ comment = {Surveys results on SOCPs, including a variety of problems
 	organization={Society for Industrial and Applied Mathematics}
 }
 
+@inproceedings{Allen17,
+author = {Zeyuan Allen-Zhu},
+title = {Katyusha: the first direct acceleration of stochastic gradient methods},
+year = 2017,
+booktitle = stoc17,
+}
+
 @article{Allen17a,
 Author = {Allen-Zhu, Zeyuan},
 Journal = {arXiv:1702.00763 [math.OC]},
@@ -1260,11 +1267,12 @@ Title = {Natasha: Faster stochastic non-convex optimization via
 Year = {2017}
 }
 
-@article{Allen17b,
+@inproceedings{Allen18,
   Author = {Allen-Zhu, Zeyuan},
-  Journal = {arXiv:1708.08694 [math.OC]},
+  booktitle = nips2018,
+  url = {https://arXiv.org/abs/1708.08694},
   Title = {Natasha 2: Faster Non-Convex Optimization than {SGD}},
-  Year = {2017},
+  Year = {2018},
 }
 
 @inproceedings{AllenLi17,
@@ -1491,17 +1499,6 @@ publisher=	{MIT Press},
 year=     	1988
 }
 
-@techreport{Andreae85,
-author=   	{Andreae, Peter Merrett},
-title=    	{Justified Generalization: Acquiring Procedures from Examples},
-institution= 	{MIT Artificial Intelligence Laboratory},
-year=     	1985,
-month=    	Jan,
-number=   	{AI-TR-834},
-comment=  	{Ph.D. thesis.  Examines traces of a correct procedure
-		(physical motion procedure) to infer loops, etc.}
-}
-
 @incollection{AndoniDaImInMi06,
 author = {A. Andoni and M. Datar and N. Immorlica and P. Indyk and V. Mirrokni},
 title = {Locality-sensitive hashing using stable distributions},
@@ -1520,6 +1517,31 @@ year = 2005,
 journal = jmlr,
 volume = 6,
 pages = {1817--1853},
+}
+
+
+@techreport{Andreae85,
+author=   	{Andreae, Peter Merrett},
+title=    	{Justified Generalization: Acquiring Procedures from Examples},
+institution= 	{MIT Artificial Intelligence Laboratory},
+year=     	1985,
+month=    	Jan,
+number=   	{AI-TR-834},
+comment=  	{Ph.D. thesis.  Examines traces of a correct procedure
+		(physical motion procedure) to infer loops, etc.}
+}
+
+@inproceedings{AndresBoChPa13,
+author = {Miguel Andr\'{e}s and Nicolas Bordenabe and Konstantinos
+  Chatzikokolakis and Catuscia Palamidessi},
+title = {Geo-indistinguishability: Differential privacy for location-based
+  systems},
+year = 2013,
+booktitle = {Proceedings of the ACM SIGSAC Conference on Computer and
+  Communications Security},
+publisher = acm,
+pages = {901--914},
+comment = {A little trivial, honestly.},
 }
 
 @article{AndrewsPo94,
@@ -2072,7 +2094,9 @@ booktitle = aistat19,
 author = {Hilal Asi and John C. Duchi},
 year = 2019,
 title = {The importance of better models in stochastic optimization},
-journal = {arXiv:1903.08619 [math.OC]},
+journal = pnas,
+volume = {to appear},
+url = {https://arXiv.org/abs/1903.08619},
 }
 
 @book{Ash90,
@@ -2152,14 +2176,17 @@ institution = {University of California, Irvine, School of Information and Compu
 }
 
 @article{AtarChDu15,
-  title={Robust bounds on risk-sensitive functionals via R{\'e}nyi divergence},
+  title={Robust bounds on risk-sensitive functionals via {R}\'{e}nyi
+    divergence},
   author={Atar, Rami and Chowdhary, Kenny and Dupuis, Paul},
   journal={SIAM/ASA Journal on Uncertainty Quantification},
   volume=3,
   number=1,
   pages={18--33},
   year=2015,
-  publisher={SIAM}
+  publisher={SIAM},
+  comment = {Gives some duality calculations for robustness to uncertainty
+    sets defined by divergence balls.},
 }
 
 @article{AtlasonEpHe04,
@@ -6964,6 +6991,16 @@ year = 2015,
 booktitle = nips2015,
 }
 
+@inproceedings{ChatzikokolakisAnBoPa13,
+author = {Konstantinos Chatzikokolakis and Miguel Andr\'{e}s and
+ Nicol\'{a}s Bordenabe and Catuscia Palamidessi},
+title = {Broadening the Scope of Differential Privacy Using Metrics},
+year = 2013,
+pages = {82--102},
+booktitle = {The 13th Privacy Enhancing Technologies Symposium},
+url = {https://hal.inria.fr/hal-00767210/document},
+}
+
 @inproceedings{ChaudhuriHs11,
 author = {Kamalika Chaudhuri and Daniel Hsu},
 title = {Sample complexity bounds for differentially private learning},
@@ -8966,9 +9003,10 @@ journal = {arXiv:1802.02988 [math.OC]},
   title={Stochastic subgradient method converges on tame functions},
   author={Davis, Damek and Drusvyatskiy, Dmitriy and Kakade, Sham and Lee, Jason D},
   journal=focm,
-  volume = {to appear},
+  pages={1--36},
   url = {https://arXiv.org/abs/1804.07795},
-  year={2019}
+  year={2019},
+  publisher={Springer}
 }
 
 @article{DavisDrMa18,
@@ -9462,6 +9500,7 @@ author = {J. Deng and W. Dong and R. Socher and L. Li and K. Li and
 title = {Image{N}et: a large-scale hierarchical image database},
 year = 2009,
 booktitle = cvpr,
+pages={248-255},
 }
 
 @inproceedings{DenkerGaGrHeHoHuJaBaGu88,
@@ -10315,6 +10354,15 @@ year = 2018,
 volume = {To Appear},
 comment = {Old title = {An accelerated algorithm for minimizing convex
   compositions}. Also arXiv:1605.00125 [math.OC].},
+}
+
+@inproceedgins{DuLeLiWaZh19,
+	title={Gradient descent finds global minima of deep neural 
+	networks},
+	author={Du, Simon S and Lee, Jason D and Li, Haochuan and Wang, 
+	Liwei and Zhai, Xiyu},
+	booktitle=icml19,
+	year={2019}
 }
 
 @misc{Duchi19,
@@ -11184,7 +11232,12 @@ number = 2,
   number=1,
   pages={80--111},
   year=2016,
-  publisher={SIAM}
+  publisher={SIAM},
+  comment = {Lots of duality calculations and asymptotic expansions of
+    robustness sets as underlying distributions change (i.e. asymptotic
+    expansion of robust value under small distribution shift).
+    Applies sometimes to stochastic processes (long-running
+    systems).},
 }
 
 @inproceedings{DureyCl01,
@@ -11355,6 +11408,15 @@ that differential privacy means that an adversary knowing most of a dataset
 cannot recover information about a single entry in a dataset with a few
 queries of the dataset.
 },
+}
+
+@article{DworkNaPiRo10,
+author = {Cynthia Dwork and Moni Naor and Toniann Pitassi and Guy Rothblum},
+title = {Differential privacy under continual observation},
+year = 2010,
+booktitle = stoc10,
+pages = {715--724},
+publisher = acm,
 }
 
 @article{DworkSm09,
@@ -13739,7 +13801,9 @@ pages = {237–-246},
   number=1,
   pages={29--58},
   year=2013,
-  publisher={Taylor \& Francis}
+  publisher={Taylor \& Francis},
+  comment = {Looks at estimating value of portfolio over uncertainty
+    region in probability space. Not sure if this isn't trivial...},
 }
 
 @inproceedings{GleichLi11,
@@ -15156,8 +15220,10 @@ booktitle = colt18,
   title={Robustness},
   author={Hansen, Lars Peter and Sargent, Thomas J},
   year=2008,
-  publisher={Princeton university press},
-  comment={Treatment of robust control in macroeconomic settings.}
+  publisher={Princeton University Press},
+  comment={Treatment of robust control in macroeconomic settings, where
+    one assumes underlying dynamics are not known perfectly (i.e. model
+    of time evolution is wrong).}
 }
 
 @inproceedings{HardtMa17,
@@ -17805,6 +17871,19 @@ url = {http://arxiv.org/abs/0803.0924},
 },
 }
 
+@inproceedings{KasiviswanathanNiRaSm13,
+author = {Shiva Prasad Kasiviswanathan and Kobbi Nissim
+and Sofya Raskhodnikova and Adam Smith},
+title = {Analyzing graphs with node differential privacy},
+year = 2013,
+booktitle = {Theory of Cryptography},
+volume = 7785,
+series = {Lecture Notes in Computer Science},
+editor = {Amit Sahai},
+publisher = {Springer},
+pages = {457--476},
+}
+
 @inproceedings{KasiviswanathanRuSm13,
 author = {Shiva Prasad Kasiviswanathan and Mark Rudelson and Adam Smith},
 title = {The Power of Linear Reconstruction Attacks},
@@ -18362,9 +18441,9 @@ pages= {227--248},
 year = 2007}
 
 @inproceedings{KhoslaJaYaLi11,
-  title={Novel dataset for fine-grained image categorization: Stanford dogs},
+  title={Novel dataset for fine-grained image categorization},
   author={Khosla, Aditya and Jayadevaprakash, Nityananda and Yao, Bangpeng and Li, Fei-Fei},
-  booktitle={Proc. CVPR Workshop on Fine-Grained Visual Categorization (FGVC)},
+  booktitle={First Workshop on Fine-Grained Visual Categorization, IEEE Conference on Computer Vision and Pattern Recognition},
   volume=2,
   pages=1,
   year=2011
@@ -19060,6 +19139,14 @@ journal = {arXiv:0906.4835 [math.OC]},
 	author={Krichene, Walid and Bayen, Alexandre and Bartlett, Peter L},
 	booktitle=nips2015,
 	year={2015}
+}
+
+@inproceedings{KrishnanXiSa18,
+	title={Neumann optimizer: A practical optimization algorithm for 
+	deep neural networks},
+	author={Krishnan, Shankar and Xiao, Ying and Saurous, Rif A},
+	booktitle = iclr18,
+	year={2018}
 }
 
 @techreport{KrizhevskyHi09,
@@ -20231,6 +20318,15 @@ number=   	4,
 pages=    	{1035--1074},
 comment=  	{Analysis of implementation of Hidden Markov models and the
 		Baum-Welch algorithm}
+}
+
+@inproceedings{LevyDu19,
+author = {Daniel Levy and John C. Duchi},
+year = 2019,
+title = {Necessary and Sufficient Geometries for Adaptive,
+  Mirror, and Standard Gradient Methods},
+booktitle = nips2019,
+url = {https://arxiv.org/abs/1909.10455},
 }
 
 @article{Levy16,
@@ -24477,12 +24573,17 @@ publisher = {MIT Press},
 @article{PetersenJaDu00,
   title={Minimax optimal control of stochastic uncertain systems with relative entropy constraints},
   author={Petersen, Ian R and James, Matthew R and Dupuis, Paul},
-  journal={IEEE Transactions on Automatic Control},
+  journal=ieeetac,
   volume=45,
   number=3,
   pages={398--412},
   year=2000,
-  publisher={IEEE}
+  publisher={IEEE},
+  comment = {Discusses control systems with uncertain dynamics,
+    where the uncertain dynamics are described by a KL-divergence ball.
+    Develops a Ricatti recursion for LQR controllers under these constraints,
+    where unsurprisingly the asymptotic loss is a log-sum-exp formula
+    under the nominal distribution.},
 }
 
 @article{Petrov65,
@@ -25571,6 +25672,8 @@ pages = {1287--1319},
   author={Real, Esteban and Aggarwal, Alok and Huang, Yanping and Le, Quoc V},
   comment = {journal={arXiv:1802.01548 [cs.NE]}},
   booktitle = aaai19,
+  volume={33},
+  pages={4780--4789},
   year={2019}
 }
 
@@ -26389,6 +26492,27 @@ journal =       {Science},
 volume  =       {290},
 pages =         {2323--2326},
 year =          {2000}
+}
+
+@article{RoyerWr18,
+	title={Complexity analysis of second-order line-search algorithms 
+	for smooth nonconvex optimization},
+	author={Royer, Cl{\'e}ment W and Wright, Stephen J},
+	journal=siopt,
+	volume={28},
+	number={2},
+	pages={1448--1477},
+	year={2018},
+}
+
+@article{RoyerONWr19,
+	title={A {N}ewton-{CG} algorithm with complexity guarantees for 
+	smooth unconstrained optimization},
+	author={Royer, Cl{\'e}ment W and O'Neill, Michael and Wright, 
+	Stephen J},
+	journal=mathproga,
+	year={2019},
+	publisher={Springer}
 }
 
 @book{Royden88,
@@ -28648,11 +28772,11 @@ year = 2002,
 publisher = {Springer},
 }
 
-@article{SimonyanZi14,
+@article{SimonyanZi15,
   title={Very deep convolutional networks for large-scale image recognition},
   author={Simonyan, Karen and Zisserman, Andrew},
-  journal={arXiv:1409.1556 [cs.CV]},
-  year={2014}
+  year = 2015,
+  booktitle = iclr15,
 }
 
 @article{Sion58,
@@ -28899,6 +29023,22 @@ comment=  	{Continues Part I.  Inference of probabilities and grammars.}
 ,title=		{Theory of learning from examples}
 }
 
+@article{SoudryCa16,
+	title={No bad local minima: Data independent training error 
+	guarantees for multilayer neural networks},
+	author={Soudry, Daniel and Carmon, Yair},
+	journal={arXiv: 1605.08361 [stats.ML]},
+	year={2016}
+}
+
+@inproceedings{SoudryHo17,
+	title={Exponentially vanishing sub-optimal local minima in 
+	multilayer neural networks},
+	author={Soudry, Daniel and Hoffer, Elad},
+	booktitle={International Conference on Learning Representation 
+	(ICLR) Wokshop},
+	year={2017}
+}
 
 @article{SoudryHoNaGuSr18,
 title = {The Implicit Bias of Gradient Descent on Separable Data},
@@ -29567,6 +29707,17 @@ journal = jmlr,
 volume = 11,
 pages = {311--365},
 }
+
+
+@inproceedings{TensorFlow16,
+title	= {TensorFlow: A system for large-scale machine learning},
+author	= {Martin Abadi and Paul Barham and Jianmin Chen and Zhifeng Chen and Andy Davis and Jeffrey Dean and Matthieu Devin and Sanjay Ghemawat and Geoffrey Irving and Michael Isard and Manjunath Kudlur and Josh Levenberg and Rajat Monga and Sherry Moore and Derek G. Murray and Benoit Steiner and Paul Tucker and Vijay Vasudevan and Pete Warden and Martin Wicke and Yuan Yu and Xiaoqiang Zheng},
+year	= {2016},
+URL	= {https://www.usenix.org/system/files/conference/osdi16/osdi16-abadi.pdf},
+booktitle	= {12th USENIX Symposium on Operating Systems Design and Implementation (OSDI 16)},
+pages	= {265--283}
+}
+
 
 @misc{TensorFlow15,
 title={ {TensorFlow}: Large-Scale Machine Learning on Heterogeneous Systems},
