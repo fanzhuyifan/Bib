@@ -298,6 +298,7 @@ Symposium on Discrete Algorithms (SODA)}}
 @string{jmlr =	{Journal of Machine Learning Research}}
 @string{jrss = {Journal of the Royal Statistical Society}}
 @string{jrssb = {Journal of the Royal Statistical Society, Series B}}
+@string{mathor = {Mathematics of Operations Research}}
 @string{mathprog = {Mathematical Programming}}
 @string{mathprogc = {Mathematical Programming Computation}}
 @string{mathproga = {Mathematical Programming, Series A}}
@@ -4382,11 +4383,15 @@ number = 4,
 pages = {1351--1378},
 }
 
-@article{BlanchetKaMu16,
-  title={Robust Wasserstein profile inference and applications to machine learning},
+@article{BlanchetKaMu19,
+  title={Robust {W}asserstein profile inference and applications to machine learning},
   author={Blanchet, Jose and Kang, Yang and Murthy, Karthyek},
-  journal={arXiv:1610.05627 [math.ST]},
-  year=2016
+  journal = {Journal of Applied Probability},
+  pages = {830--857},
+  volume  = 56,
+  number = 3,
+comment = {journal={arXiv:1610.05627 [math.ST]}},
+  year=2019,
 }
 
 @article{BlanchetKaZhMu17,
@@ -4396,12 +4401,15 @@ pages = {1351--1378},
         year=2017
 	}
 
-@article{BlanchetMu16,
+@article{BlanchetMu19,
   title={Quantifying Distributional Model Risk Via Optimal Transport},
   author={Blanchet, Jose and Murthy, Karthyek},
-  year=2016,
-journal = {arXiv:1604.01446 [math.PR]},
-url = {https://arxiv.org/abs/1604.01446},
+  year=2019,
+journal = mathor,
+volume = 44,
+number = 2,
+pages = {565--600},
+comment = {url = {https://arxiv.org/abs/1604.01446}},
 }
 
 @article{BlanchetMuZh18,
@@ -5505,6 +5513,16 @@ author = {Matthew Brennan and Guy Bresler and Wasim Huleihel},
 year = 2018,
 booktitle = colt18,
 }
+
+@inproceedings{BrennerNi10,
+ author = {Hai Brenner and Kobbi Nissim},
+ title = {Impossibility of Differentially Private Universally Optimal Mechanisms},
+ booktitle = focs10,
+ year = 2010,
+ pages = {71--80},
+ publisher = {IEEE Computer Society},
+} 
+
 
 @book{Brent73,
        author={Richard P Brent},
@@ -13563,6 +13581,24 @@ pages=		{169--174}
   publisher={Institute of Mathematical Statistics}
 }
 
+
+@article{GengDiGuKu19,
+	author = {Quan Geng  and Wei Ding and Ruiqi Guo and Sanjiv Kumar},
+	title = {Privacy and Utility Tradeoff in Approximate Differential Privacy},
+	year = 2019,
+	journal = {arXiv:1810.00877 [cs.CR]},
+}
+
+@article{GengKaOhVi15,
+author={Quan Geng and Peter Kairouz and Sewoong Oh and Pramod Viswanath},
+journal={IEEE Journal of Selected Topics in Signal Processing},
+title={The Staircase Mechanism in Differential Privacy},
+year={2015},
+volume={9},
+number={7},
+pages={1176-1184},
+}
+
 @article{GengVi16,
 author = {Quong Geng and Pramod Viswanath},
 title = {The Optimal Noise-Adding Mechanism in Differential Privacy},
@@ -14784,6 +14820,16 @@ number = 2,
 pages = {388--404},
 }
 
+
+@inproceedings{GupteSu10,
+ author = {Mangesh Gupte and Mukund Sundararajan},
+ title = {Universally Optimal Privacy Mechanisms for Minimax Agents},
+ booktitle = pods10,
+ year = 2010,
+ pages = {135--146},
+ publisher = {ACM},
+} 
+
 @article{GuptaViNeYuWaWo11,
   title={Experimental validation of free-energy-landscape reconstruction from non-equilibrium single-molecule force spectroscopy measurements},
   author={Gupta, Amar Nath and Vincent, Abhilash and Neupane, Krishna and Yu, Hao and Wang, Feng and Woodside, Michael T},
@@ -15840,7 +15886,7 @@ problem over the domain (often easier than a quadratic), but method
 does require keeping around *each* function observed.},
 }
 
-@inproceedings{HazanAgKa14,
+@inproceedings{HazanKoLe14,
   title={Logistic regression: Tight bounds for stochastic and online optimization},
   author={Hazan, Elad and Koren, Tomer and Levy, Kfir Y},
   year = 2014,
@@ -29023,6 +29069,15 @@ comment=  	{Continues Part I.  Inference of probabilities and grammars.}
 ,title=		{Theory of learning from examples}
 }
 
+@article{SoriaDo13,
+title = {Optimal data-independent noise for differential privacy},
+author = {Jordi Soria-Comas and Josep Domingo-Ferrer},
+journal = {Information Sciences},
+volume = 250,
+pages = {200--387},
+year = 2013,
+}
+
 @article{SoudryCa16,
 	title={No bad local minima: Data independent training error 
 	guarantees for multilayer neural networks},
@@ -29057,6 +29112,7 @@ pages = {1--57},
   booktitle = {Proceedings of the International Symposium on Music Information Retrieval},
   year = 	 {2003},
 }
+
 
 @book{Spall03,
 author = {James C. Spall},
@@ -30836,7 +30892,7 @@ booktitle = nips2018,
 ,author=	{V. G. Vovk}
 ,title=		{Universal forcasting algorithms}
 ,year=		1992
-,journal=       {Information and Compuatation}
+,journal=       {Information and Computation}
 ,number=        96
 ,pages=         {245--277}
 }
