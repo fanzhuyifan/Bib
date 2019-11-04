@@ -235,6 +235,8 @@ Symposium on Discrete Algorithms (SODA)}}
 
 @string{pods02 = {Proceedings of the Twenty-First ACM SIGMOD-SIGACT-SIGART
   Symposium on Principles of Database Systems}}
+@string{pods10 = {Proceedings of the Twenty-Ningth ACM SIGMOD-SIGACT-SIGART
+  Symposium on Principles of Database Systems}}
 
 @string{ml94 =	{Machine Learning: Proceedings of the Eleventh
 		 International Conference}}
@@ -13784,7 +13786,12 @@ comment = {
   where the tradeoff is not so explicit. Uses linear programming to
   characterize the optimality. Only applies to count queries (i.e.
   what fraction of the data obeys a certain predicate) and only one
-  query may be issued.
+  query may be issued, and requires that mechanisms are oblivious (i.e.
+  cannot look at the entire database, only the result of the counting
+  query.) Here, the important thing is that the queries
+  are count queries, and the losses suffered $\ell(i, j)$ for answering
+  $j$ when the truth is $i$ must be functions of $|i - j|$ and increasing
+  in the error $|i - j|$.
 },
 }
 
