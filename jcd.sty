@@ -8,6 +8,7 @@
 \usepackage{graphicx}
 \usepackage{xcolor}
 \usepackage{xifthen}
+\usepackage{mathtools}
 % \usepackage{fullpage}
 
 \definecolor{darkblue}{rgb}{0,0,.75}
@@ -68,8 +69,8 @@
 \newcommand{\opnorms}[1]{\matrixnorms{#1}_{\rm op}} % Small operator norm with three bars
 
 
-\newcommand{\defeq}{:=}
-\newcommand{\eqdef}{=:}
+\newcommand{\defeq}{\coloneqq}
+\newcommand{\eqdef}{\eqqcolon}
 \newcommand{\what}[1]{\widehat{#1}} % Wide hat
 \newcommand{\wt}[1]{\widetilde{#1}} % Wide tilde
 \newcommand{\wb}[1]{\overline{#1}} % Wide bar
@@ -88,6 +89,9 @@
 \newcommand{\Q}{\mathbb{Q}}
 \newcommand{\naturals}{\mathbb{N}} % Natural numbers
 \newcommand{\N}{\mathbb{N}}
+
+\newcommand{\ones}{\mathbf{1}}
+\newcommand{\zeros}{\mathbf{0}}
 
 %%% New version of \caption puts things in smaller type, single-spaced 
 %%% and indents them to set them off more from the text.

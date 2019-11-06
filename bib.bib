@@ -235,6 +235,8 @@ Symposium on Discrete Algorithms (SODA)}}
 
 @string{pods02 = {Proceedings of the Twenty-First ACM SIGMOD-SIGACT-SIGART
   Symposium on Principles of Database Systems}}
+@string{pods10 = {Proceedings of the Twenty-Ningth ACM SIGMOD-SIGACT-SIGART
+  Symposium on Principles of Database Systems}}
 
 @string{ml94 =	{Machine Learning: Proceedings of the Eleventh
 		 International Conference}}
@@ -298,6 +300,7 @@ Symposium on Discrete Algorithms (SODA)}}
 @string{jmlr =	{Journal of Machine Learning Research}}
 @string{jrss = {Journal of the Royal Statistical Society}}
 @string{jrssb = {Journal of the Royal Statistical Society, Series B}}
+@string{mathor = {Mathematics of Operations Research}}
 @string{mathprog = {Mathematical Programming}}
 @string{mathprogc = {Mathematical Programming Computation}}
 @string{mathproga = {Mathematical Programming, Series A}}
@@ -1506,17 +1509,6 @@ publisher=	{MIT Press},
 year=     	1988
 }
 
-@techreport{Andreae85,
-author=   	{Andreae, Peter Merrett},
-title=    	{Justified Generalization: Acquiring Procedures from Examples},
-institution= 	{MIT Artificial Intelligence Laboratory},
-year=     	1985,
-month=    	Jan,
-number=   	{AI-TR-834},
-comment=  	{Ph.D. thesis.  Examines traces of a correct procedure
-		(physical motion procedure) to infer loops, etc.}
-}
-
 @incollection{AndoniDaImInMi06,
 author = {A. Andoni and M. Datar and N. Immorlica and P. Indyk and V. Mirrokni},
 title = {Locality-sensitive hashing using stable distributions},
@@ -1535,6 +1527,31 @@ year = 2005,
 journal = jmlr,
 volume = 6,
 pages = {1817--1853},
+}
+
+
+@techreport{Andreae85,
+author=   	{Andreae, Peter Merrett},
+title=    	{Justified Generalization: Acquiring Procedures from Examples},
+institution= 	{MIT Artificial Intelligence Laboratory},
+year=     	1985,
+month=    	Jan,
+number=   	{AI-TR-834},
+comment=  	{Ph.D. thesis.  Examines traces of a correct procedure
+		(physical motion procedure) to infer loops, etc.}
+}
+
+@inproceedings{AndresBoChPa13,
+author = {Miguel Andr\'{e}s and Nicolas Bordenabe and Konstantinos
+  Chatzikokolakis and Catuscia Palamidessi},
+title = {Geo-indistinguishability: Differential privacy for location-based
+  systems},
+year = 2013,
+booktitle = {Proceedings of the ACM SIGSAC Conference on Computer and
+  Communications Security},
+publisher = acm,
+pages = {901--914},
+comment = {A little trivial, honestly.},
 }
 
 @article{AndrewsPo94,
@@ -1937,6 +1954,14 @@ year = 2015,
 	year=2017
 }
 
+@article{ArjovskyBoGuLo19,
+author = {Martin Arjovsky and Leon Bottou and Ishaan Gulrajani and
+  David Lopez-Paz},
+title = {Invariant Risk Minimization},
+year = 2019,
+journal = {arXiv:1907.02893 [stat.ML]},
+}
+
 @article{Arias-CastroCaDa13,
 author = {Ery Arias-Castro and Emmanuel Cand\'es and Mark Davenport},
 title = {On the Fundamental Limits of Adaptive Sensing},
@@ -2089,6 +2114,7 @@ year = 2019,
 title = {The importance of better models in stochastic optimization},
 journal = pnas,
 volume = {to appear},
+url = {https://doi.org/10.1073/pnas.1908018116},
 }
 
 @book{Ash90,
@@ -2168,14 +2194,17 @@ institution = {University of California, Irvine, School of Information and Compu
 }
 
 @article{AtarChDu15,
-  title={Robust bounds on risk-sensitive functionals via R{\'e}nyi divergence},
+  title={Robust bounds on risk-sensitive functionals via {R}\'{e}nyi
+    divergence},
   author={Atar, Rami and Chowdhary, Kenny and Dupuis, Paul},
   journal={SIAM/ASA Journal on Uncertainty Quantification},
   volume=3,
   number=1,
   pages={18--33},
   year=2015,
-  publisher={SIAM}
+  publisher={SIAM},
+  comment = {Gives some duality calculations for robustness to uncertainty
+    sets defined by divergence balls.},
 }
 
 @article{AtlasonEpHe04,
@@ -2572,7 +2601,7 @@ comment = {Uses Loomis-Whitney inequality to show lower bounds on amount
   author={Borja Balle and Gilles Barthe and Marco Gaboardi},
   booktitle= nips2018,
   pages={6277--6287},
-  year={2018}
+  year={2018},
 }
 
 @unpublished{Balsubramani14,
@@ -2689,7 +2718,23 @@ number = 5,
 pages = {2055--2085},
 }
 
-@article{BarberCaRaTi19,
+@article{BarberCaRaTi19a,
+author = {Rina Foygel Barber and Emmanuel J. Cand\`{e}s and Aaditya
+  Ramdas and Ryan J. Tibshirani},
+title = {The limits of distribution-free conditional predictive inference},
+year = 2019,
+journal = {arXiv:1903.04684 [math.ST]},
+}
+
+@article{BarberCaRaTi19b,
+author = {Rina Foygel Barber and Emmanuel J. Cand\`{e}s and Aaditya
+  Ramdas and Ryan J. Tibshirani},
+title = {Conformal Prediction Under Covariate Shift},
+year = 2019,
+journal = {arXiv:1904.06019 [stat.ME]},
+}
+
+@article{BarberCaRaTi19c,
 author = {Rina Foygel Barber and Emmanuel J. Cand\`{e}s and Aaditya
   Ramdas and Ryan J. Tibshirani},
 title = {Predictive inference with the jackknife+},
@@ -4371,11 +4416,15 @@ number = 4,
 pages = {1351--1378},
 }
 
-@article{BlanchetKaMu16,
-  title={Robust Wasserstein profile inference and applications to machine learning},
+@article{BlanchetKaMu19,
+  title={Robust {W}asserstein profile inference and applications to machine learning},
   author={Blanchet, Jose and Kang, Yang and Murthy, Karthyek},
-  journal={arXiv:1610.05627 [math.ST]},
-  year=2016
+  journal = {Journal of Applied Probability},
+  pages = {830--857},
+  volume  = 56,
+  number = 3,
+comment = {journal={arXiv:1610.05627 [math.ST]}},
+  year=2019,
 }
 
 @article{BlanchetKaZhMu17,
@@ -4385,12 +4434,15 @@ pages = {1351--1378},
         year=2017
 	}
 
-@article{BlanchetMu16,
+@article{BlanchetMu19,
   title={Quantifying Distributional Model Risk Via Optimal Transport},
   author={Blanchet, Jose and Murthy, Karthyek},
-  year=2016,
-journal = {arXiv:1604.01446 [math.PR]},
-url = {https://arxiv.org/abs/1604.01446},
+  year=2019,
+journal = mathor,
+volume = 44,
+number = 2,
+pages = {565--600},
+comment = {url = {https://arxiv.org/abs/1604.01446}},
 }
 
 @article{BlanchetMuZh18,
@@ -5494,6 +5546,16 @@ author = {Matthew Brennan and Guy Bresler and Wasim Huleihel},
 year = 2018,
 booktitle = colt18,
 }
+
+@inproceedings{BrennerNi10,
+ author = {Hai Brenner and Kobbi Nissim},
+ title = {Impossibility of Differentially Private Universally Optimal Mechanisms},
+ booktitle = focs10,
+ year = 2010,
+ pages = {71--80},
+ publisher = {IEEE Computer Society},
+} 
+
 
 @book{Brent73,
        author={Richard P Brent},
@@ -6980,6 +7042,16 @@ year = 2015,
 booktitle = nips2015,
 }
 
+@inproceedings{ChatzikokolakisAnBoPa13,
+author = {Konstantinos Chatzikokolakis and Miguel Andr\'{e}s and
+ Nicol\'{a}s Bordenabe and Catuscia Palamidessi},
+title = {Broadening the Scope of Differential Privacy Using Metrics},
+year = 2013,
+pages = {82--102},
+booktitle = {The 13th Privacy Enhancing Technologies Symposium},
+url = {https://hal.inria.fr/hal-00767210/document},
+}
+
 @inproceedings{ChaudhuriHs11,
 author = {Kamalika Chaudhuri and Daniel Hsu},
 title = {Sample complexity bounds for differentially private learning},
@@ -7351,6 +7423,22 @@ pages = {1--22},
   publisher={Wiley Online Library}
 }
 
+@inproceedings{ChettyFr19,
+  title={A Practical Method to Reduce Privacy Loss When Disclosing Statistics Based on Small Samples},
+  author={Raj Chetty and John N Friedman},
+  booktitle={AEA Papers and Proceedings},
+  volume={109},
+  pages={414--20},
+  year={2019}
+}
+
+@techreport{ChettyFrHeJoPo18,
+  title={The opportunity atlas: Mapping the childhood roots of social mobility},
+  author={Raj Chetty and John N Friedman and Nathaniel Hendren and  Maggie R Jones and Sonya R Porter},
+  year={2018},
+  institution={National Bureau of Economic Research},
+}
+
 @article{ChoOhNiStEiChMaWaThSo13,
 author = {Minseon Cho and Seung Soo Oh and Jeff Nie
 and Ron Stewart and Michael Eisenstein
@@ -7517,6 +7605,15 @@ title = {Functional regression for quasar spectra},
 year = 2014,
 journal = {arXiv:1404.3168 [stat.ME]},
 url = {http://arxiv.org/abs/1404.3168},
+}
+
+@article{Clarke75,
+author = {Francis H. Clarke},
+title = {Generalized gradients and applications},
+year = 1975,
+journal = tams,
+volume = 205,
+pages = {247--262},
 }
 
 @article{ClarkeBa90,
@@ -8982,9 +9079,10 @@ journal = {arXiv:1802.02988 [math.OC]},
   title={Stochastic subgradient method converges on tame functions},
   author={Davis, Damek and Drusvyatskiy, Dmitriy and Kakade, Sham and Lee, Jason D},
   journal=focm,
-  volume = {to appear},
+  pages={1--36},
   url = {https://arXiv.org/abs/1804.07795},
-  year={2019}
+  year={2019},
+  publisher={Springer}
 }
 
 @article{DavisDrMa18,
@@ -9478,6 +9576,7 @@ author = {J. Deng and W. Dong and R. Socher and L. Li and K. Li and
 title = {Image{N}et: a large-scale hierarchical image database},
 year = 2009,
 booktitle = cvpr,
+pages={248-255},
 }
 
 @inproceedings{DenkerGaGrHeHoHuJaBaGu88,
@@ -11209,7 +11308,12 @@ number = 2,
   number=1,
   pages={80--111},
   year=2016,
-  publisher={SIAM}
+  publisher={SIAM},
+  comment = {Lots of duality calculations and asymptotic expansions of
+    robustness sets as underlying distributions change (i.e. asymptotic
+    expansion of robust value under small distribution shift).
+    Applies sometimes to stochastic processes (long-running
+    systems).},
 }
 
 @inproceedings{DureyCl01,
@@ -11380,6 +11484,15 @@ that differential privacy means that an adversary knowing most of a dataset
 cannot recover information about a single entry in a dataset with a few
 queries of the dataset.
 },
+}
+
+@article{DworkNaPiRo10,
+author = {Cynthia Dwork and Moni Naor and Toniann Pitassi and Guy Rothblum},
+title = {Differential privacy under continual observation},
+year = 2010,
+booktitle = stoc10,
+pages = {715--724},
+publisher = acm,
 }
 
 @article{DworkSm09,
@@ -11797,12 +11910,14 @@ pages = {3797--3820},
   year={2009},
 }
 
-@article{EsfahaniKu17,
+@article{EsfahaniKu18,
   title={Data-driven distributionally robust optimization using the Wasserstein metric: Performance guarantees and tractable reformulations},
   author={Esfahani, Peyman Mohajerin and Kuhn, Daniel},
   journal=mathproga,
-  year = 2017,
-  volume = {to appear},
+  year = 2018,
+  volume = 171,
+  number = {1--2},
+  pages = {115--166},
   comment={Gives convex reformulations of DRO problems based on
                   Wasserstein distances for certain loss functions
                   (concave in uncertainty parameter, certain two-stage
@@ -12002,6 +12117,14 @@ year=		1992
   publisher={Academic Press},
 }
 
+@article{Feldman19,
+author = {Vitaly Feldman},
+title = {Does Learning Require Memorization? A Short Tale about a Long Tail},
+year = 2019,
+journal = {arXiv:1906.05271 [cs.LG]},
+url = {https://arxiv.org/abs/1906.05271},
+}
+
 @article{FeldmanGrReVeXi17,
 author = {Vitaly Feldman and Elena Grigorescu and Lev Reyzin
 and Santosh Vempala and Ying Xiao},
@@ -12012,7 +12135,6 @@ volume = 64,
 number = 2,
 pages = {8:1--8:37},
 }
-
 
 @inproceedings{FeldmanSt18,
 author = {Vitaly Feldman and Thomas Steinke},
@@ -13526,6 +13648,24 @@ pages=		{169--174}
   publisher={Institute of Mathematical Statistics}
 }
 
+
+@article{GengDiGuKu19,
+	author = {Quan Geng  and Wei Ding and Ruiqi Guo and Sanjiv Kumar},
+	title = {Privacy and Utility Tradeoff in Approximate Differential Privacy},
+	year = 2019,
+	journal = {arXiv:1810.00877 [cs.CR]},
+}
+
+@article{GengKaOhVi15,
+author={Quan Geng and Peter Kairouz and Sewoong Oh and Pramod Viswanath},
+journal={IEEE Journal of Selected Topics in Signal Processing},
+title={The Staircase Mechanism in Differential Privacy},
+year={2015},
+volume={9},
+number={7},
+pages={1176-1184},
+}
+
 @article{GengVi16,
 author = {Quong Geng and Pramod Viswanath},
 title = {The Optimal Noise-Adding Mechanism in Differential Privacy},
@@ -13684,7 +13824,12 @@ comment = {
   where the tradeoff is not so explicit. Uses linear programming to
   characterize the optimality. Only applies to count queries (i.e.
   what fraction of the data obeys a certain predicate) and only one
-  query may be issued.
+  query may be issued, and requires that mechanisms are oblivious (i.e.
+  cannot look at the entire database, only the result of the counting
+  query.) Here, the important thing is that the queries
+  are count queries, and the losses suffered $\ell(i, j)$ for answering
+  $j$ when the truth is $i$ must be functions of $|i - j|$ and increasing
+  in the error $|i - j|$.
 },
 }
 
@@ -13764,7 +13909,9 @@ pages = {237–-246},
   number=1,
   pages={29--58},
   year=2013,
-  publisher={Taylor \& Francis}
+  publisher={Taylor \& Francis},
+  comment = {Looks at estimating value of portfolio over uncertainty
+    region in probability space. Not sure if this isn't trivial...},
 }
 
 @inproceedings{GleichLi11,
@@ -14143,6 +14290,17 @@ publisher= 	{Holt, Reinhart, and Winston},
 editor=    	{V. P. Godame and D. A. Sprott},
 pages=    	{108--141}
 }
+
+@inproceedings{GoodfellowPoMiXuWaOzCoBe14,
+author = {Ian Goodfellow and Jean Pouget-Abadie and Mehdi Mirza and Bing Xu
+  and David Warde-Farley and Sherjil Ozair and Aaron Courville and
+  Yoshua Bengio},
+title = {Generative adversarial networks},
+year = 2014,
+booktitle = nips2014,
+pages = {2672--2680},
+}
+
 
 @inproceedings{GoodfellowShSz15,
 	Author = {Goodfellow, Ian J and Shlens, Jonathon and Szegedy, Christian},
@@ -14745,6 +14903,16 @@ number = 2,
 pages = {388--404},
 }
 
+
+@inproceedings{GupteSu10,
+ author = {Mangesh Gupte and Mukund Sundararajan},
+ title = {Universally Optimal Privacy Mechanisms for Minimax Agents},
+ booktitle = pods10,
+ year = 2010,
+ pages = {135--146},
+ publisher = {ACM},
+} 
+
 @article{GuptaViNeYuWaWo11,
   title={Experimental validation of free-energy-landscape reconstruction from non-equilibrium single-molecule force spectroscopy measurements},
   author={Gupta, Amar Nath and Vincent, Abhilash and Neupane, Krishna and Yu, Hao and Wang, Feng and Woodside, Michael T},
@@ -15181,8 +15349,10 @@ booktitle = colt18,
   title={Robustness},
   author={Hansen, Lars Peter and Sargent, Thomas J},
   year=2008,
-  publisher={Princeton university press},
-  comment={Treatment of robust control in macroeconomic settings.}
+  publisher={Princeton University Press},
+  comment={Treatment of robust control in macroeconomic settings, where
+    one assumes underlying dynamics are not known perfectly (i.e. model
+    of time evolution is wrong).}
 }
 
 @inproceedings{HardtMa17,
@@ -15799,7 +15969,7 @@ problem over the domain (often easier than a quadratic), but method
 does require keeping around *each* function observed.},
 }
 
-@inproceedings{HazanAgKa14,
+@inproceedings{HazanKoLe14,
   title={Logistic regression: Tight bounds for stochastic and online optimization},
   author={Hazan, Elad and Koren, Tomer and Levy, Kfir Y},
   year = 2014,
@@ -17554,6 +17724,15 @@ isbn =           {0-387-96269-7}
   pages =	 {608--613}
 }
 
+@article{Jordan19,
+author = {Michael I. Jordan},
+title = {Artificial Intelligence---The Revolution Hasn’t Happened Yet},
+year = 2019,
+journal = {Harvard Data Science Review},
+volume = 1,
+number = 1,
+}
+
 @article{JosephMaNeRo19,
 author = {Matthew Joseph and Jieming Mao and Seth Neel and Aaron Roth},
 title = {The Role of Interactivity in Local Differential Privacy},
@@ -17828,6 +18007,19 @@ some weird issues with adaptive versus non-adaptive algorithms here.)
 (they say it is sub-Gaussian; that is silly).
 url = {http://arxiv.org/abs/0803.0924},
 },
+}
+
+@inproceedings{KasiviswanathanNiRaSm13,
+author = {Shiva Prasad Kasiviswanathan and Kobbi Nissim
+and Sofya Raskhodnikova and Adam Smith},
+title = {Analyzing graphs with node differential privacy},
+year = 2013,
+booktitle = {Theory of Cryptography},
+volume = 7785,
+series = {Lecture Notes in Computer Science},
+editor = {Amit Sahai},
+publisher = {Springer},
+pages = {457--476},
 }
 
 @inproceedings{KasiviswanathanRuSm13,
@@ -18387,9 +18579,9 @@ pages= {227--248},
 year = 2007}
 
 @inproceedings{KhoslaJaYaLi11,
-  title={Novel dataset for fine-grained image categorization: Stanford dogs},
+  title={Novel dataset for fine-grained image categorization},
   author={Khosla, Aditya and Jayadevaprakash, Nityananda and Yao, Bangpeng and Li, Fei-Fei},
-  booktitle={Proc. CVPR Workshop on Fine-Grained Visual Categorization (FGVC)},
+  booktitle={First Workshop on Fine-Grained Visual Categorization, IEEE Conference on Computer Vision and Pattern Recognition},
   volume=2,
   pages=1,
   year=2011
@@ -20269,8 +20461,7 @@ comment=  	{Analysis of implementation of Hidden Markov models and the
 @inproceedings{LevyDu19,
 author = {Daniel Levy and John C. Duchi},
 year = 2019,
-title = {Necessary and Sufficient Geometries for Adaptive,
-  Mirror, and Standard Gradient Methods},
+title = {Necessary and Sufficient Geometries for Gradient Methods},
 booktitle = nips2019,
 url = {https://arxiv.org/abs/1909.10455},
 }
@@ -24155,11 +24346,13 @@ comment=  	{Ordinary versions are complete for P; partially observed
   year=2016
 }
 
-@article{PapernotMcGoJhCeSw16,
+@inproceedings{PapernotMcGoJhCeSw17,
   title={Practical black-box attacks against deep learning systems using adversarial examples},
   author={Papernot, Nicolas and McDaniel, Patrick and Goodfellow, Ian and Jha, Somesh and Celik, Z Berkay and Swami, Ananthram},
-  journal={arXiv:1602.02697 [cs.CR]},
-  year=2016
+  booktitle = {Proceedings of the 2017 ACM on Asia Conference on Computer and Communications Security},
+  comment = {journal={arXiv:1602.02697 [cs.CR]}},
+  year=2017,
+  publisher = {ACM},
 }
 
 @inproceedings{PapernotMcWuJhSw16,
@@ -24519,12 +24712,17 @@ publisher = {MIT Press},
 @article{PetersenJaDu00,
   title={Minimax optimal control of stochastic uncertain systems with relative entropy constraints},
   author={Petersen, Ian R and James, Matthew R and Dupuis, Paul},
-  journal={IEEE Transactions on Automatic Control},
+  journal=ieeetac,
   volume=45,
   number=3,
   pages={398--412},
   year=2000,
-  publisher={IEEE}
+  publisher={IEEE},
+  comment = {Discusses control systems with uncertain dynamics,
+    where the uncertain dynamics are described by a KL-divergence ball.
+    Develops a Ricatti recursion for LQR controllers under these constraints,
+    where unsurprisingly the asymptotic loss is a log-sum-exp formula
+    under the nominal distribution.},
 }
 
 @article{Petrov65,
@@ -25613,6 +25811,8 @@ pages = {1287--1319},
   author={Real, Esteban and Aggarwal, Alok and Huang, Yanping and Le, Quoc V},
   comment = {journal={arXiv:1802.01548 [cs.NE]}},
   booktitle = aaai19,
+  volume={33},
+  pages={4780--4789},
   year={2019}
 }
 
@@ -25662,11 +25862,11 @@ booktitle = nips2011,
 }
 
 @inproceedings{RechtRoScSh19,
-	title = 	 {Do {I}mage{N}et Classifiers Generalize to {I}mage{N}et?},
-	author = 	 {Recht, Benjamin and Roelofs, Rebecca and Schmidt, Ludwig 
-	and Shankar, Vaishaal},
-	booktitle = 	icml19,
-	year = 	 {2019},
+ title = {Do {I}mage{N}et Classifiers Generalize to {I}mage{N}et?},
+ author = {Recht, Benjamin and Roelofs, Rebecca and Schmidt, Ludwig
+    and Shankar, Vaishaal},
+ booktitle = icml19,
+ year =  {2019},
 }
 
 @inproceedings{ReddiHeSrPoSm16,
@@ -26236,11 +26436,11 @@ pages = {183–-283},
   publisher={APS}
 }
 
-@article{RomanoPaCa19,
+@inproceedings{RomanoPaCa19,
 author = {Yaniv Romano and Evan Patterson and Emmanuel J. Cand\`{e}s},
 title = {Conformalized Quantile Regression},
 year = 2019,
-journal = {arXiv:1905.03222 [stat.ME]},
+booktitle = nips2019,
 url = {https://arxiv.org/abs/1905.03222},
 }
 
@@ -27477,11 +27677,12 @@ journal = {arXiv:1308.6370 [math.OC]},
 
 @inproceedings{SchmidtSaTsTaMa18,
 author = {Ludwig Schmidt and Shibani Santurkar and Dimitris Tsipras
-and Kunal Talwar and Aleksander Madry},
+  and Kunal Talwar and Aleksander Madry},
 title = {Adversarially Robust Generalization Requires More Data},
 year = 2018,
 booktitle = nips2018,
-comment = {Demonstrates two models based on Gaussian data and Bernoulli data
+comment = {arXiv:1804.11285,
+  Demonstrates two models based on Gaussian data and Bernoulli data
   where training takes more data to be robust.},
 }
 
@@ -28725,11 +28926,11 @@ year = 2002,
 publisher = {Springer},
 }
 
-@article{SimonyanZi14,
+@article{SimonyanZi15,
   title={Very deep convolutional networks for large-scale image recognition},
   author={Simonyan, Karen and Zisserman, Andrew},
-  journal={arXiv:1409.1556 [cs.CV]},
-  year={2014}
+  year = 2015,
+  booktitle = iclr15,
 }
 
 @article{Sion58,
@@ -28976,6 +29177,15 @@ comment=  	{Continues Part I.  Inference of probabilities and grammars.}
 ,title=		{Theory of learning from examples}
 }
 
+@article{SoriaDo13,
+title = {Optimal data-independent noise for differential privacy},
+author = {Jordi Soria-Comas and Josep Domingo-Ferrer},
+journal = {Information Sciences},
+volume = 250,
+pages = {200--387},
+year = 2013,
+}
+
 @article{SoudryCa16,
 	title={No bad local minima: Data independent training error 
 	guarantees for multilayer neural networks},
@@ -29010,6 +29220,7 @@ pages = {1--57},
   booktitle = {Proceedings of the International Symposium on Music Information Retrieval},
   year = 	 {2003},
 }
+
 
 @book{Spall03,
 author = {James C. Spall},
@@ -29660,6 +29871,17 @@ journal = jmlr,
 volume = 11,
 pages = {311--365},
 }
+
+
+@inproceedings{TensorFlow16,
+title	= {TensorFlow: A system for large-scale machine learning},
+author	= {Martin Abadi and Paul Barham and Jianmin Chen and Zhifeng Chen and Andy Davis and Jeffrey Dean and Matthieu Devin and Sanjay Ghemawat and Geoffrey Irving and Michael Isard and Manjunath Kudlur and Josh Levenberg and Rajat Monga and Sherry Moore and Derek G. Murray and Benoit Steiner and Paul Tucker and Vijay Vasudevan and Pete Warden and Martin Wicke and Yuan Yu and Xiaoqiang Zheng},
+year	= {2016},
+URL	= {https://www.usenix.org/system/files/conference/osdi16/osdi16-abadi.pdf},
+booktitle	= {12th USENIX Symposium on Operating Systems Design and Implementation (OSDI 16)},
+pages	= {265--283}
+}
+
 
 @misc{TensorFlow15,
 title={ {TensorFlow}: Large-Scale Machine Learning on Heterogeneous Systems},
@@ -30778,7 +31000,7 @@ booktitle = nips2018,
 ,author=	{V. G. Vovk}
 ,title=		{Universal forcasting algorithms}
 ,year=		1992
-,journal=       {Information and Compuatation}
+,journal=       {Information and Computation}
 ,number=        96
 ,pages=         {245--277}
 }
