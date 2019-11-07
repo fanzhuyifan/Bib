@@ -256,6 +256,7 @@ Symposium on Discrete Algorithms (SODA)}}
 		 International Conference}}
 
 @string{ecml94=	{Machine Learning: ECML-94}}
+@string{ecml=	{European Conference on Machine Learning}}
 
 @string{itcs2017 = {Proceedings of the Eighth Innovations in Theoretical Computer Science (ITCS)}}
 @string{itcs2019 = {Proceedings of the Tenth Innovations in Theoretical Computer Science (ITCS)}}
@@ -388,6 +389,7 @@ Symposium on Discrete Algorithms (SODA)}}
 @string{icml96 = {Proceedings of the Thirteenth International Conference on Machine Learning}}
 @string{icml97 = {Proceedings of the Fourteenth International Conference on Machine Learning}}
 @string{icml98 = {Proceedings of the Fifteenth International Conference on Machine Learning}}
+@string{icml99 = {Proceedings of the Sixteenth International Conference on Machine Learning}}
 @string{icml00 = {Proceedings of the Seventeenth International Conference on Machine Learning}}
 @string{icml01 = {Proceedings of the Eighteenth International Conference on Machine Learning}}
 @string{icml02 = {Proceedings of the Nineteenth International Conference on Machine Learning}}
@@ -8987,6 +8989,16 @@ edition=	{second}
 ,year=          1984
 ,volume=        147
 ,pages=         {278-292}
+}
+
+@article{Dawid92a,
+author = {A. P. Dawid},
+title = {Applications of a general propagation algorithm for probabilistic expert systems},
+year = 1992,
+journal = {Statistics and Computing},
+volume = 2,
+number = 1,
+pages = {25--36},
 }
 
 @article{Dawid92
@@ -19172,6 +19184,13 @@ booktitle = icml17,
 		  Reconstruction},
 }
 
+@book{KollerFr09,
+author = {Daphne Koller and Nir Friedman},
+year = 2009,
+title = {Probabilistic Graphical Models: Principles and Techniques},
+publisher = {MIT Press},
+}
+
 @inproceedings{KollerSa97,
 	author = "D. Koller and M. Sahami",
 	title = "Hierarchically classifying docuemnts using very few words",
@@ -20263,6 +20282,27 @@ comment = {Shows how Newton methods may be used to solve minimization
   the optimal solution, depending on how accurately sub-problems are solved.}
 }
 
+@book{Lehmann99,
+author = {Erich L. Lehmann},
+title = {Elements of Large Sample Theory},
+year = 1999,
+publisher = {Springer},
+}
+
+@book{LehmannCa98,
+author = { Erich L. Lehmann and George Casella },
+title = {Theory of Point Estimation, Second Edition},
+year = 1998,
+publisher = {Springer},
+}
+
+@book{LehmannRo05,
+author = {Erich L. Lehmann and Joseph P. Romano},
+title = {Testing Statistical Hypotheses, Third Edition},
+year = 2005,
+publisher = {Springer},
+}
+
 @inproceedings{Lei11,
 author = {Jing Lei},
 title = {Differentially private {M}-estimators},
@@ -20303,27 +20343,6 @@ pages = {1094--1111},
 	author={Lei, Lihua and Ju, Cheng and Chen, Jianbo and Jordan, Michael I},
 	booktitle=nips2017,
 	year=2017
-}
-
-@book{Lehmann99,
-author = {Erich L. Lehmann},
-title = {Elements of Large Sample Theory},
-year = 1999,
-publisher = {Springer},
-}
-
-@book{LehmannCa98,
-author = { Erich L. Lehmann and George Casella },
-title = {Theory of Point Estimation, Second Edition},
-year = 1998,
-publisher = {Springer},
-}
-
-@book{LehmannRo05,
-author = {Erich L. Lehmann and Joseph P. Romano},
-title = {Testing Statistical Hypotheses, Third Edition},
-year = 2005,
-publisher = {Springer},
 }
 
 @article{Lei14,
@@ -23911,6 +23930,18 @@ booktitle = nips2011,
 	address =  "New York"
 }
 
+@article{Nilsson98,
+author = {D. Nilsson},
+title = {An efficient algorithm for finding the $M$ most probable
+  configurations in probabilistic expert systems},
+year = 1998,
+journal = {Statistics and Computing},
+volume = 8,
+pages = {159--173},
+number = 2,
+}
+
+
 @unpublished{NiyogiBe9?
 ,author=	{Partha Niyogi and Robert C. Berwick}
 ,title=		{A dynamical systems model for language change}
@@ -24416,6 +24447,16 @@ institution=  	{MIT Laboratory for Information and Decision Sciences},
 number=   	{LIDS-P-1479},
 comment=  	{Ordinary versions are complete for P; partially observed
 		are PSPACE-complete.}
+}
+
+@inproceedings{PapadopoulosPrVoGa02,
+author = {Harris Papadopoulos and Kostas Proedrou and Volodya Vovk
+  and Alex Gammerman},
+title = {Inductive confidence machines for regression},
+year = 2002,
+booktitle = ecml,
+pages = {345--356},
+publisher = {Springer},
 }
 
 @unknown{PapkaCaBa9?
@@ -25889,6 +25930,16 @@ journal = aos,
 volume = 38,
 number = 3,
 pages = {1287--1319},
+}
+
+@article{ReadPfHoFr11,
+author = {Jesse Read and Bernhard Pfahringer and Geoff Holmes and
+Eibe Frank},
+title = {Classifier chains for multi-label classification},
+year = 2011,
+journal = ml,
+volume = 85,
+pages = {333--359},
 }
 
 @inproceedings{RealAgHuLe19,
@@ -27662,6 +27713,17 @@ year = 2012,
 ,volume=	52
 ,number=	2
 }
+
+@article{SchapireSi00,
+author = {Robert E. Schapire and Yoram Singer},
+title = {Boos{T}exter: A boosting-based system for text categorization},
+year = 2000,
+journal = ml,
+volume = 39,
+number = {2--3},
+pages = {135--168},
+}
+
 
 @article{SchapireSi99
 ,author=	{R.~E.~Schapire and Y.~Singer}
@@ -31177,6 +31239,13 @@ journal = {International Statistical Review},
 volume = {69},
 year = {2001},
 pages = {213--248}
+}
+
+@inproceedings{VovkGaSa99,
+author = {Volodya Vovk and Alex Grammerman and Craig Saunders},
+title = {Machine-learning applications of algorithmic randomness},
+year = 1999,
+booktitle = icml99,
 }
 
 @book{VovkGaSh05,
