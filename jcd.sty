@@ -117,6 +117,9 @@
 \makeatother
 
 \newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\newcommand{\darkblue}[1]{\textcolor{darkblue}{#1}}
+
 \definecolor{innerboxcolor}{rgb}{.9,.95,1}
 \definecolor{outerlinecolor}{rgb}{.6,0,.2}
 \newcommand{\jcdcomment}[1]{\fcolorbox{outerlinecolor}{innerboxcolor}{
@@ -127,9 +130,9 @@
 
 % General comment: two arguments. First is the name of the commenter, second
 % is the actual comment.
-\newcommand{\gencomment}[2]{\fcolorbox{outerilnecolor}{innerboxcolor}{
+\newcommand{\gencomment}[2]{\fcolorbox{outerlinecolor}{innerboxcolor}{
     \begin{minipage}{.9\textwidth}
-      \red{\bf {#1} Comment:} {#2}
+      \darkblue{\bf {#1} Comment:} {#2}
     \end{minipage}
   } \\
 }

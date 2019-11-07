@@ -28846,7 +28846,15 @@ pages = {357--361},
   number=2,
   pages={227--244},
   year=2000,
-  publisher={Elsevier}
+  publisher={Elsevier},
+  comment = {Discusses reweighting approaches for maximizing likelihood
+    even with mis-specified models. In particular, looks at
+    solving $\maximize \int p_i(x) q(y \mid x) \log p(y \mid x; \theta) dx dy$,
+    where $i \in \{0, 1\}$ may differ. When the model is well-specified,
+    no problem, as either distribution will yield optimal classifier.
+    When the model is mis-specified, reweighting
+    by $w(x) = p_i(x) p_{1 - i}(x)$ allows fitting in one distribution
+    to find the optimal model for the other.},
 }
 
 @article{ShimojoIc89,
@@ -29624,6 +29632,16 @@ comment=	{fill in first name and journal number}
   year = 	 1992
 }
 
+@article{Stone74,
+author = {Mervyn Stone},
+title = {Cross-Validatory Choice and Assessment of Statistical Predictions},
+journal = jrssb,
+year = 1974,
+volume = 36,
+number = 2,
+pages = {111--147},
+}
+
 @article{Stone80,
 author = {Charles J. Stone},
 title = {Optimal rates of convergence for nonparametric estimators},
@@ -29727,7 +29745,10 @@ pages = {e1001779},
   journal=jmlr,
   volume=8,
   pages={985--1005},
-  year=2007
+  year=2007,
+  comment = {Uses importance reweighting to correct a cross-validation estimate.
+    ASsumes that importance weights (ratio of source to target) distribution
+    on covariates $X$ are known, and $P(Y \mid X)$ remains constant.},
 }
 
 @inproceedings{SugiyamaNaKaBuKa08,
@@ -31713,7 +31734,15 @@ author = {Junfeng Wen and Chun-Nam Yu and Russell Greiner},
 title = {Robust Learning under Uncertain Test Distributions: Relating Covariate Shift to Model Misspecification},
 booktitle = icml14,
 year = 2014,
-pages={631--639}
+pages={631--639},
+comment = {Looks at model mis-specification when the test distribution
+  is uncertain, i.e.\ $p(x)$ may change but $p(y \mid x)$ stays identical.
+  Seems a little weird, as they only cover the easy impliciations:
+  a correctly specified model will pointwise dominate (i.e.\ $\theta$ is
+  optimal simultaneously for all losses $\E[\ell(f_\theta(x), Y) \mid X = x]$
+  as $x$ varies), and then adversarial perturbations aren't a big deal.
+  So if adversarial perturbations hurt, then you are mis-specified.
+  (No duh.)},
 }
 
 @article{WenocurDu81,
