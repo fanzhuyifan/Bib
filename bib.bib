@@ -3,6 +3,7 @@
 #
 
 @string{acl = {Proceedings of the Annual Meeting of the Association for Computational Linguistics}}
+@string{acm = {Association for Computing Machinery}}
 
 @string{aistat07 = {Processing of 11th International Conference on
 Artificial Intelligence and Statistics}}
@@ -152,6 +153,8 @@ on Artificial Intelligence and Statistics}}
 @string{soda90 = {Proceedings of the First Annual ACM-SIAM Symposium on
 		  Discrete Algorithms (SODA)}}
 @string{soda91 = {Proceedings of the Second Annual ACM-SIAM Symposium on
+		  Discrete Algorithms (SODA)}}
+@string{soda07 = {Proceedings of the Eighteenth ACM-SIAM Symposium on
 		  Discrete Algorithms (SODA)}}
 @string{soda10 = {Proceedings of the Twenty-First ACM-SIAM Symposium on
 		  Discrete Algorithms (SODA)}}
@@ -325,6 +328,11 @@ Symposium on Discrete Algorithms (SODA)}}
 @string{ucsccrl={University of California Santa Cruz,
 		 Computer Research Laboratory}}
 
+@string{kdd10 = {Proceedings of the 16th ACM SIGKDD Conference on Knowledge
+   Discovery and Data Mining (KDD)}},
+@string{kdd11 = {Proceedings of the 17th ACM SIGKDD Conference on Knowledge
+   Discovery and Data Mining (KDD)}},
+ 
 %% NOTE: NeurIPS has an off-by-one error in its numbering. The
 %% Proceedings of the Thirty-Second Conference on Neural Information
 %% Processing Systems is the *book* Advances in Neural Information
@@ -2081,6 +2089,14 @@ publisher = {Wiley},
 address = {New York},
 year = {1951},
 type = {Book},
+}
+
+@inproceedings{ArthurVa07,
+author = {David Arthur and Sergei Vassilvitskii},
+title = {k-means++: The Advantages of Careful Seeding},
+booktitle = soda07,
+year = 2007,
+pages = {1027--1035},
 }
 
 @article{ArtsteinBaBaNa04,
@@ -4108,6 +4124,15 @@ comment = {
   then it is hard to find $h^*$ without querying many labels.
 },
 }
+
+@inproceedings{BhaskarLaSmTh10,
+author = {Raghav Bhaskar and Srivatsan Laxman and Adam Smith
+  and Abhradeep Thakurta},
+title = {Discovering frequent patterns in sensitive data},
+year = 2010,
+booktitle = kdd10,
+}
+
 
 @book{Bhatia97,
 author = {Rajendra Bhatia},
@@ -11577,7 +11602,7 @@ queries of the dataset.
 },
 }
 
-@article{DworkNaPiRo10,
+@inproceedings{DworkNaPiRo10,
 author = {Cynthia Dwork and Moni Naor and Toniann Pitassi and Guy Rothblum},
 title = {Differential privacy under continual observation},
 year = 2010,
@@ -14026,8 +14051,7 @@ pages = {237–-246},
 author = {D.~Gleich and L.-H.~Lim},
 title = {Rank aggregation via nuclear norm minimization},
 year = 2011,
-booktitle = {Proceedings of the 17th ACM SIGKDD Conference on Knowledge
- Discovery and Data Mining (KDD)},
+booktitle = kdd11,
 pages = {60--68},
 }
 
