@@ -6,25 +6,31 @@
 \usepackage{amsfonts}
 \usepackage{latexsym}
 \usepackage{graphicx}
+\usepackage{subcaption} % Subfigures environment
 \usepackage{xcolor}
 \usepackage{xifthen}
 \usepackage{mathtools}
 % \usepackage{fullpage}
+
+
+\usepackage[numbers]{natbib} % Handling bibliography
+\usepackage[linesnumbered,ruled,vlined]{algorithm2e} % Algorithm environment
+
 
 \definecolor{darkblue}{rgb}{0,0,.75}
 \def\bluehyperref{%
   \usepackage[colorlinks=true,allcolors=darkblue]{hyperref}
 }
 
-\def\usebiggeometry{%
-  \usepackage[top=2.54cm,left=2.54cm,right=2.54cm,bottom=2.54cm]{geometry}}
-\def\usemedgeometry{%
-  \usepackage[top=2.54cm,left=3.0cm,right=3.0cm,bottom=2.54cm]{geometry}}
+%\def\usebiggeometry{%
+%  \usepackage[top=2.54cm,left=1.5cm,right=1.5cm,bottom=2.54cm]{geometry}}
+%\def\usemedgeometry{%
+%  \usepackage[top=2.54cm,left=3.0cm,right=3.0cm,bottom=2.54cm]{geometry}}
 
-% \setlength{\topmargin}{1cm}
-%% \setlength{\textwidth}{15cm}
-%% \setlength{\textheight}{8.5in}
-%% \setlength{\oddsidemargin}{1cm}
+ \setlength{\topmargin}{1cm}
+ \setlength{\textwidth}{15cm}
+ \setlength{\textheight}{8.5in}
+ \setlength{\oddsidemargin}{1cm}
 
 % Symbol formats
 \newcommand{\mc}[1]{\mathcal{#1}}
@@ -279,3 +285,9 @@
 % Makes equation numbers have (1.1) style
 % \numberwithin{equation}{section}
 % \numberwithin{equation}{subsection}
+
+%Handling Keywords
+\def\keywordname{{\bfseries \emph Keywords}}%
+\def\keywords#1{\par\addvspace\medskipamount{\rightskip=0pt plus1cm
+\def\and{\ifhmode\unskip\nobreak\fi\ $\cdot$
+}\noindent\keywordname\enspace\ignorespaces#1\par}}
