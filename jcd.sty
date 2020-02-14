@@ -21,11 +21,6 @@
 \def\usemedgeometry{%
   \usepackage[top=2.54cm,left=3.0cm,right=3.0cm,bottom=2.54cm]{geometry}}
 
-% \setlength{\topmargin}{1cm}
-%% \setlength{\textwidth}{15cm}
-%% \setlength{\textheight}{8.5in}
-%% \setlength{\oddsidemargin}{1cm}
-
 % Symbol formats
 \newcommand{\mc}[1]{\mathcal{#1}}
 \newcommand{\mbf}[1]{\mathbf{#1}}
@@ -279,3 +274,9 @@
 % Makes equation numbers have (1.1) style
 % \numberwithin{equation}{section}
 % \numberwithin{equation}{subsection}
+
+%Handling Keywords
+\def\keywordname{{\bfseries \emph Keywords}}%
+\def\keywords#1{\par\addvspace\medskipamount{\rightskip=0pt plus1cm
+    \def\and{\ifhmode\unskip\nobreak\fi\ $\cdot$
+    }\noindent\keywordname\enspace\ignorespaces#1\par}}

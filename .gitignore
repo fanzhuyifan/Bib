@@ -1,2 +1,4 @@
 # File to specify files that ought to be ignored in this repository
 *~
+.DS_Store
+texput.log
