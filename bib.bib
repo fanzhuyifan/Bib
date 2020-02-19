@@ -475,6 +475,7 @@ Learning Representations}}
 @string{allerton17 = {The 55th Allerton Conference on Communication, Control,
  and Computing}}
 
+@string{cdc1974 = {13th IEEE Conference on Decisions and Control}}
 @string{cdc2011 = {50th IEEE Conference on Decisions and Control}}
 @string{cdc2012 = {51st IEEE Conference on Decisions and Control}}
 @string{cdc2013 = {52nd IEEE Conference on Decisions and Control}}
@@ -6421,7 +6422,7 @@ author = {Yair Carmon and John C. Duchi},
 journal = siopt,
 volume = 29,
 number = 3,
-pages = {2146–-2178},
+pages = {2146--2178},
 year={2019},
 comment = {arXiv:1612.00547 [math.OC]},
 }
@@ -6471,7 +6472,7 @@ author = {Carmon, Yair and Duchi, John C and Hinder, Oliver and Sidford,
 year = 2019,
 journal = mathproga,
 volume = {to appear},
-doi={s10107-019-01406-y}
+comment = {doi={s10107-019-01406-y}},
 }
 
 @article{CarmonDuHiSi19ii,
@@ -8800,16 +8801,15 @@ pages = {417--528},
 }
 
 @inproceedings{CullumDo74,
-	title={A block {L}anczos algorithm for computing the q algebraically 
-	largest eigenvalues and a corresponding eigenspace of large, sparse, real 
-	symmetric matrices},
-	author={Cullum, Jane and Donath, William E},
-	booktitle={Decision and Control including the 13th Symposium on 
-	Adaptive Processes, 1974 IEEE Conference on},
-	volume={13},
-	pages={505--509},
-	year={1974},
-	organization={IEEE}
+title={A block {L}anczos algorithm for computing the q algebraically 
+largest eigenvalues and a corresponding eigenspace of large, sparse, real 
+symmetric matrices},
+author={Cullum, Jane and Donath, William E},
+booktitle= cdc1974,
+comment={volume={13}},
+pages={505--509},
+year={1974},
+organization={IEEE}
 }
 
 @article{CurramMi94
@@ -14478,7 +14478,7 @@ booktitle = icml13,
 
 @Book{GolubVa89,
 	author =   "G.H. Golub and C.F. Van Loan",
-	title =    "Matrix computations",
+	title =    "Matrix Computations",
 	publisher =    "John Hopkins University Press",
 	year =     1989
 }
@@ -17008,12 +17008,16 @@ number = 8,
 pages = {e1000167},
 }
 
-@article{Ho-NguyenKi16,
+@article{Ho-NguyenKi17,
 author = {Nam Ho-Nguyen and Fatma K{\i}l{\i}n\k{c}-Karzan},
 title = {A Second-Order Cone Based Approach for Solving the
 Trust-Region Subproblem and Its Variants},
-year = 2016,
-journal = {arXiv:1603.03366 [math.OC]},
+year = 2017,
+journal = siopt,
+volume = 27,
+number = 3,
+pages = {1485--1512},
+comment = {arXiv:1603.03366 [math.OC]},
 }
 
 @book{HonigMe84
@@ -21884,16 +21888,6 @@ pages = {123--224},
 url = {http://arxiv.org/abs/1104.5557},
 }
 
-@article{MaWaChCh19,
-	title={Implicit regularization in nonconvex statistical estimation: 
-	Gradient descent converges linearly for phase retrieval, matrix 
-	completion, and blind deconvolution},
-	author={Ma, Cong and Wang, Kaizheng and Chi, Yuejie and Chen, Yuxin},
-	journal={Foundations of Computational Mathematics},
-	year={2019},
-	publisher={Springer}
-}
-
 @article{MaMaYu15,
   title={A statistical perspective on algorithmic leveraging},
   author={Ping Ma and Michael W. Mahoney and Bin Yu},
@@ -22779,18 +22773,11 @@ title = {Implicit Regularization in Nonconvex Statistical Estimation:
 Gradient Descent Converges Linearly for Phase Retrieval,
 Matrix Completion and Blind Deconvolution},
 year = 2019,
-journal = {Foundations of Computational Mathematics},
-url = {https://doi.org/10.1007/s10208-019-09429-9},
+journal = focm,
+volume = {to appear},
+publisher = {Springer},
+comment = {url = {https://doi.org/10.1007/s10208-019-09429-9}},
 comment = {arXiv:1711.10467 [cs.LG]},
-}
-
-@inproceedings{PapernotMcJhFrCeSw16,
-  title={The limitations of deep learning in adversarial settings},
-  author={Papernot, Nicolas and McDaniel, Patrick and Jha, Somesh and Fredrikson, Matt and Celik, Z Berkay and Swami, Ananthram},
-  booktitle={2016 IEEE European Symposium on Security and Privacy (EuroS\&P)},
-  pages={372--387},
-  year=2016,
-  organization={IEEE}
 }
 
 @inproceedings{McMahanSt12,
@@ -24886,6 +24873,15 @@ publisher = {Springer},
   publisher = {ACM},
 }
 
+@inproceedings{PapernotMcJhFrCeSw16,
+  title={The limitations of deep learning in adversarial settings},
+  author={Papernot, Nicolas and McDaniel, Patrick and Jha, Somesh and Fredrikson, Matt and Celik, Z Berkay and Swami, Ananthram},
+  booktitle={2016 IEEE European Symposium on Security and Privacy (EuroS\&P)},
+  pages={372--387},
+  year=2016,
+  organization={IEEE}
+}
+
 @inproceedings{PapernotMcWuJhSw16,
   title={Distillation as a defense to adversarial perturbations against deep neural networks},
   author={Papernot, Nicolas and McDaniel, Patrick and Wu, Xi and Jha, Somesh and Swami, Ananthram},
@@ -25072,7 +25068,7 @@ comment=  	{Defines and studies graphoids for representing dependencies}
 @article{Pearlmutter94,
 	title={Fast exact multiplication by the {H}essian},
 	author={Pearlmutter, Barak A},
-	journal={Neural computation},
+	journal={Neural Computation},
 	volume={6},
 	number={1},
 	pages={147--160},
@@ -28452,7 +28448,7 @@ pages={647-653},
 	title={Fast curvature matrix-vector products for second-order gradient 
 	descent},
 	author={Schraudolph, Nicol N},
-	journal={Neural computation},
+	journal={Neural Computation},
 	volume={14},
 	number={7},
 	pages={1723--1738},
