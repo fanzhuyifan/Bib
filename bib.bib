@@ -475,6 +475,7 @@ Learning Representations}}
 @string{allerton17 = {The 55th Allerton Conference on Communication, Control,
  and Computing}}
 
+@string{cdc1974 = {13th IEEE Conference on Decisions and Control}}
 @string{cdc2011 = {50th IEEE Conference on Decisions and Control}}
 @string{cdc2012 = {51st IEEE Conference on Decisions and Control}}
 @string{cdc2013 = {52nd IEEE Conference on Decisions and Control}}
@@ -6415,6 +6416,7 @@ year = 2017,
   publisher={IMS}
   
 }
+
 @article{CarmonDu19,
 title = {Gradient Descent Finds the Cubic-Regularized
  Nonconvex {N}ewton Step},
@@ -6422,7 +6424,7 @@ author = {Yair Carmon and John C. Duchi},
 journal = siopt,
 volume = 29,
 number = 3,
-pages = {2146–-2178},
+pages = {2146--2178},
 year={2019},
 comment = {arXiv:1612.00547 [math.OC]},
 }
@@ -6472,7 +6474,7 @@ author = {Carmon, Yair and Duchi, John C and Hinder, Oliver and Sidford,
 year = 2019,
 journal = mathproga,
 volume = {to appear},
-doi={s10107-019-01406-y}
+comment = {doi={s10107-019-01406-y}},
 }
 
 @article{CarmonDuHiSi19ii,
@@ -8799,16 +8801,15 @@ pages = {417--528},
 }
 
 @inproceedings{CullumDo74,
-	title={A block {L}anczos algorithm for computing the q algebraically 
-	largest eigenvalues and a corresponding eigenspace of large, sparse, real 
-	symmetric matrices},
-	author={Cullum, Jane and Donath, William E},
-	booktitle={Decision and Control including the 13th Symposium on 
-	Adaptive Processes, 1974 IEEE Conference on},
-	volume={13},
-	pages={505--509},
-	year={1974},
-	organization={IEEE}
+title={A block {L}anczos algorithm for computing the q algebraically 
+largest eigenvalues and a corresponding eigenspace of large, sparse, real 
+symmetric matrices},
+author={Cullum, Jane and Donath, William E},
+booktitle= cdc1974,
+comment={volume={13}},
+pages={505--509},
+year={1974},
+organization={IEEE}
 }
 
 @article{CurramMi94
@@ -13792,10 +13793,10 @@ comment=  	{Argues for deriving probability density of future observations
 		(a predictive distribution) from prior observations.}
 }
 
-@article{GeJiZh17,
+@inproceedings{GeJiZh17,
   title={No Spurious Local Minima in Nonconvex Low Rank Problems: A Unified Geometric Analysis},
   author={Ge, Rong and Jin, Chi and Zheng, Yi},
-  journal={arXiv:1704.00708 [cs.LG]},
+  booktitle=icml17,
   year={2017}
 }
 
@@ -14485,7 +14486,7 @@ booktitle = icml13,
 
 @Book{GolubVa89,
 	author =   "G.H. Golub and C.F. Van Loan",
-	title =    "Matrix computations",
+	title =    "Matrix Computations",
 	publisher =    "John Hopkins University Press",
 	year =     1989
 }
@@ -15637,6 +15638,16 @@ author = {Moritz Hardt and Tengyu Ma},
 title = {Identity Matters in Deep Learning},
 year = 2017,
 booktitle = iclr17,
+}
+
+@article{HardtMaRe18,
+	title={Gradient descent learns linear dynamical systems},
+	author={Hardt, Moritz and Ma, Tengyu and Recht, Benjamin},
+	journal=jmlr,
+	volume={19},
+	number={1},
+	pages={1025--1068},
+	year={2018},
 }
 
 @article{HardtMo12,
@@ -17005,12 +17016,16 @@ number = 8,
 pages = {e1000167},
 }
 
-@article{Ho-NguyenKi16,
+@article{Ho-NguyenKi17,
 author = {Nam Ho-Nguyen and Fatma K{\i}l{\i}n\k{c}-Karzan},
 title = {A Second-Order Cone Based Approach for Solving the
 Trust-Region Subproblem and Its Variants},
-year = 2016,
-journal = {arXiv:1603.03366 [math.OC]},
+year = 2017,
+journal = siopt,
+volume = 27,
+number = 3,
+pages = {1485--1512},
+comment = {arXiv:1603.03366 [math.OC]},
 }
 
 @book{HonigMe84
@@ -21040,7 +21055,16 @@ comment = {Simultaneous with the paper "Optimal Randomized Response Models,"
   year=2018
 }
 
-@article{LiangLi09,
+@inproceedings{LiYu17,
+	title={Convergence analysis of two-layer neural networks with {R}e{LU} 
+	activation},
+	author={Li, Yuanzhi and Yuan, Yang},
+	booktitle=nips2017,
+	pages={597--607},
+	year={2017}
+}
+
+@article{LingLi09,
 author = {Hua Ling and Runze Li},
 title = {Variable Selection for Partially Linear Models With
    Measurement Errors},
@@ -22362,6 +22386,15 @@ edition = {Second},
 publisher = {Springer},
 }
 
+@inproceedings{MartensGr15,
+	title={Optimizing neural networks with kronecker-factored approximate 
+	curvature},
+	author={Martens, James and Grosse, Roger},
+	booktitle=icml15,
+	pages={2408--2417},
+	year={2015}
+}
+
 @article{Martinet70,
   title={Regularisation d'in{\'e}quations variationelles par approximations succesives},
   author={Martinet, Bernard},
@@ -22756,18 +22789,11 @@ title = {Implicit Regularization in Nonconvex Statistical Estimation:
 Gradient Descent Converges Linearly for Phase Retrieval,
 Matrix Completion and Blind Deconvolution},
 year = 2019,
-journal = {Foundations of Computational Mathematics},
-url = {https://doi.org/10.1007/s10208-019-09429-9},
+journal = focm,
+volume = {to appear},
+publisher = {Springer},
+comment = {url = {https://doi.org/10.1007/s10208-019-09429-9}},
 comment = {arXiv:1711.10467 [cs.LG]},
-}
-
-@inproceedings{PapernotMcJhFrCeSw16,
-  title={The limitations of deep learning in adversarial settings},
-  author={Papernot, Nicolas and McDaniel, Patrick and Jha, Somesh and Fredrikson, Matt and Celik, Z Berkay and Swami, Ananthram},
-  booktitle={2016 IEEE European Symposium on Security and Privacy (EuroS\&P)},
-  pages={372--387},
-  year=2016,
-  organization={IEEE}
 }
 
 @inproceedings{McMahanSt12,
@@ -24863,6 +24889,15 @@ publisher = {Springer},
   publisher = {ACM},
 }
 
+@inproceedings{PapernotMcJhFrCeSw16,
+  title={The limitations of deep learning in adversarial settings},
+  author={Papernot, Nicolas and McDaniel, Patrick and Jha, Somesh and Fredrikson, Matt and Celik, Z Berkay and Swami, Ananthram},
+  booktitle={2016 IEEE European Symposium on Security and Privacy (EuroS\&P)},
+  pages={372--387},
+  year=2016,
+  organization={IEEE}
+}
+
 @inproceedings{PapernotMcWuJhSw16,
   title={Distillation as a defense to adversarial perturbations against deep neural networks},
   author={Papernot, Nicolas and McDaniel, Patrick and Wu, Xi and Jha, Somesh and Swami, Ananthram},
@@ -25049,7 +25084,7 @@ comment=  	{Defines and studies graphoids for representing dependencies}
 @article{Pearlmutter94,
 	title={Fast exact multiplication by the {H}essian},
 	author={Pearlmutter, Barak A},
-	journal={Neural computation},
+	journal={Neural Computation},
 	volume={6},
 	number={1},
 	pages={147--160},
@@ -28429,7 +28464,7 @@ pages={647-653},
 	title={Fast curvature matrix-vector products for second-order gradient 
 	descent},
 	author={Schraudolph, Nicol N},
-	journal={Neural computation},
+	journal={Neural Computation},
 	volume={14},
 	number={7},
 	pages={1723--1738},
@@ -29458,6 +29493,20 @@ author = {David O. Siegmund},
 year = 1985,
 title = {Sequential Analysis},
 publisher = {Springer},
+}
+
+@article{SilverScSiAnHuGuHuBaLaBo17,
+	title={Mastering the game of {G}o without human knowledge},
+	author={Silver, David and Schrittwieser, Julian and Simonyan, Karen and 
+	Antonoglou, Ioannis and Huang, Aja and Guez, Arthur and Hubert, 
+	Thomas and Baker, Lucas and Lai, Matthew and Bolton, Adrian and 
+	others},
+	journal={Nature},
+	volume={550},
+	number={7676},
+	pages={354},
+	year={2017},
+	publisher={Nature Publishing Group}
 }
 
 @inproceedings{SimardLeDe93,
@@ -31678,6 +31727,21 @@ year = 2009,
 publisher = {Springer},
 }
 
+@article{VinyalsBaCz19,
+	title={Grandmaster level in {S}tar{C}raft {II} using multi-agent 
+	reinforcement learning},
+	author={Vinyals, Oriol and Babuschkin, Igor and Czarnecki, Wojciech M 
+	and Mathieu, Micha{\"e}l and Dudzik, Andrew and Chung, Junyoung and 
+	Choi, David H and Powell, Richard and Ewalds, Timo and Georgiev, Petko 
+	and others},
+	journal={Nature},
+	volume={575},
+	number={7782},
+	pages={350--354},
+	year={2019},
+	publisher={Nature Publishing Group}
+}
+
 @article{Vitanyi11,
 author = {Paul M. B. Vit\'anyi},
 title = {Information distance in multiples},
@@ -32896,6 +32960,16 @@ pages = {2543--2596},
 	author = {Xu, Yi and Rong, Jing and Yang, Tianbao},
 	booktitle = nips2018,
 	year = 2018,
+}
+
+@article{XuRoMa19,
+	title={Newton-type methods for non-convex optimization under inexact 
+	{H}essian information},
+	author={Xu, Peng and Roosta, Fred and Mahoney, Michael W},
+	journal=mathproga,
+	year={2019},
+	volume = {to appear},
+	publisher={Springer}
 }
 
 @article{XueYe00,
