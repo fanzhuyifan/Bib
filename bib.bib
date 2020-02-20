@@ -481,6 +481,9 @@ Learning Representations}}
 @string{cdc2013 = {52nd IEEE Conference on Decisions and Control}}
 @string{cdc2014 = {53rd IEEE Conference on Decisions and Control}}
 
+@string{cvpr16 = "Proceedings of the 26th IEEE Conference on Computer Vision and Pattern Recognition"}
+
+
 @string{cpam = {Communications on Pure and Applied Mathematics}}
 @string{focm = {Foundations of Computational Mathematics}}
 @string{wiley=	{John Wiley \& Sons}}
@@ -4129,8 +4132,7 @@ journal = siopt,
 }
 
 @article{Besag75,
- ISSN = {00390526, 14679884},
- URL = {http://www.jstor.org/stable/2987782},
+URL = {http://www.jstor.org/stable/2987782},
  abstract = {A Markovian approach to the specification of spatial stochastic interaction for irregularly distributed data points is reviewed. Three specific methods of statistical analysis are proposed; the first two are generally applicable whilst the third relates only to "normally" distributed variables. Some reservations are expressed and the need for practical investigations is emphasized.},
  author = {Julian Besag},
  journal = {Journal of the Royal Statistical Society. Series D (The Statistician)},
@@ -7655,8 +7657,6 @@ volume={14},
 number={3},
 pages={462-467},
 keywords={Approximation methods;Probability functions;Trees},
-doi={10.1109/TIT.1968.1054142},
-ISSN={1557-9654},
 }
 
 @book{ChowTe12,
@@ -10694,6 +10694,14 @@ series = {IAS/Park City Mathematics Series},
 publisher = {American Mathematical Society},
 editors=  {Michael Mahoney and John C. Duchi and Anna Gilbert},
 year = 2018,
+}
+
+@misc{Duchi19_300B_exercises,
+author = {John C. Duchi},
+title = {Exercises for Theory of Statistics},
+note = {Stanford University},
+year = 2019,
+url = {http://web.stanford.edu/class/stats300b/Exercises/all-exercises.pdf},
 }
 
 @misc{DuchiChRe15code,
@@ -21193,13 +21201,21 @@ pages=    	{361--387},
   number=212,
 }
 
-@inproceedings{LinMaBeHaPeRaDoZi14,
-  title={Microsoft coco: Common objects in context},
-  author={Lin, Tsung-Yi and Maire, Michael and Belongie, Serge and Hays, James and Perona, Pietro and Ramanan, Deva and Doll{\'a}r, Piotr and Zitnick, C Lawrence},
-  booktitle={European conference on computer vision},
-  pages={740--755},
-  year={2014},
-  organization={Springer}
+@InProceedings{LinMaBeHaPeRaDoZi14,
+author="Lin, Tsung-Yi
+and Maire, Michael
+and Belongie, Serge
+and Hays, James
+and Perona, Pietro
+and Ramanan, Deva
+and Doll{\'a}r, Piotr
+and Zitnick, C. Lawrence",
+title="Microsoft {COCO}: Common Objects in Context",
+booktitle="Computer Vision -- ECCV 2014",
+year="2014",
+publisher="Springer International Publishing",
+address="Cham",
+pages="740--755",
 }
 
 @inproceedings{LiRi16,
@@ -26431,7 +26447,7 @@ title = {On the convergence of {A}dam and beyond},
 @inproceedings{RedmonDiGiFa16,
   title={You only look once: Unified, real-time object detection},
   author={Redmon, Joseph and Divvala, Santosh and Girshick, Ross and Farhadi, Ali},
-  booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
+  booktitle=cvpr16,
   pages={779--788},
   year={2016}
 }
@@ -28547,9 +28563,9 @@ pages = {633-648}
 	Year = {2015}}
 	
 @article{SesiaCa19,
- author={Sesia, Matteo and Cand{\`e}s, Emmanuel J},
+ author={Sesia, Matteo and Cand{\`e}s, Emmanuel J.},
   title={A comparison of some conformal quantile regression methods},
-  journal={STAT},
+  journal={arXiv:1909.05433 [stat.ME]},
   year={2019}
 }
 
@@ -30047,15 +30063,19 @@ pages = {225--287},
 }
 
 @article{SteinwartCh11,
-  title={Estimating conditional quantiles with the help of the pinball loss},
-  author={Steinwart, Ingo and Christmann, Andreas and others},
-  journal={Bernoulli},
-  volume={17},
-  number={1},
-  pages={211--225},
-  year={2011},
-  publisher={Bernoulli Society for Mathematical Statistics and Probability}
+author = "Steinwart, Ingo and Christmann, Andreas",
+fjournal = "Bernoulli",
+journal = "Bernoulli",
+month = "02",
+number = "1",
+pages = "211--225",
+publisher = "Bernoulli Society for Mathematical Statistics and Probability",
+title = "Estimating conditional quantiles with the help of the pinball loss",
+url = "https://doi.org/10.3150/10-BEJ267",
+volume = "17",
+year = "2011"
 }
+
 
 @article{SteinwartSc07,
   title={Fast rates for support vector machines using Gaussian kernels},
@@ -30442,7 +30462,7 @@ volume=        16
 }
 
 @article{TanPaLe19,
-  title={Efficientdet: Scalable and efficient object detection},
+  title={Efficient{D}et: Scalable and efficient object detection},
   author={Tan, Mingxing and Pang, Ruoming and Le, Quoc V},
   journal={arXiv:1911.09070 [cs.CV]},
   year={2019}
