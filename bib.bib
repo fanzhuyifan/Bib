@@ -235,6 +235,8 @@ Symposium on Discrete Algorithms (SODA)}}
 		  Symposium on the Theory of Computing}}
 @string{stoc18 = {Proceedings of the Fiftieth Annual ACM
 		  Symposium on the Theory of Computing}}
+@string{stoc19 = {Proceedings of the Fifty-first Annual ACM
+		  Symposium on the Theory of Computing}}
 
 @string{pods02 = {Proceedings of the Twenty-First ACM SIGMOD-SIGACT-SIGART
   Symposium on Principles of Database Systems}}
@@ -21504,6 +21506,19 @@ Title = {On the limited memory {BFGS} method for large scale optimization},
 Volume = {45},
 Year = {1989}}
 
+@inproceedings{LiuTa19,
+author = {Jingcheng Liu and Kunal Talwar},
+title = {Private Selection from Private Candidates},
+year = 2019,
+booktitle = stoc19,
+url = {https://arxiv.org/abs/1811.07971},
+comment = {Shows that if we wish to do model selection (or something similar)
+  privately, a good idea is to iterate (1) choose one of our k models at
+  random, run a private procedure to evaluate its quality, and
+  (2) after running T steps of this, select the best. Except the important
+  thing is that the number of iterations $T$ of this is random
+  (e.g. geometric), which allows to maintain privacy.},
+}
 
 @inproceedings{LiuWrReBiSr14,
 author = {Ji Liu and Stephen J. Wright and Christopher R\'e
