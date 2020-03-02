@@ -21,6 +21,9 @@
 \def\usemedgeometry{%
   \usepackage[top=2.54cm,left=3.0cm,right=3.0cm,bottom=2.54cm]{geometry}}
 
+% Sets line spacing to be 1.5 by default (can enter other scalars)
+\newcommand{\draftmode}[1][1.5]{\renewcommand{\baselinestretch}{#1}}
+
 % Symbol formats
 \newcommand{\mc}[1]{\mathcal{#1}}
 \newcommand{\mbf}[1]{\mathbf{#1}}
