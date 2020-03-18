@@ -33,6 +33,7 @@ In your terminal, create a branch. The command for this is
 ``
 git branch your-branch-name
 ``
+
 ``
 git checkout your-branch-name
 ``
@@ -44,6 +45,7 @@ committed them via
 ``
 git add bib.bib
 ``
+
 ``
 git commit -m "This is a description of the edits I've made"
 ``
@@ -70,6 +72,7 @@ the repository, just issue the command
 ``
 git checkout master
 ``
+
 ``
 git pull
 ``
