@@ -30,8 +30,8 @@ requests. Here are the steps in somewhat more detail:
 
 In your terminal, create a branch. The command for this is
 
-git branch your-branch-name
-git checkout your-branch-name
+git branch *your-branch-name*
+git checkout *your-branch-name*
 
 Once you've done these, you'll be on your branch. Now, you can edit
 your branch as you see fit, and once you've made your edits and
@@ -44,9 +44,21 @@ you can do push your edits to the main server via
 
 git push
 
-(This may flag some issues of upstream setting; don't worry about those.)
+This may flag some issues of upstream setting; typically you can fix this by
+instead running
 
-Once you've pushed your branch to the server, you need to
+git push --set-upstream origin *your-branch-name*
+
+don't worry about those.)
+
+Once you've pushed your branch to the server, you need to create a
+pull request. To do this, go to
+https://bitbucket.org/jduchi/bib/branches/, then on the branch you've
+just pushed, click "Create" a pull request. You'll get a window with a
+place to enter a description and reviewers. (Currently the only two
+reviewers are Yair and me.)
+
+Once we approve the changes, you can merge them in!
 
 *** Entry format ***
 
