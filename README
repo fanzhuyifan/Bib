@@ -9,7 +9,9 @@ maintain multiple bibliography files.
 
 To soft-link things, use the command
 
-ln -s [path-to-bib]/bib.bib [path-to-desired-place].
+``
+ln -s [path-to-bib]/bib.bib [path-to-desired-place]
+``
 
 The aggressively precise formatting also means that citations are
 simpler within the file, and easier to find. As a corollary to this,
