@@ -30,8 +30,10 @@ requests. Here are the steps in somewhat more detail:
 
 In your terminal, create a branch. The command for this is
 
+``
 git branch *your-branch-name*
 git checkout *your-branch-name*
+``
 
 Once you've done these, you'll be on your branch. Now, you can edit
 your branch as you see fit, and once you've made your edits and
