@@ -16,6 +16,50 @@ simpler within the file, and easier to find. As a corollary to this,
 please *use* this bib file--it is convenient! Do not start your own
 ones!
 
+*** Adding new entries to the bib file ***
+
+I would love it if you add entries to this file! But I also do not love
+it when the formatting is wrong. (For example, if you copied something
+from Google Scholar, it is wrong.) As a consequence of this, we are now
+using a standard code review cycle on this.
+
+To commit edits to the bib, you'll need to create a branch, do your
+edits in that branch, then issue a pull request to the master
+branch. Currently, Yair and I are reviewers who can approve pull
+requests. Here are the steps in somewhat more detail:
+
+In your terminal, create a branch. The command for this is
+
+git branch *your-branch-name*
+git checkout *your-branch-name*
+
+Once you've done these, you'll be on your branch. Now, you can edit
+your branch as you see fit, and once you've made your edits and
+committed them via
+
+git add bib.bib
+git commit -m "This is a description of the edits I've made"
+
+you can do push your edits to the main server via
+
+git push
+
+This may flag some issues of upstream setting; typically you can fix this by
+instead running
+
+git push --set-upstream origin *your-branch-name*
+
+don't worry about those.)
+
+Once you've pushed your branch to the server, you need to create a
+pull request. To do this, go to
+https://bitbucket.org/jduchi/bib/branches/, then on the branch you've
+just pushed, click "Create" a pull request. You'll get a window with a
+place to enter a description and reviewers. (Currently the only two
+reviewers are Yair and me.)
+
+Once we approve the changes, you can merge them in!
+
 *** Entry format ***
 
 Entries are in alphabetical order by first author's last name, and
