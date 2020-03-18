@@ -58,7 +58,12 @@ just pushed, click "Create" a pull request. You'll get a window with a
 place to enter a description and reviewers. (Currently the only two
 reviewers are Yair and me.)
 
-Once we approve the changes, you can merge them in.
+Once we approve the changes, you can merge them into the master. Once you've merged into the master, to check out the freshest version of the repository, just issue the command
+
+git checkout master
+git pull
+
+To check the branches on your local machine, you can always issue the command ``git branch -v'', and to delete a local branch once it has been merged, use ``git branch -d *your-branch-name*''.
 
 *** Entry format ***
 
