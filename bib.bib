@@ -1256,6 +1256,25 @@ volume = 28,
 pages = {131--142},
 }
 
+@inproceedings{AlistarhAlLi18,
+title = {Byzantine Stochastic Gradient Descent},
+year=  2018,
+author = {Dan Alistarh and Zeyuan Allen-Zhu and Jerry Li},
+booktitle = nips2018,
+comment = {Considers a distributed stochastic gradient algorithm when
+  some of the workers may be arbitrarily corrupted. Tracks mean of each
+  worker's gradients over time, ignoring all workers whose means drift too
+  far from a robust average (e.g. trimmed mean or median) of worker gradients,
+  which won't happen for good machines. Shows that things more or less behave
+  like SGD after that.
+
+  They, however, work in an unrealistic setting that each machine
+  computes a stochastic gradient that is unbiased for the population objective
+  at each iteration. This is distinct from the paper~\cite{YinChRaBa18}, who
+  assume each machine actually has a fixed sample.
+},
+}
+
 @article{AlizadehGo01,
 author = {F. Alizadeh and Donald Goldfarb},
 title = {Second-order cone programming},
@@ -33196,7 +33215,10 @@ comment = {Considers a distributed learning setting with $m$ machines and
   behaves nicely as long as the fraction $\alpha$ of the corrupted machines
   is not too high, as the median or trimmed mean of the gradients still has
   large inner product with the true gradient, so standard convergence
-  results still apply.},
+  results still apply.
+
+  Nicely, they assume that each machine has a fixed set of samples over time.
+},
 }
 
 
