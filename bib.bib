@@ -1256,6 +1256,25 @@ volume = 28,
 pages = {131--142},
 }
 
+@inproceedings{AlistarhAlLi18,
+title = {Byzantine Stochastic Gradient Descent},
+year=  2018,
+author = {Dan Alistarh and Zeyuan Allen-Zhu and Jerry Li},
+booktitle = nips2018,
+comment = {Considers a distributed stochastic gradient algorithm when
+  some of the workers may be arbitrarily corrupted. Tracks mean of each
+  worker's gradients over time, ignoring all workers whose means drift too
+  far from a robust average (e.g. trimmed mean or median) of worker gradients,
+  which won't happen for good machines. Shows that things more or less behave
+  like SGD after that.
+
+  They, however, work in an unrealistic setting that each machine
+  computes a stochastic gradient that is unbiased for the population objective
+  at each iteration. This is distinct from the paper~\cite{YinChRaBa18}, who
+  assume each machine actually has a fixed sample.
+},
+}
+
 @article{AlizadehGo01,
 author = {F. Alizadeh and Donald Goldfarb},
 title = {Second-order cone programming},
@@ -2820,7 +2839,7 @@ author = {Rina Foygel Barber and Emmanuel J. Cand\`{e}s and Aaditya
   Ramdas and Ryan J. Tibshirani},
 title = {The limits of distribution-free conditional predictive inference},
 year = 2019,
-journal = {arXiv:1903.04684 [math.ST]},
+journal = {arXiv:1903.04684v2 [math.ST]},
 }
 
 @article{BarberCaRaTi19b,
@@ -6518,6 +6537,15 @@ comment = {arXiv:1711.00841 [math.OC]},
 doi={s10107-019-01431-x}
 }
 
+@article{CarmonDu20,
+title = {First-order methods for nonconvex quadratic minimization},
+author = {Yair Carmon and John C. Duchi},
+year = 2020,
+journal = {SIAM Review},
+note = {SIGEST Award Paper},
+volume = {to appear},
+}
+
 @inproceedings{CarmonDuSiTi19,
 author = {Yair Carmon and John C Duchi and Aaron Sidford and Kevin Tian},
 title = {A Rank-1 Sketch for Matrix Multiplicative Weights},
@@ -6720,6 +6748,13 @@ address = {Beachwood, Ohio, USA},
 url = {https://arxiv.org/abs/0712.0248},
 }
 
+@article{CauchoisGuDu20,
+author = {Maxime Cauchois and Suyash Gupta and John Duchi},
+title = {Knowing what you know: valid confidence sets in multiclass and
+  multilabel prediction},
+year = 2020,
+journal = {arXiv:2004.10181},
+}
 
 @article{CavallantiCeGe11,
 author = {Giovanni Cavallanti and Nicol\`{o} Cesa-Bianchi and Claudio
@@ -12245,12 +12280,14 @@ comment = {
 @misc{EveringhamVaWiWiZi07,
 	author = "Everingham, M. and Van~Gool, L. and Williams, C. K. I. and Winn, J. and Zisserman, A.",
 	title = "The {PASCAL} {V}isual {O}bject {C}lasses {C}hallenge 2007 {(VOC2007)} {R}esults",
-	howpublished = "http://www.pascal-network.org/challenges/VOC/voc2007/workshop/index.html"}
+	url = {http://www.pascal-network.org/challenges/VOC/voc2007/workshop/index.html},
+	year = 2007}
 	
 @misc{EveringhamVaWiWiZi12,
 	author = "Everingham, M. and Van~Gool, L. and Williams, C. K. I. and Winn, J. and Zisserman, A.",
 	title = "The {PASCAL} {V}isual {O}bject {C}lasses {C}hallenge 2012 {(VOC2012)} {R}esults",
-	howpublished = "http://www.pascal-network.org/challenges/VOC/voc2012/workshop/index.html"}
+	url = {http://www.pascal-network.org/challenges/VOC/voc2012/workshop/index.html},
+	year = 2012,}
 	
 @article{EvgeniouMiPo05,
 author = "T.~Evgeniou and C.Micchelli and M.~Pontil",
@@ -16376,7 +16413,8 @@ abstract="Deep residual networks have emerged as a family of extremely deep arch
 
 @article{HechtlingerPoWa19,
     title={Cautious Deep Learning}, 
-	author={Yotam Hechtlinger and Barnabás Póczos and Larry Wasserman},
+	author={Yotam Hechtlinger and Barnab\'{a}s P\'{o}czos and Larry
+	  Wasserman},
 	journal={arXiv:1805.09460 [stat.ML]},
 	year=2019
 }
@@ -19424,6 +19462,17 @@ volume=   	34,
 pages=    	{75--86}
 }
 
+@article{KoenkerBa78,
+author = {Roger Koenker and Gilbert Bassett Jr.},
+title = {Regression Quantiles},
+year = {1978},
+journal = {Econometrica: Journal of the Econometric Society},
+volume = 46,
+number = 1,
+pages = {33--50}
+}
+
+
 @article{KohKiBo07,
 author =        {K. Koh and S.J. Kim and S. Boyd},
 title =         {An Interior-Point Method for Large-Scale
@@ -20774,6 +20823,19 @@ journal = 	{Mathematische Annalen},
 year = 		{1982},
 volume = 	{261},
 pages = 	{515--534}
+}
+
+@article{Lepskii90,
+author = {Oleg V. Lepskii},
+title = {On a Problem of Adaptive Estimation in Gaussian White Noise},
+year = 1990,
+journal = {Theory of Probability and Its Applications},
+volume = 35,
+number = 3,
+pages = {454--466},
+comment = {Shows that estimation over $\beta$-smooth classes has minimax
+  rate $n^{-\beta / (2 \beta + 1)}$, but that adaptive estimators must
+  achieve rates logarithmically slower.},
 }
 
 @article{Lepskii91,
@@ -33208,6 +33270,25 @@ volume = 64,
 number = 8,
 pages = {5662--5676},
 }
+
+@article{YinChRaBa18,
+author = {Dong Yin and Yudong Chen and Kannan Ramchandran and Peter Bartlett},
+title = {Byzantine-Robust Distributed Learning: Towards Optimal Statistical Rates},
+year = 2018,
+journal = {arXiv:1803.01498 [cs.LG]},
+comment = {Considers a distributed learning setting with $m$ machines and
+  $n$ data on each machine. A fraction $\alpha$ of the machines may be
+  corrupted and return arbitrary values. Shows that a distributed
+  gradient method that uses trimmed means (or medians) of the gradients
+  behaves nicely as long as the fraction $\alpha$ of the corrupted machines
+  is not too high, as the median or trimmed mean of the gradients still has
+  large inner product with the true gradient, so standard convergence
+  results still apply.
+
+  Nicely, they assume that each machine has a fixed set of samples over time.
+},
+}
+
 
 @unpublished{Young87p,
 author=   	{Neal Young},
