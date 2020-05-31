@@ -27,6 +27,8 @@ on Artificial Intelligence and Statistics}}
 on Artificial Intelligence and Statistics}}
 @string{aistat19 = {Proceedings of the 22nd International Conference
 on Artificial Intelligence and Statistics}}
+@string{aistat20 = {Proceedings of the 23nd International Conference
+	on Artificial Intelligence and Statistics}}
 
 @string{colt88 = {Proceedings of the 1988 Workshop on Computational
  		  Learning Theory}}
@@ -433,7 +435,8 @@ Learning Representations}}
 Learning Representations}}
 @string{iclr19 = {Proceedings of the Seventh International Conference on 
 Learning Representations}}
-
+@string{iclr20 = {Proceedings of the Eighth International Conference on 
+	Learning Representations}}
 
 @string{uai98 = {Proceedings of the Fourteenth Conference on Uncertainty
   in Artificial Intelligence}}
@@ -4575,6 +4578,18 @@ pages = {1351--1378},
 	organization={IEEE}
 }
 
+@inbook{BlanchetKa20,
+	author = {Blanchet, Jose and Kang, Yang},
+	publisher = {John Wiley \& Sons, Ltd},
+	isbn = {9781119721871},
+	title = {Semi-supervised Learning Based on Distributionally Robust 
+	Optimization},
+	booktitle = {Data Analysis and Applications 3},
+	chapter = {1},
+	pages = {1-33},
+	year = {2020},
+}
+
 @article{BlanchetKaMu19,
   title={Robust {W}asserstein profile inference and applications to machine learning},
   author={Blanchet, Jose and Kang, Yang and Murthy, Karthyek},
@@ -8304,7 +8319,7 @@ pages = 	{324--346}
 @article{CorbettGo18,
   title={The measure and mismeasure of fairness: A critical review of fair machine learning},
   author={Corbett-Davies, Sam and Goel, Sharad},
-  journal={arXiv preprint arXiv:1808.00023},
+  journal={arXiv:1808.00023},
   year=2018
 }
 
@@ -8912,6 +8927,14 @@ comment={volume={13}},
 pages={505--509},
 year={1974},
 organization={IEEE}
+}
+
+@article{CuriLeJeKr19,
+	title={Adaptive Sampling for Stochastic Risk-Averse Learning},
+	author={Curi, Sebastian and Levy, Kfir and Jegelka, Stefanie and Krause, 
+	Andreas and others},
+	journal = {arXiv:1910.12511 [cs.LG]},
+	year={2019}
 }
 
 @article{CurramMi94
@@ -10976,6 +10999,14 @@ title = {Adaptive subgradient methods for online learning and stochastic
          optimization},
 year = 2010,
 booktitle = colt10,
+}
+
+@preprint{DuchiHaNa19,
+	title={Distributionally robust losses against mixture covariate shifts},
+	author={Duchi, John C and Hashimoto, Tatsunori and Namkoong, 
+	Hongseok},
+	url={https://cs.stanford.edu/~thashim/assets/publications/condrisk.pdf},
+	year={2019},
 }
 
 @inproceedings{DuchiJoMc13,
@@ -14192,6 +14223,15 @@ comment = {
 },
 }
 
+@article{GhoshSqWo18,
+	title={Efficient stochastic gradient descent for distributionally robust 
+	learning},
+	author={Ghosh, Soumyadip and Squillante, Mark and Wollega, Ebisa},
+	journal={arXiv:1805.08728 [stats.ML]},
+	year={2018},
+	comment  = {full of mistakes},
+}
+
 @article{Gilbert08,
 author = {Natasha Gilbert},
 title = {Researchers criticize genetic data restrictions},
@@ -14206,6 +14246,25 @@ doi = {10.1038/news.2008.1083},
 ,title=		{Bounded versus unbounded rationality: the tyranny of
 		 the weak}
 ,year=		1989
+}
+
+@article{Giles08,
+	title={Multilevel {M}onte {C}arlo path simulation},
+	author={Giles, Michael B},
+	journal={Operations research},
+	volume={56},
+	number={3},
+	pages={607--617},
+	year={2008},
+}
+
+@article{Giles15,
+	title={Multilevel monte carlo methods},
+	author={Giles, Michael B},
+	journal={Acta Numerica},
+	volume={24},
+	pages={259--328},
+	year={2015},
 }
 
 @article{GilmerAdGoAnDa18,
@@ -17376,12 +17435,11 @@ year = 2009,
 booktitle = nips22,
 }
 
-@article{HuNiSaSu18,
+@inproceedings{HuNiSaSu18,
   author = {Weihua Hu and Gang Niu and Issei Sato and Masashi Sugiayma},
   title = {Does Distributionally Robust Supervised Learning Give Robust Classifiers?},
   year = 2018,
-  journal = {arXiv:1611.02041v4 [stat.ML]},
-  url = {https://arxiv.org/abs/1611.02041v4},
+  booktitle=icml18,
 }
 
 @article{HuZhFa14,
@@ -18665,6 +18723,14 @@ pages = {1321--1326},
 		least squares for {PET}}
 }
 
+@inproceedigns{KawaguchiLu20,
+	title={Ordered {SGD}: A New Stochastic Optimization Framework for 
+	Empirical Risk Minimization},
+	author={Kawaguchi, Kenji and Lu, Haihao},
+	year=2020,
+	booktitle=aistats2020,
+}
+
 @book{Kazarinoff61, 
 	title={Geometric Inequalities}, 
 	DOI={10.5948/UPO9780883859223}, 
@@ -19530,17 +19596,6 @@ volume =        8,
 pages =         {1519-1555},
 comment =       {Efficiently does both sparse and non-sparse logistic
                  regression using 2nd order method and PCG}
-}
-
-@inproceedings{
-	KohSaLi19,
-	title={Distributionally Robust Neural Networks},
-	author={Anonymous},
-	booktitle={Submitted to International Conference on Learning 
-	Representations},
-	year={2020},
-	url={https://openreview.net/forum?id=ryxGuJrFvS},
-	note={under review}
 }
 
 @inproceedings{KohlerLu17,
@@ -27692,13 +27747,17 @@ booktitle = emnlp,
 year = 2010,
 }
 
-@article{RussakovskyDeSuKrSaMaHuKaKhBeBeFe14,
+@article{RussakovskyDeSuKrSaMaHuKaKhBeBeFe15,
 author = {Olga Russakovsky and Jia Deng and Hao Su and Jonathan Krause and
 Sanjeev Satheesh and Sean Ma and Zhiheng Huang and Andrej Karpathy and
 Aditya Khosla and Michael Bernstein and Alexander C. Berg and Li Fei-Fei},
 title = {Image{N}et Large Scale Visual Recognition Challenge},
-year = 2014,
-journal = {arXiv:1409.0575 [cs.CV]},
+journal={International journal of computer vision},
+volume={115},
+number={3},
+pages={211--252},
+year={2015},
+
 }
 
 @article{RussoVa14c,
@@ -27860,6 +27919,15 @@ eprint = {
   pages={213--226},
   year=2010,
   organization={Springer}
+}
+
+@inproceedings{SagawaKohHaLi20,
+	title={Distributionally robust neural networks for group shifts: On the 
+	importance of regularization for worst-case generalization},
+	author={agawa, Shiori and Koh, Pang Wei and Hashimoto, Tatsunori B and 
+	Liang, Percy},
+	booktitle=iclr20,
+	year={2020},
 }
 
 @article{SairaYoTaMoAvPe12,
