@@ -33581,6 +33581,29 @@ pages = 	{80--91}
 	year={2018}
 }
 
+@article{Ye98,
+author = {Jianming Ye},
+title = {On Measuring and correcting the effects of data mining and model
+  selection},
+year = 1998,
+journal = jasa,
+volume = 93,
+number = 441,
+pages = {120--131},
+comment = {Considers (roughly) estimating the effective dimensionality of
+  different predictors. Suggests using a "generalized degrees of freedom"
+  measure, which basically says that if $\hat{\mu}_i(Y)$ is the expected
+  value of $Y$ on example $i$ given data $Y$, while $\mu$ is its true mean,
+  then $d \E[\hat{\mu}_i(Y)] / d\mu_i$ is a rough degree of freedom.
+
+  This means that sensitive components of the (mean) prediction should be
+  penalized in model selection. Shows also that this has some interesting
+  properties for correcting bias in model selection problems (by relating
+  to multiple testing-like issues of order statistics), but I did not
+  totally understand that part.
+},
+}
+
 @article{YeBa18,
 author = {Min Ye and Alexander Barg},
 title = {Optimal Schemes for Discrete Distribution Estimation Under
