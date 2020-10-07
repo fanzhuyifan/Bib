@@ -2750,6 +2750,13 @@ comment = {Uses Loomis-Whitney inequality to show lower bounds on amount
   year={2018},
 }
 
+@inproceedings{BalleBeGaNi19,
+author = {Borja Balle and James Bell and Adria Gascon and Kobbi Nissim},
+title = {The Privacy Blanket of the Shuffle Model},
+year = 2019,
+booktitle = {39th Annual International Cryptology Conference (CRYPTO)},
+}
+
 @unpublished{Balsubramani14,
 author = {Akshay Balsubramani},
 title = {The Utility of Abstaining in Binary Classification},
@@ -4325,6 +4332,17 @@ pages=          {79-108},
 month=          sep,
 year=		2003
 }
+
+@article{Bickel75,
+author = {Peter Bickel},
+title = {One-Step {H}uber Estimates in the Linear Model},
+year = 1975,
+journal = jasa,
+volume = 70,
+number = 350,
+pages = {428--434},
+}
+
 
 @inproceedings{BickelBrSc07,
   title={Discriminative learning for differing training and test distributions},
@@ -6216,6 +6234,25 @@ year=2014,
 note={Available at \url{https://www.consumerfinance.gov/data-research/research-reports/usingpublicly-available-information-to-proxy-for-unidentified-race-and-ethnicity/}}
 }
 
+@inproceedings{CabanesRuBa20,
+author = {Vivien Cabannes and Alessandro Rudi and Francis Bach},
+title = {Structured Prediction with Partial Labelling through the Infimum Loss},
+year = 2020,
+booktitle = icml20,
+comment = {Considers structured prediction where instead of full labels, one
+  receives supersets of labels $S \supset y$. Under a somewhat strong
+  assumption that  there is only one consistent label for all the "uncertain"
+  sets $S$--that is, for a given $x$, the intersection of the $\cap S$ with
+  $P(S \mid x) > 0$ satisfies $\cap S = \{y_x\}$. So only 1 label is consistent
+  (or has positive probability). But with this strong assumption, shows how
+  a kernel regression approach of estimating the sampling distribution,
+  then finding assignments that more or less minimize the average loss
+  under this distribution (which, under consistency conditions for the
+  density estimate, will eventually
+  be \emph{only} the consistent label $y$) one can achieve consistency.},
+}
+  
+
 @article{Cai12,
 author = {Tony Cai},
 title = {Minimax and adaptive inference in nonparametric function estimation},
@@ -6811,6 +6848,16 @@ year = 1997
 	year = 1996
 }
 
+@article{CasellaSt81,
+author = {George Casella and William Strawderman},
+title = {Estimating a Bounded Normal Mean},
+year = 1981,
+journal = aos,
+volume = 9,
+number = 4,
+pages = {870--878},
+}
+
 @inproceedings{CatanzaroKaLeAsDeKeShYeFo09,
 author = {Bryan Catanzaro and Shoaib Kamil
  and Yunsup Lee and Krste Asanovic and James Demmel and Kurt Keutzer
@@ -7276,6 +7323,15 @@ author = {Moses Charikar and Jacob Steinhardt and Gregory Valiant},
 title = {Learning from Untrusted Data},
 year = 2017,
 booktitle = stoc17,
+}
+
+@article{CharisopoulosChDaDiDiDr19,
+author = {Vasileios Charisopoulos and Yudong Chen and Damek Davis
+  and Mateo D\'{i}az and Lijun Ding and Dmitriy Drusvyatskiy},
+title = {Low-rank matrix recovery with composite optimization:
+  good conditioning and rapid convergence},
+year = 2019,
+journal = {arXiv:1904.10020 [math.OC]},
 }
 
 @article{CharisopoulosDaDiDr19,
@@ -10286,6 +10342,13 @@ volume=	40
    PAGES = "1205--1216"
 }
 
+@article{DinhTrNg20,
+title = {Personalized Federated Learning with Moreau Envelopes},
+author = {Canh Dinh and Nguyen Tran and Tuan Dung Nguyen},
+year = 2020,
+journal = {arXiv:2006.08848 [cs.LG]},
+}
+
 @inproceedings{DinurNi03,
 author = {Irit Dinur and Kobbi Nissim},
 title = {Revealing information while preserving privacy},
@@ -11449,10 +11512,10 @@ journal = {arXiv:1612.05612 [math.ST]},
 url = {https://arxiv.org/abs/1612.05612},
 }
 
-@article{DuchiRu19,
+@article{DuchiRu20,
 author = {John C. Duchi and Feng Ruan},
 title = {Asymptotic Optimality in Stochastic Optimization},
-year = 2019,
+year = 2020,
 journal = aos,
 volume = {To Appear},
 }
@@ -12980,6 +13043,16 @@ volume=   	90,
 number=   	3,
 pages=    	{239--260},
 comment=  	{Taxonomy of ways people might deviate from Bayesianism.}
+}
+
+@article{Fisher22,
+author = {Ronald A. Fisher},
+title = {On the mathematical foundations of theoretical statistics},
+year = 1922,
+journal = {Philosophical Transactions of the Royal Society A},
+volume = 222,
+issue = {594--604},
+pages = {309--368},
 }
 
 @article{FlajoletGaTh92,
@@ -15997,6 +16070,13 @@ booktitle = colt18,
   comment={Treatment of robust control in macroeconomic settings, where
     one assumes underlying dynamics are not known perfectly (i.e. model
     of time evolution is wrong).}
+}
+
+@article{HanzelyRi20,
+title = {Federated Learning of a Mixture of Global and Local Models},
+author = {Filip Hanzely and Peter Richt\'{a}rik},
+year = 2020,
+journal = {arXiv:2002.05516 [cs.LG]},
 }
 
 @inproceedings{HardtMa17,
@@ -22759,6 +22839,15 @@ pages=		{261--272}
   booktitle = 	 {ml97},
   year =	 1997,
   pages =	 {195-201}
+}
+
+@article{MansourMoRoSu20,
+author = {Yishay Mansour and Mehryar Mohri and Jae Ro and
+  Ananda Theertha Suresh},
+title = {Three Approaches for Personalization with Applications to Federated
+  Learning},
+year = 2020,
+journal = {arXiv:2002.10619 [cs.LG]},
 }
 
 @article{MarcusSaMa94,
