@@ -1,4 +1,4 @@
-#
+כ#
 #	Machine Learning (++) Bibliography
 #
 
@@ -278,6 +278,10 @@ Symposium on Discrete Algorithms (SODA)}}
 @string{aaai99= {Proceedings of the Sixteenth National Conference on
 		  Artificial Intelligence}}
 @string{aaai15= {Proceedings of the Thirty-Second National Conference on
+		  Artificial Intelligence}}
+@string{aaai17= {Proceedings of the Thirty-Third AAAI Conference on
+		  Artificial Intelligence}}
+@string{aaai18= {Proceedings of the Thirty-Fourth AAAI Conference on
 		  Artificial Intelligence}}
 @string{aaai19= {Proceedings of the Thirty-Third AAAI Conference on
 		  Artificial Intelligence}}
@@ -2783,6 +2787,13 @@ comment = {Uses Loomis-Whitney inequality to show lower bounds on amount
   year={2018},
 }
 
+@inproceedings{BalleBeGaNi19,
+author = {Borja Balle and James Bell and Adria Gascon and Kobbi Nissim},
+title = {The Privacy Blanket of the Shuffle Model},
+year = 2019,
+booktitle = {39th Annual International Cryptology Conference (CRYPTO)},
+}
+
 @unpublished{Balsubramani14,
 author = {Akshay Balsubramani},
 title = {The Utility of Abstaining in Binary Classification},
@@ -2902,15 +2913,9 @@ author = {Rina Foygel Barber and Emmanuel J. Cand\`{e}s and Aaditya
   Ramdas and Ryan J. Tibshirani},
 title = {The limits of distribution-free conditional predictive inference},
 year = 2019,
-journal = {arXiv:1903.04684v2 [math.ST]},
-}
-
-@article{BarberCaRaTi19b,
-author = {Rina Foygel Barber and Emmanuel J. Cand\`{e}s and Aaditya
-  Ramdas and Ryan J. Tibshirani},
-title = {Conformal Prediction Under Covariate Shift},
-year = 2019,
-journal = {arXiv:1904.06019 [stat.ME]},
+journal = {Information and Inference},
+volume = {to appear},
+comment = {note = {arXiv:1903.04684v2 [math.ST]},}
 }
 
 @article{BarberCaRaTi19c,
@@ -4222,8 +4227,8 @@ journal = siopt,
   volume = 167,
   number = 2,
   pages = {235--292},
-  url = {http://arxiv.org/abs/1401.0212},
   year=2018,
+comment = {  url = {http://arxiv.org/abs/1401.0212}},
 }
 
 @article{BertsimasGuKa14,
@@ -4364,6 +4369,17 @@ pages=          {79-108},
 month=          sep,
 year=		2003
 }
+
+@article{Bickel75,
+author = {Peter Bickel},
+title = {One-Step {H}uber Estimates in the Linear Model},
+year = 1975,
+journal = jasa,
+volume = 70,
+number = 350,
+pages = {428--434},
+}
+
 
 @inproceedings{BickelBrSc07,
   title={Discriminative learning for differing training and test distributions},
@@ -4644,6 +4660,17 @@ pages = {1351--1378},
 	organization={IEEE}
 }
 
+@article{BlanchetHeMu20,
+title={On distributionally robust extreme value analysis},
+author={Blanchet, Jose and He, Fei and Murthy, Karthyek},
+journal={Extremes},
+pages={1--31},
+year={2020},
+volume= 23,
+number= 2,
+publisher={Springer}
+}
+
 @inbook{BlanchetKa20,
 	author = {Blanchet, Jose and Kang, Yang},
 	publisher = {John Wiley \& Sons, Ltd},
@@ -4849,6 +4876,13 @@ title=		{Cryptographic Primitives Based on Hard Learning Problems},
 booktitle=	{Pre-Proceedings of CRYPTO~'93},
 year=		1993,
 pages=		{24.1--24.10}
+}
+
+@book{BlumHoKa20, 
+	title={Foundations of Data Science}, 
+	publisher={Cambridge University Press}, 
+	author={Avrim Blum and John Hopcroft and Ravindran Kannan}, 
+	year={2020}
 }
 
 @InProceedings{BlumKa97,
@@ -6308,12 +6342,41 @@ pages = {573--595},
     year = 2000
 }
 
+@inproceedings{BuZoVe19,
+author = {Yuheng Bu and Shaofeng Zou and Venugopal V. Veeravalli},
+year = 2019,
+title = {Tightening Mutual Information Based Bounds on
+Generalization Error},
+url = {https://arxiv.org/abs/1901.04609},
+booktitle = {Proceedings of the IEEE International Symposium on
+  Information Theory (ISIT)},
+}
+
 @misc{CFPB14,
 title={Using publicly available information to proxy for unidentified race and ethnicity: a methodology and assessment},
 author={Consumer Financial Protection Bureau},
 year=2014,
 note={Available at \url{https://www.consumerfinance.gov/data-research/research-reports/usingpublicly-available-information-to-proxy-for-unidentified-race-and-ethnicity/}}
 }
+
+@inproceedings{CabanesRuBa20,
+author = {Vivien Cabannes and Alessandro Rudi and Francis Bach},
+title = {Structured Prediction with Partial Labelling through the Infimum Loss},
+year = 2020,
+booktitle = icml20,
+comment = {Considers structured prediction where instead of full labels, one
+  receives supersets of labels $S \supset y$. Under a somewhat strong
+  assumption that  there is only one consistent label for all the "uncertain"
+  sets $S$--that is, for a given $x$, the intersection of the $\cap S$ with
+  $P(S \mid x) > 0$ satisfies $\cap S = \{y_x\}$. So only 1 label is consistent
+  (or has positive probability). But with this strong assumption, shows how
+  a kernel regression approach of estimating the sampling distribution,
+  then finding assignments that more or less minimize the average loss
+  under this distribution (which, under consistency conditions for the
+  density estimate, will eventually
+  be \emph{only} the consistent label $y$) one can achieve consistency.},
+}
+  
 
 @article{Cai12,
 author = {Tony Cai},
@@ -6881,6 +6944,16 @@ volume = 88,
 	year={2017}
 }
 
+@article{CartisGoTo19,
+title = {Universal Regularization Methods: Varying the Power, the Smoothness and the Accuracy},
+author = {Coralia Cartis and Nick I. Gould and Philippe L. Toint},
+journal = siopt,
+year = 2019,
+volume = 29,
+number = 1,
+pages = {595--615},
+}
+
 @article{Caruana97,
 author = "R.~Caruana",
 title = "Multitask Learning",
@@ -6907,6 +6980,16 @@ year = 1997
 	booktitle = nips8,
         pages = {959-965},
 	year = 1996
+}
+
+@article{CasellaSt81,
+author = {George Casella and William Strawderman},
+title = {Estimating a Bounded Normal Mean},
+year = 1981,
+journal = aos,
+volume = 9,
+number = 4,
+pages = {870--878},
 }
 
 @inproceedings{CatanzaroKaLeAsDeKeShYeFo09,
@@ -6942,7 +7025,14 @@ author = {Maxime Cauchois and Suyash Gupta and John Duchi},
 title = {Knowing what you know: valid confidence sets in multiclass and
   multilabel prediction},
 year = 2020,
-journal = {arXiv:2004.10181},
+journal = {arXiv:2004.10181 [stat.ML]},
+}
+
+@article{CauchoisGuAlDu20,
+author = {Maxime Cauchois and Suyash Gupta and Alnur Ali and John Duchi},
+title = {Robust Validation: Confident Predictions Even When Distributions Shift},
+year = 2020,
+journal = {arXiv:2008.04267 [stat.ML]},
 }
 
 @article{CavallantiCeGe11,
@@ -7367,6 +7457,15 @@ author = {Moses Charikar and Jacob Steinhardt and Gregory Valiant},
 title = {Learning from Untrusted Data},
 year = 2017,
 booktitle = stoc17,
+}
+
+@article{CharisopoulosChDaDiDiDr19,
+author = {Vasileios Charisopoulos and Yudong Chen and Damek Davis
+  and Mateo D\'{i}az and Lijun Ding and Dmitriy Drusvyatskiy},
+title = {Low-rank matrix recovery with composite optimization:
+  good conditioning and rapid convergence},
+year = 2019,
+journal = {arXiv:1904.10020 [math.OC]},
 }
 
 @article{CharisopoulosDaDiDr19,
@@ -7975,6 +8074,13 @@ pages = {321--328}
   title = 	 {Spectral Graph Theory},
   publisher = 	 {AMS},
   year = 	 1998
+}
+
+@inproceedings{ChungLu03,
+author = {Kai-min Chung and Hsueh-I Lu},
+year = 2003,
+title = {An Optimal algorithm for the maximum-density segment problem},
+booktitle = {Proceedings of the 11th Annual European Symposium on Algorithms},
 }
 
 @unpublished{ChurchGa??
@@ -9177,6 +9283,18 @@ year =  2017,
 note = {Available online at \url{https://www2.census.gov/cac/sac/meetings/2017-09/statistical-disclosure-limitation.pdf}},
 }
 
+@article{DAgostinoVaPeWoCoMaKa08,
+author = {Ralph B D'Agostino and Ramachandran Vasan and Michael Pencina and Philip  Wolf and Mark
+Cobain and Joseph Massaro and William Kannel},
+title = {General Cardiovascular Risk Profile
+for Use in Primary Care},
+journal = {Circulation},
+volume= 117,
+number= 6,
+pages = {743--753},
+year ={2008},
+}
+
 @article{DalalyanTs08,
 author = {Arnak Dalalyan and Alexandre B. Tsybakov},
 title = {Aggregation by Exponential Weighting, Sharp Oracle Inequalities and Sparsity},
@@ -10360,6 +10478,13 @@ volume=	40
    PAGES = "1205--1216"
 }
 
+@article{DinhTrNg20,
+title = {Personalized Federated Learning with Moreau Envelopes},
+author = {Canh Dinh and Nguyen Tran and Tuan Dung Nguyen},
+year = 2020,
+journal = {arXiv:2006.08848 [cs.LG]},
+}
+
 @inproceedings{DinurNi03,
 author = {Irit Dinur and Kobbi Nissim},
 title = {Revealing information while preserving privacy},
@@ -10413,6 +10538,16 @@ title = 	{Tensor Manipulation Networks: Connectionist and Symbolic
 school = 	{UCLA Computer Science Department},
 month = 	Jun,
 year = 		1989
+}
+
+@article{DolanMo02,
+  year = {2002},
+  volume = {91},
+  number = {2},
+  pages = {201--213},
+  author = {Elizabeth D. Dolan and Jorge J. Mor{\'{e}}},
+  title = {Benchmarking optimization software with performance profiles},
+  journal = mathprog
 }
 
 @InProceedings{Domingos97,
@@ -10948,6 +11083,14 @@ comment = {Old title = {An accelerated algorithm for minimizing convex
   compositions}. Also arXiv:1605.00125 [math.OC].},
 }
 
+@misc{DuaGr17,
+author = {Dheeru Dua and Casey Graff},
+year = 2017,
+title = {{UCI} Machine Learning Repository},
+url = {http://archive.ics.uci.edu/ml},
+institution = {University of California, Irvine, School of Information and Computer Sciences},
+}
+
 @inproceedgins{DuLeLiWaZh19,
 	title={Gradient descent finds global minima of deep neural 
 	networks},
@@ -11147,6 +11290,16 @@ title = {Proximal and First-Order Methods for Convex Optimization},
 year = 2011,
 note = {Lecture notes for EE290o, University of California, Berkeley},
 }
+
+@article{DuchiGlNa20,
+  title={Statistics of Robust Optimization: A Generalized Empirical
+    Likelihood Approach},
+  author={John C. Duchi and Peter W. Glynn and Hongseok Namkoong},
+  year=2020,
+  journal= {Mathematics of Operations Research},
+  volume = {to appear},
+}
+
 
 @article{DuchiGlNa16,
   title={Statistics of Robust Optimization: A Generalized Empirical
@@ -11411,6 +11564,15 @@ journal = {arXiv:1810.08750 [stat.ML]},
 title = {Learning Models with Uniform Performance via Distributionally Robust Optimization},
 }
 
+@article{DuchiNa20,
+author = {John C. Duchi and Hongseok Namkoong},
+year = 2020,
+journal = aos,
+title = {Learning Models with Uniform Performance via Distributionally Robust Optimization},
+volume = {to appear},
+url = {https://arXiv.org/abs/1810.08750},
+}
+
 @article{DuchiNa19,
 author = {John C. Duchi and Hongseok Namkoong},
 title = {Variance-based regularization with convex objectives},
@@ -11510,10 +11672,10 @@ journal = {arXiv:1612.05612 [math.ST]},
 url = {https://arxiv.org/abs/1612.05612},
 }
 
-@article{DuchiRu19,
+@article{DuchiRu20,
 author = {John C. Duchi and Feng Ruan},
 title = {Asymptotic Optimality in Stochastic Optimization},
-year = 2019,
+year = 2020,
 journal = aos,
 volume = {To Appear},
 }
@@ -12305,6 +12467,17 @@ pages = {473–-494},
 	publisher={IEEE}
 }
 
+@article{ElGhaouiOkOu03,
+title={Worst-case value-at-risk and robust portfolio optimization: A conic programming approach},
+author={Ghaoui, Laurent El and Oks, Maksim and Oustry, Francois},
+journal={Operations research},
+volume={51},
+number={4},
+pages={543--556},
+year={2003},
+publisher={INFORMS}
+}
+
 @inproceedings{ElidanMcKo06,
 author = {Gal Elidan and Ian McGraw and Daphne Koller},
 title = {Residual Belief Propagation:
@@ -12486,6 +12659,17 @@ pages = {3797--3820},
   school = 	 {Columbia University},
   year = 	 {2002},
 }
+
+@article{EstevaKuNoKoSwBlTh17,
+author = {Andre Esteva and Brett Kuprel and Roberto A. Novoa and Justin Ko and Susan M. Swetter and Helen M. Blau and Sebastian Thrun},
+title = {Dermatologist-level classification of skin cancer with deep neural
+  networks},
+year = 2017,
+journal = {Nature},
+volume = 542,
+pages = {115--118},
+}
+
 
 @book{EthierKu09,
   title={Markov processes: characterization and convergence},
@@ -12782,6 +12966,20 @@ volume=   	1
   year=2013
 }
 
+@article{FercoqRi15,
+	  doi = {10.1137/130949993},
+	  url = {https://doi.org/10.1137/130949993},
+	  year = {2015},
+	  month = jan,
+	  publisher = {Society for Industrial {\&} Applied Mathematics ({SIAM})},
+	  volume = {25},
+	  number = {4},
+	  pages = {1997--2023},
+	  author = {Olivier Fercoq and Peter Richt{\'{a}}rik},
+	  title = {Accelerated,  Parallel,  and Proximal Coordinate Descent},
+	  journal = siopt
+	}
+	
 @book{Ferguson67
 ,author=	{Thomas S. Ferguson}
 ,title=		{Mathematical Statistics: A Decision Theoretic
@@ -12998,6 +13196,14 @@ booktitle=	icml06,
 year=		2006
 }
 
+@inproceedings{FinnAbLe17,
+author = {Chelsea Finn and Pieter Abbeel and Sergey Levine},
+title = {Model-Agnostic Meta-Learning for Fast Adaptation of Deep Networks},
+year = 2017,
+booktitle = icml17,
+url = {https://arxiv.org/abs/1703.03400},
+}
+
 
 @inproceedings{FischerSi90,
 author=		{Paul Fischer and Hans Ulrich Simon},
@@ -13030,6 +13236,16 @@ volume=   	90,
 number=   	3,
 pages=    	{239--260},
 comment=  	{Taxonomy of ways people might deviate from Bayesianism.}
+}
+
+@article{Fisher22,
+author = {Ronald A. Fisher},
+title = {On the mathematical foundations of theoretical statistics},
+year = 1922,
+journal = {Philosophical Transactions of the Royal Society A},
+volume = 222,
+issue = {594--604},
+pages = {309--368},
 }
 
 @article{FlajoletGaTh92,
@@ -14124,6 +14340,16 @@ title=    	{Computers and Intractability: A Guide to the Theory of
 publisher=	{W. H. Freeman},
 year=     	1979,
 address=  	{San Francisco}
+}
+
+@inbook{Gautschi97,
+author = {Walter Gautschi},
+year = 1997,
+title = {The Incomplete Gamma Functions since {T}ricomi},
+booktitle = {Tricomi's Ideas and Contemporary Applied Mathematics},
+publisher = {Accademia Nazionale dei Lincei},
+series = {Atti dei Convegni Lincei},
+volume = 147,
 }
 
 @article{Gauvin77,
@@ -15552,6 +15778,13 @@ pages = {379–-411},
   year={2011}
 }
 
+@inproceedings{GuoPlSuWe17,
+  title={On Calibration of Modern Neural Networks},
+    author={Chuan Guo and Geoff Pleiss and Yu Sun and Kilian Q. Weinberger},
+    year={2017},
+    booktitle=icml17
+}
+
 @book{Gupal79,
 author = {A. M. Gupal},
 title = {Stokhasticheskie Methody Resheniya Negladkikh Ekstremal'nykh Zadach
@@ -16052,6 +16285,13 @@ booktitle = colt18,
   comment={Treatment of robust control in macroeconomic settings, where
     one assumes underlying dynamics are not known perfectly (i.e. model
     of time evolution is wrong).}
+}
+
+@article{HanzelyRi20,
+title = {Federated Learning of a Mixture of Global and Local Models},
+author = {Filip Hanzely and Peter Richt\'{a}rik},
+year = 2020,
+journal = {arXiv:2002.05516 [cs.LG]},
 }
 
 @inproceedings{HardtMa17,
@@ -16718,6 +16958,13 @@ Eprint = {arXiv:1710.11469 [stat.ML]},
   year={2017}
 }
 
+@article{HendrikxBaMa19,
+Author = {Hadrien Hendrikx and Francis Bach and Laurent Massoulie},
+Title = {An Accelerated Decentralized Stochastic Proximal Algorithm for Finite Sums},
+Year = {2019},
+journal = {arXiv:1905.11394 [math.OC]},
+}
+
 @incollection{HerreraChRiDe16,
   title={Multilabel classification},
   author={Herrera, Francisco and Charte, Francisco and Rivera, Antonio J and Del Jesus, Mar{\'\i}a J},
@@ -16957,6 +17204,16 @@ note=		{Revised May, 1993}
   volume =	 50,
   pages =	 {551-573}
 }
+
+@inproceedings{HendersonIsBaPiPrMe18,
+author = {Peter Henderson and Riashat Islam and Philip Bachman and
+  Joelle Pineau Doina Precup and David Meger},
+title = {Deep Reinforcement Learning that Matters},
+year = 2018,
+booktitle = {Proceedings of the Thirty-Fourth AAAI Conference on
+  Artificial Intelligence},
+}
+
 
 @inproceedings{HendrycksDi19,
 	title={Benchmarking neural network robustness to common corruptions 
@@ -18054,6 +18311,16 @@ booktitle = stoc13,
   journal   = {arXiv:1812.06295 [cs.DS]}
 }
 
+@article{James54,
+  title={Normal multivariate analysis and the orthogonal group},
+  author={James, Alan T},
+  journal= aoms,
+  volume={25},
+  number={1},
+  pages={40--75},
+  year={1954},
+}
+
 @article{JamesHa98,
 author=		{G. James and T. Hastie},
 title=		{The error coding method and {PiCT}},
@@ -19011,16 +19278,6 @@ pages = {1321--1326},
 		least squares for {PET}}
 }
 
-@article{KarlaPa16,
-	title={Driving to safety: How many miles of driving would it take to 
-	demonstrate autonomous vehicle reliability?},
-	author={Kalra, Nidhi and Paddock, Susan M},
-	journal={Transportation Research Part A: Policy and Practice},
-	volume={94},
-	pages={182--193},
-	year={2016},
-}
-
 @inproceedings{KawaguchiLu20,
 	author = {Kawaguchi, Kenji and Lu, Haihao},
 	title = {Ordered {SGD}: A New Stochastic Optimization Framework for 
@@ -19874,7 +20131,7 @@ pages=    	{75--86}
 }
 
 @article{KoenkerBa78,
-author = {Roger Koenker and Gilbert Bassett Jr.},
+author = {Roger Koenker and Gilbert {Bassett Jr.}},
 title = {Regression Quantiles},
 year = {1978},
 journal = {Econometrica: Journal of the Econometric Society},
@@ -19910,6 +20167,20 @@ booktitle=	{Proceedings of the Seventh International Conference on
 		 Machine Learning},
 year=		1990,
 month=		Jun,
+}
+
+@article{KonecnyLiRiTa20,
+doi = {10.1109/jstsp.2015.2505682},
+url = {https://doi.org/10.1109/jstsp.2015.2505682},
+year = {2016},
+month = mar,
+publisher = {Institute of Electrical and Electronics Engineers ({IEEE})},
+volume = {10},
+number = {2},
+pages = {242--255},
+author = {Jakub Konecny and Jie Liu and Peter Richtarik and Martin Takac},
+title = {Mini-Batch Semi-Stochastic Gradient Descent in the Proximal Setting},
+journal = {{IEEE} Journal of Selected Topics in Signal Processing}
 }
 
 @unpublished{KoTz90,
@@ -20879,6 +21150,14 @@ journal = {Proceedings of the IEEE},
 volume = 86,
 number = 11,
 pages = {2278--2324},
+}
+
+@misc{LeCunCoBu98,
+title={{MNIST} Handwritten Digit Database},
+author={LeCun, Yann and Cortes, Corinna and Burges, CJ},
+note={ATT Labs [Online]},
+url = {http://yann.lecun.com/exdb/mnist},
+year={1998},
 }
 
 @InProceedings{LeCunEtAl95,
@@ -22821,6 +23100,15 @@ pages=		{261--272}
   pages =	 {195-201}
 }
 
+@article{MansourMoRoSu20,
+author = {Yishay Mansour and Mehryar Mohri and Jae Ro and
+  Ananda Theertha Suresh},
+title = {Three Approaches for Personalization with Applications to Federated
+  Learning},
+year = 2020,
+journal = {arXiv:2002.10619 [cs.LG]},
+}
+
 @article{MarcusSaMa94,
 author = {M.P.\ Marcus and B.\ Santorini and M.A.\ Marcinkiewicz},
 title = {Building a large annotated corpus of {E}nglish: the {P}enn {T}reebank},
@@ -23992,6 +24280,17 @@ comment = {Discusses geometric ergodicity of linear ARMA models. A little
 	publisher={SIAM}
 }
 
+@article{Montgomery90,
+title={The distribution of {R}ademacher sums},
+author={Montgomery-Smith, Stephen J},
+journal={Proceedings of the American Mathematical Society},
+volume={109},
+number={2},
+pages={517--522},
+year={1990}
+}
+
+
 @incollection{Moore56,
 author=		{Edward F. Moore},
 title=		{Gedanken-Experiments on Sequential Machines},
@@ -24975,6 +25274,13 @@ pages=		{780--799},
 year=		1987
 }
 
+@article{NordenOKSi19,
+author = {Justin Norden and Matthew O'Kelly and Aman Sinha},
+title = {Efficient Black-box Assessment of Autonomous Vehicle Safety},
+year = 2019,
+journal = {arXiv:1912.03618 [cs.LG]},
+}
+
 @InProceedings{Novikoff62,
   author = 	 {A. B. J. Novikoff},
   title = 	 {On convergence proofs on perceptrons},
@@ -25129,6 +25435,14 @@ title = {A lower bound on distributed averaging},
 year = {2010},
 booktitle = {49th IEEE Conference on Decision and
                   Control},
+}
+
+@article{OlshevskyPaPu19,
+author = {Alex Olshevsky and Ioannis Paschalidis and Shi Pu},
+title = {A non-asymptotic analysis of network independence for
+  stochastic gradient descent},
+year = 2019,
+journal = {arXiv:1906.02702 [math.OC]},
 }
 
 @inproceedings{OngSmWi02
@@ -25526,6 +25840,15 @@ publisher = {Springer},
   organization={IEEE}
 }
 
+@inproceedings{PaquetteLiDrMaHa18,
+author = {Courtney Paquette and Hongzhou Lin and Dmitriy Drusvyatskiy
+  and Julien Mairal and Zaid Harchaoui},
+title = {Catalyst for Gradient-based Nonconvex Optimization},
+year = 2018,
+booktitle = icml18,
+pages = {613--622},
+}
+
 @inproceedings{PaszkeGrChChYaDeLiDeAnLe17,
 author = {Adam Paszke and Sam Gross and Soumith Chintala and Gregory Chanan and Edward Yang and Zachary De{V}ito and Zeming Lin and Alban Desmaison and Luca Antiga and Adam Lerer},
 title = {Automatic differentiation in PyTorch},
@@ -25596,6 +25919,13 @@ number = 198,
   pages={1--18},
   year={2015},
   publisher={Springer}
+}
+
+@article{PatrascuPaIr20,
+Author = {Andrei Patrascu and Ciprian Paduraru and Paul Irofti},
+Title = {Stochastic Proximal Gradient Algorithm with Minibatches. Application to Large Scale Learning Models},
+Year = {2020},
+journal = {arXiv:2003.13332 [cs.LG]}
 }
 
 @techreport{Paturi88,
@@ -25729,6 +26059,13 @@ comment=  	{Defines and studies graphoids for representing dependencies}
   journal=aos,
   pages={1192--1214},
   year=2004
+}
+	
+@phdthesis{Peng15,
+  title={On Singular Values of Random Matrices},
+  author={Peng, Yuanyuan},
+  year={2015},
+  school={Kent State University}
 }
 
 @article{PengQi06,
@@ -27619,6 +27956,14 @@ pages = {183–-283},
 ,title=		{The metrics induced by the {K}ullback number}
 }
 
+@inproceedings{RogersRoSmSrThWo20,
+author = {Ryan Rogers and Aaron Roth and Adam Smith and Nathan Srebro and
+  Om Thakkar and Blake Woodworth},
+title = {Guaranteed Validity for Empirical Approaches to Adaptive Data Analysis},
+year = 2020,
+booktitle = aistat20,
+}
+
 @inproceedings{RogersRoSmTh16,
   title={Max-Information, Differential Privacy, and Post-selection Hypothesis Testing},
   author={Ryan M. Rogers and Aaron Roth and Adam D. Smith and Om Thakkar},
@@ -27985,6 +28330,14 @@ number = 4,
 pages = {21:1--21:19},
 }
 
+@inproceedings{RudelsonVe10,
+Author = {Mark Rudelson and Roman Vershynin},
+Title = {Non-asymptotic theory of random matrices: extreme singular values},
+Year = {2010},
+booktitle = {Proceedings of the International Congress of Mathematicians,
+Volume III},
+pages = {1576--1602},
+}
 
 @inproceedings{Rudich85,
 author = 	{Rudich, S.},
@@ -28625,6 +28978,25 @@ comment = {Shows (among other results) that if a function
   year={2003},
   publisher={John Wiley \& Sons}
 }
+
+@inproceedings{ScamanBaBuLeMa17,
+author = {Kevin Scaman and Francis Bach and S\'{e}bastien Bubeck and
+  Yin Tat Lee and Laurent Massouli\'{e}},
+title = {Optimal algorithms for smooth and strongly convex distributed
+  optimization in networks},
+year = 2017,
+booktitle = icml17,
+}
+
+@inproceedings{ScamanBaBuLeMa18,
+author = {Kevin Scaman and Francis Bach and S\'{e}bastien Bubeck and
+  Yin Tat Lee and Laurent Massouli\'{e}},
+title = {Optimal algorithms for non-smooth distributed
+  optimization in networks},
+year = 2018,
+booktitle = nips2018,
+}
+
 
 @incollection{Scarf82,
 author = {Herbert E. Scarf},
@@ -29306,6 +29678,14 @@ year = 2013,
 journal = {arXiv:1308.1269 [math.ST]},
 }
 
+@book{ShakedSh07,
+author = {Moshe Shaked and J. George Shanthikumar},
+title = {Stochastic Orders},
+year = 2007,
+series = {Springer Series in Statistics},
+publisher = {Springer},
+}
+
 @Unpublished{Shalev06,
   author = 	 {S.~Shalev-Shwartz},
   title = 	 {Analysis for {H}ildreth Algorithm},
@@ -29674,6 +30054,14 @@ comment = {Gives a simple optimal algorithm for quadratic optimization;
                   Atwood, James and Wilson, Jimbo and Sculley, D},
   journal={arXiv:1711.08536 [stat.ML]},
   year=2017
+}
+
+@article{ShankarDaRoRaReSc19,
+author = {Vaishaal Shankar and Achal Dave and Rebecca Roelofs and
+  Deva Ramanan and Benjamin Recht and Ludwig Schmidt},
+title = {Do Image Classifiers Generalize Across Time?},
+year = 2019,
+journal = {arXiv:1906.02168 [cs.LG]},
 }
 
 @inproceedings{ShashuaLe02,
@@ -30245,6 +30633,14 @@ number = 11,
 pages = {1359–-1366},
 }
 
+@book{SimonAl00,
+author = {Marvin Simon and Mohamed-Slim Alouini},
+title = {Digital Communication Over Fading Channels: A Unified Approach to Performance Analysis},
+year = 2000,
+publisher = {John Wiley \& Sons},
+address = {New York},
+}
+
 @article{Simon54,
 author=   	{Simon, Herbert A.},
 title=    	{Spurious Correlation: A Causal Interpretation},
@@ -30370,6 +30766,14 @@ Year=1995
   journal = 	 {International Journal of Neural Systems},
   year = 	 {(to appear)},
   note =	 {Available via email from singer@research.att.com}
+}
+
+@inproceedings{SinhaOKZhMaDuTe20,
+author = {Aman Sinha and Matthew O'Kelly and Hongrui Zheng and Rahul Mangharam and John Duchi and Russ Tedrake},
+year = 2020,
+title = {Formula{Z}ero: Distributionally Robust Online Adaptation via Offline Population Synthesis},
+booktitle = icml20,
+url = {https://arxiv.org/abs/2003.03900},
 }
 
 
@@ -30987,6 +31391,17 @@ url = {http://sunju.org/research/nonconvex/},
 note = {Accessed August 1, 2018},
 }
 
+@article{SunBaZh10,
+author = {Yin Sun and \'{A}rp\'{a}d Baricz and Shidong Zhou},
+title = {On the monotonicity, log-concavity and tight bounds of the
+  generalized {M}arcum and {N}uttall {Q}-functions},
+year = 2010,
+journal = ieeeit,
+pages = {1166--1186},
+volume = 56,
+number = 3,
+}
+
 @article{SunQuWr15,
 author = {Ju Sun and Qing Qu and John Wright},
 title = {When Are Nonconvex Problems Not Scary?},
@@ -31106,6 +31521,14 @@ note = {Preprint available at arXiv:math/970123 [math.MG]},
   title = {Intriguing properties of neural networks},
   year = 2014,
   booktitle = iclr14,
+}
+
+@inproceedings{SzegedyIoVaAl17,
+author = {Szegedy, Christian and Ioffe, Sergey and Vanhoucke, Vincent and Alemi, Alexander A.},
+title = {Inception-v4, {I}nception-{R}es{N}et and the Impact of Residual Connections on Learning},
+year = {2017},
+booktitle = aaai17,
+pages = {4278–-4284}
 }
 
 @article{SzepesvariLi99,
@@ -31562,6 +31985,17 @@ year = 2013,
 volume = 7,
 pages = {1456--1490},
 }
+
+@inproceedings{TibshiraniBaCaRa19,
+author = {Ryan J. Tibshirani and Rina Foygel Barber
+   and Emmanuel J. Cand\`{e}s and Aaditya Ramdas},
+title = {Conformal Prediction Under Covariate Shift},
+year = 2019,
+booktitle = nips2019,
+comment = {note = {arXiv:1904.06019 [stat.ME]}},
+}
+
+
 
 @article{TibshiraniRiTiWa18,
 author = {Ryan J Tibshirani and Alessandro Rinaldo and Rob Tibshirani and Larry Wasserman},
@@ -33351,6 +33785,17 @@ comment=  	{Empirical results for a `critter' wandering around in the
 		Holland to learn general situation/action rules.}
 }
 
+@article{WilsonDALeBeSiKa98,
+author = {Peter W. F. Wilson and Ralph B. D'Agostino and Daniel Levy
+  and Albert M. Belanger and Halit Silbershatz and William B. Kannel},
+title = {Prediction of Coronary Heart Disease Using Risk Factor Categories},
+year = 1998,
+journal = {Circulation},
+volume = 97,
+number = 18,
+pages = {1837--1847},
+}
+
 @article{Wilson04,
 author = {D. B. Wilson},
 title = {Mixing times of lozenge tiling and card shuffling {M}arkov chains},
@@ -33456,6 +33901,21 @@ comment = 	{Controller sees state of environment at each instant, and
                   are positive) with n = 11183 and d = 6}
 }
 
+@inproceedings{WoodworthFeRoSr18,
+author = {Blake Woodworth and Vitaly Feldman and Saharon Rosset and Nati Srebro},
+title = {The Everlasting Database: Statistical Validity at a Fair Price},
+year = 2018,
+booktitle = nips2018,
+}
+
+@inproceedings{WoodworthPaSr20,
+author = {Blake Woodworth and Kumar Kshitij Patel and Nati Srebro},
+title = {Minibatch vs Local {SGD} for Heterogeneous Distributed Learning},
+year = 2020,
+booktitle = icml20,
+}
+
+
 @inproceedings{WoodworthSr16,
  Author = {Woodworth, Blake E and Srebro, Nati},
  Booktitle = nips2016,
@@ -33472,11 +33932,11 @@ comment = 	{Controller sees state of environment at each instant, and
 }
 
 @inproceedings{WoodworthWaSmMcSr18,
-	title={Graph oracle models, lower bounds, and gaps for parallel stochastic optimization},
-	author={Woodworth, Blake E and Wang, Jialei and Smith, Adam and McMahan, Brendan and Srebro, Nati},
-	booktitle=nips2018,
-	pages={8496--8506},
-	year={2018}
+title = {Graph Oracle Models, Lower Bounds, and Gaps for Parallel Stochastic Optimization},
+author = {Blake E. Woodworth and Jialei Wang and Adam Smith and Brendan McMahan
+ and Nati Srebro},
+year = 2018,
+booktitle = nips2018,
 }
 
 @article{Wozabal12,
@@ -33748,6 +34208,25 @@ pages = {2543--2596},
   publisher={SIAM}
 }
 
+@inproceedings{YadavBo19,
+author = {Chhavi Yadav and Leon Bottou},
+title = {Cold Case: The Lost {MNIST} Digits},
+year = 2019,
+booktitle = nips2019,
+}
+
+@article{YadlowskyHaSuMcMiBa18,
+author = {Steve Yadlowsky and Rodney Hayward and Jeremy Sussman and
+  Robyn McClelland and Yuan Min and Sanjay Basu},
+year = 2018,
+journal = {Annals of Internal Medicine},
+title = {Clinical implications of revised pooled cohort equations for
+estimating atherosclerotic cardiovascular disease risk},
+volume = 169,
+pages = {20--29},
+number = 1,
+}
+
 @article{YadlowskyNaBaDuTi18,
 author = {Steve Yadlowsky and Hongseok Namkoong and Sanjay Basu and John Duchi and Lu Tian},
 title = {Bounds on the Conditional and Average Treatment Effect in the Presence of Unobserved Confounders},
@@ -33894,6 +34373,29 @@ pages = 	{80--91}
 	Mahoney, Michael W},
 	journal={arXiv:1802.06925 [math.OC]},
 	year={2018}
+}
+
+@article{Ye98,
+author = {Jianming Ye},
+title = {On Measuring and correcting the effects of data mining and model
+  selection},
+year = 1998,
+journal = jasa,
+volume = 93,
+number = 441,
+pages = {120--131},
+comment = {Considers (roughly) estimating the effective dimensionality of
+  different predictors. Suggests using a "generalized degrees of freedom"
+  measure, which basically says that if $\hat{\mu}_i(Y)$ is the expected
+  value of $Y$ on example $i$ given data $Y$, while $\mu$ is its true mean,
+  then $d \E[\hat{\mu}_i(Y)] / d\mu_i$ is a rough degree of freedom.
+
+  This means that sensitive components of the (mean) prediction should be
+  penalized in model selection. Shows also that this has some interesting
+  properties for correcting bias in model selection problems (by relating
+  to multiple testing-like issues of order statistics), but I did not
+  totally understand that part.
+},
 }
 
 @article{YeBa18,
