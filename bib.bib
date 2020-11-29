@@ -13500,6 +13500,13 @@ year = {2002}
 ,pages=         {379--390}
 }
 
+@inproceedings{FosterSy19,
+author = {Dylan J. Foster and Vasilis Syrgkanis},
+booktitle = colt19,
+title = {Statistical Learning with a Nuisance Component},
+year = 2019,
+}
+
 @InProceedings{FosterSeShSrWo19,
 	title = 	 {The Complexity of Making the Gradient Small in Stochastic 
 	Convex Optimization},
@@ -19104,89 +19111,21 @@ comment = {Considers problem of simulating a sample (U, V) from a joint
 	year={2020}
 }
 
-@article{KasiviswanathanLeNiRaSm11,
-author = {Shiva Prasad Kasiviswanathan and Homin K. Lee and Kobbi Nissim
-and Sofya Raskhodnikova and Adam Smith},
-title = {What can we learn privately?},
-year = {2011},
-journal = {SIAM Journal on Computing},
-volume = 40,
-number = 3,
-pages = {793--826},
-comment = {
-Studies the statistical query model (SQ), as defined by Kearns in 1998,
-and connects it with what they term local algorithms, which put the
-privacy barrier between the algorithm and the dataset. The SQ model answers
-"queries" of the form (1/n) \sum_{i=1}^n g(z_i), where z_i is the database
-(and g is a boolean function), or more generally, the SQ model answers
-a number k so that |E[g(Z)] - k| <= \alpha, where Z is drawn from the
-correct distribution.
-* They show that SQ learnability and locally private algorithms are the same
-(with respect to learning from polynomially many samples, in a very
-learning-theoretic/CS theoretic sense). This is because each can
-simulate the other.
-* The intuition is that that adding random noise to each of the
-g(z_i) individually preserves "local" privacy (add enough noise and this
-is obvious), but in aggregate, with high probability, the SQ query is
-answered for some accuracy alpha.
-* To simulate local privacy from an SQ algorithm, the authors must define
-a rejection sampling strategy that returns estimates from the SQ algorithm
-only when they obey certain probabilistic bounds; this guarantees that
-SQ algorithms can simulate locally private algorithms. (There might be
-some weird issues with adaptive versus non-adaptive algorithms here.)
-* Additionally, the authors have the wrong bound for Laplace concentration
-(they say it is sub-Gaussian; that is silly).
-url = {http://arxiv.org/abs/0803.0924},
-},
-}
-
-@inproceedings{KasiviswanathanNiRaSm13,
-author = {Shiva Prasad Kasiviswanathan and Kobbi Nissim
-and Sofya Raskhodnikova and Adam Smith},
-title = {Analyzing graphs with node differential privacy},
-year = 2013,
-booktitle = {Theory of Cryptography},
-volume = 7785,
-series = {Lecture Notes in Computer Science},
-editor = {Amit Sahai},
-publisher = {Springer},
-pages = {457--476},
-}
-
-@inproceedings{KasiviswanathanRuSm13,
-author = {Shiva Prasad Kasiviswanathan and Mark Rudelson and Adam Smith},
-title = {The Power of Linear Reconstruction Attacks},
-year = 2013,
-booktitle = stoc13,
-url = {http://arxiv.org/abs/1210.2381},
-comment = {
-  Uses random matrix theory to show that if one wishes to release accurately
-  all queries on subsets of size k of a database matrix $[U~s]$, where $s$ are
-  "sensitive" attributes and $U \in \R^{n \times d}$ are known, then
-  there are blatant failures of privacy if the adversary knows $U$ and the
-  noise is not large enough. (Here blatant means that a fraction
-  $1 - o(1)$ of $s \in \{0, 1\}^n$ can be recovered directly.) Analysis
-  is by random $\{0, 1\}$ matrices $U$, but is a sample-based quantity:
-  one must be accurate on \emph{all} matrices.
-},
-}
-
-@article{KasiviswanathanSm14,
-author = {Shiva Prasad Kasiviswanathan and Adam Smith},
-title = {On the 'Semantics' of Differential Privacy: A {B}ayesian Formulation},
-year = 2014,
-journal = {Journal of Privacy and Confidentiality},
-volume = 6,
-number = 1,
-doi = {10.29012/jpc.v6i1.634},
-url = {http://arxiv.org/abs/0803.3946v3},
-}
-
 @book{Kandel82,
 author=		{Abraham Kandel},
 title=		{Fuzzy Techniques in Pattern Recognition},
 year=		1982,
 publisher=	{Wiley}
+}
+
+@article{KangSc07,
+author = {Joseph Kang and Joseph Schafer},
+title = {Demystifying Double Robustness: A Comparison of Alternative Strategies for Estimating a Population Mean from Incomplete Data},
+year = 2007,
+journal = statsci,
+volume = 22,
+number = 4,
+pages = {523--539},
 }
 
 @article{KaplanMcCaHeBrChChScRaWuAm20,
@@ -19281,6 +19220,84 @@ year = 1991,
 journal = {Order},
 volume = 8,
 pages = {7--15},
+}
+
+@article{KasiviswanathanLeNiRaSm11,
+author = {Shiva Prasad Kasiviswanathan and Homin K. Lee and Kobbi Nissim
+and Sofya Raskhodnikova and Adam Smith},
+title = {What can we learn privately?},
+year = {2011},
+journal = {SIAM Journal on Computing},
+volume = 40,
+number = 3,
+pages = {793--826},
+comment = {
+Studies the statistical query model (SQ), as defined by Kearns in 1998,
+and connects it with what they term local algorithms, which put the
+privacy barrier between the algorithm and the dataset. The SQ model answers
+"queries" of the form (1/n) \sum_{i=1}^n g(z_i), where z_i is the database
+(and g is a boolean function), or more generally, the SQ model answers
+a number k so that |E[g(Z)] - k| <= \alpha, where Z is drawn from the
+correct distribution.
+* They show that SQ learnability and locally private algorithms are the same
+(with respect to learning from polynomially many samples, in a very
+learning-theoretic/CS theoretic sense). This is because each can
+simulate the other.
+* The intuition is that that adding random noise to each of the
+g(z_i) individually preserves "local" privacy (add enough noise and this
+is obvious), but in aggregate, with high probability, the SQ query is
+answered for some accuracy alpha.
+* To simulate local privacy from an SQ algorithm, the authors must define
+a rejection sampling strategy that returns estimates from the SQ algorithm
+only when they obey certain probabilistic bounds; this guarantees that
+SQ algorithms can simulate locally private algorithms. (There might be
+some weird issues with adaptive versus non-adaptive algorithms here.)
+* Additionally, the authors have the wrong bound for Laplace concentration
+(they say it is sub-Gaussian; that is silly).
+url = {http://arxiv.org/abs/0803.0924},
+},
+}
+
+@inproceedings{KasiviswanathanNiRaSm13,
+author = {Shiva Prasad Kasiviswanathan and Kobbi Nissim
+and Sofya Raskhodnikova and Adam Smith},
+title = {Analyzing graphs with node differential privacy},
+year = 2013,
+booktitle = {Theory of Cryptography},
+volume = 7785,
+series = {Lecture Notes in Computer Science},
+editor = {Amit Sahai},
+publisher = {Springer},
+pages = {457--476},
+}
+
+@inproceedings{KasiviswanathanRuSm13,
+author = {Shiva Prasad Kasiviswanathan and Mark Rudelson and Adam Smith},
+title = {The Power of Linear Reconstruction Attacks},
+year = 2013,
+booktitle = stoc13,
+url = {http://arxiv.org/abs/1210.2381},
+comment = {
+  Uses random matrix theory to show that if one wishes to release accurately
+  all queries on subsets of size k of a database matrix $[U~s]$, where $s$ are
+  "sensitive" attributes and $U \in \R^{n \times d}$ are known, then
+  there are blatant failures of privacy if the adversary knows $U$ and the
+  noise is not large enough. (Here blatant means that a fraction
+  $1 - o(1)$ of $s \in \{0, 1\}^n$ can be recovered directly.) Analysis
+  is by random $\{0, 1\}$ matrices $U$, but is a sample-based quantity:
+  one must be accurate on \emph{all} matrices.
+},
+}
+
+@article{KasiviswanathanSm14,
+author = {Shiva Prasad Kasiviswanathan and Adam Smith},
+title = {On the 'Semantics' of Differential Privacy: A {B}ayesian Formulation},
+year = 2014,
+journal = {Journal of Privacy and Confidentiality},
+volume = 6,
+number = 1,
+doi = {10.29012/jpc.v6i1.634},
+url = {http://arxiv.org/abs/0803.3946v3},
 }
 
 @article{KatkovnikKu72,
@@ -20767,6 +20784,33 @@ comment = {Book on classical theory of stochastic approximation. Reasonably
   pages={242--246},
   year=1985,
   publisher={Springer}
+}
+
+@book{LaanRo11,
+author = {Mark {van der Laan} and Sherri Rose},
+year = 2011,
+title = {Targeted Learning: Causal Inference for Observational and
+  Experimental Data},
+publisher = {Springer},
+}
+
+@book{LaanRo03,
+author = {Mark {van der Laan} and James M. Robins},
+title = {Unified Methods for Censored Longitudinal Data and Causality},
+year = 2003,
+publisher = {Springer},
+}
+
+@article{LaanDuVa03,
+author = {Mark {van der Laan} and Sandrine Dudoit and Aad {van der Vaart}},
+title = {The cross-validated adaptive epsilon-net
+estimator},
+year = 2003,
+journal = {Statistics \& Decisions. International Mathematical Journal for Stochastic Methods
+and Models},
+pages = {373--395},
+number = 3,
+volume = {24},
 }
 
 @inproceedings{Lafferty99,
