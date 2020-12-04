@@ -382,10 +382,7 @@ Symposium on Discrete Algorithms (SODA)}}
 @string{nips2017= {Advances in Neural Information Processing Systems 30}} % 2017
 @string{nips2018= {Advances in Neural Information Processing Systems 31}} % 2018
 @string{nips2019= {Advances in Neural Information Processing Systems 32}} % 2019
-@string{nips2020= {Advances in Neural Information Processing Systems 33}} % 2019
-
-
-@string{nips5eds={Stephen Jos\'e Hanson and Jack D. Cowan and C. Lee Giles}}
+@string{nips2020= {Advances in Neural Information Processing Systems 33}} % 2020
 
 @string{sigir88={Proceedings of the 11th Annual International
 		  ACM SIGIR Conference on Research and Development in
@@ -1393,6 +1390,13 @@ Year = {2017}
 	year={2018}
 }
 
+@inproceedings{Allen-ZhuLiSo18,
+author = {Zeyuan {Allen-Zhu} and Yuanzhi Li and Zhao Song},
+title = {A Convergence Theory for Deep Learning via Over-Parameterization},
+year = 2018,
+booktitle = icml18,
+}
+
 @inproceedings{AllenOr17,
 	author = {{Allen-Zhu}, Zeyuan and Orecchia, Lorenzo},
 	title = {Linear Coupling: An Ultimate Unification of Gradient and Mirror 
@@ -2284,6 +2288,14 @@ pages = {975--982},
   publisher={Wiley Online Library}
 }
 
+@inproceedings{AsiChChDu20,
+author = {Hilal Asi and Karan Chadha and Gary Cheng and
+  John C. Duchi},
+title = {Minibatch Stochastic Approximate Proximal Point Methods},
+booktitle = nips2020,
+year = 2020,
+}
+
 @article{AsiDu19siopt,
 author = {Hilal Asi and John C. Duchi},
 year = 2019,
@@ -2319,6 +2331,14 @@ author = {Hilal Asi and John Duchi and Omid Javidbakht},
 title = {Element Level Differential Privacy: The Right Granularity of Privacy},
 year = 2019,
 journal = {arXiv:1912.04042 [cs.LG]},
+}
+
+
+@inproceedings{AsiDu20nips,
+author = {Hilal Asi and John C. Duchi},
+year = 2020,
+title = {Instance-optimality in differential privacy via approximate inverse sensitivity mechanisms},
+booktitle = nips2020,
 }
 
 @article{AsiDu20,
@@ -6461,7 +6481,7 @@ year=2014,
 note={Available at \url{https://www.consumerfinance.gov/data-research/research-reports/usingpublicly-available-information-to-proxy-for-unidentified-race-and-ethnicity/}}
 }
 
-@inproceedings{CabanesRuBa20,
+@inproceedings{CabannesRuBa20,
 author = {Vivien Cabannes and Alessandro Rudi and Francis Bach},
 title = {Structured Prediction with Partial Labelling through the Infimum Loss},
 year = 2020,
@@ -7828,6 +7848,17 @@ year = 		1988,
 pages = 	{607--611}
 }
 
+@article{ChegireddyHa87,
+  title={Algorithms for finding k-best perfect matchings},
+  author={Chegireddy, Chandra R and Hamacher, Horst W},
+  journal={Discrete Applied Mathematics},
+  volume={18},
+  number={2},
+  pages={155--165},
+  year={1987},
+  publisher={Elsevier}
+}
+
 @article{Chen07,
   title={Large sample sieve estimation of semi-nonparametric models},
   author={Chen, Xiaohong},
@@ -8079,6 +8110,14 @@ year={2018}
   author={Raj Chetty and John N Friedman and Nathaniel Hendren and  Maggie R Jones and Sonya R Porter},
   year={2018},
   institution={National Bureau of Economic Research},
+}
+
+@inproceedings{ChizatBa18,
+author = {L\'{e}na\"{i}c Chizat and Francis Bach},
+title = {On the Global Convergence of Gradient Descent for
+Over-parameterized Models using Optimal Transport},
+year = 2018,
+booktitle = nips2018,
 }
 
 @article{ChoOhNiStEiChMaWaThSo13,
@@ -11141,15 +11180,14 @@ pages=		{57--75}
 ,pages=		{1289--1301}
 }
 
-@inproceedings{DruckerScSi93
-,author=	{Harris Drucker and Robert Schapire and Patrice
-		 Simard}
-,title=		{Improving performance in neural networks using a
-		 boosting algorithm}
-,booktitle=	nips5
-,year=		1993
-,comment=	{,publisher=	{Morgan Kaufmann},editor=	nips5eds}
-,pages=		{42--49}
+@inproceedings{DruckerScSi93,
+author=	{Harris Drucker and Robert Schapire and Patrice
+		 Simard},
+title=		{Improving performance in neural networks using a
+		 boosting algorithm},
+booktitle=	nips5,
+year=		1993,
+pages=		{42--49}
 }
 
 @article{DruckerScSi93b
@@ -11527,12 +11565,20 @@ year = 2010,
 booktitle = colt10,
 }
 
-@article{DuchiHaNa19,
+@article{DuchiHaNa20,
 	author = {Duchi, John C and Hashimoto, Tatsunori and Namkoong, 
 	Hongseok},
 	title = {Distributionally robust losses against mixture covariate shifts},
-	year = 2019,
-	url={https://cs.stanford.edu/~thashim/assets/publications/condrisk.pdf},
+	year = 2020,
+journal = {arXiv:2007.13982 [cs.LG]},
+}
+
+@inproceedings{DuchiHiNaYe20,
+author = {John C.\ Duchi and Oliver Hinder and Andrew Naber and
+  Yinyu Ye},
+year = 2020,
+booktitle = nips2020,
+title = {Conic Descent and its Application to Memory-efficient Optimization over Positive Semidefinite Matrices},
 }
 
 @inproceedings{DuchiJoMc13,
@@ -12236,6 +12282,13 @@ year=		1993
 ,author=	{Donald L. Duttweiler}
 ,title=		{A twelve-channel digital echo canceler}
 ,year=		1978
+}
+
+@inproceedings{DuZhPoSi19,
+author = {Simon Du and Xiyu Zhai and Barnabas Poczos and Aarti Singh},
+title = {Gradient descent provably optimizes over-parameterized neural networks},
+booktitle = iclr19,
+year = 2019,
 }
 
 @incollection{Dwork08,
@@ -13679,6 +13732,13 @@ year = {2002}
 ,year=          1998
 ,number=        2
 ,pages=         {379--390}
+}
+
+@inproceedings{FosterSy19,
+author = {Dylan J. Foster and Vasilis Syrgkanis},
+booktitle = colt19,
+title = {Statistical Learning with a Nuisance Component},
+year = 2019,
 }
 
 @InProceedings{FosterSeShSrWo19,
@@ -18578,6 +18638,13 @@ comment = 	{Classic abstract algebra text}
   year = 2008
 }
 
+@inproceedings{JacotGaHo18,
+author = {Arthur Jacot and Franck Gabriel and Clement Hongler},
+title = {Neural Tangent Kernel: Convergence and Generalization in Neural Networks},
+year = 2018,
+booktitle = nips2018,
+}
+
 @inproceedings{Jaggi13,
 author = {Martin Jaggi},
 title = {Revisiting {F}rank-{W}olfe: projection-free sparse convex
@@ -19378,89 +19445,21 @@ comment = {Considers problem of simulating a sample (U, V) from a joint
 	year={2020}
 }
 
-@article{KasiviswanathanLeNiRaSm11,
-author = {Shiva Prasad Kasiviswanathan and Homin K. Lee and Kobbi Nissim
-and Sofya Raskhodnikova and Adam Smith},
-title = {What can we learn privately?},
-year = {2011},
-journal = {SIAM Journal on Computing},
-volume = 40,
-number = 3,
-pages = {793--826},
-comment = {
-Studies the statistical query model (SQ), as defined by Kearns in 1998,
-and connects it with what they term local algorithms, which put the
-privacy barrier between the algorithm and the dataset. The SQ model answers
-"queries" of the form (1/n) \sum_{i=1}^n g(z_i), where z_i is the database
-(and g is a boolean function), or more generally, the SQ model answers
-a number k so that |E[g(Z)] - k| <= \alpha, where Z is drawn from the
-correct distribution.
-* They show that SQ learnability and locally private algorithms are the same
-(with respect to learning from polynomially many samples, in a very
-learning-theoretic/CS theoretic sense). This is because each can
-simulate the other.
-* The intuition is that that adding random noise to each of the
-g(z_i) individually preserves "local" privacy (add enough noise and this
-is obvious), but in aggregate, with high probability, the SQ query is
-answered for some accuracy alpha.
-* To simulate local privacy from an SQ algorithm, the authors must define
-a rejection sampling strategy that returns estimates from the SQ algorithm
-only when they obey certain probabilistic bounds; this guarantees that
-SQ algorithms can simulate locally private algorithms. (There might be
-some weird issues with adaptive versus non-adaptive algorithms here.)
-* Additionally, the authors have the wrong bound for Laplace concentration
-(they say it is sub-Gaussian; that is silly).
-url = {http://arxiv.org/abs/0803.0924},
-},
-}
-
-@inproceedings{KasiviswanathanNiRaSm13,
-author = {Shiva Prasad Kasiviswanathan and Kobbi Nissim
-and Sofya Raskhodnikova and Adam Smith},
-title = {Analyzing graphs with node differential privacy},
-year = 2013,
-booktitle = {Theory of Cryptography},
-volume = 7785,
-series = {Lecture Notes in Computer Science},
-editor = {Amit Sahai},
-publisher = {Springer},
-pages = {457--476},
-}
-
-@inproceedings{KasiviswanathanRuSm13,
-author = {Shiva Prasad Kasiviswanathan and Mark Rudelson and Adam Smith},
-title = {The Power of Linear Reconstruction Attacks},
-year = 2013,
-booktitle = stoc13,
-url = {http://arxiv.org/abs/1210.2381},
-comment = {
-  Uses random matrix theory to show that if one wishes to release accurately
-  all queries on subsets of size k of a database matrix $[U~s]$, where $s$ are
-  "sensitive" attributes and $U \in \R^{n \times d}$ are known, then
-  there are blatant failures of privacy if the adversary knows $U$ and the
-  noise is not large enough. (Here blatant means that a fraction
-  $1 - o(1)$ of $s \in \{0, 1\}^n$ can be recovered directly.) Analysis
-  is by random $\{0, 1\}$ matrices $U$, but is a sample-based quantity:
-  one must be accurate on \emph{all} matrices.
-},
-}
-
-@article{KasiviswanathanSm14,
-author = {Shiva Prasad Kasiviswanathan and Adam Smith},
-title = {On the 'Semantics' of Differential Privacy: A {B}ayesian Formulation},
-year = 2014,
-journal = {Journal of Privacy and Confidentiality},
-volume = 6,
-number = 1,
-doi = {10.29012/jpc.v6i1.634},
-url = {http://arxiv.org/abs/0803.3946v3},
-}
-
 @book{Kandel82,
 author=		{Abraham Kandel},
 title=		{Fuzzy Techniques in Pattern Recognition},
 year=		1982,
 publisher=	{Wiley}
+}
+
+@article{KangSc07,
+author = {Joseph Kang and Joseph Schafer},
+title = {Demystifying Double Robustness: A Comparison of Alternative Strategies for Estimating a Population Mean from Incomplete Data},
+year = 2007,
+journal = statsci,
+volume = 22,
+number = 4,
+pages = {523--539},
 }
 
 @article{KaplanMcCaHeBrChChScRaWuAm20,
@@ -19555,6 +19554,84 @@ year = 1991,
 journal = {Order},
 volume = 8,
 pages = {7--15},
+}
+
+@article{KasiviswanathanLeNiRaSm11,
+author = {Shiva Prasad Kasiviswanathan and Homin K. Lee and Kobbi Nissim
+and Sofya Raskhodnikova and Adam Smith},
+title = {What can we learn privately?},
+year = {2011},
+journal = {SIAM Journal on Computing},
+volume = 40,
+number = 3,
+pages = {793--826},
+comment = {
+Studies the statistical query model (SQ), as defined by Kearns in 1998,
+and connects it with what they term local algorithms, which put the
+privacy barrier between the algorithm and the dataset. The SQ model answers
+"queries" of the form (1/n) \sum_{i=1}^n g(z_i), where z_i is the database
+(and g is a boolean function), or more generally, the SQ model answers
+a number k so that |E[g(Z)] - k| <= \alpha, where Z is drawn from the
+correct distribution.
+* They show that SQ learnability and locally private algorithms are the same
+(with respect to learning from polynomially many samples, in a very
+learning-theoretic/CS theoretic sense). This is because each can
+simulate the other.
+* The intuition is that that adding random noise to each of the
+g(z_i) individually preserves "local" privacy (add enough noise and this
+is obvious), but in aggregate, with high probability, the SQ query is
+answered for some accuracy alpha.
+* To simulate local privacy from an SQ algorithm, the authors must define
+a rejection sampling strategy that returns estimates from the SQ algorithm
+only when they obey certain probabilistic bounds; this guarantees that
+SQ algorithms can simulate locally private algorithms. (There might be
+some weird issues with adaptive versus non-adaptive algorithms here.)
+* Additionally, the authors have the wrong bound for Laplace concentration
+(they say it is sub-Gaussian; that is silly).
+url = {http://arxiv.org/abs/0803.0924},
+},
+}
+
+@inproceedings{KasiviswanathanNiRaSm13,
+author = {Shiva Prasad Kasiviswanathan and Kobbi Nissim
+and Sofya Raskhodnikova and Adam Smith},
+title = {Analyzing graphs with node differential privacy},
+year = 2013,
+booktitle = {Theory of Cryptography},
+volume = 7785,
+series = {Lecture Notes in Computer Science},
+editor = {Amit Sahai},
+publisher = {Springer},
+pages = {457--476},
+}
+
+@inproceedings{KasiviswanathanRuSm13,
+author = {Shiva Prasad Kasiviswanathan and Mark Rudelson and Adam Smith},
+title = {The Power of Linear Reconstruction Attacks},
+year = 2013,
+booktitle = stoc13,
+url = {http://arxiv.org/abs/1210.2381},
+comment = {
+  Uses random matrix theory to show that if one wishes to release accurately
+  all queries on subsets of size k of a database matrix $[U~s]$, where $s$ are
+  "sensitive" attributes and $U \in \R^{n \times d}$ are known, then
+  there are blatant failures of privacy if the adversary knows $U$ and the
+  noise is not large enough. (Here blatant means that a fraction
+  $1 - o(1)$ of $s \in \{0, 1\}^n$ can be recovered directly.) Analysis
+  is by random $\{0, 1\}$ matrices $U$, but is a sample-based quantity:
+  one must be accurate on \emph{all} matrices.
+},
+}
+
+@article{KasiviswanathanSm14,
+author = {Shiva Prasad Kasiviswanathan and Adam Smith},
+title = {On the 'Semantics' of Differential Privacy: A {B}ayesian Formulation},
+year = 2014,
+journal = {Journal of Privacy and Confidentiality},
+volume = 6,
+number = 1,
+doi = {10.29012/jpc.v6i1.634},
+url = {http://arxiv.org/abs/0803.3946v3},
 }
 
 @article{KatkovnikKu72,
@@ -21051,6 +21128,33 @@ comment = {Book on classical theory of stochastic approximation. Reasonably
   publisher={Springer}
 }
 
+@book{LaanRo11,
+author = {Mark {van der Laan} and Sherri Rose},
+year = 2011,
+title = {Targeted Learning: Causal Inference for Observational and
+  Experimental Data},
+publisher = {Springer},
+}
+
+@book{LaanRo03,
+author = {Mark {van der Laan} and James M. Robins},
+title = {Unified Methods for Censored Longitudinal Data and Causality},
+year = 2003,
+publisher = {Springer},
+}
+
+@article{LaanDuVa03,
+author = {Mark {van der Laan} and Sandrine Dudoit and Aad {van der Vaart}},
+title = {The cross-validated adaptive epsilon-net
+estimator},
+year = 2003,
+journal = {Statistics \& Decisions. International Mathematical Journal for Stochastic Methods
+and Models},
+pages = {373--395},
+number = 3,
+volume = {24},
+}
+
 @inproceedings{Lafferty99,
 	author = "John D. Lafferty",
 	title = "Additive Models, Boosting and Inference for
@@ -22000,10 +22104,11 @@ comment=  	{Analysis of implementation of Hidden Markov models and the
 }
 
 @inproceedings{LevyCaDuSi20,
-	title={Large-Scale Methods for Distributionally Robust Optimization},
-	author={Levy, Daniel and Carmon, Yair and Duchi, John C and Sidford, Aaron},
-	booktitle=nips2020,
-	year={2020}
+title = {Large-Scale Methods for Distributionally Robust Optimization},
+author = {Daniel Levy and Yair Carmon and John C. Duchi and Aaron Sidford},
+year = 2020,
+booktitle = nips2020,
+url = {https://arxiv.org/abs/2010.05893},
 }
 
 @inproceedings{LevyDu19,
@@ -27532,6 +27637,7 @@ comment=  	{Gets 96.5 percent accuracy on 100-speaker set for digits.}
 ,publisher=	{Prentice-Hall}
 }
 
+
 @article{RaffelShRoLeEtAl20,
 	author  = {Colin Raffel and Noam Shazeer and Adam Roberts and Katherine Lee and Sharan Narang and Michael Matena and Yanqi Zhou and Wei Li and Peter J. Liu},
 	title   = {Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer},
@@ -27542,12 +27648,31 @@ comment=  	{Gets 96.5 percent accuracy on 100-speaker set for digits.}
 	pages   = {1-67},
 }
 
-@article{RaghunathanStLi18,
+@inproceedings{RaghunathanXiYaDuLi20,
+author = {Aditi Raghunathan and Sang Michael Xie and Fanny Yang and
+  John C. Duchi and Percy Liang},
+title = {Understanding and Mitigating the Tradeoff Between Robustness and
+  Accuracy},
+booktitle = icml20,
+year = 2020,
+}
+
+@inproceedings{RaghunathanXiYaDuLi19,
+author = {Aditi Raghunathan and Sang Michael Xie and Fanny Yang and
+  John C. Duchi and Percy Liang},
+title = {Adversarial Training Can Hurt Generalization},
+year = 2019,
+booktitle = {Workshop on Identifying and Understanding Deep Learning
+  Phenomena, 37th International Conference on Machine Learning},
+}
+
+@inproceedings{RaghunathanStLi18,
   title={Certified defenses against adversarial examples},
     author={Raghunathan, Aditi and Steinhardt, Jacob and Liang, Percy},
-      journal={arXiv:1801.09344 [cs.LG]},
-        year=2018
-	}
+booktitle = iclr18,
+url={https://arxiv.org/abs/1801.09344},
+year=2018,
+}
 	
 @inproceedings{Raginsky09,
 author = {Maxim Raginsky},
@@ -31339,6 +31464,13 @@ Year=1995
   note =	 {Available via email from singer@research.att.com}
 }
 
+@inproceedings{SinhaOKTeDu20,
+author = {Aman Sinha and Matthew O'Kelly and Russ Tedrake and John Duchi},
+title = {Neural Bridge Sampling for Evaluating Safety-Critical Autonomous Systems},
+booktitle = nips2020,
+year = 2020,
+}
+
 @inproceedings{SinhaOKZhMaDuTe20,
 author = {Aman Sinha and Matthew O'Kelly and Hongrui Zheng and Rahul Mangharam and John Duchi and Russ Tedrake},
 year = 2020,
@@ -31801,6 +31933,15 @@ author = {G. W. Stewart and Ji-Guang Sun},
 title = {Matrix Perturbation Theory},
 year = 1990,
 publisher = {Academic Press},
+}
+
+@inproceedings{StichCoJa18,
+author = {Sebastian Stich and Jean-Baptiste Cordonnier and Martin Jaggi},
+title = {Sparsified {SGD} with memory},
+year = 2018,
+booktitle = nips2018,
+comment = {Assumes strong convexity and Lipschitzness, and uses both a lot,
+  making all the results in the paper vacuous. May be fixable, unclear.},
 }
 
 @article{Stockmeyer85,
@@ -33985,6 +34126,17 @@ author = {M. Warmuth and K. Glocer and S.V.N. Vishwanathan},
 title = {Entropy Regularized LPBoost},
 booktitle = {Algorithmic Learning Theory (ALT)},
 year = {2008}
+}
+
+@article{WarmuthHa84,
+  title={On the complexity of iterated shuffle},
+  author={Warmuth, Manfred K and Haussler, David},
+  journal={Journal of Computer and System Sciences},
+  volume={28},
+  number={3},
+  pages={345--358},
+  year={1984},
+  publisher={Elsevier}
 }
 
 @article{WarmuthKu08,
