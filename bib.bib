@@ -242,7 +242,9 @@ Symposium on Discrete Algorithms (SODA)}}
 		  Symposium on the Theory of Computing}}
 @string{stoc18 = {Proceedings of the Fiftieth Annual ACM
 		  Symposium on the Theory of Computing}}
-@string{stoc19 = {Proceedings of the Fifty-first Annual ACM
+@string{stoc19 = {Proceedings of the Fifty-First Annual ACM
+		  Symposium on the Theory of Computing}}
+@string{stoc20 = {Proceedings of the Fifty-Second Annual ACM
 		  Symposium on the Theory of Computing}}
 
 @string{pods02 = {Proceedings of the Twenty-First ACM SIGMOD-SIGACT-SIGART
@@ -341,6 +343,8 @@ Symposium on Discrete Algorithms (SODA)}}
 @string{ucsccrl={University of California Santa Cruz,
 		 Computer Research Laboratory}}
 
+@string{kdd08 = {Proceedings of the 14th ACM SIGKDD Conference on Knowledge
+		    Discovery and Data Mining (KDD)}},
 @string{kdd10 = {Proceedings of the 16th ACM SIGKDD Conference on Knowledge
    Discovery and Data Mining (KDD)}},
 @string{kdd11 = {Proceedings of the 17th ACM SIGKDD Conference on Knowledge
@@ -1189,6 +1193,15 @@ year = 2008,
 booktitle = colt08,
 }
 
+@article{AilonMoNe08,
+author = {Ailon, Nir and Charikar, Moses and Newman, Alantha},
+title = {Aggregating Inconsistent Information: Ranking and Clustering},
+year = {2008},
+journal = {Journal of the Association for Computing Machinery},
+volume = {55},
+number = {5},
+}
+
 @article{AitkinRu85,
   title={Estimation and hypothesis testing in finite mixture models},
   author={Aitkin, Murray and Rubin, Donald B},
@@ -1659,6 +1672,13 @@ comment = {A little trivial, honestly.},
   year=1994
 }
 
+@article{AngelopoulosBaMaJo20,
+      title={Uncertainty Sets for Image Classifiers using Conformal Prediction}, 
+      author={Anastasios Angelopoulos and Stephen Bates and Jitendra Malik and Michael I. Jordan},
+      year={2020},
+      journal = {arXiv:2009.14193 [cs.CV]}
+}
+
 @article{Angluin78,
 author=   	{Angluin, Dana},
 title=    	{On the complexity of minimum inference of regular sets},
@@ -1960,7 +1980,7 @@ pages = {207--217},
 	  {D}ata {A}nalysis}},
 	note = {University of Alberta course CMPUT651},
 	year = 2018,
-	url = {https://web.archive.org/web/20200523015947/http://webdocs.cs.ualberta.ca/~osheffet/HW1W18.pdf},
+  url = {https://web.archive.org/web/20200523015947/http://webdocs.cs.ualberta.ca/~osheffet/HW1W18.pdf},
 	note = {Archived May 23, 2020; available also at
 	\url{https://web.stanford.edu/~jduchi/notes/Sheffet-hw-example-18.pdf}},
 comment = {	note = {Assignment notes for University of Alberta Course }},
@@ -2720,6 +2740,13 @@ comment = {Shows that for generic measurements in $\R$ in phase
  retrieval, $2n - 1$ measurements give injectivity. (Theorem 2.2)}
 }
 
+@book{BalasubramanianHoVo14,
+  title={Conformal prediction for reliable machine learning: theory, adaptations and applications},
+  author={Balasubramanian, Vineeth and Ho, Shen-Shyang and Vovk, Vladimir},
+  year={2014},
+  publisher={Newnes}
+}
+
 @unpublisheD{BalcanBlFiMa12,
 author = {Maria-Florina Balcan and Avrim Blum and Shai Fine and
  Yishay Mansour},
@@ -3257,6 +3284,13 @@ author={Ba{\c{s}}ar, Tamer and Bernhard, Pierre},
 title={H-infinity optimal control and related minimax design problems: a dynamic game approach},
 year=2008,
 publisher={Springer Science \& Business Media}
+}
+
+@inproceedings{BassilyFeTaTh19,
+title = {Private Stochastic Convex Optimization with Optimal Rates},
+author = {Raef Bassily and Vitaly Feldman and Kunal Talwar and Abhradeep Thakurta},
+year = 2019,
+booktitle = nips2019,
 }
 
 @inproceedings{BassilyGrKaSm13,
@@ -7086,12 +7120,15 @@ address = {Beachwood, Ohio, USA},
 url = {https://arxiv.org/abs/0712.0248},
 }
 
-@article{CauchoisGuDu20,
+@article{CauchoisGuDu21,
 author = {Maxime Cauchois and Suyash Gupta and John Duchi},
-title = {Knowing what you know: valid confidence sets in multiclass and
-  multilabel prediction},
-year = 2020,
-journal = {arXiv:2004.10181 [stat.ML]},
+title = {Knowing what you know: valid and validated confidence sets in multiclass and multilabel prediction},
+year = 2021,
+journal = jmlr,
+volume = 22,
+number=81,
+pages={1--42},
+note = {arXiv:2004.10181 [stat.ML]},
 }
 
 @article{CauchoisGuAlDu20,
@@ -8191,6 +8228,16 @@ pages=		{233--235}
   year = 	 {1980}
 }
 
+@InProceedings{CidGaSa14,
+author="Cid-Sueiro, Jes{\'u}s
+and Garc{\'i}a-Garc{\'i}a, Dar{\'i}o
+and Santos-Rodr{\'i}guez, Ra{\'u}l",
+title="Consistency of Losses for Learning from Weak Labels",
+booktitle="Proceedings of the European Conference on Machine Learning and Knowledge Discovery in Databases",
+year="2014",
+pages="197--210",
+}
+
 @misc{CifarTutorial18,
 title = {Advanced Convolutional Neural Networks},
 year = 2018,
@@ -8718,6 +8765,15 @@ journal = ieeeit,
 volume = 16,
 year = 2008,
 pages = {1274--1286},
+}
+
+@article{CourSaTa11,
+author = {Cour, Timothee and Sapp, Ben and Taskar, Ben},
+title = {Learning from Partial Labels},
+year = {2011},
+journal = jmlr,
+volume = {12},
+pages = {1501–-1536},
 }
 
 @article{Couzin08,
@@ -13012,6 +13068,14 @@ month=	  	mar,
 number=	  	{LA-UR-88-901}
 }
 
+@InProceedings{FathonyBeZhZi18, 
+title = {Efficient and Consistent Adversarial Bipartite Matching}, 
+author = {Fathony, Rizal and Behpour, Sima and Zhang, Xinhua and Ziebart, Brian}, booktitle = icml18, 
+publisher=PMLR,
+volume = {80},
+pages = {1457--1466}, 
+year = {2018}}
+
 @inproceedings{FazelGeKaMe18,
 	title={Global convergence of policy gradient methods for the linear quadratic regulator},
 	author={Fazel, Maryam and Ge, Rong and Kakade, Sham M and Mesbahi, Mehran},
@@ -13052,6 +13116,13 @@ journal = jacm,
 volume = 64,
 number = 2,
 pages = {8:1--8:37},
+}
+
+@inproceedings{FeldmanKoTa20,
+author = {Vitaly Feldman and Tomer Koren and Kunal Talwar},
+title = {Private Stochastic Convex Optimization: Optimal Rates in Linear Time},
+year = 2020,
+booktitle = stoc20,
 }
 
 @inproceedings{FeldmanSt18,
@@ -13122,6 +13193,17 @@ volume=   	1
 		 Approach}
 ,year=		1967
 ,publisher=	{Academic Press}
+}
+
+@InProceedings{FernandesBr11,
+author="Fernandes, Eraldo R.
+and Brefeld, Ulf",
+title="Learning from Partially Annotated Sequences",
+booktitle="Proceedings of the European Conference on Machine Learning and Knowledge Discovery in Databases",
+year="2011",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="407--422",
 }
 
 @book{Fernholz83,
@@ -15246,6 +15328,15 @@ pages=    	{792--807}
 ,year=		1998
 }
 
+@article{GolovinKrSt14,
+      title={Online Submodular Maximization under a Matroid Constraint with Application to Learning Assignments}, 
+      author={Daniel Golovin and Andreas Krause and Matthew Streeter},
+      year={2014},
+      eprint={1407.1082},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+
 @inproceedings{GolovinScMcYo13,
 author = {Daniel Golovin and D. Sculley and H. Brendan McMahan and Michael Young},
 title = {Large-Scale Learning with Less {RAM} via Randomization},
@@ -15961,6 +16052,15 @@ title = {An empirical algorithm for relative value iteration for
 average-cost {MDP}s},
 year = 2015,
 journal = {Submitted},
+}
+
+@article{GuptaKuRa21,
+      title={Nested conformal prediction and quantile out-of-bag ensemble methods}, 
+      author={Chirag Gupta and Arun K. Kuchibhotla and Aaditya K. Ramdas},
+      year={2021},
+      eprint={1910.10562},
+      archivePrefix={arXiv},
+      primaryClass={stat.ME}
 }
 
 @article{GuptaKu00,
@@ -18139,6 +18239,17 @@ booktitle = nips22,
         year = {1996}
 }
 
+@article{HullermeierFuChBr08,
+author = {H\"{u}llermeier, Eyke and F\"{u}rnkranz, Johannes and Cheng, Weiwei and Brinker, Klaus},
+title = {Label Ranking by Learning Pairwise Preferences},
+year = {2008},
+volume = {172},
+number = {16–-17},
+journal = {Artificial Intelligence},
+month = nov,
+pages = {1897–-1916},
+}
+
 @article{HummerSz01,
   title={Free energy reconstruction from nonequilibrium single-molecule pulling experiments},
   author={Hummer, Gerhard and Szabo, Attila},
@@ -18361,6 +18472,14 @@ comment = {Considers maximal leakage of $X \to Y$, defined as
 	title = "Boosting for Document Routing",
 	booktitle = "{CIKM}",
 	year = 2000
+}
+
+@InProceedings{IzbickiShSt20, 
+title = {Flexible distribution-free conditional predictive bands using density estimators}, 
+author = {Izbicki, Rafael and Shimizu, Gilson and Stern, Rafael}, 
+booktitle = aistat20,
+pages = {3068--3077},
+year = {2020},
 }
 
 @article{Izenman91,
@@ -19807,11 +19926,33 @@ comment = {Shows how to solve symmetric diaogonally dominant systems with
   steps are done using specific flows on graph and using importance sampling.},
 }
 
+@article{Kemeny59,
+ author = {John G. Kemeny},
+ journal = {Daedalus},
+ number = {4},
+ pages = {577--591},
+ publisher = {The MIT Press},
+ title = {Mathematics without Numbers},
+ volume = {88},
+ year = {1959}
+}
+
 @book{KemenySn62,
 author=   	{J.~G.~Kemeny and J.~L.~Snell},
 title=    	{Mathematical Models in the Social Sciences},
 year=     	1962,
 publisher=	{MIT Press},
+}
+
+@article{Kendall38,
+ author = {M. G. Kendall},
+ journal = {Biometrika},
+ number = {1/2},
+ pages = {81--93},
+ publisher = {Oxford University Press, Biometrika Trust},
+ title = {A New Measure of Rank Correlation},
+ volume = {30},
+ year = {1938}
 }
 
 @article{KerdreuxCoAs17,
@@ -20001,6 +20142,17 @@ booktitle = iclr17,
   pages={103--121},
   year=2014,
   publisher={Springer}
+}
+
+@InProceedings{KimKwFeHa13,
+author="Kim, Suna
+and Kwak, Suha
+and Feyereisl, Jan
+and Han, Bohyung",
+title="Online Multi-target Tracking by Large Margin Structured Learning",
+booktitle="Proceedings of the Asian Conference on Computer Vision",
+year="2013",
+pages="98--111",
 }
 
 @article{KimKoLuBoGo07,
@@ -20591,6 +20743,15 @@ comment = {journal = {arXiv:1312.3580 [math.PR]}},
 ,title=		{Combining decisions of multiple rules}
 }
 
+
+@inproceedings{KorbaGaAl18,
+ author = {Korba, Anna and Garcia, Alexandre and d'Alch\'{e}-Buc, Florence},
+ booktitle = nips2018,
+ pages = {8994--9004},
+ title = {A Structured Prediction Approach for Label Ranking},
+ year = {2018}
+}
+
 @article{KorenBeVo09,
 Author = {Koren, Yehuda and Bell, Robert and Volinsky, Chris},
 Journal = {Computer},
@@ -21147,6 +21308,18 @@ url = {http://arXiv.org/abs/1605.09349},
                   identifiability condition required in DuchiGlNa16.}
 }
 
+@inproceedings{LambrouPa16,
+author="Lambrou, Antonis
+and Papadopoulos, Harris",
+title="Binary Relevance Multi-label Conformal Predictor",
+booktitle="Proceedings of the 5th International Symposium on
+  Conformal and Probabilistic Prediction with Applications (COPA)",
+year="2016",
+pages="90--104",
+publisher = {Springer}
+}
+
+
 @inproceedings{LamZh15,
   title={Quantifying Input Uncertainty in Stochastic Optimization},
   author={Lam, Henry and Zhou, Enlu},
@@ -21313,6 +21486,13 @@ comment = 	{Gives a nice characteriztion of commutative regular languages}
   pages={1111--1121},
   year={2010},
   publisher={Taylor \& Francis}
+}
+
+@article{LealMiReSc15,
+	title = {{MOTC}hallenge 2015: {T}owards a Benchmark for Multi-Target Tracking},
+	journal = {arXiv:1504.01942 [cs.CV]},
+	author = {Leal-Taix\'{e}, L. and Milan, A. and Reid, I. and Roth, S. and Schindler, K.},
+	year = {2015},
 }
 
 @inproceedings{Leamer85,
@@ -23706,6 +23886,15 @@ pages=		{1367--1392}
   publisher={Springer}
 }
 
+@inproceedings{MayhewChTsRo19,
+author = {Mayhew, Stephen and Chaturvedi, Snigdha and Tsai, Chen-Tse and Roth, Dan},
+year = {2019},
+month = {01},
+pages = {645--655},
+title = {Named Entity Recognition with Partially Annotated Training Data},
+booktitle={Proceedings of the 23rd Conference on Computational Natural Language Learning}
+}
+
 @article{MazumdarJoSa19,
 author = {Eric V. Mazumdar and Michael I. Jordan and S. Shankar Sastry},
 title = {On Finding Local {N}ash Equilibria (and Only Local {N}ash Equilibria)
@@ -25383,6 +25572,14 @@ booktitle = {Principles of Database Systems},
 	Year = {2008},
 }
 
+@inproceedings{NguyenCa08,
+author = {Nguyen, Nam and Caruana, Rich},
+title = {Classification with Partial Labels},
+booktitle=kdd08,
+year = {2008},
+pages = {551--559},
+}
+
 @inproceedings{NguyenLiScTa17,
 	title={{SARAH}: a novel method for machine learning problems using stochastic recursive gradient},
 	author={Nguyen, Lam M and Liu, Jie and Scheinberg, Katya and Tak{\'a}{\v{c}}, Martin},
@@ -26047,6 +26244,16 @@ month=		jun
   	year		= {1980},
 }
 
+@InProceedings{PaisiosLeMaKrPa19, 
+title = {A Deep Neural Network Conformal Predictor for Multi-label Text Classification}, 
+author = {Paisios, Andreas and Lenc, Ladislav and Mart\'{\i}nek, Ji\v{r}\'{\i} and Kr\'al, Pavel and Papadopoulos, Harris}, 
+booktitle = {Proceedings of the Eighth Symposium on Conformal and Probabilistic Prediction and Applications}, 
+pages = {228--245}, 
+year = {2019}, 
+volume = {105}, 
+series = {Proceedings of Machine Learning Research}, 
+}
+
 @book{Palay85,
 author=   	{Palay, Andrew J.},
 title=    	{Searching with Probabilities},
@@ -26101,6 +26308,21 @@ comment=  	{Ordinary versions are complete for P; partially observed
 		are PSPACE-complete.}
 }
 
+@InProceedings{Papadopoulos14,
+author="Papadopoulos, Harris",
+editor="Iliadis, Lazaros
+and Maglogiannis, Ilias
+and Papadopoulos, Harris
+and Sioutas, Spyros
+and Makris, Christos",
+title="A Cross-Conformal Predictor for Multi-label Classification",
+booktitle="Proceedings of the IFIP International Conference on
+	Artificial Intelligence Applications and Innovations",
+year="2014",
+publisher="Springer Berlin Heidelberg",
+pages="241--250"
+}
+
 @inproceedings{PapadopoulosPrVoGa02,
 author = {Harris Papadopoulos and Kostas Proedrou and Volodya Vovk
   and Alex Gammerman},
@@ -26111,6 +26333,13 @@ pages = {345--356},
 publisher = {Springer},
 }
 
+@inproceedings{PapandreouChMuYu15,
+  author={G. {Papandreou} and L. {Chen} and K. P. {Murphy} and A. L. {Yuille}},
+  booktitle=iccv,
+  title={Weakly-and Semi-Supervised Learning of a Deep Convolutional Network for Semantic Image Segmentation},
+  year={2015},
+  pages={1742--1750}}
+  
 @unknown{PapkaCaBa9?
 ,author=       {Ron Papka and James P. Callan and Andrew G. Barto}
 ,title=        {Text-based information retrieval using exponentiated
@@ -27176,6 +27405,14 @@ title = {Microsoft Learning to Rank Datasets},
 year = 2011,
 note = {URL \url{http://research.microsoft.com/en-us/projects/mslr/}, accessed
    March 1, 2012}},
+}
+
+@article{QiniLi13,
+  author    = {Tao Qin and
+               Tie{-}Yan Liu},
+  title     = {Introducing {LETOR} 4.0 Datasets},
+  journal   = {arXiv:1306.2597 [cs.IR]},
+  year      = {2013},
 }
 
 @article{Quinlan83,
@@ -28332,10 +28569,9 @@ author = {Yaniv Romano and Evan Patterson and Emmanuel J. Cand\`{e}s},
 title = {Conformalized Quantile Regression},
 year = 2019,
 booktitle = nips2019,
-url = {https://arxiv.org/abs/1905.03222},
 }
 
-@article{RomanoSeCa20,
+@inproceedings{RomanoSeCa20,
     title={Classification with Valid and Adaptive Coverage},
     author={Yaniv Romano and Matteo Sesia and Emmanuel J. Cand\`{e}s},
     year={2020},
@@ -28385,6 +28621,16 @@ comment = {journal={arXiv:2006.02544 [stat.ME]}},
 	number = 2,
 	pages = "117--150",
 	year = 1996
+}
+
+@article{RooyenWi18,
+  author  = {Brendan van Rooyen and Robert C. Williamson},
+  title   = {A Theory of Learning with Corrupted Labels},
+  journal = jmlr,
+  year    = {2018},
+  volume  = {18},
+  number  = {228},
+  pages   = {1--50},
 }
 
 @article{RoscasoBeDe10,
@@ -29009,13 +29255,6 @@ number = {525},
 pages = {223-234},
 year  = {2019},
 publisher = {Taylor & Francis},
-doi = {10.1080/01621459.2017.1395341},
-URL = { 
-        https://doi.org/10.1080/01621459.2017.1395341
-    },
-eprint = { 
-        https://doi.org/10.1080/01621459.2017.1395341
-    }
 }
 
 @inproceedings{SaenkoKuFrDa10,
@@ -33222,6 +33461,16 @@ number = 1,
 pages = {181--190},
 }
 
+@inproceedings{TriggsVe08,
+ author = {Triggs, Bill and Verbeek, Jakob},
+ booktitle = nips21,
+ pages = {1553--1560},
+ title = {Scene Segmentation with CRFs Learned from Partially Labeled Images},
+ volume = {20},
+ year = {2008}
+}
+
+
 @inproceedings{Verbeurgt90,
 author=		{Karsten Verbeurgt},
 title=		{Learning {DNF} under the Uniform Distribution in
@@ -33436,8 +33685,6 @@ publisher = {Springer},
   year = 	 {2012},
   volume = 	{25},
   series = 	 {Proceedings of Machine Learning Research},
-  pdf = 	 {http://proceedings.mlr.press/v25/vovk12/vovk12.pdf},
-  url = 	 {http://proceedings.mlr.press/v25/vovk12.html},
 }
 
 @article{WaegemanBo06,
@@ -33612,6 +33859,7 @@ address = {Philadelphia},
 ,publisher=	{Prentice Hall}
 }
 
+
 @article{WangBeSa16,
 author = {Tengyao Wang and Quentin Berthet and Richard J. Samworth},
 title = {Statistical and computational trade-offs in estimation of
@@ -33702,6 +33950,29 @@ journal = {arXiv:1605.08285 [stat.ML]},
                   Andrew and Gupta, Maya and Jordan, Michael I.},
   journal={arXiv:2002.09343 [cs.LG]},
   year=2020,
+}
+
+@article{WangLiLvYaHo14,
+    author = {Wang, Huazhen AND Liu, Xin AND Lv, Bing AND Yang, Fan AND Hong, Yanzhu},
+    journal = {PLOS ONE},
+    publisher = {Public Library of Science},
+    title = {Reliable Multi-Label Learning via Conformal Predictor and Random Forest for Syndrome Differentiation of Chronic Fatigue in Traditional Chinese Medicine},
+    year = {2014},
+    volume = {9},
+    pages = {1-14},
+    number = {6},
+}
+
+@InProceedings{WangLiNoLu15,
+author={Wang, Huazhen
+and Liu, Xin
+and Nouretdinov, Ilia
+and Luo, Zhiyuan},
+title="A Comparison of Three Implementations of Multi-Label Conformal Prediction",
+booktitle="Proceedings of the International Symposium on Statistical Learning and Data Sciences",
+year="2015",
+publisher="Springer International Publishing",
+pages="241--250",
 }
 
 @article{WangYuSi16,
@@ -34283,6 +34554,16 @@ comment = 	{Controller sees state of environment at each instant, and
 ,year=		1977
 }
 
+@article{Wolsey82,
+  title={An analysis of the greedy algorithm for the submodular set covering problem},
+    author={Wolsey, Laurence A.},
+      journal={Combinatorica},
+      volume=2,
+      pages={385--393},
+        year=1982
+	}
+	
+	
 @article{WongKo17,
   title={Provable defenses against adversarial examples via the convex outer adversarial polytope},
     author={Wong, Eric and Kolter, J Zico},
@@ -34929,6 +35210,15 @@ Le Cam's, and Assouad's techniques for lower bounds, along with applications
 to density estimation. Reduces density estimation to identification of
 biases of several coins, which is a standard technique.
 I should try to understand Le Cam and Assouad better.},
+}
+
+@inproceedings{YuJaKaDh14,
+author = {Yu, Hsiang-Fu and Jain, Prateek and Kar, Purushottam and Dhillon, Inderjit S.},
+title = {Large-Scale Multi-Label Learning with Missing Labels},
+year = {2014},
+booktitle = icml14,
+pages = {593-–601},
+volume=32
 }
 
 @inproceedings{YuXuGu18,
@@ -35648,5 +35938,14 @@ booktitle = {Proceedings of the 22nd International Conference on Computational
   pages={539--544},
   year=2013,
   publisher={SIAM}
+}
+
+@inproceedings{ZuylenHeJaWi07,
+author = {van Zuylen, Anke and Hegde, Rajneesh and Jain, Kamal and Williamson, David P.},
+title = {Deterministic Pivoting Algorithms for Constrained Ranking and Clustering Problems},
+year = {2007},
+publisher = {Society for Industrial and Applied Mathematics},
+booktitle = soda07,
+pages = {405--414},
 }
 
