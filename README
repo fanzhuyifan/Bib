@@ -112,6 +112,7 @@ where the last four digits indicate which year of NIPS it is.
 
 When entering things from the arXiv, use the format
 
+``
 @article{DuchiGlNa16,
   title={Statistics of Robust Optimization: A Generalized Empirical
     Likelihood Approach},
@@ -119,6 +120,7 @@ When entering things from the arXiv, use the format
   year=2016,
   journal={arXiv:1610.03425 [stat.ML]},
 }
+``
 
 Note that you should *never* use
 
