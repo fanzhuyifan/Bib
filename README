@@ -113,11 +113,11 @@ where the last four digits indicate which year of NIPS it is.
 When entering things from the arXiv, use the format
 
 @article{DuchiGlNa16,  
-  title={Statistics of Robust Optimization: A Generalized Empirical  
-    Likelihood Approach},  
-  author={John C. Duchi and Peter W. Glynn and Hongseok Namkoong},  
-  year=2016,  
-  journal={arXiv:1610.03425 [stat.ML]},  
+&nbsp;&nbsp;title={Statistics of Robust Optimization: A Generalized Empirical  
+&nbsp;&nbsp;&nbsp;&nbsp;Likelihood Approach},  
+&nbsp;&nbsp;author={John C. Duchi and Peter W. Glynn and Hongseok Namkoong},  
+&nbsp;&nbsp;year=2016,  
+&nbsp;&nbsp;journal={arXiv:1610.03425 [stat.ML]},  
 }
 
 
