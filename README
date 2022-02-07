@@ -90,14 +90,14 @@ each has a key given by first author's full last name, then first two
 initials of each additional author, followed by the 2-digit year.
 As a typical example, here is
 
-@article{DuchiBaWa12,
-author = {John C. Duchi and Peter L. Bartlett and Martin J. Wainwright},
-title = {Randomized Smoothing for Stochastic Optimization},
-year = 2012,
-journal = siopt,
-volume = 22,
-number = 2,
-pages = {674--701},
+@article{DuchiBaWa12,  
+&nbsp;&nbsp;author = {John C. Duchi and Peter L. Bartlett and Martin J. Wainwright},  
+&nbsp;&nbsp;title = {Randomized Smoothing for Stochastic Optimization},  
+&nbsp;&nbsp;year = 2012,  
+&nbsp;&nbsp;journal = siopt,  
+&nbsp;&nbsp;volume = 22,  
+&nbsp;&nbsp;number = 2,  
+&nbsp;&nbsp;pages = {674--701},  
 }
 
 Note that this has an abbreviated journal. This is because there are
