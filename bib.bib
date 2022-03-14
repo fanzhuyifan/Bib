@@ -11711,6 +11711,20 @@ comment = {Shows that for ``relatively smooth'' optimization problems,
 	year=2020,
 }
 
+@article{DroriTe14,
+author = {Yoel Drori and Marc Teboulle},
+title = {Performance of first-order methods for smooth convex minimization: a novel approach},
+year = 2014,
+journal = mathproga,
+volume = 145,
+pages = {451--482},
+comment = {Introduces an SDP for what they term the Performance Estimation
+  Problem (PEP), which allows derivations of some (worst-case) performance
+  of various first-order methods via solving an SDP. Allows computationally
+  finding worst-case optimal stepsizes for first-order methods according
+  to their worst-case problem.},
+}
+
 @article{DreesKa98,
   title={Selecting the optimal sample fraction in univariate extreme value estimation},
   author={Drees, Holger and Kaufmann, Edgar},
@@ -23380,6 +23394,26 @@ publisher = {Cambridge University Press},
 year = 2014,
 }
 
+@article{LessardRePa16,
+author = {Laurent Lessard and Benjamin Recht and Andrew Packard},
+title = {Analysis and design of optimization algorithms via integral
+quadratic regulators},
+year = 2016,
+journal = siopt,
+pages = {57--95},
+volume = 26,
+number = 1,
+comment = {Follows a line of work, e.g. the papers DroriTe14 and
+  TaylorHeGl17, which uses SDPs to investigate optimal convergence rates
+  of various algorithms (especially first-order methods). In contrast
+  to the cited papers, Lessard et al. use a dynamical systems approach,
+  so that their methods (as far as I can tell) are fixed stepsize and work
+  mostly with strongly convex methods. They write first-order iteration via
+  matrices, then identify certain constraints the iteration must satisfy
+  even for convex functions (this is where the IQCs come in). Means
+  that the SDPs constructed don't have to explode in size.},
+}
+
 @book{LesserOrTa03,
   title     = "{Distributed Sensor Networks: A Multiagent
                Perspective}",
@@ -34392,6 +34426,25 @@ year = 2005
 	title = "One-class classification; Concept-learning in the absence of counter-examples",
 	school = "Delft University of Technology",
 	year = 2001
+}
+
+@article{TaylorHeGl17,
+author = {Adrien B. Taylor and Julien M. Hendrickx and Fran\c{c}ois Glineur},
+title = {Smooth strongly convex interpolation and exact worst-case performance of first-order methods},
+year = 2017,
+journal = mathproga,
+pages = {307--345},
+volume = 161,
+comment = {Inspired by DroriTe14, provides lower bounds on the speed
+  of (first-order) optimization algorithms by interatively constructing
+  worst-case functions based on iterates. Develops formulae for when
+  a convex function may interpolate a set of function value gradient
+  tuples $(x_i, f(x_i), g_i)$, and uses these to write
+  the optimality gap of an iteration. It is hard to solve their resulting
+  SDPs (they grow large with number of iterations and closed forms are
+  unclear), but a dual problem gives an upper bound on the convergence
+  rate of various algorithms once given explicit stepsize choices. Does
+  not \emph{really} give convergence rate lower bounds.},
 }
 
 @inproceedings{TaxDu99,
