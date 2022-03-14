@@ -3628,6 +3628,20 @@ comment = {Gives equivalent conditions to a Bregman divergence being
 comment={    url = "citeseer.nj.nec.com/bauschke96projection.html"},
 }
 
+@article{BauschkeBoTe17,
+author = {Heinz H. Bauschke and J\'{e}r\^{o}me Bolte and Marc Teboulle},
+title = {A descent lemma beyond {L}ipschitz gradient continuity:
+  first-order methods revisted and applications},
+year = 2017,
+journal = mathor,
+number = 42,
+year = 2017,
+pages = {330--348},
+comment = {Elegant. Similar, but with slightly examples, to
+  LuFrNe18.}
+}
+
+
 @book{BauschkeCo11,
   title={Convex Analysis and Monotone Operator Theory in {H}ilbert Spaces},
   author={Heinz H. Bauschke and Patrick L. Combettes},
@@ -11648,6 +11662,28 @@ booktitle = nips2016,
                   Barbee79's coupling argument to construct
                   independent blocks which yields a maximal
                   inequality.}
+}
+
+@article{DragomirTaAsBo21,
+title = {Optimal complexity and certification of {B}regman first-order
+   methods},
+author = {Radu-Alexandru Dragomir and Adrien B. Taylor and
+  Alexandre d'Aspremont and J\'{e}r\^{o}me Bolte}
+year = 2021,
+journal = mathproga,
+volume = {Published Online},
+comment = {Shows that for ``relatively smooth'' optimization problems,
+  acceleration is generically impossible. By this we mean a few things:
+  a function $f$ is relatively smooth w.r.t.\ $h$ if for some $L$,
+  $Lh - f$ is convex (i.e.\ $f(y) \le f(x) + \<\nabla f(x), y - x\>
+  + L D_h(y,x)$ for $D_h$ the Bregman divergence). If one considers the
+  entire collection of such pairs of functions, and then considers
+  algorithms that (1) remain in an appropriate span of iterates and
+  (2) can compute prox steps w.r.t.\ $h$, then the best complexity guarantees
+  are roughly $L D_h(x^0, x^*) / k$. The proof is via a slightly smoothed
+  non-smooth function, roughly the max function $f(x) = |x|_\infty$, with
+  a bit of rotation to make it similar to Nesterov's chain-type
+  constructions.},
 }
 
 @article{DrechslerGlMcSaSm21,
@@ -24399,6 +24435,33 @@ number = 8,
   booktitle = {IJCV},
   year = 	 {2004}
 }
+
+@article{LuFrNe18,
+title = {Relatively smooth convex optimization by first-order methods,
+  and applications},
+author = {Haihao Lu and Robert M. Freund and Yurii Nesterov},
+year = 2018,
+journal = siopt,
+volume = 28
+number = 1,
+pages = {333-354},
+comment = {Very nice paper, similar to BauschkeBoTe17, that considers
+  first-order type methods for what they term ``relatively smooth''
+  problems. These are functions $f$ for which one has a (convex)
+  $h$ such that $L h - f$ is convex for some finite $L$, which is equivalent
+  to $f(y) \le f(x) + \<\nabla f(x), y - x\> + L D_h(y, x)$. From this,
+  one uses the natural Bregman iteration (mirror descent) and achieves
+  nice convergence results. This is in distinction to the typical case, where
+  one assumes that $f$ is smooth w.r.t.\ some norm $\norm{\cdot}$, and that
+  $h$ is strongly convex with respect to the same norm.
+  They have concrete applications to
+  E-optimal design (covering ellipsoids), which do not admit
+  easy strongly convex regularizers and so require new Bregman
+  divergences; think problems with $f(x) = -\log x$, for example.
+
+  The proof of convergence is quite clean and probably could be taught.},
+}
+
 
 @techreport{LuNe14,
 author = {Yu Lu and Sahand N. Negahban},
