@@ -3233,6 +3233,34 @@ year = 2019,
 journal = {arXiv:1905.02928 [stat.ME]},
 }
 
+@article{BarberCaRaTi22,
+author = {Rina Foygel Barber and Emmanuel J. Cand\`{e}s and Aaditya
+  Ramdas and Ryan J. Tibshirani},
+title = {Conformal Prediction Beyond Exchangeability},
+year = 2022,
+journal = {arXiv:2202.13415 [stat.ME]},
+comment = {Shows how a weighted variant of conformal inference, specifically,
+  using quantiles of $\sum_{i = 1}^n w_i \delta_{R_i}$ where
+  $w_i$ are (a priori chosen) weights summing to 1, guarantees a conformal
+  and as good as standard conformal at level $\alpha$ (i.e.\ $1 - \alpha$),
+  excepting there is a ``coverage gap'' penalty of at most
+  $\sum_{i = 1}^n w_i \tv{R(Z) - R(Z^i)} / (1 + \sum_{i = 1}^n w_i)$,
+  where $R(Z)$ are the residuals on dataset $Z$ and $Z^i$ is
+  identical to $Z$ with its last element and $i$th element swapped.
+  The idea in the proof is to choose an index $K$ at random with
+  probability proportional to $w_i$, which makes things "sort of" exchangeable,
+  then argue that miscovering $Y_{n + 1}$ is the same as miscovering
+  random index $K$ when looking at $Z^K$.
+
+  A slightly
+  funny thing in the result is that the probability is taken only
+  over the \emph{last} element $Y_{n + 1}$, while the sum of errors is
+  over the first $n$, which is understandable from the proof---but in
+  non-exchangeable cases, the sum of variation distances could be
+  quite large if there is gradual distribution shift.
+},
+}
+
 @article{BarberDu14a,
 author = {Rina Foygel Barber and John C. Duchi},
 title = {Privacy and Statistical Risk: Formalisms and Minimax Bounds},
