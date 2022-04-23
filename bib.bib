@@ -13733,6 +13733,24 @@ author = {Georgina Evans and Gary King and Margaret Schwenzfeier and
 title = {Statistically Valid Inferences from Privacy Protected Data},
 year = 2021,
 note = {available at \url{https://gking.harvard.edu/files/gking/files/udp.pdf}},
+comment = {Uses a subsampling and aggregate procedure to perform
+  private inference: splits a dataset into $P$ pieces, estimates
+  a quantity $\what{\theta}$ of interest on each,
+  truncates these quantities to a region $[-\Lambda, \Lambda]$, then
+  averages them and adds appropriate normal noise. Argues (in a
+  somewhat handwavy/vague way) that this will yield valid inferences,
+  once one applies a debiasing procedure to remove the censoring/truncation
+  bias. (This makes a bit of sense but still assumes some \emph{a priori}
+  knowledge of $\Lambda$.)
+
+  Once they have constructed their truncated estimator, they also
+  estimate the probability of truncation of the true
+  estimator $\what{\theta}$ (they do not specify how, but this
+  is presumbably estimation of $P(\what{\theta} > \Lambda)$, which is
+  a Bernoulli and so easy to do via noise addition). With this,
+  they can directly compute bias/variance of the corrected estimate,
+  using plug-in-estimates.
+},
 }
 
 @inproceedings{EvfimievskiGeSr03,
@@ -14103,11 +14121,11 @@ year=1983,
 publisher={Springer Science \& Business Media}
 }
 
-@article{FerrandoWaSh20,
-  title={General-Purpose Differentially-Private Confidence Intervals},
+@article{FerrandoWaSh21,
+  title={Parametric Bootstrap for Differentially Private Confidence Intervals},
   author={Ferrando, Cecilia and Wang, Shufan and Sheldon, Daniel},
-  journal={arXiv:2006.07749 [cs.LG]},
-  year={2020}
+  journal={arXiv:2006.07749v2 [cs.LG]},
+  year={2021}
 }
 
 @article{Feuerverger89,
