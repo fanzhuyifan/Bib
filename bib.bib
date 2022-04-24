@@ -462,6 +462,8 @@ Learning Representations}}
 	Learning Representations}}
 @string{iclr21 = {Proceedings of the Ninth International Conference on 
 	Learning Representations}}
+@string{iclr22 = {Proceedings of the Tenth International Conference on 
+	Learning Representations}}
 
 @string{uai98 = {Proceedings of the Fourteenth Conference on Uncertainty
   in Artificial Intelligence}}
@@ -25824,11 +25826,24 @@ year = 2010,
   year=1934
 }
 
-@book{MeurantGe06,
-	author 	= {Meurant, G{\'e}rard},
-	title 		= {The {L}anczos and Conjugate Gradient Algorithms: From Theory to Finite Precision Computations},
-	publisher 	= {Society for Industrial and Applied Mathematics},
-	year 		= {2006},
+@article{MedinaBrLo21,
+author = {Marco Avella Medina and Casey Bradshaw and Po-Ling Loh},
+title = {Differentially private inference via noisy optimization},
+year = 2021,
+journal = {arXiv:2103.11003 [math.ST]},
+comment = {
+  Suggests using a noisy Newton method (estimate both Hessian
+  and gradient) during gradient descent, showing that these
+  methods can be convergent with enough noise. They use
+  some self-concordance theory to get appropriate (enough)
+  convergence rates once one is close enough to an optimum.
+
+  They then use these noisy Hessian and gradient estimates to get
+  a Sandwich estimator (typical thing) for asymptotic variance of
+  parameters. These could be quite expensive from a
+  privacy perspective. They provide some finite sample corrections
+  for the noise they add as well.
+},
 }
 
 @article{Megiddo80
@@ -26129,6 +26144,13 @@ pages = {399--413},
 	year={2017}
 }
 
+@book{MeurantGe06,
+	author 	= {Meurant, G{\'e}rard},
+	title 		= {The {L}anczos and Conjugate Gradient Algorithms: From Theory to Finite Precision Computations},
+	publisher 	= {Society for Industrial and Applied Mathematics},
+	year 		= {2006},
+}
+
 @book{MeynTw09,
 author = {S. Meyn and R. L. Tweedie},
 title = {Markov Chains and Stochastic Stability},
@@ -26287,6 +26309,30 @@ pages = {263--275},
 	year={2020},
 }
 
+@inproceedings{MitchellLiBoFiMa22,
+author = {Eric Mitchell and Charles Lin and Antoine Bosselut and Chelsea Finn and Christopher D Manning},
+title = {Fast Model Editing at Scale},
+year = 2022,
+booktitle = iclr22,
+comment = {
+  Looks at problem of making local updates to large scale models when
+  some information changes and you want to fix that
+  (e.g.\ when Messi moved to PSG).
+
+  They learning a transformation to apply to the old deep network,
+  starting from the old gradient, by fitting a (low rank) ``transformation
+  network'' (or EDIT network). They hope it obeys some reasonable locality
+  properties (i.e.\ doesn't blow up everything else).
+  They seem to know a bunch about the problems and where things should change:
+  for each error sample $x_e$, they have a label $y_e$, and they also have
+  a related sample $x'_e$ (with related label $y'_e$)
+  that they're now supposed to get right, and they also have another
+  but unrelated example $x_{\textup{new}}$ that's \emph{not} supposed to
+  change. Between all of these, they can then use stochastic gradient
+  to fit the EDIT network for a given starting network.
+},
+}
+
 @inproceedings{MitchellWuZaBaVaHuSpRaGe19,
   title={Model cards for model reporting},
   author={Mitchell, Margaret and Wu, Simone and Zaldivar, Andrew and Barnes,
@@ -26389,6 +26435,18 @@ comment=	{address= Boston/Dordrecht/Lancaster}
   pages=529,
   year=2015,
   publisher={Nature Publishing Group}
+}
+
+@inproceedings{MohanThShSoCu12,
+author = {Prashanth Mohan and Abhradeep Thakurta and Elaine Shi
+  and Dawn Song and David E. Culler},
+title = {{GUPT}: Privacy Preserving Data Analysis Made Easy},
+year = 2012,
+booktitle = sigmod12,
+comment = {Basically uses subsample and aggregate to build a
+  privacy preserving system. Suggests using old data
+  to choose subsample sizes over which to aggregate.
+},
 }
 
 @inproceedings{MohriSiSu19,
