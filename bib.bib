@@ -21946,14 +21946,21 @@ number = 1,
 pages = {33--50}
 }
 
-@article{KohSaMaXiZhBaHuYaPhBeLeKuPiLeFiLi20,
+@inproceedings{KohSaMaXiZhBaHuYaPhBeLeKuPiLeFiLi21,
 author = {Pang Wei Koh and Shiori Sagawa and Henrik Marklund and Sang Michael Xie and Marvin Zhang and Akshay Balsubramani and Weihua Hu and Michihiro Yasunaga and Richard Lanas Phillips and Sara Beery and Jure Leskovec and Anshul Kundaje and Emma Pierson and Sergey Levine and Chelsea Finn and Percy Liang},
 title = {{WILDS}: A benchmark of in-the-wild distribution shifts},
-year = 2020,
-journal = {arXiv:2012.07421 [cs.LG]},
+year = 2021,
+booktitle = icml21,
+comment = {
+  arXiv:2012.07421 [cs.LG].
+  Collects 10 distribution shift datasets. Several have ``domain
+  generalization,'' which includes multiple different domains
+  (e.g. batches in high-throughput genetic sequencing, or different
+  hospitals, or different camera traps). Several have subpopulation
+  shift. Funny enough suggests that ERM is better at distribution shift
+  than other methods...
+},
 }
-
-
 
 @article{KohKiBo07,
 author =        {K. Koh and S.J. Kim and S. Boyd},
@@ -37887,6 +37894,24 @@ booktitle = {Ninth USENIX Symposium on Networked Systems Design
   publisher =    {Academic Press},
   OPTnote = 	 {},
   OPTannote = 	 {}
+}
+
+@article{ZechBaLiCoTiOe18,
+author = {John R. Zech and Marcus Badgeley and Manway Liu and Anthony B. Costa
+  and Joseph J. Titano and Eric Karl Oermann},
+title = {Variable generalization performance of a deep learning model to detect pneumonia in chest radiographs: A cross-sectional study},
+journal = {PLOS Medicine},
+month = {November},
+year = 2018,
+comment = {
+  Compared CNN performance for pneumonia screening over 3 different hospitals.
+  Pneumonia-screening CNNs achieved better internal than external performance
+  in 3 out of 5 natural comparisons. When models were trained on pooled data
+  from sites with different pneumonia prevalence, they performed better on new
+  pooled data from these sites but not on external data. CNNs robustly
+  identified hospital system and department within a hospital, which can have
+  large differences in disease burden and may confound predictions.
+},
 }
 
 @Article{Zhang03,
