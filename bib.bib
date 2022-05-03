@@ -11414,6 +11414,26 @@ volume=	40
    PAGES = "1205--1216"
 }
 
+@article{DingDrFa22,
+author = {Lijun Ding and Dmitriy Drusvyatskiy and Maryam Fazel},
+title = {Flat minima generalize for low-rank matrix recovery},
+year = 2022,
+journal = {arXiv:2203.03756 [cs.LG]},
+comment = {Considers the problem of recovering matrices
+  $L, R$ from the sensing equation $b = \mc{A}(X_\star) + \xi$ when
+  $X_\star$ is low rank, using the nonconvex formulation
+  to minimize $f(L, R) = \ltwo{\mc{A}(LR^\top) - b}^2$. Shows that
+  if we regularize the Hessian of $f$, one form of the resulting
+  second derivative matrix is
+  $\mbox{str}(D^2 f(L, R)) = \lfro{D_1 L}^2 + \lfro{D_2 R}^2$, where
+  $\mbox{str}$ denotes a scaled/normalized trace-type quantity.
+  Given that the nuclear norm of a matrix
+  $\norm{X}_* = \half \inf_{LR^\top = X} \{\lfro{L}^2 + \lfro{R}^2\}$,
+  this then shows that minimizing the scaled trace of the Hessian
+  is equivalent to nuclear norm minimization.
+},
+}
+
 @article{DinhTrNg20,
 title = {Personalized Federated Learning with Moreau Envelopes},
 author = {Canh Dinh and Nguyen Tran and Tuan Dung Nguyen},
