@@ -172,8 +172,10 @@ on Artificial Intelligence and Statistics}}
 		  Discrete Algorithms (SODA)}}
 @string{soda14 = {Proceedings of the Twenty-Fifth ACM-SIAM Symposium on
 		  Discrete Algorithms (SODA)}}
+@string{soda16 = {Proceedings of the Twenty-Seventh ACM-SIAM
+                  Symposium on Discrete Algorithms (SODA)}}
 @string{soda18 = {Proceedings of the Twenty-Ninth ACM-SIAM
-Symposium on Discrete Algorithms (SODA)}}
+        Symposium on Discrete Algorithms (SODA)}}
 @string{soda19 = {Proceedings of the Thirtieth ACM-SIAM Symposium on
 		  Discrete Algorithms (SODA)}}
 
@@ -461,6 +463,8 @@ Learning Representations}}
 @string{iclr20 = {Proceedings of the Eighth International Conference on
 	Learning Representations}}
 @string{iclr21 = {Proceedings of the Ninth International Conference on
+	Learning Representations}}
+@string{iclr22 = {Proceedings of the Tenth International Conference on 
 	Learning Representations}}
 
 @string{uai98 = {Proceedings of the Fourteenth Conference on Uncertainty
@@ -1403,8 +1407,7 @@ comment = {Surveys results on SOCPs, including a variety of problems
 	title={Using optimization to obtain a width-independent, parallel,
 	simpler, and faster positive SDP solver},
 	author={Allen-Zhu, Zeyuan and Lee, Yin Tat and Orecchia, Lorenzo},
-	booktitle={Proceedings of the twenty-seventh annual ACM-SIAM
-	symposium on Discrete algorithms},
+	booktitle=soda16,
 	year={2016},
 	organization={Society for Industrial and Applied Mathematics}
 }
@@ -3225,12 +3228,16 @@ pages = {455--482},
 comment = {note = {arXiv:1903.04684v2 [math.ST]},}
 }
 
-@article{BarberCaRaTi19c,
+@article{BarberCaRaTi21,
 author = {Rina Foygel Barber and Emmanuel J. Cand\`{e}s and Aaditya
   Ramdas and Ryan J. Tibshirani},
-title = {Predictive inference with the jackknife+},
-year = 2019,
-journal = {arXiv:1905.02928 [stat.ME]},
+title = {Predictive inference with the {J}ackknife+},
+year = 2021,
+journal = aos,
+volume = 49,
+number = 1,
+pages = {486--507},
+comment = {arXiv:1905.02928 [stat.ME]},
 }
 
 @article{BarberCaRaTi22,
@@ -3617,7 +3624,10 @@ pages = {1046--1059},
       title={Distribution-Free, Risk-Controlling Prediction Sets},
       author={Stephen Bates and Anastasios Angelopoulos and Lihua Lei and Jitendra Malik and Michael I. Jordan},
       year={2021},
-      journal={Journal of the Association for Computing Machinery},
+      journal=jacm,
+      volume = 68,
+      number = 6,
+      pages = {43:1--43:34},
       comment={arXiv:2101.02703}
 }
 
@@ -3674,6 +3684,20 @@ comment = {Gives equivalent conditions to a Bregman divergence being
     year = "1996",
 comment={    url = "citeseer.nj.nec.com/bauschke96projection.html"},
 }
+
+@article{BauschkeBoTe17,
+author = {Heinz H. Bauschke and J\'{e}r\^{o}me Bolte and Marc Teboulle},
+title = {A descent lemma beyond {L}ipschitz gradient continuity:
+  first-order methods revisted and applications},
+year = 2017,
+journal = mathor,
+volume = 42,
+number = 2,
+pages = {330--348},
+comment = {Elegant. Similar, but with slightly examples, to
+  LuFrNe18.}
+}
+
 
 @book{BauschkeCo11,
   title={Convex Analysis and Monotone Operator Theory in {H}ilbert Spaces},
@@ -4013,6 +4037,13 @@ author =        {R.~Bellman},
 title =         {Adaptive Control Processes: A Guided Tour},
 publisher =     {Princeton University Press},
 year =          {1961}
+}
+
+@book{Bellman97,
+author=		{Bellman, Richard},
+title=		{Introduction to Matrix Analysis},
+year=		{1997},
+publisher=	{Society for Industrial and Applied Mathematics (SIAM)}
 }
 
 @article{BelloniChWa11,
@@ -7339,6 +7370,7 @@ author = {Carmon, Yair and Duchi, John C and Hinder, Oliver
  and Sidford, Aaron},
 year = 2020,
 journal = mathproga,
+volume = 184,
 pages = {71--120},
 }
 
@@ -7591,6 +7623,14 @@ year = 1997
         pages = {959-965},
 	year = 1996
 }
+
+@book{CasellaBe01,
+author = {George Casella and Roger Berger},
+title = {Statistical Inference},
+year = 2001,
+publisher = {Duxbury Press},
+}
+
 
 @article{CasellaSt81,
 author = {George Casella and William Strawderman},
@@ -11713,6 +11753,28 @@ booktitle = nips2016,
                   inequality.}
 }
 
+@article{DragomirTaAsBo21,
+title = {Optimal complexity and certification of {B}regman first-order
+   methods},
+author = {Radu-Alexandru Dragomir and Adrien B. Taylor and
+  Alexandre d'Aspremont and J\'{e}r\^{o}me Bolte},
+year = 2021,
+journal = mathproga,
+volume = {Published Online},
+comment = {Shows that for ``relatively smooth'' optimization problems,
+  acceleration is generically impossible. By this we mean a few things:
+  a function $f$ is relatively smooth w.r.t.\ $h$ if for some $L$,
+  $Lh - f$ is convex (i.e.\ $f(y) \le f(x) + \<\nabla f(x), y - x\>
+  + L D_h(y,x)$ for $D_h$ the Bregman divergence). If one considers the
+  entire collection of such pairs of functions, and then considers
+  algorithms that (1) remain in an appropriate span of iterates and
+  (2) can compute prox steps w.r.t.\ $h$, then the best complexity guarantees
+  are roughly $L D_h(x^0, x^*) / k$. The proof is via a slightly smoothed
+  non-smooth function, roughly the max function $f(x) = |x|_\infty$, with
+  a bit of rotation to make it similar to Nesterov's chain-type
+  constructions.},
+}
+
 @article{DrechslerGlMcSaSm21,
   title={Non-parametric Differentially Private Confidence Intervals for the Median},
   author={Drechsler, Joerg and Globus-Harris, Ira and McMillan, Audra and Sarathy, Jayshree and Smith, Adam},
@@ -11731,11 +11793,40 @@ booktitle = nips2016,
   publisher={Institute of Mathematical Statistics}
 }
 
+@article{Drori17,
+author = {Yoel Drori},
+title = {The exact information-based complexity of smooth convex minimization},
+journal = {Journal of Complexity},
+volume = 39,
+year = 2017,
+pages = {1--16},
+comment = {Uses a certain recursive interpolating function construction
+  to demonstrate that the DroriTe14's ``Optimized Gradient Method'' is
+  optimal for (deterministic) first-order convex optimization, even to
+  constants. Uses an iterative ``span-respecting'' (aka the worst-function
+  in the world) type construction to give the lower bounds, being
+  very careful about the construction.},
+}
+
 @inproceedings{DroriSh20,
 	title={The Complexity of Finding Stationary Points with Stochastic Gradient Descent},
 	author = {Drori, Yoel and Shamir, Ohad},
 	booktitle=icml20,
 	year=2020,
+}
+
+@article{DroriTe14,
+author = {Yoel Drori and Marc Teboulle},
+title = {Performance of first-order methods for smooth convex minimization: a novel approach},
+year = 2014,
+journal = mathproga,
+volume = 145,
+pages = {451--482},
+comment = {Introduces an SDP for what they term the Performance Estimation
+  Problem (PEP), which allows derivations of some (worst-case) performance
+  of various first-order methods via solving an SDP. Allows computationally
+  finding worst-case optimal stepsizes for first-order methods according
+  to their worst-case problem.},
 }
 
 @article{DreesKa98,
@@ -11936,6 +12027,16 @@ title = {Nonsmooth optimization using {T}aylor-like models: error bounds,
 year = 2016,
 journal = {arXiv:1610.03446 [math.OC]},
 url = {https://arxiv.org/abs/1610.03446},
+}
+
+@article{DrusvyatskiyPa18,
+author = {Dmitriy Drusvyatskiy and Courtney Paquette},
+title = {Variational Analysis of Spectral Functions Simplified},
+year = 2018,
+journal = {Journal of Convex Analysis},
+number = 25,
+pages = {119--135},
+volume = 1,
 }
 
 @article{DrusvyatskiyLe11,
@@ -12201,15 +12302,16 @@ year = 2011,
 note = {Lecture notes for EE290o, University of California, Berkeley},
 }
 
-@article{DuchiGlNa20,
+@article{DuchiGlNa21,
   title={Statistics of Robust Optimization: A Generalized Empirical
     Likelihood Approach},
   author={John C. Duchi and Peter W. Glynn and Hongseok Namkoong},
-  year=2020,
-  journal= {Mathematics of Operations Research},
-  volume = {to appear},
+  year=2021,
+  journal={Mathematics of Operations Research},
+  volume = 46,
+  number = 3,
+  pages = {946--969},
 }
-
 
 @article{DuchiGlNa16,
   title={Statistics of Robust Optimization: A Generalized Empirical
@@ -13709,6 +13811,32 @@ note = {Accessed May 2018},
   year={2020}
 }
 
+@unpublished{EvansKiScTh21,
+author = {Georgina Evans and Gary King and Margaret Schwenzfeier and
+  Abhradeep Guha Thakurta},
+title = {Statistically Valid Inferences from Privacy Protected Data},
+year = 2021,
+note = {available at \url{https://gking.harvard.edu/files/gking/files/udp.pdf}},
+comment = {Uses a subsampling and aggregate procedure to perform
+  private inference: splits a dataset into $P$ pieces, estimates
+  a quantity $\what{\theta}$ of interest on each,
+  truncates these quantities to a region $[-\Lambda, \Lambda]$, then
+  averages them and adds appropriate normal noise. Argues (in a
+  somewhat handwavy/vague way) that this will yield valid inferences,
+  once one applies a debiasing procedure to remove the censoring/truncation
+  bias. (This makes a bit of sense but still assumes some \emph{a priori}
+  knowledge of $\Lambda$.)
+
+  Once they have constructed their truncated estimator, they also
+  estimate the probability of truncation of the true
+  estimator $\what{\theta}$ (they do not specify how, but this
+  is presumbably estimation of $P(\what{\theta} > \Lambda)$, which is
+  a Bernoulli and so easy to do via noise addition). With this,
+  they can directly compute bias/variance of the corrected estimate,
+  using plug-in-estimates.
+},
+}
+
 @inproceedings{EvfimievskiGeSr03,
 author = {Alexandre V. Evfimievski and Johannes Gehrke
  and Ramakrishnan Srikant},
@@ -14076,11 +14204,11 @@ year=1983,
 publisher={Springer Science \& Business Media}
 }
 
-@article{FerrandoWaSh20,
-  title={General-Purpose Differentially-Private Confidence Intervals},
+@article{FerrandoWaSh21,
+  title={Parametric Bootstrap for Differentially Private Confidence Intervals},
   author={Ferrando, Cecilia and Wang, Shufan and Sheldon, Daniel},
-  journal={arXiv:2006.07749 [cs.LG]},
-  year={2020}
+  journal={arXiv:2006.07749v2 [cs.LG]},
+  year={2021}
 }
 
 @article{Feuerverger89,
@@ -15111,6 +15239,26 @@ comment=  	{Inference of stochastic finite-state and context-free
 		grammars.}
 }
 
+
+@article{FuNaBo20,
+author = {Anqi Fu and Balasubramanian Narasimhan and Stephen Boyd},
+title = {{CVXR}: An {R} package for disciplined convex optimization},
+year = 2020,
+journal = {Journal of Statistical Software},
+volume = 94,
+number = 14,
+pages = {1--34},
+}
+
+@article{FuUnXiBo19,
+author = {Anqi Fu and Baris Ungun and Lei Xing and Stephen Boyd},
+title = {A convex optimization approach to radiation treatment planning with dose constraints},
+year = 2019,
+journal = {Optimization and Engineering},
+pages = {277--300},
+volume = 20,
+}
+
 @article{FuChCh13,
 author = {King-Wa Fu and CH Chan and Michael Chau},
 title = {Assessing Censorship on Microblogs in {C}hina: Discriminatory Keyword
@@ -15229,7 +15377,7 @@ url = {http://dx.doi.org/10.2139/ssrn.3072038},
 @InProceedings{GaboardiRoSh19,
   title = 	 {Locally Private Mean Estimation: $Z$-test and Tight Confidence Intervals},
   author =       {Gaboardi, Marco and Rogers, Ryan and Sheffet, Or},
-  journal = icml19,
+  booktitle = icml19,
   year = 	 {2019}
   }
 
@@ -15460,6 +15608,15 @@ journal = bams,
 volume = 39,
 number = 3,
 pages = {355--405},
+}
+
+@inproceedings{GarfinkelAbPo18,
+author = {Simson Garfinkel and John Abowd and Sarah Powazek},
+title = {Issues Encountered Deploying Differential Privacy},
+year = 2018,
+booktitle = {Proceedings of the 2018 Workshop on Privacy in the
+  Electronic Society (WPES)},
+pages = {133--137},
 }
 
 @inproceedings{GargMaNg14,
@@ -15924,7 +16081,7 @@ doi = {10.1038/news.2008.1083},
 }
 
 @book{GineNi21,
-	title={Mathematical foundations of infinite-dimensional statistical models},
+	title={Mathematical Foundations of Infinite-Dimensional Statistical Models},
 	author={Gin{\'e}, Evarist and Nickl, Richard},
 	year={2021},
 	publisher={Cambridge University Press}
@@ -17619,6 +17776,14 @@ title = {Train faster, generalize better:
 Stability of stochastic gradient descent},
 year = 2016,
 booktitle = icml16,
+}
+
+@book{HardtRe22,
+author = {Moritz Hardt and Benjamin Recht},
+year = 2022,
+title = {Patterns, Predictions, and Actions: A story about machine learning},
+publisher = {Princeton University Press},
+note = {Available at \url{https://mlstory.org/}},
 }
 
 @inproceedings{HardtRo10,
@@ -19443,6 +19608,14 @@ author = {I. A. Ibragimov and R. Z. Has'minskii},
 title = {Statistical Estimation: Asymptotic Theory},
 year = 1981,
 publisher = {Springer-Verlag},
+}
+
+@article{IlyasPaEnLeMa22,
+author = {Andrew Ilyas and Sung Min Park and Logan Engstrom and
+  Guillaume Leclerc and Aleksander Madry},
+title = {Datamodesl: Predicting Predictions from Training Data},
+journal = {arXiv:2202.00622 [stat.ML]},
+year = 2022,
 }
 
 @article{Imbens04,
@@ -21401,6 +21574,30 @@ year = 2012,
 booktitle = {Principles of Database Systems},
 }
 
+@article{KiferMa14,
+author = {Daniel Kifer and Ashwin Machanavajjhala},
+title = {Pufferfish: A Framework for Mathematical Privacy Definitions},
+year = 2014,
+journal = {ACM Transactions on Database Systems},
+volume = 39,
+number = 1,
+pages = {3:1--3:36},
+comment = {
+  Proposes Pufferfish privacy (obviously), which provides a Bayesian
+  semantics to privacy. Basic idea is that an adversary has prior
+  information in the form of possible distributions $\pi \in \Pi$ on
+  data, and there are some secrets $s \in \mc{S}$ that are of
+  interest. (So differential privacy consists of
+  a pair of distributions $\pi, \pi'$ that are point masses on two
+  databases, and the ``secrets'' $s$ are the data of
+  individual $x_i$ versus $x_i'$.) Then a mechanism is private if
+  it satisfies
+  $P(M(X) = a \mid s, \pi) \le e^{\varepsilon} P(M(X) = a \mid s', \pi)$
+  for all $s, s' \in \mc{S}$ and all distributions $\pi \in \Pi$.
+  Generalizes DP to account for what an adversary may know.
+},
+}
+
 @inproceedings{KilbertasRoPaHaJaSc17,
 author = {Niki Kilbertus and Mateo Rojas Carulla and Giambattista Parascandolo
   and Moritz Hardt and Dominik Janzing and Bernhard Sch\"{o}lkopf},
@@ -21855,14 +22052,21 @@ number = 1,
 pages = {33--50}
 }
 
-@article{KohSaMaXiZhBaHuYaPhBeLeKuPiLeFiLi20,
+@inproceedings{KohSaMaXiZhBaHuYaPhBeLeKuPiLeFiLi21,
 author = {Pang Wei Koh and Shiori Sagawa and Henrik Marklund and Sang Michael Xie and Marvin Zhang and Akshay Balsubramani and Weihua Hu and Michihiro Yasunaga and Richard Lanas Phillips and Sara Beery and Jure Leskovec and Anshul Kundaje and Emma Pierson and Sergey Levine and Chelsea Finn and Percy Liang},
 title = {{WILDS}: A benchmark of in-the-wild distribution shifts},
-year = 2020,
-journal = {arXiv:2012.07421 [cs.LG]},
+year = 2021,
+booktitle = icml21,
+comment = {
+  arXiv:2012.07421 [cs.LG].
+  Collects 10 distribution shift datasets. Several have ``domain
+  generalization,'' which includes multiple different domains
+  (e.g. batches in high-throughput genetic sequencing, or different
+  hospitals, or different camera traps). Several have subpopulation
+  shift. Funny enough suggests that ERM is better at distribution shift
+  than other methods...
+},
 }
-
-
 
 @article{KohKiBo07,
 author =        {K. Koh and S.J. Kim and S. Boyd},
@@ -23426,6 +23630,26 @@ publisher = {Cambridge University Press},
 year = 2014,
 }
 
+@article{LessardRePa16,
+author = {Laurent Lessard and Benjamin Recht and Andrew Packard},
+title = {Analysis and design of optimization algorithms via integral
+quadratic regulators},
+year = 2016,
+journal = siopt,
+pages = {57--95},
+volume = 26,
+number = 1,
+comment = {Follows a line of work, e.g. the papers DroriTe14 and
+  TaylorHeGl17, which uses SDPs to investigate optimal convergence rates
+  of various algorithms (especially first-order methods). In contrast
+  to the cited papers, Lessard et al. use a dynamical systems approach,
+  so that their methods (as far as I can tell) are fixed stepsize and work
+  mostly with strongly convex methods. They write first-order iteration via
+  matrices, then identify certain constraints the iteration must satisfy
+  even for convex functions (this is where the IQCs come in). Means
+  that the SDPs constructed don't have to explode in size.},
+}
+
 @book{LesserOrTa03,
   title     = "{Distributed Sensor Networks: A Multiagent
                Perspective}",
@@ -24481,6 +24705,33 @@ number = 8,
   booktitle = {IJCV},
   year = 	 {2004}
 }
+
+@article{LuFrNe18,
+title = {Relatively smooth convex optimization by first-order methods,
+  and applications},
+author = {Haihao Lu and Robert M. Freund and Yurii Nesterov},
+year = 2018,
+journal = siopt,
+volume = 28,
+number = 1,
+pages = {333-354},
+comment = {Very nice paper, similar to BauschkeBoTe17, that considers
+  first-order type methods for what they term ``relatively smooth''
+  problems. These are functions $f$ for which one has a (convex)
+  $h$ such that $L h - f$ is convex for some finite $L$, which is equivalent
+  to $f(y) \le f(x) + \<\nabla f(x), y - x\> + L D_h(y, x)$. From this,
+  one uses the natural Bregman iteration (mirror descent) and achieves
+  nice convergence results. This is in distinction to the typical case, where
+  one assumes that $f$ is smooth w.r.t.\ some norm $\norm{\cdot}$, and that
+  $h$ is strongly convex with respect to the same norm.
+  They have concrete applications to
+  E-optimal design (covering ellipsoids), which do not admit
+  easy strongly convex regularizers and so require new Bregman
+  divergences; think problems with $f(x) = -\log x$, for example.
+
+  The proof of convergence is quite clean and probably could be taught.},
+}
+
 
 @techreport{LuNe14,
 author = {Yu Lu and Sahand N. Negahban},
@@ -25722,11 +25973,24 @@ year = 2010,
   year=1934
 }
 
-@book{MeurantGe06,
-	author 	= {Meurant, G{\'e}rard},
-	title 		= {The {L}anczos and Conjugate Gradient Algorithms: From Theory to Finite Precision Computations},
-	publisher 	= {Society for Industrial and Applied Mathematics},
-	year 		= {2006},
+@article{MedinaBrLo21,
+author = {Marco Avella Medina and Casey Bradshaw and Po-Ling Loh},
+title = {Differentially private inference via noisy optimization},
+year = 2021,
+journal = {arXiv:2103.11003 [math.ST]},
+comment = {
+  Suggests using a noisy Newton method (estimate both Hessian
+  and gradient) during gradient descent, showing that these
+  methods can be convergent with enough noise. They use
+  some self-concordance theory to get appropriate (enough)
+  convergence rates once one is close enough to an optimum.
+
+  They then use these noisy Hessian and gradient estimates to get
+  a Sandwich estimator (typical thing) for asymptotic variance of
+  parameters. These could be quite expensive from a
+  privacy perspective. They provide some finite sample corrections
+  for the noise they add as well.
+},
 }
 
 @article{Megiddo80
@@ -26027,6 +26291,13 @@ pages = {399--413},
 	year={2017}
 }
 
+@book{MeurantGe06,
+	author 	= {Meurant, G{\'e}rard},
+	title 		= {The {L}anczos and Conjugate Gradient Algorithms: From Theory to Finite Precision Computations},
+	publisher 	= {Society for Industrial and Applied Mathematics},
+	year 		= {2006},
+}
+
 @book{MeynTw09,
 author = {S. Meyn and R. L. Tweedie},
 title = {Markov Chains and Stochastic Stability},
@@ -26185,6 +26456,30 @@ pages = {263--275},
 	year={2020},
 }
 
+@inproceedings{MitchellLiBoFiMa22,
+author = {Eric Mitchell and Charles Lin and Antoine Bosselut and Chelsea Finn and Christopher D Manning},
+title = {Fast Model Editing at Scale},
+year = 2022,
+booktitle = iclr22,
+comment = {
+  Looks at problem of making local updates to large scale models when
+  some information changes and you want to fix that
+  (e.g.\ when Messi moved to PSG).
+
+  They learning a transformation to apply to the old deep network,
+  starting from the old gradient, by fitting a (low rank) ``transformation
+  network'' (or EDIT network). They hope it obeys some reasonable locality
+  properties (i.e.\ doesn't blow up everything else).
+  They seem to know a bunch about the problems and where things should change:
+  for each error sample $x_e$, they have a label $y_e$, and they also have
+  a related sample $x'_e$ (with related label $y'_e$)
+  that they're now supposed to get right, and they also have another
+  but unrelated example $x_{\textup{new}}$ that's \emph{not} supposed to
+  change. Between all of these, they can then use stochastic gradient
+  to fit the EDIT network for a given starting network.
+},
+}
+
 @inproceedings{MitchellWuZaBaVaHuSpRaGe19,
   title={Model cards for model reporting},
   author={Mitchell, Margaret and Wu, Simone and Zaldivar, Andrew and Barnes,
@@ -26287,6 +26582,19 @@ comment=	{address= Boston/Dordrecht/Lancaster}
   pages=529,
   year=2015,
   publisher={Nature Publishing Group}
+}
+
+@inproceedings{MohanThShSoCu12,
+author = {Prashanth Mohan and Abhradeep Thakurta and Elaine Shi
+  and Dawn Song and David E. Culler},
+title = {{GUPT}: Privacy Preserving Data Analysis Made Easy},
+year = 2012,
+booktitle = {Proceedings of the 2012 ACM International Conference on
+Management of Data (SIGMOD)},
+comment = {Basically uses subsample and aggregate to build a
+  privacy preserving system. Suggests using old data
+  to choose subsample sizes over which to aggregate.
+},
 }
 
 @inproceedings{MohriSiSu19,
@@ -29736,6 +30044,16 @@ year={2010},
 	publisher={IEEE},
 }
 
+@misc{RCore21,
+title = {R: A Language and Environment for Statistical Computing},
+author = {{R Core Team}},
+organization = {R Foundation for Statistical Computing},
+address = {Vienna, Austria},
+year = {2021},
+url = {https://www.R-project.org/},
+}
+
+
 @article{ReNiGuSr19,
   title={Overton: A data system for monitoring and improving machine-learned products},
   author={Re, Christopher and Niu, Feng and Gudipati, Pallavi and Srisuwananukorn, Charles},
@@ -32909,9 +33227,9 @@ year = 		2003
 author = {Robert P. Sherman},
 title = {{Maximal Inequalities for Degenerate $U$-Processes with Applications to Optimization Estimators}},
 volume = {22},
-journal = {The Annals of Statistics},
+journal = aos,
 number = {1},
-pages = {439 -- 459},
+pages = {439--459},
 keywords = {Chaining, degenerate $U$-processes, Empirical processes, Euclidean classes of functions, generalized regression model, maximal inequality, optimazation estimator, polynomial classes of sets, Semiparametric estimation, symmetrization},
 year = {1994},
 }
@@ -34317,6 +34635,16 @@ volume=        16
 	year={2019}
 }
 
+@article{TangKoBaWaWa17,
+author = {Jun Tang and Aleksandra Korolova nad Xiaolong Bai and
+  Xueqiang Wang and Xiaofeng Wang},
+title = {Privacy Loss in {A}pple's Implementation of Differential Privacy on
+  {MacOS} 10.12},
+year = 2017,
+journal = {arXiv:1709.02753 [cs.CR]},
+}
+
+
 @article{TanPaLe19,
   title={Efficient{D}et: Scalable and efficient object detection},
   author={Tan, Mingxing and Pang, Ruoming and Le, Quoc V},
@@ -34343,6 +34671,15 @@ journal = siopt,
 pages = {476--505},
 volume = 8,
 number = 2,
+}
+
+@book{Tao12,
+author = {Terence Tao},
+year = 2012,
+title = {Topics in Random Matrix Theory},
+publisher = {American Mathematical Society},
+series = {Graduate Studies in Mathematics},
+volume = 132,
 }
 
 @unpublished{Tao11_brunn,
@@ -34436,6 +34773,25 @@ year = 2005
 	title = "One-class classification; Concept-learning in the absence of counter-examples",
 	school = "Delft University of Technology",
 	year = 2001
+}
+
+@article{TaylorHeGl17,
+author = {Adrien B. Taylor and Julien M. Hendrickx and Fran\c{c}ois Glineur},
+title = {Smooth strongly convex interpolation and exact worst-case performance of first-order methods},
+year = 2017,
+journal = mathproga,
+pages = {307--345},
+volume = 161,
+comment = {Inspired by DroriTe14, provides lower bounds on the speed
+  of (first-order) optimization algorithms by interatively constructing
+  worst-case functions based on iterates. Develops formulae for when
+  a convex function may interpolate a set of function value gradient
+  tuples $(x_i, f(x_i), g_i)$, and uses these to write
+  the optimality gap of an iteration. It is hard to solve their resulting
+  SDPs (they grow large with number of iterations and closed forms are
+  unclear), but a dual problem gives an upper bound on the convergence
+  rate of various algorithms once given explicit stepsize choices. Does
+  not \emph{really} give convergence rate lower bounds.},
 }
 
 @inproceedings{TaxDu99,
@@ -37474,10 +37830,12 @@ pages = {5662--5676},
 }
 
 @article{YehPeDrAzTaLoErBu20,
-  title={Using publicly available satellite imagery and deep learning to understand economic well-being in Africa},
+  title={Using publicly available satellite imagery and deep learning to understand economic well-being in {A}frica},
   author={Yeh, Christopher and Perez, Anthony and Driscoll, Anne and Azzari, George and Tang, Zhongyi and Lobell, David and Ermon, Stefano and Burke, Marshall},
   journal={Nature Communications},
   year={2020},
+  volume = 11,
+  number = 2583,
   publisher={Nature Publishing Group}
 }
 
@@ -37687,6 +38045,24 @@ booktitle = {Ninth USENIX Symposium on Networked Systems Design
   publisher =    {Academic Press},
   OPTnote = 	 {},
   OPTannote = 	 {}
+}
+
+@article{ZechBaLiCoTiOe18,
+author = {John R. Zech and Marcus Badgeley and Manway Liu and Anthony B. Costa
+  and Joseph J. Titano and Eric Karl Oermann},
+title = {Variable generalization performance of a deep learning model to detect pneumonia in chest radiographs: A cross-sectional study},
+journal = {PLOS Medicine},
+month = {November},
+year = 2018,
+comment = {
+  Compared CNN performance for pneumonia screening over 3 different hospitals.
+  Pneumonia-screening CNNs achieved better internal than external performance
+  in 3 out of 5 natural comparisons. When models were trained on pooled data
+  from sites with different pneumonia prevalence, they performed better on new
+  pooled data from these sites but not on external data. CNNs robustly
+  identified hospital system and department within a hospital, which can have
+  large differences in disease burden and may confound predictions.
+},
 }
 
 @Article{Zhang03,
