@@ -137,12 +137,6 @@
   } \\
 }
 
-\newcommand{\hncomment}[1]{\fcolorbox{outerlinecolor}{innerboxcolor}{
-    \begin{minipage}{.9\textwidth}
-      \red{\bf HN Comment:} {#1}
-  \end{minipage}} \\
-}
-
 \newcommand{\<}{\langle} % Angle brackets
 \renewcommand{\>}{\rangle}
 
@@ -288,8 +282,12 @@
 % \numberwithin{equation}{section}
 % \numberwithin{equation}{subsection}
 
-%Handling Keywords
-\def\keywordname{{\bfseries \emph Keywords}}%
-\def\keywords#1{\par\addvspace\medskipamount{\rightskip=0pt plus1cm
-    \def\and{\ifhmode\unskip\nobreak\fi\ $\cdot$
-    }\noindent\keywordname\enspace\ignorespaces#1\par}}
+\definecolor{inneralgcolor}{rgb}{.96,.96,.96}
+\newcommand{\algbox}[1]{
+  \fcolorbox{black}{inneralgcolor}{
+    \begin{minipage}{.9\textwidth}
+      {#1}
+    \end{minipage}
+  } \\
+}
+
