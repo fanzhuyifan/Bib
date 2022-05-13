@@ -3551,6 +3551,13 @@ pages = {311--334},
 year = 2006,
 }
 
+@article{BartlettMoRa21,
+author = {Peter L. Bartlett and Andrea Montanari and Alexander Rakhlin},
+title = {Deep Learning: A Statistical Viewpoint},
+year = 2021,
+journal = {arXiv:2103.09177 [math.ST]},
+}
+
 @inproceedings{BartlettTe04,
     author = "P.~Bartlett and A.~Tewari",
     title = "Sparseness vs estimating conditional probabilities: Some asymptotic results",
@@ -6502,6 +6509,7 @@ comment = {Shows that pointwise notions of risk are problematic for
 	author={Tom B. Brown and Benjamin Mann and Nick Ryder and Melanie Subbiah and Jared Kaplan and Prafulla Dhariwal and Arvind Neelakantan and Pranav Shyam and Girish Sastry and Amanda Askell and Sandhini Agarwal and Ariel Herbert-Voss and Gretchen Krueger and Tom Henighan and Rewon Child and Aditya Ramesh and Daniel M. Ziegler and Jeffrey Wu and Clemens Winter and Christopher Hesse and Mark Chen and Eric Sigler and Mateusz Litwin and Scott Gray and Benjamin Chess and Jack Clark and Christopher Berner and Sam McCandlish and Alec Radford and Ilya Sutskever and Dario Amodei},
 	year={2020},
 	booktitle=nips2020,
+	comment = {GPT3 paper. See https://arxiv.org/abs/2005.14165},
 }
 
 @article{BrownNe??
@@ -7333,6 +7341,18 @@ year=     	1987,
 editor=   	{Pat Langley},
 pages=    	{256--266},
 publisher=	{Morgan Kaufmann}
+}
+
+@article{CarliniTrWaJaHeLeRoBrSoErOpRa21,
+author = {Nicholas Carlini and Florian Tram\`{e}r and Eric Wallace
+  and Matthew Jagielski and Ariel Herbert-Voss and Katherine Lee and
+  Adam Roberts and Tom Brown and
+  Dawn Song \'{U}lfar Erlingsson and Alina Oprea and Colin Raffel},
+year = 2021,
+title = {Extracting Training Data from Large Language Models},
+journal = {arXiv:2012.07805 [cs.CR]},
+comment = {Shows that with a bit of feeding data, can pull out interesting
+  private sentences from, e.g., GPT3}.
 }
 
 @inproceedings{CarliniWa17,
@@ -12156,13 +12176,13 @@ institution = {University of California, Irvine, School of Information and Compu
 	year={2019}
 }
 
-@misc{Duchi19,
+@misc{Duchi21,
 author = {John C. Duchi},
 title = {Information Theory and Statistics},
-year = 2019,
+year = 2021,
 howpublished = {Lecture Notes for Statistics 311/{EE} 377,
 Stanford University},
-note = {Accessed May 2019},
+note = {Accessed May 2021},
 url = {http://web.stanford.edu/class/stats311/lecture-notes.pdf},
 }
 
@@ -13437,6 +13457,16 @@ author = {Sam Efromovich},
 year = 1999,
 title = {Nonparametric Curve Estimation: Methods, Theory, and Applications},
 publisher = {Springer-Verlag},
+}
+
+@article{Efron79,
+author = {Bradley Efron},
+title = {Bootstrap Methods: Another Look at the Jackknife},
+journal = aos,
+year = 1979,
+volume = 7,
+number = 1,
+pages = {1--26},
 }
 
 @article{Efron86,
@@ -16683,6 +16713,15 @@ year= {1999}
   title = 	 {No-regret algorithms for Online Convex Programs},
   booktitle = nips19,
   year = 	 {2006}
+}
+
+@inproceedings{GordonLaPaPaHaHaBe22,
+author = {Mitchell Gordon and Michelle S. Lam and Joon Sung Park
+  and Kayur Patel and Jeffrey T. Hancock and Tatsunori Hashimoto and
+  Michael S. Bernstein},
+title = {Jury Learning: Integrating Dissenting Voices into Machine Learning Models},
+year = 2022,
+booktitle = {CHI Conference on Human Factors in Computing Systems},
 }
 
 @article{GordonSh85,
@@ -20706,12 +20745,23 @@ year = 2016,
 ,publisher=	{Springer-Verlag}
 }
 
-@inproceedings{JumperEv20,
+@inproceedings{JumperEvEtAl20,
 author = {John Jumper and Richard Evans and Alexander Pritzel and Tim Green and Michael Figurnov and Kathryn Tunyasuvunakool and Olaf Ronneberger and Russ Bates and Augustin Zidek and Alex Bridgland and Clemens Meyer and Simon A A Kohl and Anna Potapenko and Andrew J Ballard and Andrew Cowie and Bernardino Romera-Paredes and Stanislav Nikolov and Rishub Jain and Jonas Adler and Trevor Back and Stig Petersen and David Reiman and Martin Steinegger and Michalina Pacholska and David Silver and Oriol Vinyals and Andrew W Senior and Koray Kavukcuoglu and Pushmeet Kohli and Demis Hassabis},
 year = 2020,
 title = {High Accuracy Protein Structure Prediction Using Deep Learning},
 booktitle = {Fourteenth Critical Assessment of Techniques for Protein Structure Prediction (CASP 14)},
 }
+
+@article{JumperEvEtAl21,
+author = {John Jumper and Richard Evans and Alexander Pritzel and Tim Green and Michael Figurnov and Kathryn Tunyasuvunakool and Olaf Ronneberger and Russ Bates and Augustin Zidek and Alex Bridgland and Clemens Meyer and Simon A A Kohl and Anna Potapenko and Andrew J Ballard and Andrew Cowie and Bernardino Romera-Paredes and Stanislav Nikolov and Rishub Jain and Jonas Adler and Trevor Back and Stig Petersen and David Reiman and Martin Steinegger and Michalina Pacholska and David Silver and Oriol Vinyals and Andrew W Senior and Koray Kavukcuoglu and Pushmeet Kohli and Demis Hassabis},
+year = 2021,
+title = {Highly accurate protein structure prediction with {A}lpha{F}old},
+journal = {Nature},
+volume = 596,
+pages = {583--589},
+comment = {AlphaFold.},
+}
+
 
 @book{Kac59
 ,author=	{Mark Kac}
@@ -21817,11 +21867,13 @@ doi = {10.1126/science.1251722},
   publisher={Taylor \& Francis}
 }
 
-@article{KipnisDu19,
+@article{KipnisDu22,
 author = {Alon Kipnis and John C. Duchi},
 title = {Mean Estimation from Adaptive One-bit Measurements},
-journal = {arXiv:1901.03403 [cs.IT]},
-year = 2019,
+journal = ieeeit,
+year = 2022,
+volume = {to appear},
+comment = {arXiv:1901.03403 [cs.IT]},
 }
 
 @inproceedings{KipnisDu17_allerton,
@@ -27338,6 +27390,15 @@ howpublished = {Code 31 Department Website},
 url = {https://www.onr.navy.mil/en/Science-Technology/Departments/Code-31/All-Programs/311-Mathematics-Computers-Research/Mathematics-Data-Science},
 }
 
+@misc{Neskovic22,
+author = {Office of Naval Research},
+title = {Mathematical Data Science Program},
+year = 2022,
+note = {Accessed April, 2022},
+howpublished = {Code 31 Department Website},
+url = {https://www.onr.navy.mil/Science-Technology/Departments/Code-31/All-Programs/311-Mathematics-Computers-Research/mathematical-data-science},
+}
+
 @book{NesterovNe94,
 author = {Y. Nesterov and A. Nemirovski},
 title = {Interior-Point Polynomial Algorithms in Convex Programming},
@@ -29731,6 +29792,16 @@ comment=  	{Gets 96.5 percent accuracy on 100-speaker set for digits.}
 ,publisher=	{Prentice-Hall}
 }
 
+@inproceedings{RadfordKiHaRaGoAgSaAsMiClKrSu21,
+author = {Alec Radford and Jong Wook Kim and Chris Hallacy and
+Aditya Ramesh and Gabriel Goh and Sandhini Agarwal  and
+Girish Sastry and Amanda Askell and Pamela Mishkin and
+Jack Clark and Gretchen Krueger and Ilya Sutskever},
+title = {Learning Transferable Visual Models From Natural Language Supervision},
+year = 2021,
+booktitle = icml21,
+comment = {The CLIP paper},
+}
 
 @article{RaffelShRoLeEtAl20,
 	author  = {Colin Raffel and Noam Shazeer and Adam Roberts and Katherine Lee and Sharan Narang and Michael Matena and Yanqi Zhou and Wei Li and Peter J. Liu},
