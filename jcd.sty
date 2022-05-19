@@ -77,7 +77,7 @@
 
 \newcommand{\half}{\frac{1}{2}}
 \newcommand{\indic}[1]{1\!\left\{#1\right\}} % Indicator function
-\newcommand{\indics}[1]{1\!\{#1\}} % Indicator function small
+\newcommand{\indics}[1]{1\{#1\}} % Indicator function small
 \newcommand{\bindic}[1]{\mathbf{1}\left\{#1\right\}} % Indicator function
 
 \newcommand{\reals}{\mathbb{R}} % Real number symbol
@@ -137,14 +137,10 @@
   } \\
 }
 
-\newcommand{\hncomment}[1]{\fcolorbox{outerlinecolor}{innerboxcolor}{
-    \begin{minipage}{.9\textwidth}
-      \red{\bf HN Comment:} {#1}
-  \end{minipage}} \\
-}
-
 \newcommand{\<}{\langle} % Angle brackets
 \renewcommand{\>}{\rangle}
+
+\newcommand{\setdiff}{\triangle}  % symmetric difference between sets
 
 \renewcommand{\iff}{\Leftrightarrow}
 \renewcommand{\choose}[2]{\binom{#1}{#2}}
@@ -174,7 +170,8 @@
 
 \newcommand{\normal}{\mathsf{N}}  % Normal distribution
 \newcommand{\uniform}{\mathsf{Uni}}  % Uniform distribution
-\newcommand{\gammadist}{\mathsf{Gamma}}  % Uniform distribution
+\newcommand{\gammadist}{\mathsf{Gamma}}  % Gamma distribution
+\newcommand{\laplace}{\mathsf{Lap}}  % Laplace distribution
 
 % Convergence of random variables
 \newcommand{\cd}{\mathop{\stackrel{d}{\rightarrow}}} % Convergences in
@@ -204,6 +201,8 @@
 \newcommand{\hinges}[1]{[{#1}]_+} % Max of argument and zero
 \newcommand{\dist}{\mathop{\rm dist}}
 \newcommand{\rank}{\mathop{\rm rank}}
+\newcommand{\range}{\mathop{\rm range}}  % Range of matrix
+\newcommand{\nullspace}{\mathop{\rm null}}  % Nullspace of matrix
 
 \providecommand{\minimize}{\mathop{\rm minimize}}
 \providecommand{\maximize}{\mathop{\rm maximize}}
@@ -284,8 +283,12 @@
 % \numberwithin{equation}{section}
 % \numberwithin{equation}{subsection}
 
-%Handling Keywords
-\def\keywordname{{\bfseries \emph Keywords}}%
-\def\keywords#1{\par\addvspace\medskipamount{\rightskip=0pt plus1cm
-    \def\and{\ifhmode\unskip\nobreak\fi\ $\cdot$
-    }\noindent\keywordname\enspace\ignorespaces#1\par}}
+\definecolor{inneralgcolor}{rgb}{.96,.96,.96}
+\newcommand{\algbox}[1]{
+  \fcolorbox{black}{inneralgcolor}{
+    \begin{minipage}{.9\textwidth}
+      {#1}
+    \end{minipage}
+  } \\
+}
+
