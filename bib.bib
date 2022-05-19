@@ -156,9 +156,13 @@ on Artificial Intelligence and Statistics}}
 @string{focs18 = {59th Annual Symposium on Foundations of Computer Science}}
 @string{focs19 = {60th Annual Symposium on Foundations of Computer Science}}
 @string{focs20 = {61st Annual Symposium on Foundations of Computer Science}}
+@string{focs21 = {62nd Annual Symposium on Foundations of Computer Science}}
 
 @string{recomb19 = {23rd Annual International Conference on Research
   in Computational Molecular Biology (RECOMB)}}
+
+@string{sigmod12 = {Proceedings of the 2012 ACM International Conference on
+Management of Data (SIGMOD)}}
 
 @string{soda90 = {Proceedings of the First Annual ACM-SIAM Symposium on
 		  Discrete Algorithms (SODA)}}
@@ -2505,6 +2509,14 @@ title = {Instance-optimality in differential privacy via approximate inverse sen
 booktitle = nips2020,
 }
 
+@inproceedings{AsiDuFaJaTa21,
+author = {Hilal Asi and John Duchi and Alireza Fallah and Omid Javidbakht
+  and Kunal Talwar},
+year = 2021,
+booktitle = icml21,
+title = {Private Adaptive Gradient Methods for Convex Optimization},
+}
+
 @article{AsiDu20,
 author = {Hilal Asi and John Duchi},
 title = {Near Instance-Optimality in Differential Privacy},
@@ -3334,7 +3346,7 @@ comment = {Well-written tutorial on programming with Pthreads and their methods}
   year = {2016},
 }
 
-@article{Baron20,
+@article{Baron00,
   title={Nonparametric adaptive change point estimation and on line detection: Nonparametric adaptive change point},
   author={Baron, Michael I},
   journal={Sequential Analysis},
@@ -3544,6 +3556,13 @@ volume = 135,
 number = 3,
 pages = {311--334},
 year = 2006,
+}
+
+@article{BartlettMoRa21,
+author = {Peter L. Bartlett and Andrea Montanari and Alexander Rakhlin},
+title = {Deep Learning: A Statistical Viewpoint},
+year = 2021,
+journal = {arXiv:2103.09177 [math.ST]},
 }
 
 @inproceedings{BartlettTe04,
@@ -5027,7 +5046,7 @@ pages = {295--317},
 
 @inProceedings{BiswasDoKaUl20,
  author = {Biswas, Sourav and Dong, Yihe and Kamath, Gautam and Ullman, Jonathan},
- title = {CoinPress: Practical Private Mean and Covariance Estimation},
+ title = {Coin{P}ress: Practical Private Mean and Covariance Estimation},
  booktitle = nips20,
  year = {2020}
 }
@@ -6352,6 +6371,16 @@ url = {https://arxiv.org/abs/1506.07216},
   number =	 486
 }
 
+@article{Breiman01,
+author = {Leo Breiman},
+title = {Statistical Modeling: The Two Cultures},
+year = 2001,
+journal = statsci,
+volume = 16,
+number = 3,
+pages = {199--215},
+}
+
 @Article{Breiman98,
 author=	{Leo Breiman},
 title=		{Arcing classifiers},
@@ -6497,6 +6526,7 @@ comment = {Shows that pointwise notions of risk are problematic for
 	author={Tom B. Brown and Benjamin Mann and Nick Ryder and Melanie Subbiah and Jared Kaplan and Prafulla Dhariwal and Arvind Neelakantan and Pranav Shyam and Girish Sastry and Amanda Askell and Sandhini Agarwal and Ariel Herbert-Voss and Gretchen Krueger and Tom Henighan and Rewon Child and Aditya Ramesh and Daniel M. Ziegler and Jeffrey Wu and Clemens Winter and Christopher Hesse and Mark Chen and Eric Sigler and Mateusz Litwin and Scott Gray and Benjamin Chess and Jack Clark and Christopher Berner and Sam McCandlish and Alec Radford and Ilya Sutskever and Dario Amodei},
 	year={2020},
 	booktitle=nips2020,
+	comment = {GPT3 paper. See https://arxiv.org/abs/2005.14165},
 }
 
 @article{BrownNe??
@@ -6843,13 +6873,19 @@ pages = {635--658},
 	year = 1998
 }
 
-
 @inproceedings{BurgesShReLaDeHaHu05,
   author = "C.J.C. Burges and T. Shaked and E. Renshaw and A. Lazier and M. Deeds and N. Hamilton and G. Hullender",
   booktitle = icml05,
   title = "Learning to rank using gradient descent",
   year = 2005,
  pages = {89--96},
+}
+
+@article{BurgWi22,
+author = {Gerrit J. J. van den Burg Christopher K. I. Williams},
+title = {An Evaluation of Change Point Detection Algorithms},
+year = 2020,
+journal = {arXiv:2003.06222 [stat.ML]},
 }
 
 @article{Burke85,
@@ -7322,6 +7358,18 @@ year=     	1987,
 editor=   	{Pat Langley},
 pages=    	{256--266},
 publisher=	{Morgan Kaufmann}
+}
+
+@article{CarliniTrWaJaHeLeRoBrSoErOpRa21,
+author = {Nicholas Carlini and Florian Tram\`{e}r and Eric Wallace
+  and Matthew Jagielski and Ariel Herbert-Voss and Katherine Lee and
+  Adam Roberts and Tom Brown and
+  Dawn Song \'{U}lfar Erlingsson and Alina Oprea and Colin Raffel},
+year = 2021,
+title = {Extracting Training Data from Large Language Models},
+journal = {arXiv:2012.07805 [cs.CR]},
+comment = {Shows that with a bit of feeding data, can pull out interesting
+  private sentences from, e.g., GPT3},
 }
 
 @inproceedings{CarliniWa17,
@@ -8497,6 +8545,13 @@ pages = {1173--1183}
   journal={Econometrica},
   pages={289--314},
   year=1998
+}
+
+@article{ChengDuKu22,
+author = {Chen Cheng and John Duchi and Rohith Kuditipudi},
+title = {Memorize to Generalize: on the Necessity of Interpolation in High Dimensional Linear Regression},
+year = 2022,
+journal = {arXiv:2202.09889 [stat.ML]},
 }
 
 @article{ChengSaBa06,
@@ -11399,6 +11454,26 @@ volume=	40
    PAGES = "1205--1216"
 }
 
+@article{DingDrFa22,
+author = {Lijun Ding and Dmitriy Drusvyatskiy and Maryam Fazel},
+title = {Flat minima generalize for low-rank matrix recovery},
+year = 2022,
+journal = {arXiv:2203.03756 [cs.LG]},
+comment = {Considers the problem of recovering matrices
+  $L, R$ from the sensing equation $b = \mc{A}(X_\star) + \xi$ when
+  $X_\star$ is low rank, using the nonconvex formulation
+  to minimize $f(L, R) = \ltwo{\mc{A}(LR^\top) - b}^2$. Shows that
+  if we regularize the Hessian of $f$, one form of the resulting
+  second derivative matrix is
+  $\mbox{str}(D^2 f(L, R)) = \lfro{D_1 L}^2 + \lfro{D_2 R}^2$, where
+  $\mbox{str}$ denotes a scaled/normalized trace-type quantity.
+  Given that the nuclear norm of a matrix
+  $\norm{X}_* = \half \inf_{LR^\top = X} \{\lfro{L}^2 + \lfro{R}^2\}$,
+  this then shows that minimizing the scaled trace of the Hessian
+  is equivalent to nuclear norm minimization.
+},
+}
+
 @article{DinhTrNg20,
 title = {Personalized Federated Learning with Moreau Envelopes},
 author = {Canh Dinh and Nguyen Tran and Tuan Dung Nguyen},
@@ -12118,13 +12193,13 @@ institution = {University of California, Irvine, School of Information and Compu
 	year={2019}
 }
 
-@misc{Duchi19,
+@misc{Duchi21,
 author = {John C. Duchi},
 title = {Information Theory and Statistics},
-year = 2019,
+year = 2021,
 howpublished = {Lecture Notes for Statistics 311/{EE} 377,
 Stanford University},
-note = {Accessed May 2019},
+note = {Accessed May 2021},
 url = {http://web.stanford.edu/class/stats311/lecture-notes.pdf},
 }
 
@@ -13401,6 +13476,16 @@ title = {Nonparametric Curve Estimation: Methods, Theory, and Applications},
 publisher = {Springer-Verlag},
 }
 
+@article{Efron79,
+author = {Bradley Efron},
+title = {Bootstrap Methods: Another Look at the Jackknife},
+journal = aos,
+year = 1979,
+volume = 7,
+number = 1,
+pages = {1--26},
+}
+
 @article{Efron86,
   title={How biased is the apparent error rate of a prediction rule?},
   author={Efron, Bradley},
@@ -13434,7 +13519,7 @@ publisher = {Springer-Verlag},
   publisher={Taylor \& Francis Group}
 }
 
-@book{Efron16,
+@book{EfronHa16,
 title={Computer Age Statistical Inference: Algorithms, Inference, and Data Science},
 author={Bradley Efron and Trevor Hastie},
 publisher={Cambridge University Press},
@@ -13475,11 +13560,11 @@ comment = {Uses batting averages to illustrate a regression to the mean
  year = 1981
 }
 
-@book{EfronTi93
-,author=	{Bradley Efron and Robert J. Tibshirani}
-,title=		{An Introduction to the Bootstrap}
-,year=		1993
-,publisher=	{Chapman \& Hall}
+@book{EfronTi93,
+author=	{Bradley Efron and Robert J. Tibshirani},
+title=		{An Introduction to the Bootstrap},
+year=		1993,
+publisher=	{Chapman \& Hall}
 }
 
 @book{Efron12,
@@ -14097,12 +14182,13 @@ year=		1992
   year={2012}
 }
 
-@article{Feldman19,
+@inproceedings{Feldman20,
 author = {Vitaly Feldman},
 title = {Does Learning Require Memorization? {A} Short Tale about a Long Tail},
-year = 2019,
-journal = {arXiv:1906.05271 [cs.LG]},
-url = {https://arxiv.org/abs/1906.05271},
+year = 2020,
+booktitle = stoc20,
+pages = {954--959},
+comment = {arXiv:1906.05271 [cs.LG]},
 }
 
 @article{FeldmanGrReVeXi17,
@@ -14121,6 +14207,14 @@ author = {Vitaly Feldman and Tomer Koren and Kunal Talwar},
 title = {Private Stochastic Convex Optimization: Optimal Rates in Linear Time},
 year = 2020,
 booktitle = stoc20,
+}
+
+@inproceedings{FeldmanMcTa21,
+author = {Vitaly Feldman and Audra McMillan and Kunal Talwar},
+title = {Hiding Among the Clones: A Simple and Nearly Optimal Analysis
+of Privacy Amplification by Shuffling},
+booktitle = focs21,
+year = 2021,
 }
 
 @inproceedings{FeldmanSt18,
@@ -16636,6 +16730,15 @@ year= {1999}
   title = 	 {No-regret algorithms for Online Convex Programs},
   booktitle = nips19,
   year = 	 {2006}
+}
+
+@inproceedings{GordonLaPaPaHaHaBe22,
+author = {Mitchell Gordon and Michelle S. Lam and Joon Sung Park
+  and Kayur Patel and Jeffrey T. Hancock and Tatsunori Hashimoto and
+  Michael S. Bernstein},
+title = {Jury Learning: Integrating Dissenting Voices into Machine Learning Models},
+year = 2022,
+booktitle = {CHI Conference on Human Factors in Computing Systems},
 }
 
 @article{GordonSh85,
@@ -19620,7 +19723,7 @@ publisher = {Springer-Verlag},
 @article{IlyasPaEnLeMa22,
 author = {Andrew Ilyas and Sung Min Park and Logan Engstrom and
   Guillaume Leclerc and Aleksander Madry},
-title = {Datamodesl: Predicting Predictions from Training Data},
+title = {Datamodels: Predicting Predictions from Training Data},
 journal = {arXiv:2202.00622 [stat.ML]},
 year = 2022,
 }
@@ -20659,12 +20762,23 @@ year = 2016,
 ,publisher=	{Springer-Verlag}
 }
 
-@inproceedings{JumperEv20,
+@inproceedings{JumperEvEtAl20,
 author = {John Jumper and Richard Evans and Alexander Pritzel and Tim Green and Michael Figurnov and Kathryn Tunyasuvunakool and Olaf Ronneberger and Russ Bates and Augustin Zidek and Alex Bridgland and Clemens Meyer and Simon A A Kohl and Anna Potapenko and Andrew J Ballard and Andrew Cowie and Bernardino Romera-Paredes and Stanislav Nikolov and Rishub Jain and Jonas Adler and Trevor Back and Stig Petersen and David Reiman and Martin Steinegger and Michalina Pacholska and David Silver and Oriol Vinyals and Andrew W Senior and Koray Kavukcuoglu and Pushmeet Kohli and Demis Hassabis},
 year = 2020,
 title = {High Accuracy Protein Structure Prediction Using Deep Learning},
 booktitle = {Fourteenth Critical Assessment of Techniques for Protein Structure Prediction (CASP 14)},
 }
+
+@article{JumperEvEtAl21,
+author = {John Jumper and Richard Evans and Alexander Pritzel and Tim Green and Michael Figurnov and Kathryn Tunyasuvunakool and Olaf Ronneberger and Russ Bates and Augustin Zidek and Alex Bridgland and Clemens Meyer and Simon A A Kohl and Anna Potapenko and Andrew J Ballard and Andrew Cowie and Bernardino Romera-Paredes and Stanislav Nikolov and Rishub Jain and Jonas Adler and Trevor Back and Stig Petersen and David Reiman and Martin Steinegger and Michalina Pacholska and David Silver and Oriol Vinyals and Andrew W Senior and Koray Kavukcuoglu and Pushmeet Kohli and Demis Hassabis},
+year = 2021,
+title = {Highly accurate protein structure prediction with {A}lpha{F}old},
+journal = {Nature},
+volume = 596,
+pages = {583--589},
+comment = {AlphaFold.},
+}
+
 
 @book{Kac59
 ,author=	{Mark Kac}
@@ -21711,6 +21825,13 @@ pages=          {606--617}
   publisher={INFORMS}
 }
 
+@book{KingKeVe94,
+author = {Gary King and Robert Keohane and Sidney Verba},
+title = {Designing Social Inquiry: Scientific Inference in Qualitative Research},
+year = 1994,
+publisher = {Princeton University Press},
+}
+
 @article{KingmaBa14,
 	title={Adam: A method for stochastic optimization},
 	author={Kingma, Diederik P and Ba, Jimmy},
@@ -21763,11 +21884,13 @@ doi = {10.1126/science.1251722},
   publisher={Taylor \& Francis}
 }
 
-@article{KipnisDu19,
+@article{KipnisDu22,
 author = {Alon Kipnis and John C. Duchi},
 title = {Mean Estimation from Adaptive One-bit Measurements},
-journal = {arXiv:1901.03403 [cs.IT]},
-year = 2019,
+journal = ieeeit,
+year = 2022,
+volume = {to appear},
+comment = {arXiv:1901.03403 [cs.IT]},
 }
 
 @inproceedings{KipnisDu17_allerton,
@@ -22891,6 +23014,14 @@ url = {http://arXiv.org/abs/1605.09349},
                   confidence bands on the objective function
                   itself. This (more or less) relaxes the
                   identifiability condition required in DuchiGlNa16.}
+}
+
+@article{Lamb12,
+author = {Evelyn Lamb},
+title = {5 {S}igma: What's That?},
+year = 2012,
+journal = {Scientific American},
+note = {URL \url{https://blogs.scientificamerican.com/observations/five-sigmawhats-that/}},
 }
 
 @inproceedings{LambrouPa16,
@@ -27276,6 +27407,15 @@ howpublished = {Code 31 Department Website},
 url = {https://www.onr.navy.mil/en/Science-Technology/Departments/Code-31/All-Programs/311-Mathematics-Computers-Research/Mathematics-Data-Science},
 }
 
+@misc{Neskovic22,
+author = {Office of Naval Research},
+title = {Mathematical Data Science Program},
+year = 2022,
+note = {Accessed April, 2022},
+howpublished = {Code 31 Department Website},
+url = {https://www.onr.navy.mil/Science-Technology/Departments/Code-31/All-Programs/311-Mathematics-Computers-Research/mathematical-data-science},
+}
+
 @book{NesterovNe94,
 author = {Y. Nesterov and A. Nemirovski},
 title = {Interior-Point Polynomial Algorithms in Convex Programming},
@@ -27817,6 +27957,13 @@ journal = {arXiv:1912.03618 [cs.LG]},
   volume =	 {XII},
   year =	 1962,
   pages =	 {615--622}
+}
+
+@inproceedings{NowakBaRu20,
+	title={Consistent Structured Prediction with Max-Min Margin Markov Networks},
+	author={Nowak-Vila, Alex and Bach, Francis and Rudi, Alessandro},
+	booktitle=icml20,
+	year={2020}
 }
 
 @article{NummelinTw78,
@@ -29669,6 +29816,16 @@ comment=  	{Gets 96.5 percent accuracy on 100-speaker set for digits.}
 ,publisher=	{Prentice-Hall}
 }
 
+@inproceedings{RadfordKiHaRaGoAgSaAsMiClKrSu21,
+author = {Alec Radford and Jong Wook Kim and Chris Hallacy and
+Aditya Ramesh and Gabriel Goh and Sandhini Agarwal  and
+Girish Sastry and Amanda Askell and Pamela Mishkin and
+Jack Clark and Gretchen Krueger and Ilya Sutskever},
+title = {Learning Transferable Visual Models From Natural Language Supervision},
+year = 2021,
+booktitle = icml21,
+comment = {The CLIP paper},
+}
 
 @article{RaffelShRoLeEtAl20,
 	author  = {Colin Raffel and Noam Shazeer and Adam Roberts and Katherine Lee and Sharan Narang and Michael Matena and Yanqi Zhou and Wei Li and Peter J. Liu},
@@ -30884,6 +31041,15 @@ note = 		{(Reprinted in {\sl Neurocomputing} (MIT Press, 1988).)}
   publisher = 	 {Spartan},
   year = 	 1962,
   address =	 {New York}
+}
+
+@inproceedings{RosenfeldRaRi21,
+author = {Elan Rosenfeld and Pradeep Ravikumar and Andrej Risteki},
+title = {The Risks of Invariant Risk Minimization},
+year = 2021,
+booktitle = iclr21,
+comment = {Gives theoretical examples where Invariant Risk Minimization
+  just does completely the wrong thing and fits a bad model.},
 }
 
 @article{Rosenthal70,
@@ -36677,6 +36843,15 @@ comment = {
 },
 }
 
+@article{Wasserman12,
+author = {Larry Wasserman},
+title = {Minimaxity, statistical thinking and differential privacy},
+year = 2012,
+journal = {Journal of Privacy and Confidentiality},
+number = 1,
+volume = 4,
+}
+
 @article{WassermanZh10,
 author = {Larry Wasserman and Shuheng Zhou},
 title = {A statistical framework for differential privacy},
@@ -38157,6 +38332,17 @@ author = {Chiyuan Zhang and Samy Bengio and Moritz Hardt and
 title = {Understanding deep learning requires rethinking generalization},
 year = 2017,
 booktitle = iclr17,
+}
+
+@article{ZhangBeHaReVi21,
+author = {Chiyuan Zhang and Samy Bengio and Moritz Hardt and
+  Benjamin Recht and Oriol Vinyals},
+title = {Understanding deep learning (still) requires rethinking generalization},
+year = 2017,
+journal = cacm,
+volume = 64,
+number = 3,
+pages = {107--115},
 }
 
 @inproceedings{ZhangChLi16,
