@@ -7082,6 +7082,36 @@ number = 6,
 pages = {3074--3110},
 }
 
+@article{CaiWaZh21,
+author = {T. Tony Cai and Yichen Wang and Linjun Zhang},
+title = {The cost of privacy: optimal rates of convergence for parameter estimation with differential privacy},
+journal = aos,
+year=  2021,
+volume = 49,
+number = 5,
+pages = {2825--2850},
+comment = {Shows a statistical perspective on the ``fingerprinting''
+  or ``traitor-tracing'' arguments that (e.g.) Ullman and Steinke and
+  used to prove lower bounds for $(\epsilon,\delta)$-DP.
+  Let $M(X)$ be a mechanism taking a dataset $X$ in as input to (ostensibly)
+  estimate a parameter $\mu \in \R^d$.
+  Still quite sophisticated, but the basic idea is that if you put a prior
+  on parameters $\mu \in [-1, 1]^d$, then one of two things must happen:
+  (1) the ``tracing'' algorithm $A_\mu(x, M(X)) = \<x - \mu, M(X)\>$ must
+  have a lot of large indices for $x \in \{x_1, \ldots, x_n\}$, or
+  (2) we must have $\ltwo{M(X) - \wb{X}}$ quite large.
+  By averaging over priors on the mean $\mu$ (so that $M$ does not know
+  $\mu$), one can demonstrate that typically $M$ must be at least a little
+  biased toward the sample mean.
+
+  Given  this master result, the remainder of the lower bounds are not
+  so difficult: one uses a bit of group privacy to get blocks of changing
+  samples, then argues for privacy (not too different from \cite{BarberDu14a},
+  for example). But still some subtlety and a nice treatment that a
+  statistician can read.
+  },
+}
+
 @article{CaiWu20,
   title={Statistical and computational limits for sparse matrix detection},
   author={Cai, T Tony and Wu, Yihong },
