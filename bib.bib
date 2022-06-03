@@ -16751,7 +16751,31 @@ pages = {2672--2680},
 	}
 
 
-
+@article{GopalanKaReShWi21,
+author = {Parikshit Gopalan and Adam Tauman Kalai and Omer Reingold
+  and Vatsal Sharan and Udi Wieder},
+title = {Omnipredictors},
+year = 2021,
+journal = {arXiv:2109.05389 [cs.LG]},
+comment = { Develops what they call ``omnipredictors,'' which is related
+  to multicalibration (see \cite{HebertKiReRo18}). A function $f$ is an
+  omni-predictor if for a collection of losses $\mc{L}$ and
+  decision rules $c$, one has
+  $\inf_{k : [0, 1] \to \R} \E[\ell(Y, k \circ f(X))]
+  \le \inf_{c \in \mc{C}} \E[\ell(Y, c(X))] + \delta$,
+  where $\delta$ is small, for all losses $\ell \in \mc{L}$.
+  If $\mc{C}$ is a partition of the underlying domain, then one
+  can achieve this by making $f$ be an appropriate predictor that
+  is ``optimal'' for $x$ in different partitions.
+  
+  The approach is to use boosting with ``agnostic'' methods, which
+  basically look for elements of $\mc{C}$ that are highly correlated
+  with the targets $y$. Somehow these approaches still feel quite
+  combinatorial---as they focus on partitions. Could be interesting
+  to look at weighted notions of loss minimization (or connect to
+  calibration/validation ideas).
+},
+}
 
 @inproceedings{Gopal16,
   title={Adaptive Sampling for SGD by Exploiting Side Information},
@@ -18603,11 +18627,28 @@ pages = {363--381},
 	year={2017}
 }
 
-@article{HebertKiReRo17,
+@inproceedings{HebertKiReRo18,
   author = {{\'U}rsula H{\'e}bert-Johnson and Michael P. Kim and Omer Reingold and Guy N. Rothblum},
-  journal = {arXiv:1711.08513 [cs.LG]},
-  title = {Calibration for the (Computationally-Identifiable) Masses},
-  year = {2017},
+  booktitle = icml18,
+  title = {Multicalibration: Calibration for the (Computationally-Identifiable) Masses},
+  year = {2018},
+  comment = {arXiv:1711.08513 [cs.LG].
+  Introduces what they call ``multicalibration,'' which essentially
+  says the following: if you have a collection $\mc{C}$ of subsets of a sample
+  space $\mc{X}$, then a predictor $f : \mc{X} \to [0, 1]$ (predicting
+  a binary label $Y \in \{0, 1\}$) is \emph{multicalibrated} if
+  $\E[f(X) \mid X \in C] \approx P(Y = 1 \mid X \in C)$ for all
+  subsets $C \in \mc{C}$. Their motivation is fairness.
+
+  The approach to finding a multi-calibrated predictor is via boosting-type
+  algorithms (or subgradient descent somehow in some large function
+  space) where one looks for subsets where things are uncalibrated,
+  then updates based on those. A bit combinatorial.
+  Would be interesting to do learning more by \emph{weighting}
+  within a class of functions of interest (see their follow
+  up work on Omnipredictors as well), and KimGhZo18, which audits based
+  on algorithms. All interesting works.
+}
 }
 
 @misc{HeinzeMe17,
@@ -21826,6 +21867,29 @@ booktitle = iclr17,
 	author={Kim, Donghwan and Fessler, Jeffrey A},
 	journal={arXiv:1803.06600 [math.OC]},
 	year={2018}
+}
+
+@article{KimGhZo18,
+author = {Michael P. Kim and Amirata Ghorbani and James Zou},
+title = {Multiaccuracy: Black-Box Post-Processing for Fairness in Classification},
+year = 2018,
+journal = {arXiv:1805.12317 [cs.LG]},
+}
+
+@article{KimKeGoKrRe22,
+author = {Michael P. Kim and Christopher Kern and Shafi Goldwasser
+  and Frauke Kreuter and Omer Reingold},
+title = {Universal adaptability: Target-independent inference that competes with propensity scoring},
+year = 2022,
+journal = pnas,
+volume = 119,
+number = 4,
+pages = {e2108097119},
+comment = {Uses their multicalibration ideas to (under an assumption of
+  strong ignorability, i.e. $P(X, Y, Z) = P(Y | X) P(X) P(Z | X)$ so that
+  there is no unmeasured confounding) shows how to approximately get accuracy
+  for downstream prediction tasks across environments/treatments as long
+  as predictors are calibrated. Not too surprising...},
 }
 
 @article{KimKiFa14,
