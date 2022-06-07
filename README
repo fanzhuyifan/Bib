@@ -23,11 +23,14 @@ ones!
 I would love it if you add entries to this file! But I also do not love
 it when the formatting is wrong. (For example, if you copied something
 from Google Scholar, it is wrong.) As a consequence of this, we are now
-using a standard code review cycle on this.
+using a standard code review cycle on this. A good use pattern is to try
+to merge your branch into the master (pushing your changes to the
+master branch) at least once a week or so, so that branches
+do no become too out of synchronization with one another.
 
 To commit edits to the bib, you'll need to create a branch, do your
 edits in that branch, then issue a pull request to the master
-branch. Currently, Yair and I are reviewers who can approve pull
+branch. Currently I am the only reviewer who can approve pull
 requests. Here are the steps in somewhat more detail:
 
 In your terminal, create a branch. The command for this is
@@ -60,12 +63,28 @@ instead running
 git push --set-upstream origin your-branch-name
 ``
 
-Once you've pushed your branch to the server, you need to create a
-pull request. To do this, go to
+Now that you've pushed your branch to the server, you might want to
+do one of two things: merging the master branch into yours (so that
+your branch reflects all the changes of the master) or
+merging your branch into the master. For the former (merging the
+master into your branch) it's not so hard. You should simply checkout
+the master, pull it to make sure it's up to date, then switch back
+to your branch and merge in the master. The commands for this are
+
+``
+git checkout master
+git pull
+git checkout your-branch-name
+git merge master
+``
+
+Now your branch reflects all the changes made to the master.  To get
+your changes into the master, once you've pushed your branch to the
+server, you need to create a pull request. To do this, go to
 https://bitbucket.org/jduchi/bib/branches/, then on the branch you've
 just pushed, click "Create" a pull request. You'll get a window with a
-place to enter a description and reviewers. (Currently the only two
-reviewers are Yair and me.)
+place to enter a description and reviewers. (Currently the only
+reviewer is John.)
 
 Once we approve the changes, you can merge them into the master. Once
 you've merged into the master, to check out the freshest version of
