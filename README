@@ -72,7 +72,7 @@ the master, pull it to make sure it's up to date, then switch back
 to your branch and merge in the master. The commands for this are
 
 ``
-git checkout master
+git checkout master \n
 git pull
 git checkout your-branch-name
 git merge master
