@@ -71,12 +71,12 @@ master into your branch) it's not so hard. You should simply checkout
 the master, pull it to make sure it's up to date, then switch back
 to your branch and merge in the master. The commands for this are
 
-``
-git checkout master \n
+```
+git checkout master
 git pull
 git checkout your-branch-name
 git merge master
-``
+```
 
 Now your branch reflects all the changes made to the master.  To get
 your changes into the master, once you've pushed your branch to the
