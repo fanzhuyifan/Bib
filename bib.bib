@@ -8243,6 +8243,28 @@ pages = {805--849},
   year={2011},
 }
 
+
+@article{ChanShSo11,
+author = {T H Hubert Chan and Elaine Shi and Dawn Song}
+title = {Private and Continual Release of Statistics},
+year = 2011,
+journal = {ACM Transactions on Information and System Security},
+volume = 14,
+number = 3,
+pages = {26.1--26.24},
+comment = {Continuous continual release of sums of a binary sequence,
+  $\sum_{i = 1}^n x_i$, where $x_i \in \{0, 1\}$. Introduces a binary
+  tree mechanism, which represents a sum as a path in an interval
+  tree, so that $\sum_{i = 1}^n x_i$ is a path through $\log n$ elements
+  in the tree. By adding Laplace noise to each node in the tree,
+  gives privacy, and additional noise at most $\log^{3/2} n$  (as there
+  are $\log n$ elements getting summed, each with noise variance
+  roughly $\log n$). clean intuition and presentation.
+  See also DworkNaPiRo10.  Note: this mechanism extends to sums of
+  vectors as long as we can elements in a tree and sum along paths
+  of tree.},
+}
+
 @inproceedings{ChanShSo12,
 author = {T-H. Hubert Chan and Elaine Shi and Dawn Song},
 year = 2012,
@@ -13477,6 +13499,10 @@ year = 2010,
 booktitle = stoc10,
 pages = {715--724},
 publisher = acm,
+comment = {Introduces continual observation DP, as well as a tree-type
+mechanism (see ChanShSo11 for a---to me---cleaner presentation) for
+providing privacy for all releases of a sum $\sum_{i = 1}^n X_i$
+where $X_i$ are $\{0, 1\}$-valued.},
 }
 
 @article{DworkSm09,
@@ -38775,6 +38801,14 @@ pages = {107--115},
 	pages={7354--7363},
 	year={2019},
 }
+
+@article{ZhangKaBaYa20,
+author = {Kaiqing Zhang and Sham M. Kakade and Tamer Basar and Lin F. Yang},
+title = {Model-Based Multi-Agent RL in Zero-Sum {M}arkov Games with Near-Optimal Sample Complexity},
+year = 2020,
+journal = {arXiv:2007.07461 [cs.LG]},
+}
+
 
 @inproceedings{ZhangLeJo16,
   title={$\ell_1$-regularized neural networks are improperly
