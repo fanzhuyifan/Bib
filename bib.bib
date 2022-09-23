@@ -98,6 +98,10 @@ on Artificial Intelligence and Statistics}}
 		  Computational Learning Theory}}
 @string{colt20 = {Proceedings of the Thirty Third Annual Conference on
 	Computational Learning Theory}}
+@string{colt21 = {Proceedings of the Thirty Fourth Annual Conference on
+	Computational Learning Theory}}
+@string{colt22 = {Proceedings of the Thirty Fifth Annual Conference on
+	Computational Learning Theory}}
 
 
 @string{ecp = {Electronic Communications in Probability}}
@@ -568,6 +572,16 @@ publisher = {IEEE},
   booktitle={Artificial Intelligence and Statistics},
   pages={1--9},
   year={2012}
+}
+
+@article{AbbeBaHa15,
+author = {Emmanuel Abbe and Afonso Bandeira and Georgina Hall},
+title = {Exact recovery in the stochastic block model},
+year = 2015,
+journal = ieeeit,
+volume = 62,
+number = 1,
+pages = {471--487},
 }
 
 @phdthesis{Abbeel08,
@@ -1245,6 +1259,21 @@ year = 2013,
   pages={226--238},
   year=2007,
   publisher={Elsevier}
+}
+
+@inproceedings{AhnYuSr20,
+author = {Kwangjun Ahn and Chulhee Yun and Suvrit Sra},
+title = {{SGD} with shuffling: optimal rates without component
+  convexity and large epoch requirements},
+booktitle = nips2020,
+year = 2020,
+}
+
+@inproceedings{AhnSr20,
+author = {Kwangjun Ahn and Suvrit Sra},
+title = {From {N}esterov's estimate sequence to {R}iemannian acceleration},
+year = 2020,
+booktitle = colt20,
 }
 
 @inproceedings{AielloMi91,
@@ -2508,7 +2537,7 @@ journal = siopt,
 volume = 29,
 number = 3,
 pages = {2257--2290},
-url = {https://arXiv.org/abs/1810.05633},
+comment={url = {https://arXiv.org/abs/1810.05633}},
 }
 
 @inproceedings{AsiDu19aistats,
@@ -6772,6 +6801,17 @@ volume = 12,
 pages = {1655--1695},
 }
 
+@article{BubeckCeLu13,
+author = {S\'ebastien Bubeck and Nicol\'o Cesa-Bianchi and
+  G\'{a}bor Lugosi},
+title = {Bandits with heavy tail},
+journal = ieeeit,
+year = 2013,
+volume = 59,
+number = 11,
+pages = {7711--7717},
+}
+
 @article{BubeckCe12,
 author = {S\'ebastien Bubeck and Nicol\'o Cesa-Bianchi},
 title = {Regret analysis of stochastic and nonstochastic multi-armed bandit
@@ -7897,6 +7937,16 @@ address = {Beachwood, Ohio, USA},
 url = {https://arxiv.org/abs/0712.0248},
 }
 
+@article{Catoni12,
+author = {Olivier Catoni},
+title = {Challenging the empirical mean and empirical variance: a deviation study},
+year = 2012,
+journal = {Annales de l'Institut Henri Poincar\'{e}},
+volume = 48,
+number = 4,
+pages = {1148--1185},
+}
+
 @article{CauchoisAlDu21,
 author = {Maxime Cauchois and Alnur Ali and John Duchi},
 title = {A comment and erratum on ``{E}xcess Optimism: How Biased is the Apparent Error of an Estimator Tuned by {SURE}?''},
@@ -8913,6 +8963,14 @@ Author = {Shuxiao Chen and Qinqing Zheng and Qi Long and Weijie J. Su},
 Title = {A Theorem of the Alternative for Personalized Federated Learning},
 Year = {2021},
 journal = {arXiv:2103.01901 [stat.ML]},
+}
+
+@inproceedings{CherapanamjeriTrBaJo22,
+author = {Yeshwanth Cherapanamjeri and Nilesh Tripuraneni and
+  Peter Bartlett and Michael Jordan},
+title = {Optimal Mean Estimation without a Variance},
+year = 2022,
+booktitle = colt22,
 }
 
 @article{CheriditoDeKu04,
@@ -11470,6 +11528,19 @@ publisher = {John Wiley and Sons},
   year = 	 1996,
 }
 
+@article{DevroyeLeLuOl16,
+author = {Luc Devroye and Matthieu Lerasle and G\'{a}bor Lugosi and Roberto
+  Oliveira},
+title = {Sub-{G}aussian mean estimators},
+year = 2016,
+journal = aos,
+volume = 44,
+number = 6,
+pages = {2695--2725},
+comment = {Investigates upper and lower bounds for the size of confidence
+  intervals with sub-Gaussian type coverage for 1-dimensional means.},
+}
+
 @article{DezeureBuMeME15,
 author = {Ruben Dezeure and Peter B\"uhlmann and Lukas Meier and
 Nicolai Meinshausen},
@@ -12423,10 +12494,10 @@ note = {Accessed May 2021},
 url = {http://web.stanford.edu/class/stats311/lecture-notes.pdf},
 }
 
-@misc{Duchi15,
+@misc{Duchi20,
 author = {John C. Duchi},
 title = {Stats311/{EE}377: Information theory and statistics},
-year = 2015,
+year = 2020,
 month = {Fall},
 howpublished = {Course at Stanford University},
 url = {http://web.stanford.edu/class/stats311},
@@ -14929,6 +15000,15 @@ year=		1988
 	author={Flokas, Lampros and Vlatakis-Gkaragkounis, Emmanouil-Vasileios and Piliouras, Georgios},
 	booktitle=nips2019,
 	year={2019}
+}
+
+@book{Folland99,
+author = {Gerald Folland},
+title = {Real Analysis: Modern Techniques and their Applications},
+publisher = {John Wiley \& Sons},
+year = 1999,
+series = {Pure and Applied Mathematics},
+edition = {Second},
 }
 
 @article{FollmerSc02,
@@ -17658,7 +17738,14 @@ journal = {arXiv:2105.03067 [stat.ME]},
  publisher = {ACM},
 }
 
-
+@article{GurbuzbalabanOzPa21,
+author = {Mert G\"{u}rb\"{u}zbalaban and Asu Ozdaglar and Pablo Parrilo},
+title = {Why random reshuffling beats stochastic gradient descent},
+year = 2021,
+journal = mathproga,
+volume = 186,
+pages = {49--84},
+}
 
 @InProceedings{GuruswamiSa99,
   author = 	 {Venkatesan Guruswami and Amit Sahai},
@@ -18204,7 +18291,6 @@ title = {On the geometry of differential privacy},
 year = 2010,
 booktitle = stoc10,
 pages = {705--714},
-url = {http://arxiv.org/abs/0907.3754},
 comment = {
   Give lower bounds on the amount of noise necessary to add for answering
   queries of the form y = Fx, where x is a vector in \R^n and
@@ -18218,6 +18304,7 @@ comment = {
   force more than mass 1 to the resulting distribution.
   For many queries, we get lower bounds that scale as
   d/\epsilon \min\{\sqrt{d}, \sqrt{\log(n/d)}\}
+url = {http://arxiv.org/abs/0907.3754},
 },
 }
 
@@ -29268,6 +29355,14 @@ number = 2,
 pages = {660–681},
 }
 
+@inproceedings{PerdomoZrMeHa20,
+author = {Juan Perdomo and Tijana Zrnic and
+  Celestine Mendler-D\"{u}nner and Moritz Hardt},
+title = {Performative Prediction},
+year = 2020,
+booktitle = icml20,
+}
+
 @inproceedings{PereiraRiSp??
 ,author=	{Fernando Pereira and Michael Riley and Richard
 		 Sproat}
@@ -34602,6 +34697,16 @@ year = 1994,
 publisher = {Ellis Horwood},
 }
 
+@article{SraHo15,
+author = {Suvrit Sra and Reshad Hosseini},
+title = {Conic Geometric Optimization on the Manifold of Positive Definite Matrices},
+journal = siopt,
+year = 2015,
+volume = 25,
+number = 1,
+pages = {713--739},
+}
+
 @inproceedings{SrebroSrTe10,
   title={Smoothness, low noise and fast rates},
   author={Srebro, Nathan and Sridharan, Karthik and Tewari, Ambuj},
@@ -38900,6 +39005,14 @@ pages = {107--115},
 	year={2019},
 }
 
+@inproceedings{ZhangHeSrJa20,
+author = {Jingzhao Zhang and Tianxing He and Suvrit Sra and Ali Jadbabaie},
+title = {Why gradient clipping accelerates training: a theoretical justification
+  for adaptivity},
+year = 2020,
+booktitle = iclr20,
+}
+
 @article{ZhangKaBaYa20,
 author = {Kaiqing Zhang and Sham M. Kakade and Tamer Basar and Lin F. Yang},
 title = {Model-Based Multi-Agent RL in Zero-Sum {M}arkov Games with Near-Optimal Sample Complexity},
@@ -38907,6 +39020,14 @@ year = 2020,
 journal = {arXiv:2007.07461 [cs.LG]},
 }
 
+@inproceedings{ZhangKaVeKiReKuSr20,
+author = {Jingzhao Zhang and Sai Praneeth Karimireddy and
+  Andreas Veit and Seungyeon Kim and Shashank Reddi and Sanjiv Kumar
+  and Suvrit Sra},
+title = {Why are adaptive methods good for attention models?},
+year = 2020,
+booktitle = nips2020,
+}
 
 @inproceedings{ZhangLeJo16,
   title={$\ell_1$-regularized neural networks are improperly
@@ -38991,6 +39112,20 @@ number = 5,
 	pages={2110--2142},
 	year={2017},
 	publisher={SIAM}
+}
+
+@inproceedings{ZhangSr16,
+author = {Hongyi Zhang and Suvrit Sra},
+title = {First-order methods for geodesically convex optimization},
+year = 2016,
+booktitle = colt16,
+}
+
+@inproceedings{ZhangSr18,
+author = {Hongyi Zhang and Suvrit Sra},
+title = {An estimate sequence for geodesically convex optimization},
+year = 2018,
+booktitle = colt18,
 }
 
 @inproceedings{ZhangWaJo14,
