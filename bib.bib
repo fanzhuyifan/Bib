@@ -23164,6 +23164,38 @@ comment=  	{Uses maximum entropy solution to derive minimum discrimination
   publisher={Springer}
 }
 
+@inproceedings{KumarRaJoMaLi22,
+author = {Ananya Kumar and Aditi Raghunathan and Robbie Jones
+  and Tengyu Ma and Percy Liang},
+title = {Fine-Tuning can Distort Pretrained Features and Underperform Out-of-Distribution},
+booktitle = iclr22,
+year = 2022,
+comment = {
+  Considers the following fine tuning setting: we have an initialized
+  data representation (feature extractor), typically arising from something
+  like pre-training a CLIP model or similar. Then there are downstream
+  classification (or other prediction tasks) on two distributions,
+  $P_{id}$ and $P_{ood}$ (in and out of domain). From the initial network,
+  we train on data coming from $P_{id}$, using one of two strategies:
+  (i) linear probing (i.e., training the last layer), and (ii) full fine-tuning,
+  where we use gradient descent on the entire network for data from $P_{id}$.
+  We then evaluate on held-out data from both $P_{id}$ and $P_{ood}$.
+
+  The question is which of strategy (i) or (ii) performs better on which
+  tasks, and it turns out that (ii) is better for $P_{id}$, but
+  worse for held-out data from $P_{ood}$. On a theoretical model of
+  predicting a no-noise signal $y = v^T B x$, where $v, B$ represent the
+  top layer and middle of a neural network, the model predicts roughly
+  that a gradient flow on data from $P_{id}$, when initialized with a poor
+  ``head'' vector (top layer $v$), will modify its $B$ representation
+  so substantially that it screws up $P_{ood}$. A fix is to
+  \emph{first} fit the top layer, \emph{then} fine tune the whole network.
+
+  Experiments are interesting on a number of paired datasets with shifts;
+  pretrained on a larger vision dataset (COCO or soemthing).
+}
+}
+
 @inproceedings{KunduRo11,
 author = {Gourab Kundu and Dan Roth},
 title = {Adapting Text instead of the Model: An Open Domain Approach},
