@@ -502,7 +502,8 @@ Learning Representations}}
   in Artificial Intelligence}}
 @string{uai11 = {Proceedings of the 27th Conference on Uncertainty
   in Artificial Intelligence}}
-
+@string{uai22 = {Proceedings of the 38th Conference on Uncertainty
+  in Artificial Intelligence}}
 
 
 @string{allerton10 = {The 48th Allerton Conference on Communication, Control,
@@ -8770,6 +8771,25 @@ pages = {1173--1183}
   pages={339--348},
   year=2019,
   organization={ACM}
+}
+
+@inproceedings{ChenKoNoHi20,
+author = {Ting Chen and Simon Kornblith and Mohammad Norouzi and
+  Geoffrey Hinton},
+title = {A Simple Framework for Contrastive Learning of Visual Representations},
+year = 2020,
+booktitle = icml20,
+comment = {Investigates contrastive learning, where one attempts to find
+  multi-layer embeddings (e.g., to get features) by making it so that
+  different parts or transformations of the same image embed to similar
+  vectors. Defines a loss which is just log-sum-exp: for a particular
+  similarity metric $s(x, z)$, minimizes losses of the form
+  $\log(\sum_{i = 0}^k \exp(s(x, z_i) - s(x, z_0)))$, where
+  $x, z_0$ are the embeddings of the (augmentations) from the same
+  image, and $z_i$ are from different images. A lot of empirical
+  ablation studies, but it seems to work well.
+  (Not clear to John exactly what matters at this point.)
+},
 }
 
 @article{ChenLaOu17,
@@ -23164,6 +23184,25 @@ comment=  	{Uses maximum entropy solution to derive minimum discrimination
   publisher={Springer}
 }
 
+@inproceedings{KumarLiMa19,
+author = {Ananya Kumar and Percy Liang and Tengyu Ma},
+title = {Verified Uncertainty Calibration},
+year = 2019,
+booktitle = nips2019,
+comment = {Shows failures of things like Platt scaling, and introduces
+  a joint binning/scaling procedure to achieve better calibration with
+  reasonably fast rates of convergence.},
+}
+
+@inproceedings{KumarMaLiRa22,
+author = {Ananya Kumar and Tengyu Ma and Percy Liang and Aditi Raghunathan},
+booktitle = uai22,
+year = 2022,
+title = {Calibrated ensembles can mitigate accuracy tradeoffs under
+  distribution shift},
+}
+
+
 @inproceedings{KumarRaJoMaLi22,
 author = {Ananya Kumar and Aditi Raghunathan and Robbie Jones
   and Tengyu Ma and Percy Liang},
@@ -29934,6 +29973,17 @@ pages = {347--353},
 	year = 1998
 }
 
+@incollection{Platt99,
+author = {John C. Platt},
+title = {Probabilistic outputs for support vector machines and comparisons
+to regularized likelihood methods},
+year = 1999,
+booktitle = {Advances in Large Margin Classifiers},
+pages = {61--74},
+publisher = {MIT Press},
+}
+
+
 @incollection{PlattCrSh00,
 	author = "J.~C. Platt and N. Cristianini and J. Shawe-Taylor",
 	title = "Large Margin {DAG}s for Multiclass Classification",
@@ -30501,7 +30551,7 @@ booktitle = icml16,
 
 @inproceedings{RajpurkarJiLi18,
     author = {Pranav Rajpurkar and Robin Jia and Percy Liang},
-    title = {Know What You Don't Know: Unanswerable Questions for SQuAD},
+    title = {Know What You Don't Know: Unanswerable Questions for {SQuAD}},
     booktitle = acl,
     year = 2018,
 }
@@ -33073,6 +33123,14 @@ pages = {1000--1017}
 }
 
 
+@article{SchuhmannBeVeGoWiChCoKaMuWoScKuCrScKaJi22,
+author = {Christoph Schuhmann and  Romain Beaumont and  Richard Vencu and  Cade Gordon and  Ross Wightman and  Mehdi Cherti and  Theo Coombes and  Aarush Katta and  Clayton Mullis and  Mitchell Wortsman and  Patrick Schramowski and  Srivatsa Kundurthy and  Katherine Crowson and  Ludwig Schmidt and  Robert Kaczmarczyk and  Jenia Jitsev},
+title = {{LAION-5B}: An open large-scale dataset for training next
+generation image-text models},
+year = 2022,
+journal = {arXiv:2210.08402 [cs.CV]},
+}
+
 @InProceedings{SchutzeSi94,
 	author = "H. Schutze and Y. Singer",
 	title = "Part-of-speech tagging using a variable memory {Markov} model",
@@ -35492,6 +35550,17 @@ author = {Terence Tao},
 title = {The {B}runn-{M}inkowski inequality for nilpotent groups},
 year = 2011,
 note = {URL \url{http://terrytao.wordpress.com/tag/prekopa-leindler-inequality/}},
+}
+
+@inproceedings{TaoriDaShCaReSc20,
+author={Rohan Taori and Achal Dave and Vaishaal Shankar and
+	Nicholas Carlini and Benjamin Recht and Ludwig Schmidt},
+title = {Measuring Robustness to Natural
+Distribution Shifts in Image Classification},
+year = 2020,
+booktitle = nips2020,
+abstract = {We study how robust current ImageNet models are to distribution shifts arising from natural variations in datasets. Most research on robustness focuses on synthetic image perturbations (noise, simulated weather artifacts, adversarial examples, etc.), which leaves open how robustness on synthetic distribution shift relates to distribution shift arising in real data. Informed by an evaluation of 204 ImageNet models in 213 different test conditions, we find that there is often little to no transfer of robustness from current synthetic to natural distribution shift. Moreover, most current techniques provide no robustness to the natural distribution shifts in our testbed. The main exception is training on larger and more diverse datasets, which in multiple cases increases robustness, but is still far from closing the performance gaps. Our results indicate that distribution shifts arising in real data are currently an open research problem.
+},
 }
 
 @unpublished{TaoriDaShCaReSc19,
