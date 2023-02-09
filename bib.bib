@@ -259,8 +259,6 @@ Management of Data (SIGMOD)}}
 		  Symposium on the Theory of Computing}}
 @string{stoc20 = {Proceedings of the Fifty-Second Annual ACM
 		  Symposium on the Theory of Computing}}
-@string{stoc21 = {Proceedings of the Fifty-Third Annual ACM
-		  Symposium on the Theory of Computing}}
 @string{stoc22 = {Proceedings of the Fifty-Fourth Annual ACM
 		  Symposium on the Theory of Computing}}
 
@@ -407,7 +405,6 @@ Management of Data (SIGMOD)}}
 @string{nips2018= {Advances in Neural Information Processing Systems 31}} % 2018
 @string{nips2019= {Advances in Neural Information Processing Systems 32}} % 2019
 @string{nips2020= {Advances in Neural Information Processing Systems 33}} % 2020
-@string{nips2021= {Advances in Neural Information Processing Systems 34}} % 2021
 
 @string{sigir88={Proceedings of the 11th Annual International
 		  ACM SIGIR Conference on Research and Development in
@@ -10046,7 +10043,7 @@ pages = {160--199},
 }
 
 @book{Cramer46,
-author = {Harald Cramér},
+author = {Harald Cram\'{e}r},
 title = {Mathematical Methods in Statistics},
 year = {1946},
 publisher = {Princeton University Press},
@@ -12116,6 +12113,32 @@ title = {Breakdown properties of multivariate location estimators},
 howpublished = {Harvard University, qualifying paper, Department of
   Statistics},
 year = 1982,
+}
+
+@article{Donoho88,
+author = {David Donoho},
+title = {One-sided inference about functionals of a density},
+year = 1988,
+journal = aos,
+volume = 16,
+number = 4,
+pages = {1390--1420},
+comment = {Studies the (truly nonparametric) estimation of various density
+  functionals, including $L_p$ norms $(\int |f^{(k)}|^p)^{1/p}$, Fisher
+  information, or numbers of modes. While estimating these is impossible,
+  basically because they are discontinuous in the total variation metric
+  (because we can add a tiny little bit to a density and drastically change
+  the functionals), we can estimate \emph{lower bounds}. Basically,
+  the lower bounds are often lower semicontinuous with respect to the
+  Kolmogorov-Smirnov metric, which gets small with i.i.d.\ sampling. Then
+  one can get reasonable lower bounds by this lower semicontinuity.
+  An alternative perspective is that if the density is ``nice'' enough
+  that the functional of interest has a given value, it won't get much smaller
+  with nearby (slightly smoother) densities. Roughly, these estimates of
+  ``complexity'' can be empirically lower bounded, but we cannot eliminate
+  the possibility of much more complex mechanisms. (Compare, e.g., to the
+  lifetime of a proton: it must be long because the universe hasn't exploded!)
+  },
 }
 
 @article{DonohoGa92,
@@ -18059,6 +18082,20 @@ Computational Linguistics (HLT/ACL)},
 pages = {771--779},
 }
 
+@article{HaghtalabJaPr21,
+author = {Nika Haghtalab and Matthew O. Jackson and Ariel D. Procaccia},
+title = {Belief polarization in a complex word: a learning theory perspective},
+year = 2021,
+journal = pnas,
+volume = 118,
+number = 19,
+comment = {Shows via a few cute examples how ``polarization'' might happen
+  naturally in simple settings. For example, by enforcing a memory limitation
+  on a linear classifier, two classifiers might disagree substantially
+  even if they do ``optimally'' on two samples from the same population
+  distribution.},
+}
+
 @inproceedings{Hajek72,
 author = {Jaroslav H\'{a}jek},
 title = {Local asymptotic minimax and admissibility in estimation},
@@ -18217,10 +18254,11 @@ note = 		{In book entitled {\sl How to Write Mathematics}, by
 		J.A. Dieudonn\'e}
 }
 
-@book{Hampel68,
-  title={Contributions to the theory of robust estimation},
+@phdthesis{Hampel68,
+  title={Contributions to the Theory of Robust Estimation},
   author={Frank Hampel},
-  year={1968}
+  year={1968},
+  school={University of California, Berkeley},  
 }
 
 @book{HampelRoRoSt86,
@@ -19916,7 +19954,7 @@ year = 		{1979},
 address = 	{Reading, MA}
 }
 
-@article{HopkinsKaMa22,
+@inproceedings{HopkinsKaMa22,
 author = {Samuel B. Hopkins and Gautam Kamath and Mahbod Majid},
 title = {Efficient mean estimation with pure differential privacy via a sum-of-squares exponential mechanism},
 booktitle = stoc22,
@@ -36640,11 +36678,15 @@ toward lower bounds and oracle inequalities. Readable for young students,
 and nice proofs of some Sobolev class inequalities and containments.},
 }
 
-@book{Tukey60,
+@incollection{Tukey60,
 author = {John W. Tukey},
 title = {A survey of sampling from contaminated distributions},
+booktitle = {Contributions to Probability and Statistics: Essays in Honor of
+  Harold Hotelling},
 year = 1960,
-publisher = {Princeton University}
+publisher = {Stanford University Press},
+series = {Stanford Studies in Mathematics and Statistics},
+volume = 2,
 }
 
 @inproceedings{TuBoSiSoRe16,

@@ -118,6 +118,30 @@
 }
 \makeatother
 
+%%% New version of \maketitle puts things in cooler fonts for the title
+%%% and centers names
+\makeatletter
+\def\@maketitle{%
+  \newpage
+  \null
+  \vskip -1em%
+  \begin{center}%
+    \let \footnote \thanks
+    \vskip -1em%
+    {\Large \textsc{\@title} \par}%
+    \vskip 1em%
+    {\large
+      \lineskip .5em%
+      \begin{tabular}[t]{c}%
+        \@author
+      \end{tabular}\par}%
+    \vskip 1em%
+    {\large \@date}%
+  \end{center}%
+  \par
+  \vskip 1.5em}
+\makeatother
+
 \newcommand{\red}[1]{\textcolor{red}{#1}}
 \newcommand{\blue}[1]{\textcolor{blue}{#1}}
 \newcommand{\darkblue}[1]{\textcolor{darkblue}{#1}}
@@ -171,6 +195,7 @@
 \newcommand{\ball}{\mathbb{B}}
 
 \newcommand{\normal}{\mathsf{N}}  % Normal distribution
+\newcommand{\expdist}{\mathsf{Exp}}  % Exponential distribution
 \newcommand{\uniform}{\mathsf{Uni}}  % Uniform distribution
 \newcommand{\gammadist}{\mathsf{Gamma}}  % Gamma distribution
 \newcommand{\laplace}{\mathsf{Lap}}  % Laplace distribution
