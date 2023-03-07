@@ -31964,7 +31964,16 @@ title = {The Risks of Invariant Risk Minimization},
 year = 2021,
 booktitle = iclr21,
 comment = {Gives theoretical examples where Invariant Risk Minimization
-  just does completely the wrong thing and fits a bad model.},
+  just does completely the wrong thing and fits a bad model. Simple
+  explanation/version: there are constant features $x_c$ and
+  non-constant $x_e$ (per environment), generated from Gaussian
+  $x_c \sim \normal(y \mu_c, \sigma^2 I)$ and $x_e \sim \normal(y \mu_e,
+  \sigma^2 I)$, where $\mu_e$ changes per environment $e$. Then
+  if the number of environments $E$ is smaller than $d_e$ (the dimension
+  of environmental features), there are predictors with substantially
+  lower risk that use the per-environment features (this is natural; one
+  can always encode them so they don't hurt because the dimension is high
+  enough!).},
 }
 
 @article{Rosenthal70,
@@ -39762,6 +39771,22 @@ pages = {2541-2567},
                   Kuhn11.}
 }
 
+
+@InProceedings{ZhouGu18,
+	title={Stochastic variance-reduced cubic regularized {N}ewton methods},
+	author={Zhou, Dongruo and Xu, Pan and Gu, Quanquan},
+	booktitle=icml18,
+	year={2018}
+}
+
+@InProceedings{ZhouGu19,
+	title = 	 {Lower Bounds for Smooth Nonconvex Finite-Sum
+	Optimization},
+	author = 	 {Zhou, Dongruo and Gu, Quanquan},
+	booktitle = 	icml19,
+	year = 	 {2019},
+}
+
 @article{ZhouHu14,
   title={Gradient-based adaptive stochastic search for non-differentiable optimization},
   author={Zhou, Enlu and Hu, Jiaqiao},
@@ -39777,19 +39802,26 @@ pages = {2541-2567},
                   polynomially growing sample sizes.}
 }
 
-@InProceedings{ZhouGu18,
-	title={Stochastic variance-reduced cubic regularized {N}ewton methods},
-	author={Zhou, Dongruo and Xu, Pan and Gu, Quanquan},
-	booktitle=icml18,
-	year={2018}
-}
-
-@InProceedings{ZhouGu19,
-	title = 	 {Lower Bounds for Smooth Nonconvex Finite-Sum
-	Optimization},
-	author = 	 {Zhou, Dongruo and Gu, Quanquan},
-	booktitle = 	icml19,
-	year = 	 {2019},
+@inproceedings{ZhouKoSuSuSr22,
+author = {Lijia Zhou and Frederic Koehler and Pragya Sur and Danica Sutherland and Nathan Srebro},
+title = {A non-asymptotic {M}oreau envelope theory for high-dimensional
+  generalized linear models},
+year = 2022,
+booktitle = nips2022,
+comment = {Uses a Gaussian min-max theorem to provide (one-sided) convergence
+  guarantees for Moreau-regularized losses. Starting from recognition that
+  it's often easier to prove one-sided bounds of the form
+  $Pf \le P_n f + R_n$, where $R_n$ is some (small with high-probability)
+  remainder term---think, e.g., of random functions with a good ratio
+  of 4th to 2nd moments---then (by assuming certain Gaussianity of features)
+  shows that it is possible to give uniform convergence guarantees of the form
+  $L_\lambda(w) \le P_n \ell(w, Z) + R_n$ with high probability. Here,
+  $L_\lambda(w) = \inf_u \{L(u) + \lambda \norm{u - w}^2\}$ and
+  $L(u) = P \ell(w, Z)$ is the population expectation of a given loss, and
+  we assume $Z$ is a Gaussian random vector. This representation allows
+  application of Gaussian min/max duality theorems and high-probability
+  guarantees.
+},
 }
 
 @article{ZhouLaWa09,
