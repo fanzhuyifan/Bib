@@ -13956,6 +13956,18 @@ comment = {
 },
 }
 
+@inproceedings{DworkSmStUlVa15,
+title = {Robust Traceability from Trace Amounts},
+author = Cynthia Dwork and Adam Smith and Thomas Steinke and
+  Jonathan Ullman and Salil Vadhan},
+year = 2015,
+booktitle = focs15,
+note = {Long version available at \url{https://jonathan-ullman.github.io/assets/tracing.pdf}},
+comment = {Develops some Stein-type identities that say if one releases
+  marginal statistics with any accuracy, then one can recover individual's
+  presence in datasets. Also used by KamathLiSiUl19.},
+}
+
 @inproceedings{DworkTaThZh14,
 	title={Analyze {G}auss: optimal bounds for privacy-preserving principal
 	component analysis},
@@ -21724,14 +21736,18 @@ comment = {Considers problem of simulating a sample (U, V) from a joint
   X - Y piece).},
 }
 
-@article{KamathLiSiUl18,
+@inproceedings{KamathLiSiUl19,
 author    = {Gautam Kamath and
                Jerry Li and
                Vikrant Singhal and
                Jonathan R. Ullman},
 title     = {Privately Learning High-Dimensional Distributions},
-year = 2018,
-journal = {arXiv:1805.00216 [cs.DS]},
+year = 2019,
+booktitle = colt19,
+comment = {arXiv:1805.00216 [cs.DS]. Shows upper and lower bounds for
+  estimating $d$-dimensional distributions; lower bounds use Stein-type
+  identities to show that either a function is correlated with a sample
+  mean or it has high error. Builds off of identities in DworkSmStUlVa15.},
 }
 
 @article{KamzolovGa20,
