@@ -379,6 +379,8 @@ Management of Data (SIGMOD)}}
    Discovery and Data Mining (KDD)}},
 @string{kdd13 = {Proceedings of the 19th ACM SIGKDD Conference on Knowledge
    Discovery and Data Mining (KDD)}},
+@string{kdd16 = {Proceedings of the 22nd ACM SIGKDD Conference on Knowledge
+    Discovery and Data Mining (KDD)}},
 @string{kdd17 = {Proceedings of the 23rd ACM SIGKDD Conference on Knowledge
    Discovery and Data Mining (KDD)}},
 
@@ -8982,64 +8984,6 @@ number = 2,
 pages = {1173--1183}
 }
 
-@article{ChenGl96,
-  title={Two-dimensional discrete scan statistics},
-  author={Chen, Jie and Glaz, Joseph},
-  journal={Statistics \& probability letters},
-  volume={31},
-  number={1},
-  pages={59--68},
-  year={1996},
-  publisher={Elsevier}
-}
-
-@inproceedings{ChenKaMaSvUd19,
-  title={Fairness Under Unawareness: Assessing Disparity When Protected Class Is Unobserved},
-  author={Chen, Jiahao and Kallus, Nathan and Mao, Xiaojie and Svacha, Geoffry and Udell, Madeleine},
-  booktitle={Proceedings of the Conference on Fairness, Accountability, and Transparency},
-  pages={339--348},
-  year=2019,
-  organization={ACM}
-}
-
-@inproceedings{ChenKoNoHi20,
-author = {Ting Chen and Simon Kornblith and Mohammad Norouzi and
-  Geoffrey Hinton},
-title = {A Simple Framework for Contrastive Learning of Visual Representations},
-year = 2020,
-booktitle = icml20,
-comment = {Investigates contrastive learning, where one attempts to find
-  multi-layer embeddings (e.g., to get features) by making it so that
-  different parts or transformations of the same image embed to similar
-  vectors. Defines a loss which is just log-sum-exp: for a particular
-  similarity metric $s(x, z)$, minimizes losses of the form
-  $\log(\sum_{i = 0}^k \exp(s(x, z_i) - s(x, z_0)))$, where
-  $x, z_0$ are the embeddings of the (augmentations) from the same
-  image, and $z_i$ are from different images. A lot of empirical
-  ablation studies, but it seems to work well.
-  (Not clear to John exactly what matters at this point.)
-},
-}
-
-@article{ChenLaOu17,
-  title={Accelerated schemes for a class of variational inequalities},
-  author={Chen, Yunmei and Lan, Guanghui and Ouyang, Yuyuan},
-  journal={Mathematical Programming},
-  volume=165,
-  number=1,
-  pages={113--149},
-  year=2017,
-  publisher={Springer}
-}
-
-@article{ChenSh98,
-  title={Sieve extremum estimates for weakly dependent data},
-  author={Chen, Xiaohong and Shen, Xiaotong},
-  journal={Econometrica},
-  pages={289--314},
-  year=1998
-}
-
 @article{ChengAsDu22,
 author = {Chen Cheng and Hilal Asi and John Duchi},
 title = {How many labelers do you have? A closer look at gold-standard labels},
@@ -9101,13 +9045,6 @@ number = 2,
 volume = 10,
 }
 
-@book{ChenGoSh10,
-	title={Normal Approximation by Stein’s method},
-	author={Chen, Louis HY and Goldstein, Larry and Shao, Qi-Man},
-	year={2010},
-	publisher={Springer},
-}
-
 @article{ChenGiTr12,
 author = {Richard Chen and Alex Gittens and Joel A. Tropp},
 title = {The masked sample covariance estimator: an analysis using matrix
@@ -9115,6 +9052,71 @@ concentration inequalities},
 year = 2012,
 journal = {Information and Inference},
 volume = {to appear},
+}
+
+@article{ChenGl96,
+  title={Two-dimensional discrete scan statistics},
+  author={Chen, Jie and Glaz, Joseph},
+  journal={Statistics \& probability letters},
+  volume={31},
+  number={1},
+  pages={59--68},
+  year={1996},
+  publisher={Elsevier}
+}
+
+@book{ChenGoSh10,
+	title={Normal Approximation by Stein’s method},
+	author={Chen, Louis HY and Goldstein, Larry and Shao, Qi-Man},
+	year={2010},
+	publisher={Springer},
+}
+
+@inproceedings{ChenGu16,
+author = {Tianqi Chen and Carlos Guestrin},
+title = {{XGB}oost: A Scalable Tree Boosting System},
+year = 2016,
+booktitle = kdd16,
+pages = {785--794},
+}
+
+@inproceedings{ChenKaMaSvUd19,
+  title={Fairness Under Unawareness: Assessing Disparity When Protected Class Is Unobserved},
+  author={Chen, Jiahao and Kallus, Nathan and Mao, Xiaojie and Svacha, Geoffry and Udell, Madeleine},
+  booktitle={Proceedings of the Conference on Fairness, Accountability, and Transparency},
+  pages={339--348},
+  year=2019,
+  organization={ACM}
+}
+
+@inproceedings{ChenKoNoHi20,
+author = {Ting Chen and Simon Kornblith and Mohammad Norouzi and
+  Geoffrey Hinton},
+title = {A Simple Framework for Contrastive Learning of Visual Representations},
+year = 2020,
+booktitle = icml20,
+comment = {Investigates contrastive learning, where one attempts to find
+  multi-layer embeddings (e.g., to get features) by making it so that
+  different parts or transformations of the same image embed to similar
+  vectors. Defines a loss which is just log-sum-exp: for a particular
+  similarity metric $s(x, z)$, minimizes losses of the form
+  $\log(\sum_{i = 0}^k \exp(s(x, z_i) - s(x, z_0)))$, where
+  $x, z_0$ are the embeddings of the (augmentations) from the same
+  image, and $z_i$ are from different images. A lot of empirical
+  ablation studies, but it seems to work well.
+  (Not clear to John exactly what matters at this point.)
+},
+}
+
+@article{ChenLaOu17,
+  title={Accelerated schemes for a class of variational inequalities},
+  author={Chen, Yunmei and Lan, Guanghui and Ouyang, Yuyuan},
+  journal={Mathematical Programming},
+  volume=165,
+  number=1,
+  pages={113--149},
+  year=2017,
+  publisher={Springer}
 }
 
 @article{ChenLeToZh16,
@@ -9185,6 +9187,14 @@ pages = {421--444},
   pages={711--722},
   year=2009,
   publisher={Biometrika Trust}
+}
+
+@article{ChenSh98,
+  title={Sieve extremum estimates for weakly dependent data},
+  author={Chen, Xiaohong and Shen, Xiaotong},
+  journal={Econometrica},
+  pages={289--314},
+  year=1998
 }
 
 @article{ChenSiSu07,
@@ -18048,7 +18058,7 @@ url = {http://www.cis.upenn.edu/~sudipto/mypapers/unsketchables.pdf},
 
 @article{GuiguesKrSh18,
   title={A Central Limit Theorem and Hypotheses Testing for Risk-averse Stochastic Programs},
-  author={Guigues, Vincent and Krätschmer, Volker and Shapiro, Alexander},
+  author={Guigues, Vincent and Kr\"{a}tschmer, Volker and Shapiro, Alexander},
   journal={SIAM Journal on Optimization},
   volume=28,
   number=2,
@@ -32156,6 +32166,28 @@ pages = {1064--1082},
     year = "1994",
 }
 
+@article{RobinsRo95,
+  title = {Semiparametric efficiency in multivariate regression models with missing data},
+  author = {Robins, James M and Rotnitzky, Andrea},
+  journal = {Journal of the American Statistical Association},
+  volume = {90},
+  number = {429},
+  pages = {122--129},
+  year = {1995},
+  publisher = {Taylor \& Francis}
+}
+
+@article{RobinsRoZh94,
+  title={Estimation of regression coefficients when some regressors are not always observed},
+  author={Robins, James M and Rotnitzky, Andrea and Zhao, Lue Ping},
+  journal={Journal of the American Statistical Association},
+  volume={89},
+  number={427},
+  pages={846--866},
+  year={1994},
+  publisher={Taylor \& Francis}
+}
+
 @article{Rockafellar69,
 author = {R. Tyrell Rockafellar},
 title = {Measurable Dependence of Convex Sets and Functions on Parameters},
@@ -32634,6 +32666,15 @@ journal = jasa,
 pages = {322--331},
 volume = 100,
 number = 469,
+}
+
+@incollection{Rubin18,
+  title={Multiple imputation},
+  author={Rubin, Donald B},
+  booktitle={Flexible Imputation of Missing Data, Second Edition},
+  pages={29--62},
+  year={2018},
+  publisher={Chapman and Hall/CRC},
 }
 
 @book{Rubinstein81,
@@ -33336,6 +33377,13 @@ comment = {Shows (among other results) that if a function
 ,author=	{D. Sarkar}
 ,title=		{Nonsubscriber card behavior score model development
 		--- overlimit accounts}
+}
+
+@book{SarndalSwWr03,
+  title = {Model assisted survey sampling},
+  author = {S{\"a}rndal, Carl-Erik and Swensson, Bengt and Wretman, Jan},
+  year = {2003},
+  publisher = {Springer Science \& Business Media},
 }
 
 @unknown{Saul98
@@ -37108,6 +37156,13 @@ year = 2008,
 url = {http://www.mit.edu/~dimitrib/PTseng/papers/apgm.pdf},
 comment = {note = {URL
 \url{http://www.mit.edu/~dimitrib/PTseng/papers/apgm.pdf}}},
+}
+
+@book{Tsiatis06,
+ author = {Anastasios Tsiatis},
+ title = {Semiparametric Theory and Missing Data},
+ year = 2006,
+ publisher = {Springer},
 }
 
 @inproceedings{TsiprasSaEnTuMa19,
