@@ -2,7 +2,7 @@
 \usepackage{amssymb}
 \usepackage{amsbsy}
 \usepackage{amsmath}
-\usepackage{amsthm}
+% \usepackage{amsthm}
 \usepackage{amsfonts}
 \usepackage{latexsym}
 \usepackage{graphicx}
@@ -186,7 +186,7 @@
 \newcommand{\tvnorms}[1]{\norms{#1}_{\rm TV}}
 \newcommand{\fdiv}[2]{D_{f}\left({#1} |\!| {#2}\right)}
 \newcommand{\fdivs}[2]{D_{f}({#1} |\!| {#2})}
-\newcommand{\dkl}[2]{D_{\rm kl}\left({#1} |\!| {#2}\right)}
+\newcommand{\dkl}[2]{D_{\textrm{kl}}\left({#1} |\!| {#2}\right)}
 \newcommand{\dkls}[2]{D_{\rm kl}({#1} |\!| {#2})}  % Small KL-divergence
 \newcommand{\dchi}[2]{D_{\chi^2}\left({#1} |\!| {#2}\right)}
 \newcommand{\dhel}{d_{\rm hel}}
@@ -246,17 +246,17 @@
 % Lemmas are numbered by section, and observations, claims, facts, and 
 % assumptions take their numbering. Propositions and definitions have their
 % own numbering by section.
-\newtheorem{theorem}{Theorem}
-\newtheorem{lemma}{Lemma}[section]
-\newtheorem*{lemma*}{Lemma}
-\newtheorem{corollary}{Corollary}[section]
-\newtheorem{observation}[theorem]{Observation}
-\newtheorem{proposition}{Proposition}
-\newtheorem{definition}{Definition}[section]
-\newtheorem{claim}{Claim}[section]
-\newtheorem{fact}[theorem]{Fact}
-\newtheorem{assumption}{Assumption}
-\newtheorem{conjecture}[theorem]{Conjecture}
+% \newtheorem{theorem}{Theorem}
+% \newtheorem{lemma}{Lemma}[section]
+% \newtheorem*{lemma*}{Lemma}
+% \newtheorem{corollary}{Corollary}[section]
+% \newtheorem{observation}[theorem]{Observation}
+% \newtheorem{proposition}{Proposition}
+% \newtheorem{definition}{Definition}[section]
+% \newtheorem{claim}{Claim}[section]
+% \newtheorem{fact}[theorem]{Fact}
+% \newtheorem{assumption}{Assumption}
+% \newtheorem{conjecture}[theorem]{Conjecture}
 
 % \renewenvironment{proof}{\noindent{\bf Proof}\hspace*{1em}}{\qed\\}
 
@@ -280,22 +280,22 @@
 \newenvironment{proofof}[1]{\noindent{\bf Proof} of {#1}:
   \hspace*{1em}}{\qed\bigskip\\}
 
-\newenvironment{remark}{\noindent{\bf Remark}
-  \hspace*{1em}}{\bigskip}
+% \newenvironment{remark}{\noindent{\bf Remark}
+%   \hspace*{1em}}{\bigskip}
 
-\newcounter{example}
+% \newcounter{example}
 
-\newenvironment{example}[1][]{
-  \refstepcounter{example}
-  \ifthenelse{\isempty{#1}}{%
-    % There is no text to display in the example
-    \noindent \textbf{Example \theexample:}\hspace*{.05em}
-  }{%
-    \noindent \textbf{Example \theexample} ({#1})\textbf{:}\hspace*{.05em}
-  }
-}{%
-  $\Diamond$ \medskip
-}
+% \newenvironment{example}[1][]{
+%   \refstepcounter{example}
+%   \ifthenelse{\isempty{#1}}{%
+%     % There is no text to display in the example
+%     \noindent \textbf{Example \theexample:}\hspace*{.05em}
+%   }{%
+%     \noindent \textbf{Example \theexample} ({#1})\textbf{:}\hspace*{.05em}
+%   }
+% }{%
+%   $\Diamond$ \medskip
+% }
 
 \newenvironment{example*}[1][]{
   \ifthenelse{\isempty{#1}}{%
