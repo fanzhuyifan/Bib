@@ -106,6 +106,8 @@ on Artificial Intelligence and Statistics}}
 	Computational Learning Theory}}
 @string{colt22 = {Proceedings of the Thirty Fifth Annual Conference on
 	Computational Learning Theory}}
+@string{colt23 = {Proceedings of the Thirty Sixth Annual Conference on
+	Computational Learning Theory}}
 
 
 @string{ecp = {Electronic Communications in Probability}}
@@ -265,6 +267,8 @@ Management of Data (SIGMOD)}}
 		  Symposium on the Theory of Computing}}
 @string{stoc20 = {Proceedings of the Fifty-Second Annual ACM
 		  Symposium on the Theory of Computing}}
+@string{stoc21 = {Proceedings of the Fifty-Third Annual ACM
+		  Symposium on the Theory of Computing}}
 @string{stoc22 = {Proceedings of the Fifty-Fourth Annual ACM
 		  Symposium on the Theory of Computing}}
 @string{stoc23 = {Proceedings of the Fifty-Fifth Annual ACM
@@ -377,6 +381,8 @@ Management of Data (SIGMOD)}}
    Discovery and Data Mining (KDD)}},
 @string{kdd13 = {Proceedings of the 19th ACM SIGKDD Conference on Knowledge
    Discovery and Data Mining (KDD)}},
+@string{kdd16 = {Proceedings of the 22nd ACM SIGKDD Conference on Knowledge
+    Discovery and Data Mining (KDD)}},
 @string{kdd17 = {Proceedings of the 23rd ACM SIGKDD Conference on Knowledge
    Discovery and Data Mining (KDD)}},
 
@@ -516,6 +522,8 @@ Learning Representations}}
 @string{uai10 = {Proceedings of the 26th Conference on Uncertainty
   in Artificial Intelligence}}
 @string{uai11 = {Proceedings of the 27th Conference on Uncertainty
+  in Artificial Intelligence}}
+@string{uai17 = {Proceedings of the 33rd Conference on Uncertainty
   in Artificial Intelligence}}
 @string{uai22 = {Proceedings of the 38th Conference on Uncertainty
   in Artificial Intelligence}}
@@ -4762,6 +4770,17 @@ volume = 1,
 pages = {385--402},
 }
 
+@article{BerkBrBuZhZh13,
+author = {Richard Berk and Lawrence Brown and Andreas Buja and Kai Zhang
+  and Linda Zhao},
+title = {Valid post-selection inference},
+journal = aos,
+volume = 41,
+number = 2,
+pages = {802--837},
+year = 2013,
+}
+
 @article{BerkHeJaKeRo21,
   title={Fairness in criminal justice risk assessments: The state of the art},
   author={Berk, Richard and Heidari, Hoda and Jabbari, Shahin and Kearns, Michael and Roth, Aaron},
@@ -6790,13 +6809,15 @@ publisher = {Institute of Mathematical Statistics},
 address = {Hayward, California},
 }
 
-@article{BrownBuFeSmTa21,
+@inproceedings{BrownBuFeSmTa21,
 author = {Gavin Brown and Mark Bun and Vitaly Feldman and Adam Smith and
   Kunal Talwar},
 title = {When is Memorization of Irrelevant Training Data
 Necessary for High-Accuracy Learning?},
 year = 2021,
-journal = {arXiv:2012.06421 [cs.LG]},
+booktitle = stoc21,
+pages = {123--132},
+comment = {journal = {arXiv:2012.06421 [cs.LG]}},
 }
 
 @article{BrownGaSmUlZa21,
@@ -7869,13 +7890,15 @@ journal = mathproga,
 doi={s10107-019-01406-y},
 }
 
-@article{CarmonDuHiSi19ii,
+@article{CarmonDuHiSi21,
 title = {Lower bounds for finding stationary points
  {II}: First order methods},
 author = {Carmon, Yair and Duchi, John C and Hinder, Oliver and Sidford,
 	Aaron},
-year = 2019,
+year = 2021,
 journal = mathproga,
+volume = 185,
+pages = {315--355},
 comment = {arXiv:1711.00841 [math.OC]},
 doi={s10107-019-01431-x}
 }
@@ -7925,6 +7948,13 @@ booktitle = nips2019,
 	Yujia and Lee, Yin Tat and Sidford, Aaron and Tian, Kevin},
 	booktitle = nips2020,
 	year={2020}
+}
+
+@misc{Carmon21Tucker,
+author = {Mathematical Optimization Society},
+title = {2021 {T}ucker {P}rize {C}itation for {Y}air {C}armon},
+year = 2021,
+url = {https://www.mathopt.org/?nav=tucker\_2021},
 }
 
 @TechReport{CarrLa00,
@@ -8143,6 +8173,14 @@ journal = {Annales de l'Institut Henri Poincar\'{e}},
 volume = 48,
 number = 4,
 pages = {1148--1185},
+}
+
+@article{CatoniGi17,
+author = {Olivier Catoni and Ilaria Giulini},
+title = {Dimension-free {PAC}-Bayesian bounds for matrices,
+  vectors, and linear least squares regression},
+journal = {arXiv:1712.02747 [math.ST]},
+year = 2017,
 }
 
 @article{CauchoisAlDu21,
@@ -8966,64 +9004,6 @@ number = 2,
 pages = {1173--1183}
 }
 
-@article{ChenGl96,
-  title={Two-dimensional discrete scan statistics},
-  author={Chen, Jie and Glaz, Joseph},
-  journal={Statistics \& probability letters},
-  volume={31},
-  number={1},
-  pages={59--68},
-  year={1996},
-  publisher={Elsevier}
-}
-
-@inproceedings{ChenKaMaSvUd19,
-  title={Fairness Under Unawareness: Assessing Disparity When Protected Class Is Unobserved},
-  author={Chen, Jiahao and Kallus, Nathan and Mao, Xiaojie and Svacha, Geoffry and Udell, Madeleine},
-  booktitle={Proceedings of the Conference on Fairness, Accountability, and Transparency},
-  pages={339--348},
-  year=2019,
-  organization={ACM}
-}
-
-@inproceedings{ChenKoNoHi20,
-author = {Ting Chen and Simon Kornblith and Mohammad Norouzi and
-  Geoffrey Hinton},
-title = {A Simple Framework for Contrastive Learning of Visual Representations},
-year = 2020,
-booktitle = icml20,
-comment = {Investigates contrastive learning, where one attempts to find
-  multi-layer embeddings (e.g., to get features) by making it so that
-  different parts or transformations of the same image embed to similar
-  vectors. Defines a loss which is just log-sum-exp: for a particular
-  similarity metric $s(x, z)$, minimizes losses of the form
-  $\log(\sum_{i = 0}^k \exp(s(x, z_i) - s(x, z_0)))$, where
-  $x, z_0$ are the embeddings of the (augmentations) from the same
-  image, and $z_i$ are from different images. A lot of empirical
-  ablation studies, but it seems to work well.
-  (Not clear to John exactly what matters at this point.)
-},
-}
-
-@article{ChenLaOu17,
-  title={Accelerated schemes for a class of variational inequalities},
-  author={Chen, Yunmei and Lan, Guanghui and Ouyang, Yuyuan},
-  journal={Mathematical Programming},
-  volume=165,
-  number=1,
-  pages={113--149},
-  year=2017,
-  publisher={Springer}
-}
-
-@article{ChenSh98,
-  title={Sieve extremum estimates for weakly dependent data},
-  author={Chen, Xiaohong and Shen, Xiaotong},
-  journal={Econometrica},
-  pages={289--314},
-  year=1998
-}
-
 @article{ChengAsDu22,
 author = {Chen Cheng and Hilal Asi and John Duchi},
 title = {How many labelers do you have? A closer look at gold-standard labels},
@@ -9085,13 +9065,6 @@ number = 2,
 volume = 10,
 }
 
-@book{ChenGoSh10,
-	title={Normal Approximation by Stein’s method},
-	author={Chen, Louis HY and Goldstein, Larry and Shao, Qi-Man},
-	year={2010},
-	publisher={Springer},
-}
-
 @article{ChenGiTr12,
 author = {Richard Chen and Alex Gittens and Joel A. Tropp},
 title = {The masked sample covariance estimator: an analysis using matrix
@@ -9099,6 +9072,71 @@ concentration inequalities},
 year = 2012,
 journal = {Information and Inference},
 volume = {to appear},
+}
+
+@article{ChenGl96,
+  title={Two-dimensional discrete scan statistics},
+  author={Chen, Jie and Glaz, Joseph},
+  journal={Statistics \& probability letters},
+  volume={31},
+  number={1},
+  pages={59--68},
+  year={1996},
+  publisher={Elsevier}
+}
+
+@book{ChenGoSh10,
+	title={Normal Approximation by Stein’s method},
+	author={Chen, Louis HY and Goldstein, Larry and Shao, Qi-Man},
+	year={2010},
+	publisher={Springer},
+}
+
+@inproceedings{ChenGu16,
+author = {Tianqi Chen and Carlos Guestrin},
+title = {{XGB}oost: A Scalable Tree Boosting System},
+year = 2016,
+booktitle = kdd16,
+pages = {785--794},
+}
+
+@inproceedings{ChenKaMaSvUd19,
+  title={Fairness Under Unawareness: Assessing Disparity When Protected Class Is Unobserved},
+  author={Chen, Jiahao and Kallus, Nathan and Mao, Xiaojie and Svacha, Geoffry and Udell, Madeleine},
+  booktitle={Proceedings of the Conference on Fairness, Accountability, and Transparency},
+  pages={339--348},
+  year=2019,
+  organization={ACM}
+}
+
+@inproceedings{ChenKoNoHi20,
+author = {Ting Chen and Simon Kornblith and Mohammad Norouzi and
+  Geoffrey Hinton},
+title = {A Simple Framework for Contrastive Learning of Visual Representations},
+year = 2020,
+booktitle = icml20,
+comment = {Investigates contrastive learning, where one attempts to find
+  multi-layer embeddings (e.g., to get features) by making it so that
+  different parts or transformations of the same image embed to similar
+  vectors. Defines a loss which is just log-sum-exp: for a particular
+  similarity metric $s(x, z)$, minimizes losses of the form
+  $\log(\sum_{i = 0}^k \exp(s(x, z_i) - s(x, z_0)))$, where
+  $x, z_0$ are the embeddings of the (augmentations) from the same
+  image, and $z_i$ are from different images. A lot of empirical
+  ablation studies, but it seems to work well.
+  (Not clear to John exactly what matters at this point.)
+},
+}
+
+@article{ChenLaOu17,
+  title={Accelerated schemes for a class of variational inequalities},
+  author={Chen, Yunmei and Lan, Guanghui and Ouyang, Yuyuan},
+  journal={Mathematical Programming},
+  volume=165,
+  number=1,
+  pages={113--149},
+  year=2017,
+  publisher={Springer}
 }
 
 @article{ChenLeToZh16,
@@ -9169,6 +9207,14 @@ pages = {421--444},
   pages={711--722},
   year=2009,
   publisher={Biometrika Trust}
+}
+
+@article{ChenSh98,
+  title={Sieve extremum estimates for weakly dependent data},
+  author={Chen, Xiaohong and Shen, Xiaotong},
+  journal={Econometrica},
+  pages={289--314},
+  year=1998
 }
 
 @article{ChenSiSu07,
@@ -13102,11 +13148,12 @@ year = 2010,
 booktitle = colt10,
 }
 
-@article{DuchiHaKu23,
-author = {John Duchi and Saminul Haque and Rohith Kuditpudi},
+@inproceedings{DuchiHaKu23,
+author = {John Duchi and Saminul Haque and Rohith Kuditipudi},
 title = {A fast algorithm for adaptive private mean estimation},
-year = 2013,
-journal = {arXiv:2301.07078 [stat.ML]},
+year = 2023,
+booktitle = colt23,
+url = {https://arXiv.org/abs/2301.07078},
 }
 
 @article{DuchiHaNa20,
@@ -14146,10 +14193,11 @@ month=		jan,
 year=		1991
 }
 
-@article{DziugaiteRo17,
+@inproceedings{DziugaiteRo17,
   title={Computing Nonvacuous Generalization Bounds for Deep (Stochastic) Neural Networks with Many More Parameters than Training Data},
   author={Dziugaite, Gintare Karolina and Roy, Daniel M},
-  journal={arXiv:1703.11008 [cs.LG]},
+  booktitle = uai17,
+  comment = {arXiv:1703.11008 [cs.LG]},
   year=2017
 }
 
@@ -15578,6 +15626,16 @@ year = 2011,
 booktitle = nips2011,
 }
 
+@article{FrancoMaSi14,
+author = {Annie Franco and Neil Malhotra and Gabor Simonovits},
+title = {Publication bias in the social sciences: Unlocking the file drawer},
+journal = {Science},
+year = 2014,
+volume = 345,
+number = 6203,
+pages = {1502--1505},
+}
+
 @inproceedings{FrankHa01,
 author = {E. Frank and M. Hall},
 title = {A simple approach to ordinal regression},
@@ -16945,6 +17003,17 @@ doi = {10.1038/news.2008.1083},
 	year={2015},
 }
 
+@article{GillLe95,
+author = {Richard D. Gill and Boris Y. Levit},
+title = {Applications of the van {T}rees inequality: a {B}ayesian
+  {C}ram\'{e}r-Rao bound},
+year = 1995,
+journal = {Bernoulli},
+volume = 1,
+number = {1--2},
+pages = {59--79},
+}
+
 @article{GilmerAdGoAnDa18,
 	title={Motivating the rules of the game for adversarial example research},
 	author={Gilmer, Justin and Adams, Ryan P and Goodfellow, Ian and
@@ -18022,7 +18091,7 @@ url = {http://www.cis.upenn.edu/~sudipto/mypapers/unsketchables.pdf},
 
 @article{GuiguesKrSh18,
   title={A Central Limit Theorem and Hypotheses Testing for Risk-averse Stochastic Programs},
-  author={Guigues, Vincent and Krätschmer, Volker and Shapiro, Alexander},
+  author={Guigues, Vincent and Kr\"{a}tschmer, Volker and Shapiro, Alexander},
   journal={SIAM Journal on Optimization},
   volume=28,
   number=2,
@@ -18408,6 +18477,19 @@ comment = {Shows via a few cute examples how ``polarization'' might happen
   on a linear classifier, two classifiers might disagree substantially
   even if they do ``optimally'' on two samples from the same population
   distribution.},
+}
+
+@article{Hahn98,
+author = {Jinyong Hahn},
+title = {On the role of the propensity score in efficient semiparametric
+  estimation of average treatment effects},
+year = 1998,
+journal = {Econometrica},
+volume = 66,
+number = 2,
+pages = {315--331},
+comment = {The paper with a clean presentation of semiparametric efficiency
+  lower bounds for estimation problems.},
 }
 
 @inproceedings{Hajek72,
@@ -20630,6 +20712,16 @@ pages = {1897–-1916},
   publisher={National Acad Sciences}
 }
 
+@article{HungFi20,
+author = {Kenneth Hung and William Fithian},
+title = {Statistical methods for replicability assessment},
+year = 2020,
+journal = aoas,
+volume = 14,
+number = 3,
+pages = {1063--1087},
+}
+
 @article{HyafilRi76,
 author=    	{Hyafil, Laurent and Ronald L. Rivest},
 title=     	{Constructing Optimal Binary Decision Trees is {NP}-Complete},
@@ -21884,6 +21976,14 @@ comment = {arXiv:1805.00216 [cs.DS]. Shows upper and lower bounds for
   Basically, these are fingerprinting results.},
 }
 
+@inproceedings{KamathMoSi22,
+author = {Gautam Kamath and Argyris Mouzakis and Vikrant Singhal},
+title = {New Lower Bounds for Private Estimation and a Generalized Fingerprinting Lemma},
+year = 2022,
+booktitle = nips2022,
+comment = {\url{https://arxiv.org/abs/2205.08532}},
+}
+
 @article{KamzolovGa20,
 	title={Near-Optimal Hyperfast Second-Order Method for convex
 	optimization and its Sliding},
@@ -22338,6 +22438,14 @@ journal = pnas,
 volume = 113,
 number = 4,
 pages = {913--918},
+}
+
+@inproceedings{KearnsSa98,
+author = {Michael J. Kearns and Lawrence Saul},
+title = {Large Deviation Methods for Approximate Probabilistic Inference},
+year = 1998,
+booktitle = uai98,
+pages = {311--319},
 }
 
 @inproceedings{KearnsSc90,
@@ -24250,6 +24358,13 @@ pages=		{45--52}
 ,booktitle = ml95
 ,year = 1995
 ,pages = "331--339"
+}
+
+@inproceedings{LangfordCa01,
+author = {John Langford and Richard Caruana},
+title = {(Not) bounding the true error},
+booktitle = nips2001,
+year = 2001,
 }
 
 @inproceedings{LangfordLiZh08,
@@ -28223,6 +28338,16 @@ year = 2018,
 booktitle = soda18,
 }
 
+@article{Muthukrishnan05,
+author = {S. Muthukrishnan},
+title = {Data Streams: Algorithms and Applications},
+year = 2005,
+journal = {Foundations and Trends in Theoretical Computer Science},
+volume = 1,
+number = 2,
+pages = {117--236},
+}
+
 @inproceedings{MuthukumarVoSa19,
 author = {Vidya Muthukumar and Kailas Vodrahalli and Anant Sahai},
 title = {Harmless Interpolation of Noisy Data in Regression},
@@ -30810,6 +30935,17 @@ comment = {Considers nonlinear models of the form
  estimation strategies based on families for $\varepsilon$.},
 }
 
+@incollection{PolyanskiyWu17,
+title = {Strong Data-Processing Inequalities for Channels and
+  {B}ayesian Networks},
+author = {Yury Polyanskiy and Yihong Wu},
+year = 2017,
+booktitle = {Convexity and Concentration},
+series = {The IMA Volumes in Mathematics and its Applications},
+volume = 161,
+publisher = {Springer},
+}
+
 @article{PooladianNi21,
 author = {Aram-Alexandre Pooladian and Jonathan Niles-Weed},
 title = {Entropic estimation of optimal transport maps},
@@ -31392,6 +31528,14 @@ url = {http://www.argmin.net/2017/12/05/kitchen-sinks/},
 note = {Acceptance speach for \emph{Neural Information Processing
 Systems} Test of Time Award},
 }
+
+@book{RaoYe20,
+author = {Anup Rao and Amir Yehudayoff},
+title = {Communication Complexity and Applications},
+year = 2020,
+publisher = {Cambridge University Press},
+}
+
 
 @article{Raphael99,
 author=   	{C. Raphael},
@@ -32092,6 +32236,28 @@ pages = {1064--1082},
     year = "1994",
 }
 
+@article{RobinsRo95,
+  title = {Semiparametric efficiency in multivariate regression models with missing data},
+  author = {Robins, James M and Rotnitzky, Andrea},
+  journal = {Journal of the American Statistical Association},
+  volume = {90},
+  number = {429},
+  pages = {122--129},
+  year = {1995},
+  publisher = {Taylor \& Francis}
+}
+
+@article{RobinsRoZh94,
+  title={Estimation of regression coefficients when some regressors are not always observed},
+  author={Robins, James M and Rotnitzky, Andrea and Zhao, Lue Ping},
+  journal={Journal of the American Statistical Association},
+  volume={89},
+  number={427},
+  pages={846--866},
+  year={1994},
+  publisher={Taylor \& Francis}
+}
+
 @article{Rockafellar69,
 author = {R. Tyrell Rockafellar},
 title = {Measurable Dependence of Convex Sets and Functions on Parameters},
@@ -32570,6 +32736,15 @@ journal = jasa,
 pages = {322--331},
 volume = 100,
 number = 469,
+}
+
+@incollection{Rubin18,
+  title={Multiple imputation},
+  author={Rubin, Donald B},
+  booktitle={Flexible Imputation of Missing Data, Second Edition},
+  pages={29--62},
+  year={2018},
+  publisher={Chapman and Hall/CRC},
 }
 
 @book{Rubinstein81,
@@ -33272,6 +33447,13 @@ comment = {Shows (among other results) that if a function
 ,author=	{D. Sarkar}
 ,title=		{Nonsubscriber card behavior score model development
 		--- overlimit accounts}
+}
+
+@book{SarndalSwWr03,
+  title = {Model assisted survey sampling},
+  author = {S{\"a}rndal, Carl-Erik and Swensson, Bengt and Wretman, Jan},
+  year = {2003},
+  publisher = {Springer Science \& Business Media},
 }
 
 @unknown{Saul98
@@ -35722,7 +35904,7 @@ comment = {
 
 @article{Steinwart07,
 author = {Ingo Steinwart},
-title = {How to compare different loss functions},
+title = {How to compare different loss functions and their risks},
 year = 2007,
 journal = {Constructive Approximation},
 volume = 26,
@@ -37046,6 +37228,13 @@ comment = {note = {URL
 \url{http://www.mit.edu/~dimitrib/PTseng/papers/apgm.pdf}}},
 }
 
+@book{Tsiatis06,
+ author = {Anastasios Tsiatis},
+ title = {Semiparametric Theory and Missing Data},
+ year = 2006,
+ publisher = {Springer},
+}
+
 @inproceedings{TsiprasSaEnTuMa19,
 	title={Robustness may be at odds with accuracy},
 	author={Tsipras, Dimitris and Santurkar, Shibani and Engstrom, Logan
@@ -37226,6 +37415,13 @@ year = 1960,
 publisher = {Stanford University Press},
 series = {Stanford Studies in Mathematics and Statistics},
 volume = 2,
+}
+
+@book{Tukey77,
+title = {Exploratory Data Analysis},
+author = {John W. Tukey},
+year = 1997,
+publisher = {Pearson},
 }
 
 @inproceedings{TuBoSiSoRe16,
@@ -39878,6 +40074,26 @@ journal = cacm,
 volume = 64,
 number = 3,
 pages = {107--115},
+}
+
+@article{ZhangBr22,
+  title = {High-dimensional semi-supervised learning: in search of optimal inference of the mean},
+  author = {Zhang, Yuqian and Bradic, Jelena},
+  journal = {Biometrika},
+  volume = {109},
+  number = {2},
+  pages = {387--403},
+  year = {2022},
+  publisher = {Oxford University Press}
+}
+
+@article{ZhangBrCa19,
+  title = {Semi-supervised inference: General theory and estimation of means},
+  author = {Anru Zhang and Lawrence D Brown and T Tony Cai},
+  journal = {The Annals of Statistics},
+  year = {2019},
+  volume = {47},
+  pages = {2538-2566}
 }
 
 @inproceedings{ZhangChLi16,
