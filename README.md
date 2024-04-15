@@ -81,7 +81,7 @@ git merge master
 Now your branch reflects all the changes made to the master.  To get
 your changes into the master, once you've pushed your branch to the
 server, you need to create a pull request. To do this, go to
-https://bitbucket.org/jduchi/bib/branches/, then on the branch you've
+[the branches webpage](https://github.com/jduchi/Bib/branches), then on the branch you've
 just pushed, click "Create" a pull request. You'll get a window with a
 place to enter a description and reviewers. (Currently the only
 reviewer is John.)
