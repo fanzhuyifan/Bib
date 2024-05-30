@@ -300,8 +300,9 @@ Management of Data (SIGMOD)}}
 @string{ecml94=	{Machine Learning: ECML-94}}
 @string{ecml=	{European Conference on Machine Learning}}
 
-@string{itcs2017 = {Proceedings of the Eighth Innovations in Theoretical Computer Science (ITCS)}}
-@string{itcs2019 = {Proceedings of the Tenth Innovations in Theoretical Computer Science (ITCS)}}
+@string{itcs2017 = {Proceedings of the Eighth Innovations in Theoretical Computer Science Conference (ITCS)}}
+@string{itcs2018 = {Proceedings of the Ninth Innovations in Theoretical Computer Science Conference (ITCS)}}
+@string{itcs2019 = {Proceedings of the Tenth Innovations in Theoretical Computer Science Conference (ITCS)}}
 
 
 @string{aaai97= {Proceedings of the Fourteenth National Conference on
@@ -1192,10 +1193,14 @@ volume = 6,
 }
 
 @inproceedings{AgarwalKaSiTh23,
-author = {Naman Agarwal and Satyen Kale and Karan Singh and Abhradeep Thakurta},
 title = {Differentially Private and Lazy Online Convex Optimization},
+author = {Naman Agarwal and Satyen Kale and Karan Singh and Abhradeep Thakurta},
 year = 2023,
 booktitle = colt23,
+pages = {195:1--195:34},
+comment = {Probably shows that objective perturbation works achieving
+  differential privacy for ERM problems where losses are low rank,
+  i.e., with Hessian rank 1 (so linear models).},
 }
 
 @article{AgarwalNeWa12,
@@ -22459,11 +22464,13 @@ number = 1,
 pages = {87--112},
 }
 
-@article{KarwaVa17,
+@inproceedings{KarwaVa18,
   title={Finite sample differentially private confidence intervals},
   author={Karwa, Vishesh and Vadhan, Salil},
-  journal={arXiv:1711.03908 [cs.CR]},
-  year={2017}
+  booktitle = itcs2018,
+  year={2018},
+  pages={44:1--44:9},
+  comment={arXiv:1711.03908 [cs.CR]},
 }
 
 @article{KarzanovKh91,
@@ -38948,11 +38955,14 @@ journal = {arXiv:1605.08285 [stat.ML]},
 }
 
 
-@article{WangKiLe18,
+@article{WangKiLe19,
   title={Differentially private confidence intervals for empirical risk minimization},
   author={Wang, Yue and Kifer, Daniel and Lee, Jaewoo},
-  journal={arXiv:1804.03794 [cs.LG]},
-  year={2018}
+  journal = {Journal of Privacy and Confidentiality},
+  volume = 9,
+  number = 1,
+comment={arXiv:1804.03794 [cs.LG]},
+  year={2019}
 }
 
 @article{WangKiPaChPaKiSaLe21,
