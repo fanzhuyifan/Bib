@@ -2518,6 +2518,30 @@ comment = {For solving sparse version of Ax = b, shows why lower bounds by
 },
 }
 
+@article{Arias-CastroCh17,
+author = {Ery Arias-Castro and Shiyun Chen},
+title = {Distribution-free Multiple Testing},
+year = 2017,
+journal = ejs,
+volume = 11,
+number = 1,
+pages = {1983--2001},
+comment = {Considers optimality of tests that provide guarantees on
+  false negative and false positive rates in a Gaussian sequence model.
+  Focuses on "natural" procedures, where for test statistics $X_1^n$, such
+  a procedure is based on thresholding (rejects $i$ for which
+  $X_i \ge \tau(X_1^n)$ for a data-dependent threshold $\tau$) and
+  are monotone and permutation equivariant. They work in a regime
+  where nulls are $N(0, 1)$ and alternatives are $m \le n$
+  means $\mu_i = \sqrt{2 r \log n}$, where $m / n = n^{-\beta}$. They
+  show that if $r < \beta$, no natural procedure works; otherwise,
+  $r > \beta$, then BH and Barber/Candes knockoffs work. Proof is by
+  considering an oracle that directly minimizes FDP + FNP (proportions,
+  not expected) by threshold, then showing this does not reject the correct
+  points asymptotically. Proof is a little fishy for my taste,
+  because it looks at subsequences of adaptively chosen thresholds, but
+  probably about right.},
+}
 
 @inproceedings{ArLiRuSu92,
 author=		{Sigal Ar and Richard J. Lipton and Ronitt Rubinfeld
@@ -31836,6 +31860,31 @@ comment=  	{Gets 96.5 percent accuracy on 100-speaker set for digits.}
 ,publisher=	{Prentice-Hall}
 }
 
+@article{RabinovichRaJoWa20,
+title = {Optimal rates and tradeoffs in multiple hypothesis testing},
+author = {Maxim Rabinovich and Aaditya Ramdas and Michael I. Jordan and Martin J. Wainwright},
+year = 2020,
+journal = {Statistica Sinica},
+volume = 30,
+pages = {1--22},
+comment = {
+  Provides non-asymptotic (ish) tradeoffs between false negative rate (FNR)
+  and false discovery rate (FDR) for generalized Gaussian sequence models.
+  (I'll ignore generalized gaussianity in this comment.)
+  Have $X_1^n$ statistics, $n - n^{1 - \beta_n}$ nulls $N(0, 1)$ and
+  $m = n^{1 - \beta_n}$ non-nulls drawn from $N(\sqrt{2 r_n \log n}, 1)$.
+  They show that thresholding-based procedures have risk bounded
+  by $n^{-\kappa_*}$, where
+  $\kappa = |\sqrt{\beta + \kappa} - \sqrt{r}|^2$ is a fixed point.
+  Use same style of thresholding procedures as in Arias-Castro and Shin 2016.
+  Proof is involved, but roughly shows that data-dependent
+  thresholding procedures
+  are (nearly) the same as fixed threshold thresholding procedures, then
+  proves a lower bound on those for the "best" threshold.
+},
+}
+
+
 @inproceedings{RadfordKiHaRaGoAgSaAsMiClKrSu21,
 author = {Alec Radford and Jong Wook Kim and Chris Hallacy and
 Aditya Ramesh and Gabriel Goh and Sandhini Agarwal  and
@@ -36662,6 +36711,30 @@ number = 4,
 pages = {1040--1053},
 }
 
+@article{StoreyTaSi04,
+author = {John D. Storey and Jonathan E. Taylor and David Siegmund},
+title = {Strong control, conservative point estimation and simultaneous conservative consistency of false discovery rates: a unified approach},
+year = 2004,
+journal = jrssb,
+volume = 66,
+number = 1,
+pages = {187--205},
+comment = {
+  Studies FDR control for for procedures like the Benjamini-Hochberg (BH)
+  step-down procedure. Introduces Martingale-based arguments to show that
+  FDR is controlled by an extension of BH that estimates the
+  proportion of nulls and adjusts the thresholds that way (because
+  BH gives control $\E[V / R] \le \alpha \pi_0$, where $V$ is the rejected
+  false nulls). Also provides asymptotic arguments where, if
+  $R(t) = \card(\{i \mid p_i \le t\})$ are the rejections and
+  $V(t) = \card(\{i \mid p_i \le t, i \in H_0\})$ are the rejected nulls,
+  then these converge (uniformly) to appropriate CDFs. As such,
+  many procedures asymptotically work so long as this convergence happens.
+  (Note: Genovese and Wasserman likely provide some Glivenko-Cantelli
+  based variants of these, using empirical processes.)
+},
+}
+
 @inproceedings{StorkeySu06,
 author = {Amos J. Storkey and Masashi Sugiyama},
 title = {Mixture Regression for Covariate Shift},
@@ -41430,6 +41503,27 @@ booktitle = {Proceedings of the 22nd International Conference on Computational
   booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
   pages={8697--8710},
   year={2018}
+}
+
+@article{ZrnicJo22,
+author = {Tijana Zrnic and Michael I. Jordan},
+title = {Post-Selection Inference via Algorithmic Stability},
+year = 2022,
+journal = {arXiv:2011.09462v2},
+comment = {Also appeared in Annals but I don't have citation.
+  Looks at constructing confidence intervals for a parameter $\beta_\hat{S}$
+  where $\hat{S}$ is a set of selected indices in $\beta$. Uses
+  "indistinguishable" algorithms: $X =_{\epsilon,\delta} Y$ if
+  $P(X \in O) \le e^\epsilon P(Y \in O) + \delta$. Then says a randomized
+  algorithm itself is stable for a distribution $P$, which generates
+  $Y \sim P$, if
+  there is a fixed random variable $A_0(P)$ for which
+  $P(A(Y) =_{\epsilon,\delta} A_0(P)) \ge 1 - \nu$. Then
+  argues that when algorithms are typically stable, one can construct
+  only slightly enlarged confidence intervals, because the selected
+  indices are nearly independent of the observed signal $Y$.
+  (This is intuitive: if you can reliably get indices indepent of the signal,
+  one should be able to do inference.) Mathematizing this takes work.},
 }
 
 @article{ZubkovSe13,
