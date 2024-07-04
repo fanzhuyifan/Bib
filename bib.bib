@@ -15904,6 +15904,28 @@ journal = {arXiv:2112.13487v3 [cs.LG]},
 comment = {Introduces the weighted decision estimation coefficient},
 }
 
+@article{FosterSt08,
+author = {Dean P. Foster and Robert A. Stine},
+title = {$\alpha$-investing: a procedure for sequential control of
+  expected false discoveries},
+year = 2008,
+journal = jrssb,
+volume = 70,
+number = 2,
+pages = {429--444},
+comment = {
+  Introduces $\alpha$-investing for sequential control of an FDR-like measure.
+  An $\alpha$-investing rule basically says at time $j$, we
+  reject hypothesis if $p_j \le \alpha_j$, where $\alpha_j$ is some
+  level. On rejections, we increase wealth $W(j)$ by $\omega$, and otherwise
+  lose $\alpha_j / (1 - \alpha_j)$. PRoves that this controls a measure
+  like FDR (mFDR = $\E[V] / (\E[R] + \eta)$) by arguing that a particular
+  wealth-type sequence is a sub-martingale. See also the follow-up work
+  by Aharoni and Rosset on generalized $\alpha$-investing, as well as
+  Javanmard and Montanari's follow-up LORD paper from 2017.
+},
+}
+
 @article{FosterVo93
 ,author=	{D.P. Foster and R.V. Vohra}
 ,title=		{A randomization rule for selecting forecasts}
