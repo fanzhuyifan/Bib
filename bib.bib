@@ -1011,6 +1011,18 @@ number = 6,
 pages = {925--939},
 }
 
+@article{AhlswedeGaKo76,
+author = {Rudolf Ahlswede and P\'{e}ter G\'{a}cs and J\'{a}nos K\"{o}rner},
+title = {Bounds on Conditional Probabilities
+with Applications in Multi-User Communication},
+year = 1976,
+journal = {Zeitschrift f\"{u}r  Wahrscheinlichkeitstheorie und verwandte
+  Gebiete},
+volume = 34,
+number = 2,
+pages = {157--177},
+}
+
 @article{AhlswedeWi02,
 author = {R. Ahlswede and A. Winter},
 title = {Strong converse for identification via quantum channels},
@@ -1976,6 +1988,13 @@ year = 2023,
 booktitle = nips2023,
 }
 
+@article{AngelopoulosDuZr23,
+author = {Anastasios Angelopoulos and John C. Duchi and Tijana Zrnic},
+title = {{PPI++}: Efficient Prediction-Powered Inference},
+year = 2023,
+journal = {arXiv:2311.01453 [stat.ML]},
+}
+
 @article{Angluin78,
 author=   	{Angluin, Dana},
 title=    	{On the complexity of minimum inference of regular sets},
@@ -2511,6 +2530,30 @@ comment = {For solving sparse version of Ax = b, shows why lower bounds by
 },
 }
 
+@article{Arias-CastroCh17,
+author = {Ery Arias-Castro and Shiyun Chen},
+title = {Distribution-free Multiple Testing},
+year = 2017,
+journal = ejs,
+volume = 11,
+number = 1,
+pages = {1983--2001},
+comment = {Considers optimality of tests that provide guarantees on
+  false negative and false positive rates in a Gaussian sequence model.
+  Focuses on "natural" procedures, where for test statistics $X_1^n$, such
+  a procedure is based on thresholding (rejects $i$ for which
+  $X_i \ge \tau(X_1^n)$ for a data-dependent threshold $\tau$) and
+  are monotone and permutation equivariant. They work in a regime
+  where nulls are $N(0, 1)$ and alternatives are $m \le n$
+  means $\mu_i = \sqrt{2 r \log n}$, where $m / n = n^{-\beta}$. They
+  show that if $r < \beta$, no natural procedure works; otherwise,
+  $r > \beta$, then BH and Barber/Candes knockoffs work. Proof is by
+  considering an oracle that directly minimizes FDP + FNP (proportions,
+  not expected) by threshold, then showing this does not reject the correct
+  points asymptotically. Proof is a little fishy for my taste,
+  because it looks at subsequences of adaptively chosen thresholds, but
+  probably about right.},
+}
 
 @inproceedings{ArLiRuSu92,
 author=		{Sigal Ar and Richard J. Lipton and Ronitt Rubinfeld
@@ -7591,6 +7634,13 @@ comment = {Shows a statistical perspective on the ``fingerprinting''
   },
 }
 
+@article{CaiWaZh23,
+author = {T. Tony Cai and Yichen Wang and Linjun Zhang},
+title = {Score Attack: A Lower Bound Technique for Optimal Differentially Private Learning},
+year = 2023,
+journal = {arXiv:2303.07152 [math.ST]}
+}
+
 @article{CaiWu20,
   title={Statistical and computational limits for sparse matrix detection},
   author={Cai, T Tony and Wu, Yihong },
@@ -8336,6 +8386,14 @@ volume = 22,
 number=81,
 pages={1--42},
 comment = {arXiv:2004.10181 [stat.ML]},
+}
+
+@article{CauchoisGuAlDu23,
+author = {Maxime Cauchois and Suyash Gupta and Alnur Ali and John Duchi},
+title = {Robust Validation: Confident Predictions Even When Distributions Shift},
+year = 2023,
+journal = {Journal of the American Statistical Association},
+volume = {to appear},
 }
 
 @article{CauchoisGuAlDu20,
@@ -13335,12 +13393,18 @@ note = {Lecture notes for EE290o, University of California, Berkeley},
 comment ={  url = {https://arxiv.org/abs/1610.03425}},
 }
 
-
 @inproceedings{DuchiGoKo08,
 author = {John C. Duchi and Stephen Gould and Daphne Koller},
 title = {Projected Subgradient Methods for Learning Sparse Gaussians},
 booktitle = uai08,
 year = 2008,
+}
+
+@article{DuchiGuJiSu24,
+author = {John C. Duchi and Suyash Gupta and Kuanhao Jiang and Pragya Sur},
+title = {Predictive Inference in Multi-environment Scenarios},
+year = 2024,
+journal = {arXiv:2403.16336 [stat.ML]},
 }
 
 @article{DuchiHaSi11,
@@ -15817,6 +15881,16 @@ year = {2002}
 ,year=          1991
 }
 
+@inproceedings{FosterGoHa23,
+author = {Dylan Foster and Noah Golowich and Yanjun Han},
+title = {Tight Guarantees for Interactive Decision Making with the Decision-Estimation Coefficient},
+year = 2023,
+booktitle = colt23,
+comment = {Introduces the constrained decision estimation coefficient,
+  which ideally should give an analogue of the Donoho/Liu geometrizing
+  rates stuff but for decision making problems.},
+}
+
 @article{FosterHa21,
 author = {Dean P. Foster and Sergiu Hart},
 title = {Forecast Hedging and Calibration},
@@ -15832,6 +15906,36 @@ title = {``Calibeating'': Beating Forecasters at their own Game},
 year = 2022,
 journal = {arXiv:2209.0489 [econ.TH]},
 comment = {\url{https://arxiv.org/abs/2209.04892}}
+}
+
+@article{FosterKaQiRa21,
+author = {Dylan Foster and Sham Kakade and Jian Qian and Alexander Rakhlin},
+title = {The Statistical Complexity of Interactive Decision Making},
+year = 2021,
+journal = {arXiv:2112.13487v3 [cs.LG]},
+comment = {Introduces the weighted decision estimation coefficient},
+}
+
+@article{FosterSt08,
+author = {Dean P. Foster and Robert A. Stine},
+title = {$\alpha$-investing: a procedure for sequential control of
+  expected false discoveries},
+year = 2008,
+journal = jrssb,
+volume = 70,
+number = 2,
+pages = {429--444},
+comment = {
+  Introduces $\alpha$-investing for sequential control of an FDR-like measure.
+  An $\alpha$-investing rule basically says at time $j$, we
+  reject hypothesis if $p_j \le \alpha_j$, where $\alpha_j$ is some
+  level. On rejections, we increase wealth $W(j)$ by $\omega$, and otherwise
+  lose $\alpha_j / (1 - \alpha_j)$. PRoves that this controls a measure
+  like FDR (mFDR = $\E[V] / (\E[R] + \eta)$) by arguing that a particular
+  wealth-type sequence is a sub-martingale. See also the follow-up work
+  by Aharoni and Rosset on generalized $\alpha$-investing, as well as
+  Javanmard and Montanari's follow-up LORD paper from 2017.
+},
 }
 
 @article{FosterVo93
@@ -17313,6 +17417,9 @@ journal = {Bernoulli},
 volume = 1,
 number = {1--2},
 pages = {59--79},
+comment = {Demonstrates a nice version of the van Trees inequality
+  in higher dimensions, which extends the Cramer-Rao bound to
+  make it rigorous.},
 }
 
 @article{GilmerAdGoAnDa18,
@@ -23403,6 +23510,13 @@ author={John Kirchenbauer and Jonas Geiping and Yuxin Wen and Jonathan Katz and 
   year={2023}
 }
 
+@article{KirichenkoGr21,
+author = {Alisa Kirichenko and Peter Grunwald},
+title = {Minimax rates without the fixed sample size assumption},
+year = 2021,
+journal = {arXiv:2006.11170v2 [math.ST]},
+}
+
 @InProceedings{KivinenSmWi02,
   author    = "J. Kivinen and A. J. Smola and R. C. Williamson",
   title     = "Online Learning with Kernels",
@@ -26381,6 +26495,19 @@ comment = {Shows that if we wish to do model selection (or something similar)
   (2) after running T steps of this, select the best. Except the important
   thing is that the number of iterations $T$ of this is random
   (e.g. geometric), which allows to maintain privacy.},
+}
+
+@article{LiuVaVe19,
+author = {Jingbo Liu and Ramon van Handel and Sergio Verd\'{u}},
+title = {Second-order converses via reverse hypercontractivity},
+year = 2019,
+journal = {Mathematical Statistics and Learning},
+volume = 2,
+number = 2,
+pages = {103--163},
+comment = {Available at https://arxiv.org/abs/1812.10129. Gives a really
+  nice explanation of strong converses, with the sharpest results that
+  cannot be obtained by blowing up lemmas},
 }
 
 @inproceedings{LiuWrReBiSr14,
@@ -31783,6 +31910,31 @@ comment=  	{Gets 96.5 percent accuracy on 100-speaker set for digits.}
 ,publisher=	{Prentice-Hall}
 }
 
+@article{RabinovichRaJoWa20,
+title = {Optimal rates and tradeoffs in multiple hypothesis testing},
+author = {Maxim Rabinovich and Aaditya Ramdas and Michael I. Jordan and Martin J. Wainwright},
+year = 2020,
+journal = {Statistica Sinica},
+volume = 30,
+pages = {1--22},
+comment = {
+  Provides non-asymptotic (ish) tradeoffs between false negative rate (FNR)
+  and false discovery rate (FDR) for generalized Gaussian sequence models.
+  (I'll ignore generalized gaussianity in this comment.)
+  Have $X_1^n$ statistics, $n - n^{1 - \beta_n}$ nulls $N(0, 1)$ and
+  $m = n^{1 - \beta_n}$ non-nulls drawn from $N(\sqrt{2 r_n \log n}, 1)$.
+  They show that thresholding-based procedures have risk bounded
+  by $n^{-\kappa_*}$, where
+  $\kappa = |\sqrt{\beta + \kappa} - \sqrt{r}|^2$ is a fixed point.
+  Use same style of thresholding procedures as in Arias-Castro and Shin 2016.
+  Proof is involved, but roughly shows that data-dependent
+  thresholding procedures
+  are (nearly) the same as fixed threshold thresholding procedures, then
+  proves a lower bound on those for the "best" threshold.
+},
+}
+
+
 @inproceedings{RadfordKiHaRaGoAgSaAsMiClKrSu21,
 author = {Alec Radford and Jong Wook Kim and Chris Hallacy and
 Aditya Ramesh and Gabriel Goh and Sandhini Agarwal  and
@@ -31845,6 +31997,18 @@ title = {Achievability Results for Statistical Learning Under
 year = 2009,
 booktitle = {Proceedings of the IEEE International Symposium
    on Informaiton Theory},
+}
+
+@article{RaginskySa12,
+author = {Maxim Raginsky and Igor Sason},
+title = {Concentration of measure inequalities in information theory, communications, and coding},
+year = 2014,
+journal = {Foundations and Trends in Communications and Information Theory},
+number = {1--2},
+volume = 10,
+pages = {1--250},
+comment = {Pretty comprehensive coverage of all the transport inequalities
+  and friends in information theory and related fields.},
 }
 
 @article{Raginsky16,
@@ -36609,6 +36773,30 @@ number = 4,
 pages = {1040--1053},
 }
 
+@article{StoreyTaSi04,
+author = {John D. Storey and Jonathan E. Taylor and David Siegmund},
+title = {Strong control, conservative point estimation and simultaneous conservative consistency of false discovery rates: a unified approach},
+year = 2004,
+journal = jrssb,
+volume = 66,
+number = 1,
+pages = {187--205},
+comment = {
+  Studies FDR control for for procedures like the Benjamini-Hochberg (BH)
+  step-down procedure. Introduces Martingale-based arguments to show that
+  FDR is controlled by an extension of BH that estimates the
+  proportion of nulls and adjusts the thresholds that way (because
+  BH gives control $\E[V / R] \le \alpha \pi_0$, where $V$ is the rejected
+  false nulls). Also provides asymptotic arguments where, if
+  $R(t) = \card(\{i \mid p_i \le t\})$ are the rejections and
+  $V(t) = \card(\{i \mid p_i \le t, i \in H_0\})$ are the rejected nulls,
+  then these converge (uniformly) to appropriate CDFs. As such,
+  many procedures asymptotically work so long as this convergence happens.
+  (Note: Genovese and Wasserman likely provide some Glivenko-Cantelli
+  based variants of these, using empirical processes.)
+},
+}
+
 @inproceedings{StorkeySu06,
 author = {Amos J. Storkey and Masashi Sugiyama},
 title = {Mixture Regression for Covariate Shift},
@@ -41071,6 +41259,19 @@ pages = {2541-2567},
 	year={2016}
 }
 
+@article{Zhivotovskiy24,
+author = {Nikita Zhivotovskiy},
+title = {Dimension-free Bounds for Sums of Independent Matrices and Simple Tensors via the Variational Principle},
+year = 2024,
+journal = {Electronic Journal of Probability},
+volume = 29,
+pages = {1--28},
+comment = {A nice proof of concentration of sampled covariance
+  matrices assuming they are sub-Gaussian, including
+  the effective rank.},
+}
+
+
 @article{Zhou02,
   title={The covering number in learning theory},
   author={Zhou, Ding-Xuan},
@@ -41379,6 +41580,27 @@ booktitle = {Proceedings of the 22nd International Conference on Computational
   booktitle={Proceedings of the IEEE conference on computer vision and pattern recognition},
   pages={8697--8710},
   year={2018}
+}
+
+@article{ZrnicJo22,
+author = {Tijana Zrnic and Michael I. Jordan},
+title = {Post-Selection Inference via Algorithmic Stability},
+year = 2022,
+journal = {arXiv:2011.09462v2},
+comment = {Also appeared in Annals but I don't have citation.
+  Looks at constructing confidence intervals for a parameter $\beta_\hat{S}$
+  where $\hat{S}$ is a set of selected indices in $\beta$. Uses
+  "indistinguishable" algorithms: $X =_{\epsilon,\delta} Y$ if
+  $P(X \in O) \le e^\epsilon P(Y \in O) + \delta$. Then says a randomized
+  algorithm itself is stable for a distribution $P$, which generates
+  $Y \sim P$, if
+  there is a fixed random variable $A_0(P)$ for which
+  $P(A(Y) =_{\epsilon,\delta} A_0(P)) \ge 1 - \nu$. Then
+  argues that when algorithms are typically stable, one can construct
+  only slightly enlarged confidence intervals, because the selected
+  indices are nearly independent of the observed signal $Y$.
+  (This is intuitive: if you can reliably get indices indepent of the signal,
+  one should be able to do inference.) Mathematizing this takes work.},
 }
 
 @article{ZubkovSe13,
