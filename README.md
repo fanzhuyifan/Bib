@@ -13,6 +13,11 @@ To soft-link things, use the command
 ln -s [path-to-bib]/bib.bib [path-to-desired-place]
 ``
 
+To use the soft-link in other git repositories, put `UtilityFiles/pre-commit`
+inside `.git/hooks`. The pre-commit hook replaces soft-linked files with their
+actual content. To avoid issues with your rebase commands, surround them with
+`git stash` and `git stash pop`.
+
 The aggressively precise formatting also means that citations are
 simpler within the file, and easier to find. As a corollary to this,
 please *use* this bib file--it is convenient! Do not start your own
