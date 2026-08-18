@@ -23,7 +23,7 @@ simpler within the file, and easier to find. As a corollary to this,
 please *use* this bib file--it is convenient! Do not start your own
 ones!
 
-*** Adding new entries to the bib file ***
+### Adding new entries to the bib file
 
 I would love it if you add entries to this file! But I also do not love
 it when the formatting is wrong. (For example, if you copied something
@@ -107,63 +107,63 @@ To check the branches on your local machine, you can always issue the
 command ``git branch -v``, and to delete a local branch once it has
 been merged, use ``git branch -d your-branch-name``.
 
-*** Entry format ***
+### Entry format
 
 Entries are in alphabetical order by first author's last name, and
 each has a key given by first author's full last name, then first two
 initials of each additional author, followed by the 2-digit year.
 As a typical example, here is
 
-@article{DuchiBaWa12,  
-&nbsp;&nbsp;author = {John C. Duchi and Peter L. Bartlett and Martin J. Wainwright},  
-&nbsp;&nbsp;title = {Randomized Smoothing for Stochastic Optimization},  
-&nbsp;&nbsp;year = 2012,  
-&nbsp;&nbsp;journal = siopt,  
-&nbsp;&nbsp;volume = 22,  
-&nbsp;&nbsp;number = 2,  
-&nbsp;&nbsp;pages = {674--701},  
-}
+> @article{DuchiBaWa12,  
+> &nbsp;&nbsp;author = {John C. Duchi and Peter L. Bartlett and Martin J. Wainwright},  
+> &nbsp;&nbsp;title = {Randomized Smoothing for Stochastic Optimization},  
+> &nbsp;&nbsp;year = 2012,  
+> &nbsp;&nbsp;journal = siopt,  
+> &nbsp;&nbsp;volume = 22,  
+> &nbsp;&nbsp;number = 2,  
+> &nbsp;&nbsp;pages = {674--701},  
+> }
 
 Note that this has an abbreviated journal. This is because there are
 strings at the top of the file to allow consistent formatting. Please use those
 whenever possible; e.g., NIPS should be
 
-booktitle = nips2013
+> booktitle = nips2013
 
 where the last four digits indicate which year of NIPS it is.
 
-*** Formatting instructions ***
+### Formatting instructions
 
 When entering things from the arXiv, use the format
 
-@article{DuchiGlNa16,  
-&nbsp;&nbsp;title={Statistics of Robust Optimization: A Generalized Empirical  
-&nbsp;&nbsp;&nbsp;&nbsp;Likelihood Approach},  
-&nbsp;&nbsp;author={John C. Duchi and Peter W. Glynn and Hongseok Namkoong},  
-&nbsp;&nbsp;year=2016,  
-&nbsp;&nbsp;journal={arXiv:1610.03425 [stat.ML]},  
-}
+> @article{DuchiGlNa16,  
+> &nbsp;&nbsp;title={Statistics of Robust Optimization: A Generalized Empirical  
+> &nbsp;&nbsp;&nbsp;&nbsp;Likelihood Approach},  
+> &nbsp;&nbsp;author={John C. Duchi and Peter W. Glynn and Hongseok Namkoong},  
+> &nbsp;&nbsp;year=2016,  
+> &nbsp;&nbsp;journal={arXiv:1610.03425 [stat.ML]},  
+> }
 
 
 Note that you should *never* use
 
-journal = {arXiv preprint arXiv:1610.03425}
+> journal = {arXiv preprint arXiv:1610.03425}
 
 as that does not actually reflect arXiv's desired citation style. You
 should include the subject area.  Relatedly, do not simply download
 Google's citations, as they are typically wrong and have bad capitalization,
 etc.
 
-*** Comments and Common Errors ***
+### Comments and Common Errors
 
 In the title field, any letters that should be capitalized must be
 surrounded by brackets, i.e.
 
-title = {Some cool things called {M}arkov chains}
+> title = {Some cool things called {M}arkov chains}
 
 rather than
 
-title = {Some cool things called Markov chains}
+> title = {Some cool things called Markov chains}
 
 as latex will lower-case Markov in the second example.
 
