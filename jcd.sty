@@ -182,6 +182,7 @@
 \newcommand{\var}{{\rm Var}} % Variance
 \newcommand{\cov}{\textup{Cov}} % Covariance
 \newcommand{\simiid}{\stackrel{\rm iid}{\sim}}
+\newcommand{\eqdist}{\stackrel{\textup{dist}}{=}}
 \newcommand{\openleft}[2]{\left({#1},{#2}\right]} % Interval open on left
 \newcommand{\openright}[2]{\left[{#1},{#2}\right)} % Interval open on right
 \newcommand{\tvnorm}[1]{\norm{#1}_{\rm TV}}
@@ -199,6 +200,7 @@
 \newcommand{\normal}{\mathsf{N}}  % Normal distribution
 \newcommand{\expdist}{\mathsf{Exp}}  % Exponential distribution
 \newcommand{\uniform}{\mathsf{Uni}}  % Uniform distribution
+\newcommand{\betadist}{\mathsf{Beta}}  % Beta distribution
 \newcommand{\gammadist}{\mathsf{Gamma}}  % Gamma distribution
 \newcommand{\laplace}{\mathsf{Lap}}  % Laplace distribution
 
@@ -206,6 +208,7 @@
 \newcommand{\cd}{\mathop{\stackrel{d}{\rightarrow}}} % Convergences in
                                                      % distribution
 \newcommand{\cas}{\mathop{\stackrel{a.s.}{\rightarrow}}} % Convergence a.s.
+\newcommand{\toweak}{\rightharpoonup} % Weak convergence
 \newcommand{\cp}{\stackrel{p}{\rightarrow}} % Convergence in probability
 \newcommand{\cltwo}{\stackrel{L_2}{\rightarrow}} % Convergence in ltwo
 \newcommand{\clp}[1]{\stackrel{L_{#1}}{\rightarrow}} % Convergence in Lp
@@ -322,29 +325,29 @@
 % \numberwithin{equation}{subsection}
 
 %% Potential algorithm environment
-%% \newcounter{ouralgorithm}
-
-%% \renewcommand{\algbox}[2]{%
-%%   \refstepcounter{ouralgorithm}
-%%   \begin{center}
-%%     \fcolorbox{black}{lightgray}{%
-%%       \begin{minipage}{.9\textwidth}
-%%         \textbf{Algorithm \theouralgorithm:} {#1}
-
-%%         \vspace{-.75em} \hrulefill \vspace{0em}
-
-%%         {#2}
-%%       \end{minipage}
-%%     }\\
-%%   \end{center}
-%% }
-
+\newcounter{ouralgorithm}
 \definecolor{inneralgcolor}{rgb}{.96,.96,.96}
-\newcommand{\algbox}[1]{
-  \fcolorbox{black}{inneralgcolor}{
-    \begin{minipage}{.9\textwidth}
-      {#1}
-    \end{minipage}
-  } \\
+
+\newcommand{\algbox}[2]{%
+  \refstepcounter{ouralgorithm}
+  \begin{center}
+    \fcolorbox{black}{inneralgcolor}{%
+      \begin{minipage}{.9\textwidth}
+        \textbf{Algorithm \theouralgorithm:} {#1}
+
+        \vspace{-.75em} \hrulefill \vspace{0em}
+
+        {#2}
+      \end{minipage}
+    }\\
+  \end{center}
 }
+
+%% \newcommand{\algbox*}[1]{
+%%   \fcolorbox{black}{inneralgcolor}{
+%%     \begin{minipage}{.9\textwidth}
+%%       {#1}
+%%     \end{minipage}
+%%   } \\
+%% }
 
